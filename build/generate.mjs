@@ -1160,7 +1160,7 @@ journalPages.push({
       <li><strong>1d8</strong> pour la rune au sein de cet ætt.</li>
       <li><strong>1d6</strong> pour le sens (runes bidirectionnelles uniquement) : 1–3 à l'endroit, 4–6 à l'envers.</li>
     </ol>
-    <p>En cours de partie, un maître des runes peut tirer une rune par personnage présent à chaque repos long : si elle correspond à l'ætt d'un personnage, elle produit un effet — doublé si c'est sa rune personnelle — jusqu'à la fin du prochain repos long.</p>
+    <p>En cours de partie, un maître des runes peut tirer une rune à chaque repos long (le MJ peut, à sa discrétion, autoriser plusieurs tirages, jusqu'à un maximum d'une rune par personnage présent). Si la rune tirée correspond à l'ætt d'un personnage, celui-ci bénéficie de l'effet narratif de cet ætt ; si c'est en plus sa rune personnelle, il bénéficie également de l'effet mécanique propre à cette rune, qui s'ajoute à celui de l'ætt. Ces effets durent jusqu'à la fin du prochain repos long.</p>
     <p>La macro <strong>Tirer une rune (Vers le Ragnarök)</strong> fournie par ce module automatise ce tirage.</p>` },
   sort: 0, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
   _key: `!journal.pages!${JOURNAL_ID}.${sid("rune-page-intro")}`
@@ -1386,13 +1386,15 @@ for (const region of REGIONS) {
 const macroCommand = `// Tirer une rune — Vers le Ragnarök
 // Lit les flags "vers-le-ragnarok" (ætt / rune) posés sur chaque PJ via le bloc
 // "Dévotion runique" de la fiche de personnage, et rapporte automatiquement qui
-// est concerné par le tirage (ætt correspondant, doublé si c'est la rune propre).
+// est concerné par le tirage (ætt correspondant ; effet mécanique en plus si
+// c'est la rune propre du personnage).
 const MODULE_ID = "vers-le-ragnarok";
 const AETTS = {
   "Freyja": ["Fehu","Ūruz","Thurisaz","Ansuz","Raido","Kenaz","Gebo","Wunjo"],
   "Heimdallr": ["Hagalaz","Nauthiz","Isaz","Jera","Eihwaz","Perth","Algiz","Sowilo"],
   "Týr": ["Teiwaz","Berkana","Ehwaz","Mannaz","Laguz","Ingwaz","Othila","Dagaz"]
 };
+const NON_REVERSIBLE = new Set(["Gebo","Hagalaz","Nauthiz","Isaz","Jera","Eihwaz","Sowilo","Ingwaz","Dagaz"]);
 const aettNames = Object.keys(AETTS);
 
 const aettRoll = await new Roll("1d6").roll();
@@ -1402,15 +1404,20 @@ const aettName = aettNames[aettIndex];
 const runeRoll = await new Roll("1d8").roll();
 const rune = AETTS[aettName][runeRoll.total - 1];
 
-const senseRoll = await new Roll("1d6").roll();
-const sense = senseRoll.total <= 3 ? "à l'endroit" : "à l'envers";
+const reversible = !NON_REVERSIBLE.has(rune);
+let senseRoll = null;
+let sense = "à l'endroit";
+if (reversible) {
+  senseRoll = await new Roll("1d6").roll();
+  sense = senseRoll.total <= 3 ? "à l'endroit" : "à l'envers";
+}
 
 const party = game.actors.filter(a => a.type === "character" && a.hasPlayerOwner);
 const rows = party.map(actor => {
   const actorAett = actor.getFlag(MODULE_ID, "aett");
   const actorRune = actor.getFlag(MODULE_ID, "rune");
   if (actorAett !== aettName) return \`<li style="opacity:.5;">\${actor.name} — aucun effet (\${actorAett || "aucune dévotion"})</li>\`;
-  if (actorRune === rune) return \`<li><strong>\${actor.name}</strong> — <strong>rune personnelle</strong> : effet doublé !</li>\`;
+  if (actorRune === rune) return \`<li><strong>\${actor.name}</strong> — <strong>rune personnelle</strong> : effet de l'ætt + effet mécanique de la rune !</li>\`;
   return \`<li><strong>\${actor.name}</strong> — concerné (dévoué à l'ætt de \${aettName})</li>\`;
 }).join("");
 
@@ -1418,7 +1425,7 @@ const content = \`
   <div style="text-align:center;">
     <h2 style="margin-bottom:0;">\${rune}</h2>
     <p style="opacity:.75; margin-top:0;">Ætt de \${aettName} — \${sense}</p>
-    <p style="font-size:.85em;">Ætt : d6 = \${aettRoll.total} · Rune : d8 = \${runeRoll.total} · Sens : d6 = \${senseRoll.total}</p>
+    <p style="font-size:.85em;">Ætt : d6 = \${aettRoll.total} · Rune : d8 = \${runeRoll.total}\${senseRoll ? \` · Sens : d6 = \${senseRoll.total}\` : " · (rune sans sens inversé)"}</p>
   </div>
   \${party.length ? \`<ul style="text-align:left; margin-top:.5em;">\${rows}</ul>\` : \`<p style="font-size:.85em; opacity:.75;">Aucun personnage joueur trouvé dans ce monde.</p>\`}
   <p style="font-size:.85em; opacity:.75;">Consultez le <em>Grimoire runique</em> (compendium Journaux) pour l'effet complet. La dévotion de chaque personnage se règle dans l'onglet Détails de sa fiche.</p>
