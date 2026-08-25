@@ -1,0 +1,52 @@
+{
+  "_id": "c3d358540f95c47d",
+  "name": "Pendentif de quartz solaire",
+  "type": "equipment",
+  "img": "icons/equipment/neck/pendant-gold-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ce pendentif de quartz porte la rune Sowilo gravée à sa surface, représentant la chaleur apaisante du soleil.</p>\n      <p>Cet objet émet une lumière vive dans un rayon de 36 m et une lumière faible sur 36 m supplémentaires. La lumière émise par le Quartz solaire compte comme lumière du soleil : les créatures qui y sont vulnérables en subissent les effets comme si elles se trouvaient exposées au soleil.</p>\n      <p>Les créatures à portée du pendentif ressentent une chaleur apaisante et sont immunisées contre les conditions climatiques extrêmes, comme le Fimbulvetr ou le froid glacial de Niflheimr.</p>\n      <p>La chaleur qui émane de la pierre suffit à faire fondre les icebergs des mers de Miðgarðr, facilitant la navigation.</p>",
+      "chat": ""
+    },
+    "identifier": "pendentif-de-quartz-solaire",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "attunement": "",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172855,
+    "modifiedTime": 1787667172855,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c3d358540f95c47d"
+}

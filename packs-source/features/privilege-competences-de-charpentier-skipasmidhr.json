@@ -1,0 +1,46 @@
+{
+  "_id": "d443cf367ecd4c6c",
+  "name": "Privilège : Compétences de charpentier (Skipasmidhr)",
+  "type": "feat",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p>Le personnage maîtrise les techniques traditionnelles de construction navale. Chaque fois qu'il effectue un test d'outils de charpentier pour construire ou réparer un navire, son bonus de maîtrise est doublé. Il peut ainsi réparer 1 point d'intégrité à un navire, voire en construire un nouveau, s'il dispose des ressources adéquates.</p>",
+      "chat": ""
+    },
+    "identifier": "privilege-competences-de-charpentier-skipasmidhr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Skipasmidhr",
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172861,
+    "modifiedTime": 1787667172861,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!d443cf367ecd4c6c"
+}

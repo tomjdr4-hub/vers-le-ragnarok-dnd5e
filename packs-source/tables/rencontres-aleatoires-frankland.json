@@ -1,0 +1,101 @@
+{
+  "_id": "4bdce93f06aa5807",
+  "name": "Rencontres aléatoires — Frankland",
+  "img": "icons/environment/settlement/way-marker-stone.webp",
+  "description": "Lancez 1d6 (ou tirez une rune, dont l'effet peut influencer le résultat). Chaque colonne (Adversaires, Rencontre, Météo) peut être tirée séparément selon les besoins de la scène.",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "7bc01fb7381f4e1c",
+      "type": "text",
+      "text": "Ætt de Freyja — endroit — Adversaires : 3 Spectres (wight) — Rencontre : Un petit établissement avec quelques survivants — Météo : Gel et neige",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!tables.results!4bdce93f06aa5807.7bc01fb7381f4e1c"
+    },
+    {
+      "_id": "5cd3fc1e48f09601",
+      "type": "text",
+      "text": "Ætt de Freyja — envers — Adversaires : 2d6 Loups funestes — Rencontre : Les restes d'un camp attaqué — Météo : Vent fort",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!tables.results!4bdce93f06aa5807.5cd3fc1e48f09601"
+    },
+    {
+      "_id": "48fe18a641a51c2d",
+      "type": "text",
+      "text": "Ætt de Heimdallr — endroit — Adversaires : 1d6 Feux follets — Rencontre : Un groupe de gardes du Danevirke en route vers le Mur — Météo : Ciel nuageux mais stable",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!tables.results!4bdce93f06aa5807.48fe18a641a51c2d"
+    },
+    {
+      "_id": "3658efd62d2fd9ec",
+      "type": "text",
+      "text": "Ætt de Heimdallr — envers — Adversaires : 2d12 Zombis — Rencontre : Des réfugiés francs en route vers une forteresse pour s'y protéger — Météo : Brouillard épars",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!tables.results!4bdce93f06aa5807.3658efd62d2fd9ec"
+    },
+    {
+      "_id": "80bba04ef8937f02",
+      "type": "text",
+      "text": "Ætt de Týr — endroit — Adversaires : 1 Arbre éveillé (tertre errant) — Rencontre : Un soldat franc survivant — Météo : Pluie torrentielle et battante",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!tables.results!4bdce93f06aa5807.80bba04ef8937f02"
+    },
+    {
+      "_id": "c4f8145d7a6c6572",
+      "type": "text",
+      "text": "Ætt de Týr — envers — Adversaires : 2 Spectres évanescents (wraith) — Rencontre : Un homme terrifié qui divague sur des morts qui se réveillent — Météo : Un sombre orage avance depuis le sud",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!tables.results!4bdce93f06aa5807.c4f8145d7a6c6572"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172865,
+    "modifiedTime": 1787667172865,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!tables!4bdce93f06aa5807"
+}

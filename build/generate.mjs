@@ -311,6 +311,34 @@ const EQUIPMENT_DOCS = [
       <p><em>Avantage aux tests de Charisme (Intimidation) contre les habitants de Miðgarðr pour qui la brandit.</em></p>
       <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>`,
     damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM", price: 0, weight: 1.5
+  }),
+  equipment({
+    name: "Karve", img: "icons/svg/item-bag.svg",
+    html: `<p><em>Navire polyvalent, comparable à un Snekkja de la taille d'un Knarr, utilisé aussi bien pour la guerre que pour le commerce. Sa structure lui permet de naviguer en eaux peu profondes, donnant l'avantage à tous les tests effectués à proximité du rivage.</em></p>
+      <table><tr><th>Longueur</th><td>17 m</td></tr>
+      <tr><th>Largeur</th><td>3 m</td></tr>
+      <tr><th>Coût</th><td>5 000 po</td></tr>
+      <tr><th>Temps de construction</th><td>50 jours</td></tr>
+      <tr><th>Vitesse</th><td>19 km/h (env. 300 km/jour)</td></tr>
+      <tr><th>Points d'intégrité</th><td>8</td></tr>
+      <tr><th>Équipage minimum</th><td>10 (dont 8 marins)</td></tr>
+      <tr><th>Équipage maximum</th><td>18</td></tr></table>
+      <p>Voir <em>Règles de navigation</em> (compendium Grimoire runique & guide) pour les points d'intégrité, la réparation par un Skipasmidhr et les tests de traversée.</p>`,
+    price: 5000, weight: 0
+  }),
+  equipment({
+    name: "Snekkja", img: "icons/svg/item-bag.svg",
+    html: `<p><em>Navire de guerre majestueux et richement décoré, capable d'entreprendre de longs voyages. Le Snekkja est un vaisseau léger et effilé, qui n'a pas besoin de port pour accoster et peut être échoué avec un test de groupe de Force (Athlétisme) DD 15.</em></p>
+      <table><tr><th>Longueur</th><td>28 m</td></tr>
+      <tr><th>Largeur</th><td>4,5 m</td></tr>
+      <tr><th>Coût</th><td>10 000 po</td></tr>
+      <tr><th>Temps de construction</th><td>100 jours</td></tr>
+      <tr><th>Vitesse</th><td>19 km/h (env. 300 km/jour)</td></tr>
+      <tr><th>Points d'intégrité</th><td>12</td></tr>
+      <tr><th>Équipage minimum</th><td>28 (dont 26 marins)</td></tr>
+      <tr><th>Équipage maximum</th><td>40</td></tr></table>
+      <p>Voir <em>Règles de navigation</em> (compendium Grimoire runique & guide) pour les points d'intégrité, la réparation par un Skipasmidhr et les tests de traversée.</p>`,
+    price: 10000, weight: 0
   })
 ];
 
@@ -441,6 +469,35 @@ const MAGIC_ITEMS = [
     damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM",
     html: `<p>Épée maudite (n'importe quel type). Bonus de +2 aux jets d'attaque et de dégâts.</p>
       <p>Il est impossible de récupérer les points de vie perdus à cause de cette arme en se reposant : seules la régénération ou la magie peuvent soigner ces blessures. Une fois Týrfing dégainée, il est impossible de la rengainer avant d'avoir tué une créature consciente.</p>`
+  }),
+  weapon({
+    name: "Dyrnwyn", img: "icons/weapons/swords/sword-guard-gold.webp", rarity: "legendary", attunement: "required",
+    damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM",
+    html: `<p><strong>Arme prodigieuse (épée longue).</strong> Bonus de +2 aux jets d'attaque et de dégâts effectués avec cette arme magique, ou, alternativement, un bonus égal à votre modificateur de Charisme.</p>
+      <p>Quand Dyrnwyn est dégainée, chaque créature hostile à son porteur à 9 m ou moins doit réussir un jet de sauvegarde de Charisme DD 15 ou être aveuglée jusqu'à la fin d'un repos long.</p>
+      <p>Dyrnwyn émet une lumière vive dans un rayon de 12 m et une lumière faible sur 12 m supplémentaires.</p>
+      <p>Dyrnwyn possède 7 charges. Quand son porteur touche un ennemi avec elle, il peut dépenser jusqu'à deux charges pour infliger 1d10 dégâts de force supplémentaires par charge dépensée. À l'aube, Dyrnwyn récupère 1d6+1 charges dépensées. Quand sa dernière charge est dépensée, lancez 1d20 : sur un 1, l'arme disparaît dans un éclair de lumière.</p>`
+  }),
+  equipment({
+    name: "Main de justice", img: "icons/weapons/wands/wand-gold-brown.webp", rarity: "rare", attunement: "required",
+    html: `<p><strong>Baguette prodigieuse</strong> (harmonisation réservée à un clerc, un ensorceleur, un magicien ou un sorcier). Ce sceptre doré d'environ 60 cm se termine par une main sculptée dont les trois premiers doigts sont tendus. Autrefois remis en insigne de charge à ceux qui agissaient au nom des empereurs francs, il est aujourd'hui offert par l'antique et puissant Draugr qui règne sur ces terres à ses champions, comme pour railler l'ancienne tradition.</p>
+      <p>La Main de justice ajoute 2 au DD de sauvegarde des sorts lancés par son porteur harmonisé et lui accorde un bonus de +2 aux jets d'attaque de sort.</p>
+      <p><strong>Malédiction.</strong> Tant que l'objet reste sur Miðgarðr, son porteur harmonisé fait des cauchemars terribles chaque fois qu'il s'endort : il doit réussir un jet de sauvegarde de Sagesse pour bénéficier des soins d'un repos ; en cas d'échec, hanté par des visions d'une armée de morts-vivants, il se réveille trempé de sueur, ne récupère aucun point de vie et ne peut se rendormir avant 6 heures (sauf sous l'effet du sort <em>sommeil</em> ou d'un autre sommeil magique).</p>`
+  }),
+  equipment({
+    name: "Pendentif de quartz solaire", img: "icons/equipment/neck/pendant-gold-yellow.webp", rarity: "veryRare", attunement: "",
+    html: `<p>Ce pendentif de quartz porte la rune Sowilo gravée à sa surface, représentant la chaleur apaisante du soleil.</p>
+      <p>Cet objet émet une lumière vive dans un rayon de 36 m et une lumière faible sur 36 m supplémentaires. La lumière émise par le Quartz solaire compte comme lumière du soleil : les créatures qui y sont vulnérables en subissent les effets comme si elles se trouvaient exposées au soleil.</p>
+      <p>Les créatures à portée du pendentif ressentent une chaleur apaisante et sont immunisées contre les conditions climatiques extrêmes, comme le Fimbulvetr ou le froid glacial de Niflheimr.</p>
+      <p>La chaleur qui émane de la pierre suffit à faire fondre les icebergs des mers de Miðgarðr, facilitant la navigation.</p>`
+  }),
+  equipment({
+    name: "Orbe murmurant", img: "icons/magic/perception/orb-eye-purple-red.webp", rarity: "rare", attunement: "required",
+    html: `<p>Quiconque tient cet orbe de laiton dépourvu de trait distinctif entend surtout des murmures incompréhensibles — certains pensent que la sphère prodigue de précieux conseils, d'autres qu'elle ne mène qu'à la folie.</p>
+      <p>Le porteur harmonisé à l'Orbe murmurant est occasionnellement prévenu d'un danger imminent par les murmures sombres que la sphère instille dans son esprit : il est avantagé aux jets de sauvegarde de Dextérité et gagne un bonus de +1 à la CA.</p>
+      <p>Cependant, entendre sans cesse ces paroles et ces voix affolantes ronge la raison de son porteur, qui est désavantagé aux jets de sauvegarde de Sagesse tant qu'il reste harmonisé.</p>
+      <p><strong>Intelligente.</strong> L'Orbe murmurant est un objet magique intelligent Chaotique Neutre, Intelligence 10, Sagesse 8, Charisme 14. Il communique par télépathie avec son porteur harmonisé, la plupart du temps par un charabia murmuré.</p>
+      <p><strong>Personnalité.</strong> La personnalité de l'Orbe, tout comme sa véritable finalité, reste un mystère.</p>`
   })
 ];
 
@@ -516,6 +573,14 @@ const BACKGROUNDS = [
     html: `<p><strong>Le pillard indépendant.</strong> « Fara í víkingu » — pirate, raider ou mercenaire cherchant gloire et richesse loin de sa terre natale.</p>
       <p><strong>Compétences :</strong> Athlétisme, Intimidation. <strong>Outils :</strong> instruments de navigateur.</p>
       <p><strong>Équipement de départ :</strong> vêtements tape-à-l'œil, un cadran solaire en pierre gravé d'une rune (faisant office d'instruments de navigateur), une arme de guerre, une canule de tatouage pointue, une sacoche de cuir et 20 po.</p>`
+  },
+  {
+    name: "Skipasmidhr", skills: ["ath", "prc"], tool: "carpenter",
+    privilege: "Compétences de charpentier",
+    privilegeHtml: `<p>Le personnage maîtrise les techniques traditionnelles de construction navale. Chaque fois qu'il effectue un test d'outils de charpentier pour construire ou réparer un navire, son bonus de maîtrise est doublé. Il peut ainsi réparer 1 point d'intégrité à un navire, voire en construire un nouveau, s'il dispose des ressources adéquates.</p>`,
+    html: `<p><strong>Le charpentier de marine.</strong> Les Skipasmidhr comptent parmi les artisans les plus estimés et renommés de Miðgarðr, car les navires sont la sève de l'économie des gens du Nord : pêche, commerce et raids au long cours seraient impossibles sans leur savoir-faire. Les techniques permettant de construire des vaisseaux capables de s'aventurer loin des rivages nordiques sont des secrets jalousement gardés, transmis de père en fils ou enseignés par un maître charpentier à une poignée d'apprentis triés sur le volet. Toujours respectés, ils négocient d'égal à égal avec les seigneurs et dames les plus puissants pour leur fournir les meilleurs bateaux de raid.</p>
+      <p><strong>Compétences :</strong> Athlétisme, Perception. <strong>Outils :</strong> outils d'artisan (outils de charpentier).</p>
+      <p><strong>Équipement de départ :</strong> habits courants, des outils de charpentier, une corde épaisse, une arme courante, un pendentif gravé d'une rune façonné dans le bois d'un antique navire, une sacoche de cuir avec 20 po.</p>`
   }
 ];
 
@@ -1079,6 +1144,78 @@ docs.journals.push({
   _key: `!journal!${GUIDE_ID}`
 });
 
+// -- Journal: Règles de navigation (d'après « Battle Beyond the Sea »)
+const SAILING_ID = sid("journal-sailing");
+docs.journals.push({
+  _id: SAILING_ID,
+  name: "Règles de navigation",
+  pages: [
+    {
+      _id: sid("sailing-page-roles"),
+      name: "Rôles et tour de navigation",
+      type: "text",
+      title: { show: true, level: 1 },
+      text: { format: 1, content: `<h2>Les rôles à bord</h2>
+        <p><strong>Capitaine.</strong> Par un test de Charisme (Représentation) ou de Sagesse (Ásatrú) réussi, l'équipage effectue tous ses tests de navigation de la journée avec avantage. Le capitaine peut aussi utiliser son tour de navigation pour aider un membre d'équipage et lui donner l'avantage à son propre test du jour. Ce rôle est facultatif pour les groupes de 4 joueurs ou moins.</p>
+        <p><strong>Timonier.</strong> Barre le navire sur sa route par un test de Dextérité (Escamotage) ou de Sagesse (Perspicacité) réussi.</p>
+        <p><strong>Vigie.</strong> Prévient des dangers imminents (pillards, hauts-fonds, rochers, tempêtes) par un test de Sagesse (Perception) réussi.</p>
+        <p><strong>Navigateur.</strong> Trace la route vers la destination et aide le timonier à ne pas s'en écarter par un test de Sagesse (Survie) réussi.</p>
+        <p><strong>Marin.</strong> Manœuvre les rames et règle les voiles par un test de Force (Athlétisme) réussi. Chaque personnage assumant ce rôle réduit le DD des tests de marins de 1 ; à partir de trois marins, leurs tests peuvent être traités comme un test de groupe.</p>
+        <h2>Tour de navigation</h2>
+        <p>Capitaine &gt; Navigateur &gt; Marins &gt; Vigie &gt; Timonier.</p>` },
+      sort: 0, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
+      _key: `!journal.pages!${SAILING_ID}.${sid("sailing-page-roles")}`
+    },
+    {
+      _id: sid("sailing-page-voyage"),
+      name: "Voyager en mer",
+      type: "text",
+      title: { show: true, level: 1 },
+      text: { format: 1, content: `<h2>Moins d'une journée de navigation</h2>
+        <p>Un seul test de groupe. En cas de réussite, le trajet se déroule sans incident. En cas d'échec, le groupe doit retenter le test et le navire perd 1 point d'intégrité.</p>
+        <h2>Affronter le large</h2>
+        <p>Pour un trajet de plus d'une journée, un test doit être réussi chaque jour (arrondi au supérieur), avec un DD fixé par le type de traversée :</p>
+        <table><tr><th>Type de traversée</th><th>DD</th></tr>
+        <tr><td>Longer la côte</td><td>12</td></tr>
+        <tr><td>Haute mer</td><td>13</td></tr>
+        <tr><td>Eaux agitées</td><td>15</td></tr></table>
+        <h2>Échecs</h2>
+        <table><tr><th>Rôle en échec</th><th>Conséquence</th></tr>
+        <tr><td>Navigateur, Marins ou Vigie</td><td>Le trajet prend un jour de plus.</td></tr>
+        <tr><td>Timonier</td><td>L'effort épuise l'équipage : 1 niveau d'Épuisement, et le trajet prend un jour de plus.</td></tr>
+        <tr><td>Vigie qui ne détecte pas une menace à temps</td><td>Le navire perd 1 point d'intégrité.</td></tr>
+        <tr><td>Timonier qui ne parvient pas à éviter un obstacle ou garder le cap</td><td>Le navire perd 1 point d'intégrité.</td></tr></table>
+        <p><em>Si le timonier et la vigie échouent tous deux le même jour, le navire ne perd qu'1 point d'intégrité au lieu de 2.</em></p>
+        <h2>Points d'intégrité</h2>
+        <p>Chaque navire dispose d'un nombre de points d'intégrité représentant la solidité de sa construction ; à 0, il coule. Seul un Skipasmidhr (voir l'historique du même nom, compendium Historiques) peut le réparer, à raison d'1 point tous les 10 jours de travail avec les bons outils et les matières premières nécessaires — plusieurs Skipasmidhr peuvent se répartir la tâche pour diviser ce délai (arrondi au supérieur). Faire appel à un Skipasmidhr professionnel coûte 300 po par point d'intégrité, sans jamais dépasser le plafond du navire.</p>
+        <h2>Se déplacer à bord</h2>
+        <p>Un personnage qui se déplace sur le pont pendant une tempête doit réussir un jet de sauvegarde de Dextérité DD 13 à la fin de son mouvement, sous peine d'être mis à terre.</p>
+        <h2>Le gel de Fimbulvetr</h2>
+        <p>Un personnage jeté par-dessus bord doit réussir un jet de sauvegarde de Constitution DD 12 chaque minute jusqu'à être remonté à bord, sous peine de subir 1 niveau d'Épuisement et 1d4 dégâts de froid.</p>
+        <h2>Rencontres aléatoires</h2>
+        <p>Pour déterminer les rencontres aléatoires en mer ou dans les terres traversées, consultez les tables de rencontres régionales (compendium Tables) : Jutland (continent), Frankland et Midgardr (haute mer). Le MJ peut y jouer un d6, ou tirer une rune dont l'effet influence le résultat.</p>` },
+      sort: 100000, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
+      _key: `!journal.pages!${SAILING_ID}.${sid("sailing-page-voyage")}`
+    },
+    {
+      _id: sid("sailing-page-supplies"),
+      name: "Vivres et eau",
+      type: "text",
+      title: { show: true, level: 1 },
+      text: { format: 1, content: `<h2>Nourriture</h2>
+        <p>Un personnage a besoin d'une livre de nourriture par jour, mais peut se contenter d'une demi-ration, comptant alors comme une demi-journée sans manger. Un personnage peut rester sans manger, sans conséquence, un nombre de jours égal à 3 + son modificateur de Constitution (1 au minimum) ; au-delà, il subit 1 niveau d'Épuisement à la fin de chaque jour passé sans nourriture. Le compteur est remis à zéro dès qu'il mange à nouveau.</p>
+        <h2>Eau</h2>
+        <p>Un personnage a besoin d'un gallon d'eau par jour (2 par temps chaud). S'il n'en boit que la moitié, il doit réussir un jet de sauvegarde de Constitution DD 15 ou subir 1 niveau d'Épuisement en fin de journée. S'il en boit encore moins, il subit automatiquement 1 niveau d'Épuisement en fin de journée (2 s'il souffrait déjà d'Épuisement).</p>
+        <h2>Manquer de vivres</h2>
+        <p>Si l'équipage manque de vivres, il doit s'arrêter et consacrer une heure à chercher de la nourriture. Un test de Sagesse (Survie) DD 15 réussi permet de trouver assez de nourriture pour la journée ; un test de Sagesse (Médecine) DD 17 réussi couvre les besoins en eau. Les personnages qui ne mangent ni ne boivent souffrent d'Épuisement jusqu'à ce qu'ils se nourrissent à nouveau.</p>` },
+      sort: 200000, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
+      _key: `!journal.pages!${SAILING_ID}.${sid("sailing-page-supplies")}`
+    }
+  ],
+  folder: null, sort: 200000, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
+  _key: `!journal!${SAILING_ID}`
+});
+
 // -- Roll tables for the divination mechanism
 function tableResult(parentId, i, text, range) {
   const rid = sid("res-" + parentId + text + i);
@@ -1108,6 +1245,56 @@ for (const aett of aettNames) {
     description: "Lancez ensuite 1d6 pour le sens si la rune a un envers (1-3 endroit, 4-6 envers).",
     formula: "1d8", replacement: true, displayRoll: true,
     results: runes.map((r, i) => tableResult(tid, i + 1, r.nom, [i + 1, i + 1])),
+    folder: null, sort: 0, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
+    _key: `!tables!${tid}`
+  });
+}
+
+// -- Regional random-encounter tables (d'après « Battle Beyond the Sea »)
+const REGION_TABLE_IMG = "icons/environment/settlement/way-marker-stone.webp";
+const REGIONS = [
+  {
+    name: "Jutland (continent)",
+    rows: [
+      { row: "Ætt de Freyja — endroit", foes: "1d4 Serpents corrompus (basilic)", encounter: "Une bouclière (maîtresse-bouclière) montée sur un fier destrier", weather: "Le soleil perce faiblement à travers de fins nuages, vent fort" },
+      { row: "Ætt de Freyja — envers", foes: "1d4 Insectes aberrants (chuul)", encounter: "Les restes d'un camp détruit. Un groupe de gardes du Danevirke en route vers le Mur", weather: "Ciel couvert, mais sans pluie" },
+      { row: "Ætt de Heimdallr — endroit", foes: "1 Sanglier corrompu (bulette)", encounter: "Des réfugiés en route vers une forteresse pour s'y protéger", weather: "Brume fine et éparse, pluie torrentielle" },
+      { row: "Ætt de Heimdallr — envers", foes: "2d6 Poules corrompues (cocatrix)", encounter: "Un rebelle blessé. Un homme blessé et terrifié qui divague sur des morts qui se réveillent", weather: "Un orage sombre s'annonce, venant du sud" },
+      { row: "Ætt de Týr — endroit", foes: "1 Arbre éveillé (tertre errant)", encounter: "—", weather: "—" },
+      { row: "Ætt de Týr — envers", foes: "1 Crapaud corrompu (otyugh)", encounter: "—", weather: "—" }
+    ]
+  },
+  {
+    name: "Frankland",
+    rows: [
+      { row: "Ætt de Freyja — endroit", foes: "3 Spectres (wight)", encounter: "Un petit établissement avec quelques survivants", weather: "Gel et neige" },
+      { row: "Ætt de Freyja — envers", foes: "2d6 Loups funestes", encounter: "Les restes d'un camp attaqué", weather: "Vent fort" },
+      { row: "Ætt de Heimdallr — endroit", foes: "1d6 Feux follets", encounter: "Un groupe de gardes du Danevirke en route vers le Mur", weather: "Ciel nuageux mais stable" },
+      { row: "Ætt de Heimdallr — envers", foes: "2d12 Zombis", encounter: "Des réfugiés francs en route vers une forteresse pour s'y protéger", weather: "Brouillard épars" },
+      { row: "Ætt de Týr — endroit", foes: "1 Arbre éveillé (tertre errant)", encounter: "Un soldat franc survivant", weather: "Pluie torrentielle et battante" },
+      { row: "Ætt de Týr — envers", foes: "2 Spectres évanescents (wraith)", encounter: "Un homme terrifié qui divague sur des morts qui se réveillent", weather: "Un sombre orage avance depuis le sud" }
+    ]
+  },
+  {
+    name: "Midgardr — haute mer",
+    rows: [
+      { row: "Ætt de Freyja — endroit", foes: "1d6 Orques ou requins chasseurs", encounter: "Des bateaux de pêche", weather: "Le ciel est dégagé, vent modérément fort" },
+      { row: "Ætt de Freyja — envers", foes: "1d6 Spectres (wight)", encounter: "Un navire sans pavillon", weather: "Le vent est calme, mais glacial" },
+      { row: "Ætt de Heimdallr — endroit", foes: "2d6 Pirates (capitaine bandit)", encounter: "Un navire approche, arborant la bannière d'un clan", weather: "Le ciel est en partie dégagé et le temps est stable" },
+      { row: "Ætt de Heimdallr — envers", foes: "1 Élémentaire d'eau", encounter: "La voie est bloquée par des icebergs et le gel", weather: "Il neige abondamment et le froid est extrême" },
+      { row: "Ætt de Týr — endroit", foes: "2 Requins géants", encounter: "Les survivants d'un naufrage, en détresse", weather: "Brouillard épais et mer agitée" },
+      { row: "Ætt de Týr — envers", foes: "1 Aboleth (sans actions légendaires ni asservissement)", encounter: "Les débris d'un puissant navire de guerre détruit", weather: "Une terrible tempête se lève depuis la mer" }
+    ]
+  }
+];
+
+for (const region of REGIONS) {
+  const tid = sid("table-region-" + region.name);
+  docs.tables.push({
+    _id: tid, name: `Rencontres aléatoires — ${region.name}`, img: REGION_TABLE_IMG,
+    description: "Lancez 1d6 (ou tirez une rune, dont l'effet peut influencer le résultat). Chaque colonne (Adversaires, Rencontre, Météo) peut être tirée séparément selon les besoins de la scène.",
+    formula: "1d6", replacement: true, displayRoll: true,
+    results: region.rows.map((r, i) => tableResult(tid, i + 1, `${r.row} — Adversaires : ${r.foes} — Rencontre : ${r.encounter} — Météo : ${r.weather}`, [i + 1, i + 1])),
     folder: null, sort: 0, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
     _key: `!tables!${tid}`
   });

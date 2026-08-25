@@ -1,0 +1,52 @@
+{
+  "_id": "aaee53bbbbf3ab0a",
+  "name": "Orbe murmurant",
+  "type": "equipment",
+  "img": "icons/magic/perception/orb-eye-purple-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Quiconque tient cet orbe de laiton dépourvu de trait distinctif entend surtout des murmures incompréhensibles — certains pensent que la sphère prodigue de précieux conseils, d'autres qu'elle ne mène qu'à la folie.</p>\n      <p>Le porteur harmonisé à l'Orbe murmurant est occasionnellement prévenu d'un danger imminent par les murmures sombres que la sphère instille dans son esprit : il est avantagé aux jets de sauvegarde de Dextérité et gagne un bonus de +1 à la CA.</p>\n      <p>Cependant, entendre sans cesse ces paroles et ces voix affolantes ronge la raison de son porteur, qui est désavantagé aux jets de sauvegarde de Sagesse tant qu'il reste harmonisé.</p>\n      <p><strong>Intelligente.</strong> L'Orbe murmurant est un objet magique intelligent Chaotique Neutre, Intelligence 10, Sagesse 8, Charisme 14. Il communique par télépathie avec son porteur harmonisé, la plupart du temps par un charabia murmuré.</p>\n      <p><strong>Personnalité.</strong> La personnalité de l'Orbe, tout comme sa véritable finalité, reste un mystère.</p>",
+      "chat": ""
+    },
+    "identifier": "orbe-murmurant",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172855,
+    "modifiedTime": 1787667172855,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!aaee53bbbbf3ab0a"
+}

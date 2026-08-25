@@ -1,0 +1,52 @@
+{
+  "_id": "cdba08340d510a23",
+  "name": "Main de justice",
+  "type": "equipment",
+  "img": "icons/weapons/wands/wand-gold-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Baguette prodigieuse</strong> (harmonisation réservée à un clerc, un ensorceleur, un magicien ou un sorcier). Ce sceptre doré d'environ 60 cm se termine par une main sculptée dont les trois premiers doigts sont tendus. Autrefois remis en insigne de charge à ceux qui agissaient au nom des empereurs francs, il est aujourd'hui offert par l'antique et puissant Draugr qui règne sur ces terres à ses champions, comme pour railler l'ancienne tradition.</p>\n      <p>La Main de justice ajoute 2 au DD de sauvegarde des sorts lancés par son porteur harmonisé et lui accorde un bonus de +2 aux jets d'attaque de sort.</p>\n      <p><strong>Malédiction.</strong> Tant que l'objet reste sur Miðgarðr, son porteur harmonisé fait des cauchemars terribles chaque fois qu'il s'endort : il doit réussir un jet de sauvegarde de Sagesse pour bénéficier des soins d'un repos ; en cas d'échec, hanté par des visions d'une armée de morts-vivants, il se réveille trempé de sueur, ne récupère aucun point de vie et ne peut se rendormir avant 6 heures (sauf sous l'effet du sort <em>sommeil</em> ou d'un autre sommeil magique).</p>",
+      "chat": ""
+    },
+    "identifier": "main-de-justice",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172855,
+    "modifiedTime": 1787667172855,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!cdba08340d510a23"
+}

@@ -1,0 +1,101 @@
+{
+  "_id": "c66455cb7f3b4042",
+  "name": "Rencontres aléatoires — Midgardr — haute mer",
+  "img": "icons/environment/settlement/way-marker-stone.webp",
+  "description": "Lancez 1d6 (ou tirez une rune, dont l'effet peut influencer le résultat). Chaque colonne (Adversaires, Rencontre, Météo) peut être tirée séparément selon les besoins de la scène.",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "6206a90c256eb5c0",
+      "type": "text",
+      "text": "Ætt de Freyja — endroit — Adversaires : 1d6 Orques ou requins chasseurs — Rencontre : Des bateaux de pêche — Météo : Le ciel est dégagé, vent modérément fort",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!tables.results!c66455cb7f3b4042.6206a90c256eb5c0"
+    },
+    {
+      "_id": "8dd416c85431d086",
+      "type": "text",
+      "text": "Ætt de Freyja — envers — Adversaires : 1d6 Spectres (wight) — Rencontre : Un navire sans pavillon — Météo : Le vent est calme, mais glacial",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!tables.results!c66455cb7f3b4042.8dd416c85431d086"
+    },
+    {
+      "_id": "6cbbdc456325e021",
+      "type": "text",
+      "text": "Ætt de Heimdallr — endroit — Adversaires : 2d6 Pirates (capitaine bandit) — Rencontre : Un navire approche, arborant la bannière d'un clan — Météo : Le ciel est en partie dégagé et le temps est stable",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!tables.results!c66455cb7f3b4042.6cbbdc456325e021"
+    },
+    {
+      "_id": "c3e7c26e8ef3e533",
+      "type": "text",
+      "text": "Ætt de Heimdallr — envers — Adversaires : 1 Élémentaire d'eau — Rencontre : La voie est bloquée par des icebergs et le gel — Météo : Il neige abondamment et le froid est extrême",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!tables.results!c66455cb7f3b4042.c3e7c26e8ef3e533"
+    },
+    {
+      "_id": "4c4a9f0324f4f5bc",
+      "type": "text",
+      "text": "Ætt de Týr — endroit — Adversaires : 2 Requins géants — Rencontre : Les survivants d'un naufrage, en détresse — Météo : Brouillard épais et mer agitée",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!tables.results!c66455cb7f3b4042.4c4a9f0324f4f5bc"
+    },
+    {
+      "_id": "59bdf02b56240656",
+      "type": "text",
+      "text": "Ætt de Týr — envers — Adversaires : 1 Aboleth (sans actions légendaires ni asservissement) — Rencontre : Les débris d'un puissant navire de guerre détruit — Météo : Une terrible tempête se lève depuis la mer",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!tables.results!c66455cb7f3b4042.59bdf02b56240656"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172865,
+    "modifiedTime": 1787667172865,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!tables!c66455cb7f3b4042"
+}

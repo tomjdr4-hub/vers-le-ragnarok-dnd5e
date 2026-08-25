@@ -1,7 +1,8 @@
 # Vers le Ragnarök — module Foundry VTT (pour le système dnd5e)
 
 Module de contenu (non officiel) pour jouer *Vers le Ragnarök* (Journey to Ragnarok, Mana Project Studio /
-Black Book Éditions) avec le système **dnd5e** de Foundry VTT. Il ne remplace pas dnd5e : il vient s'y greffer.
+Black Book Éditions) et son supplément *Battle Beyond the Sea* avec le système **dnd5e** de Foundry VTT.
+Il ne remplace pas dnd5e : il vient s'y greffer.
 
 Ciblé pour Foundry **v12 à v14**, avec le système **dnd5e 4.0 ou supérieur**.
 
@@ -18,21 +19,30 @@ Ciblé pour Foundry **v12 à v14**, avec le système **dnd5e 4.0 ou supérieur**
 - **Compendium Fonctionnalités** — les 6 clans de Miðgarðr (fiches culturelles), les 8 aptitudes de
   privilège d'historique, les 8 aptitudes de classe du Maître des runes, les 12 aptitudes d'ætt, et les
   aptitudes de niveau des 12 archétypes nordiques ci-dessus.
-- **Compendium Historiques** — les 8 historiques (Bondhi, Gothi, Huscarl, Jarlr, Skógarmaðr, Thrallr,
-  Vaeringhi, Vikingr), avec compétences, outils et équipement de départ décrit dans leur description.
-- **Compendium Équipement nordique** — les deux armes nordiques (hache à barbe courte, hache d'assaut) et
-  les 6 objets signature de clan.
-- **Compendium Objets magiques légendaires** — les 19 objets nommés de l'annexe du livre : Mjöllnir (le
-  marteau de Thor), Gungnir (la lance d'Odhinn), Draupnir, Skíðblaðnir (le bateau de Freyr), Týrfing,
-  Svalinn, Gramr, Skofnung, l'anneau maudit d'Andvari (Andvaranautr), la cape de Freyja, et 9 autres —
-  rareté, harmonisation et règles complètes (bonus, malédictions) telles que décrites dans le livre.
+- **Compendium Historiques** — les 8 historiques du livre de base (Bondhi, Gothi, Huscarl, Jarlr,
+  Skógarmaðr, Thrallr, Vaeringhi, Vikingr) plus le **Skipasmidhr** (charpentier de marine, tiré de *Battle
+  Beyond the Sea*), avec compétences, outils et équipement de départ décrit dans leur description.
+- **Compendium Équipement nordique** — les deux armes nordiques (hache à barbe courte, hache d'assaut),
+  les 6 objets signature de clan, et deux navires (**Karve**, **Snekkja**) avec leurs statistiques
+  complètes (points d'intégrité, équipage, coût, vitesse).
+- **Compendium Objets magiques légendaires** — les 19 objets nommés de l'annexe du livre de base : Mjöllnir
+  (le marteau de Thor), Gungnir (la lance d'Odhinn), Draupnir, Skíðblaðnir (le bateau de Freyr), Týrfing,
+  Svalinn, Gramr, Skofnung, l'anneau maudit d'Andvari (Andvaranautr), la cape de Freyja, et 9 autres,
+  plus 4 objets tirés de *Battle Beyond the Sea* : Dyrnwyn, la Main de justice, le Pendentif de quartz
+  solaire et l'Orbe murmurant — rareté, harmonisation et règles complètes (bonus, malédictions) telles
+  que décrites dans les livres.
 - **Compendium Bestiaire du Ragnarök** — 5 fiches de créature complètes (caractéristiques, PV, CA,
   résistances, aptitudes, actions et actions légendaires) pour les grandes figures du chapitre final :
   Fenrir, Jörmungandr, Sköll, Hati et Hrimgrimnir.
-- **Compendium Grimoire runique & guide** — deux journaux : un guide de création de personnage en 7 étapes,
-  et le grimoire runique complet (mécanisme de tirage + les 24 runes du Futhark classées par ætt, avec
-  leur divinité, leur effet d'ætt et leur effet mécanique complet à l'endroit comme à l'envers).
-- **Compendium Tables de divination runique** — 4 tables de jet (ætt d6, puis rune d8 par ætt).
+- **Compendium Grimoire runique, guide & navigation** — trois journaux : un guide de création de personnage
+  en 7 étapes, le grimoire runique complet (mécanisme de tirage + les 24 runes du Futhark classées par
+  ætt, avec leur divinité, leur effet d'ætt et leur effet mécanique complet à l'endroit comme à l'envers),
+  et les **règles de navigation** de *Battle Beyond the Sea* (rôles à bord, tour de navigation, DD de
+  traversée, points d'intégrité des navires, nourriture et eau).
+- **Compendium Tables de divination & rencontres** — 4 tables de jet pour la divination runique (ætt d6,
+  puis rune d8 par ætt) et 3 tables de **rencontres aléatoires régionales** (Jutland continental, Frankland,
+  Midgardr en haute mer), tirées de *Battle Beyond the Sea* et rejouant le même mécanisme ætt/sens que la
+  divination runique.
 - **Compendium Macros** — *Tirer une rune (Vers le Ragnarök)* : automatise le tirage complet (ætt, rune,
   sens) et poste un message de chat.
 - **Compétence Ásatrú** — ajoutée automatiquement à la liste des compétences (liée à la Sagesse) sur toutes
@@ -97,6 +107,13 @@ données Foundry.
 - Les bonus mécaniques décrits dans le livre pour les objets de clan (avantage à tel test tant que l'objet
   est en main, etc.) sont indiqués dans la **description** de chaque objet plutôt qu'automatisés par un
   effet actif — à appliquer manuellement en jeu, comme la plupart du contenu homebrew.
+- **Le Karve et le Snekkja** sont représentés comme des objets d'équipement à statistiques descriptives
+  (longueur, coût, points d'intégrité, équipage), et non comme des Acteurs de type Véhicule : dnd5e gère
+  les véhicules avec un schéma d'acteur dédié (cargaison, actions d'équipage, etc.) qui ne correspond pas
+  au concept de « points d'intégrité » de *Battle Beyond the Sea* ; plutôt que de forcer une conversion
+  incertaine, les points d'intégrité, l'équipage et les règles de réparation par un Skipasmidhr sont
+  documentés en toutes lettres dans l'objet et dans le journal *Règles de navigation*, à suivre
+  manuellement par la table — comme pour le bestiaire, aucun automatisme de dégâts/PV n'est câblé.
 - Les **listes de sorts par ætt** (Maître des runes) sont données en toutes lettres dans la description de
   chaque sous-classe plutôt que liées objet par objet au compendium de sorts du SRD, pour éviter toute
   référence cassée vers des sorts qui ne sont pas fournis par ce module.
@@ -105,7 +122,7 @@ données Foundry.
   elle reste mentionnée en texte dans la description de l'objet ou de la classe.
 - Ce module a été construit et validé hors ligne : le script `build/generate.mjs` produit les fichiers
   sources, compilés en compendiums LevelDB avec l'outil officiel `@foundryvtt/foundryvtt-cli`, et un
-  aller-retour de compilation/décompilation a confirmé l'intégrité des 61 documents. Il n'a en revanche
+  aller-retour de compilation/décompilation a confirmé l'intégrité des 178 documents. Il n'a en revanche
   pas pu être testé dans une session Foundry réelle — si un document refuse de s'importer ou qu'une
   fonctionnalité ne s'affiche pas comme prévu, dites-le : c'est réparable rapidement une fois le symptôme
   connu.
@@ -127,5 +144,6 @@ npx fvtt package pack --type Module --id vers-le-ragnarok \
 
 ## Source
 
-Basé sur *Vers le Ragnarök* (*Journey to Ragnarok*), © Mana Project Studio 2022, édition française Black
-Book Éditions. Module de contenu non officiel, réalisé pour l'usage personnel de table.
+Basé sur *Vers le Ragnarök* (*Journey to Ragnarok*) et son supplément *Journey to Ragnarok: Battle Beyond
+the Sea*, © Mana Project Studio 2022, édition française Black Book Éditions. Module de contenu non
+officiel, réalisé pour l'usage personnel de table.

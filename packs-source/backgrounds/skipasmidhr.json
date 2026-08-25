@@ -1,0 +1,73 @@
+{
+  "_id": "c479641aaf307721",
+  "name": "Skipasmidhr",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Le charpentier de marine.</strong> Les Skipasmidhr comptent parmi les artisans les plus estimés et renommés de Miðgarðr, car les navires sont la sève de l'économie des gens du Nord : pêche, commerce et raids au long cours seraient impossibles sans leur savoir-faire. Les techniques permettant de construire des vaisseaux capables de s'aventurer loin des rivages nordiques sont des secrets jalousement gardés, transmis de père en fils ou enseignés par un maître charpentier à une poignée d'apprentis triés sur le volet. Toujours respectés, ils négocient d'égal à égal avec les seigneurs et dames les plus puissants pour leur fournir les meilleurs bateaux de raid.</p>\n      <p><strong>Compétences :</strong> Athlétisme, Perception. <strong>Outils :</strong> outils d'artisan (outils de charpentier).</p>\n      <p><strong>Équipement de départ :</strong> habits courants, des outils de charpentier, une corde épaisse, une arme courante, un pendentif gravé d'une rune façonné dans le bois d'un antique navire, une sacoche de cuir avec 20 po.</p>",
+      "chat": ""
+    },
+    "identifier": "skipasmidhr",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "advancement": {
+      "a4cc85b025ca08eb": {
+        "_id": "a4cc85b025ca08eb",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ath",
+            "skills:prc",
+            "tool:carpenter"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Compétences d'historique"
+      },
+      "8f2502e23904173c": {
+        "_id": "8f2502e23904173c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.d443cf367ecd4c6c",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Privilège"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172862,
+    "modifiedTime": 1787667172862,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c479641aaf307721"
+}

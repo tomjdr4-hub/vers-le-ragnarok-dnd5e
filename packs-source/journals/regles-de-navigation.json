@@ -1,0 +1,114 @@
+{
+  "_id": "4208647368934590",
+  "name": "Règles de navigation",
+  "pages": [
+    {
+      "_id": "ec3d9e5e6afc17f3",
+      "name": "Rôles et tour de navigation",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h2>Les rôles à bord</h2>\n        <p><strong>Capitaine.</strong> Par un test de Charisme (Représentation) ou de Sagesse (Ásatrú) réussi, l'équipage effectue tous ses tests de navigation de la journée avec avantage. Le capitaine peut aussi utiliser son tour de navigation pour aider un membre d'équipage et lui donner l'avantage à son propre test du jour. Ce rôle est facultatif pour les groupes de 4 joueurs ou moins.</p>\n        <p><strong>Timonier.</strong> Barre le navire sur sa route par un test de Dextérité (Escamotage) ou de Sagesse (Perspicacité) réussi.</p>\n        <p><strong>Vigie.</strong> Prévient des dangers imminents (pillards, hauts-fonds, rochers, tempêtes) par un test de Sagesse (Perception) réussi.</p>\n        <p><strong>Navigateur.</strong> Trace la route vers la destination et aide le timonier à ne pas s'en écarter par un test de Sagesse (Survie) réussi.</p>\n        <p><strong>Marin.</strong> Manœuvre les rames et règle les voiles par un test de Force (Athlétisme) réussi. Chaque personnage assumant ce rôle réduit le DD des tests de marins de 1 ; à partir de trois marins, leurs tests peuvent être traités comme un test de groupe.</p>\n        <h2>Tour de navigation</h2>\n        <p>Capitaine &gt; Navigateur &gt; Marins &gt; Vigie &gt; Timonier.</p>"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787667172865,
+        "modifiedTime": 1787667172865,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!4208647368934590.ec3d9e5e6afc17f3"
+    },
+    {
+      "_id": "fe56fed2d143d56e",
+      "name": "Voyager en mer",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h2>Moins d'une journée de navigation</h2>\n        <p>Un seul test de groupe. En cas de réussite, le trajet se déroule sans incident. En cas d'échec, le groupe doit retenter le test et le navire perd 1 point d'intégrité.</p>\n        <h2>Affronter le large</h2>\n        <p>Pour un trajet de plus d'une journée, un test doit être réussi chaque jour (arrondi au supérieur), avec un DD fixé par le type de traversée :</p>\n        <table><tr><th>Type de traversée</th><th>DD</th></tr>\n        <tr><td>Longer la côte</td><td>12</td></tr>\n        <tr><td>Haute mer</td><td>13</td></tr>\n        <tr><td>Eaux agitées</td><td>15</td></tr></table>\n        <h2>Échecs</h2>\n        <table><tr><th>Rôle en échec</th><th>Conséquence</th></tr>\n        <tr><td>Navigateur, Marins ou Vigie</td><td>Le trajet prend un jour de plus.</td></tr>\n        <tr><td>Timonier</td><td>L'effort épuise l'équipage : 1 niveau d'Épuisement, et le trajet prend un jour de plus.</td></tr>\n        <tr><td>Vigie qui ne détecte pas une menace à temps</td><td>Le navire perd 1 point d'intégrité.</td></tr>\n        <tr><td>Timonier qui ne parvient pas à éviter un obstacle ou garder le cap</td><td>Le navire perd 1 point d'intégrité.</td></tr></table>\n        <p><em>Si le timonier et la vigie échouent tous deux le même jour, le navire ne perd qu'1 point d'intégrité au lieu de 2.</em></p>\n        <h2>Points d'intégrité</h2>\n        <p>Chaque navire dispose d'un nombre de points d'intégrité représentant la solidité de sa construction ; à 0, il coule. Seul un Skipasmidhr (voir l'historique du même nom, compendium Historiques) peut le réparer, à raison d'1 point tous les 10 jours de travail avec les bons outils et les matières premières nécessaires — plusieurs Skipasmidhr peuvent se répartir la tâche pour diviser ce délai (arrondi au supérieur). Faire appel à un Skipasmidhr professionnel coûte 300 po par point d'intégrité, sans jamais dépasser le plafond du navire.</p>\n        <h2>Se déplacer à bord</h2>\n        <p>Un personnage qui se déplace sur le pont pendant une tempête doit réussir un jet de sauvegarde de Dextérité DD 13 à la fin de son mouvement, sous peine d'être mis à terre.</p>\n        <h2>Le gel de Fimbulvetr</h2>\n        <p>Un personnage jeté par-dessus bord doit réussir un jet de sauvegarde de Constitution DD 12 chaque minute jusqu'à être remonté à bord, sous peine de subir 1 niveau d'Épuisement et 1d4 dégâts de froid.</p>\n        <h2>Rencontres aléatoires</h2>\n        <p>Pour déterminer les rencontres aléatoires en mer ou dans les terres traversées, consultez les tables de rencontres régionales (compendium Tables) : Jutland (continent), Frankland et Midgardr (haute mer). Le MJ peut y jouer un d6, ou tirer une rune dont l'effet influence le résultat.</p>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787667172865,
+        "modifiedTime": 1787667172865,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!4208647368934590.fe56fed2d143d56e"
+    },
+    {
+      "_id": "774d5fe0dab9d0b8",
+      "name": "Vivres et eau",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h2>Nourriture</h2>\n        <p>Un personnage a besoin d'une livre de nourriture par jour, mais peut se contenter d'une demi-ration, comptant alors comme une demi-journée sans manger. Un personnage peut rester sans manger, sans conséquence, un nombre de jours égal à 3 + son modificateur de Constitution (1 au minimum) ; au-delà, il subit 1 niveau d'Épuisement à la fin de chaque jour passé sans nourriture. Le compteur est remis à zéro dès qu'il mange à nouveau.</p>\n        <h2>Eau</h2>\n        <p>Un personnage a besoin d'un gallon d'eau par jour (2 par temps chaud). S'il n'en boit que la moitié, il doit réussir un jet de sauvegarde de Constitution DD 15 ou subir 1 niveau d'Épuisement en fin de journée. S'il en boit encore moins, il subit automatiquement 1 niveau d'Épuisement en fin de journée (2 s'il souffrait déjà d'Épuisement).</p>\n        <h2>Manquer de vivres</h2>\n        <p>Si l'équipage manque de vivres, il doit s'arrêter et consacrer une heure à chercher de la nourriture. Un test de Sagesse (Survie) DD 15 réussi permet de trouver assez de nourriture pour la journée ; un test de Sagesse (Médecine) DD 17 réussi couvre les besoins en eau. Les personnages qui ne mangent ni ne boivent souffrent d'Épuisement jusqu'à ce qu'ils se nourrissent à nouveau.</p>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787667172865,
+        "modifiedTime": 1787667172865,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!4208647368934590.774d5fe0dab9d0b8"
+    }
+  ],
+  "folder": null,
+  "sort": 200000,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172865,
+    "modifiedTime": 1787667172865,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!4208647368934590"
+}

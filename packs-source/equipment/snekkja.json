@@ -1,0 +1,50 @@
+{
+  "_id": "b14d8b9f294ccacd",
+  "name": "Snekkja",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Navire de guerre majestueux et richement décoré, capable d'entreprendre de longs voyages. Le Snekkja est un vaisseau léger et effilé, qui n'a pas besoin de port pour accoster et peut être échoué avec un test de groupe de Force (Athlétisme) DD 15.</em></p>\n      <table><tr><th>Longueur</th><td>28 m</td></tr>\n      <tr><th>Largeur</th><td>4,5 m</td></tr>\n      <tr><th>Coût</th><td>10 000 po</td></tr>\n      <tr><th>Temps de construction</th><td>100 jours</td></tr>\n      <tr><th>Vitesse</th><td>19 km/h (env. 300 km/jour)</td></tr>\n      <tr><th>Points d'intégrité</th><td>12</td></tr>\n      <tr><th>Équipage minimum</th><td>28 (dont 26 marins)</td></tr>\n      <tr><th>Équipage maximum</th><td>40</td></tr></table>\n      <p>Voir <em>Règles de navigation</em> (compendium Grimoire runique & guide) pour les points d'intégrité, la réparation par un Skipasmidhr et les tests de traversée.</p>",
+      "chat": ""
+    },
+    "identifier": "snekkja",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "kg"
+    },
+    "price": {
+      "value": 10000,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172855,
+    "modifiedTime": 1787667172855,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!b14d8b9f294ccacd"
+}

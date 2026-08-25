@@ -1,0 +1,50 @@
+{
+  "_id": "c944a336ded781c7",
+  "name": "Karve",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Navire polyvalent, comparable à un Snekkja de la taille d'un Knarr, utilisé aussi bien pour la guerre que pour le commerce. Sa structure lui permet de naviguer en eaux peu profondes, donnant l'avantage à tous les tests effectués à proximité du rivage.</em></p>\n      <table><tr><th>Longueur</th><td>17 m</td></tr>\n      <tr><th>Largeur</th><td>3 m</td></tr>\n      <tr><th>Coût</th><td>5 000 po</td></tr>\n      <tr><th>Temps de construction</th><td>50 jours</td></tr>\n      <tr><th>Vitesse</th><td>19 km/h (env. 300 km/jour)</td></tr>\n      <tr><th>Points d'intégrité</th><td>8</td></tr>\n      <tr><th>Équipage minimum</th><td>10 (dont 8 marins)</td></tr>\n      <tr><th>Équipage maximum</th><td>18</td></tr></table>\n      <p>Voir <em>Règles de navigation</em> (compendium Grimoire runique & guide) pour les points d'intégrité, la réparation par un Skipasmidhr et les tests de traversée.</p>",
+      "chat": ""
+    },
+    "identifier": "karve",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "kg"
+    },
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172855,
+    "modifiedTime": 1787667172855,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c944a336ded781c7"
+}

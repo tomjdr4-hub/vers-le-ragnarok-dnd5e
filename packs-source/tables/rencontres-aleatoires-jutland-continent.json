@@ -1,0 +1,101 @@
+{
+  "_id": "f3325b93e9959475",
+  "name": "Rencontres aléatoires — Jutland (continent)",
+  "img": "icons/environment/settlement/way-marker-stone.webp",
+  "description": "Lancez 1d6 (ou tirez une rune, dont l'effet peut influencer le résultat). Chaque colonne (Adversaires, Rencontre, Météo) peut être tirée séparément selon les besoins de la scène.",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "88fbe1a2a5125969",
+      "type": "text",
+      "text": "Ætt de Freyja — endroit — Adversaires : 1d4 Serpents corrompus (basilic) — Rencontre : Une bouclière (maîtresse-bouclière) montée sur un fier destrier — Météo : Le soleil perce faiblement à travers de fins nuages, vent fort",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!tables.results!f3325b93e9959475.88fbe1a2a5125969"
+    },
+    {
+      "_id": "d3997751320f29f2",
+      "type": "text",
+      "text": "Ætt de Freyja — envers — Adversaires : 1d4 Insectes aberrants (chuul) — Rencontre : Les restes d'un camp détruit. Un groupe de gardes du Danevirke en route vers le Mur — Météo : Ciel couvert, mais sans pluie",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!tables.results!f3325b93e9959475.d3997751320f29f2"
+    },
+    {
+      "_id": "053acdd12c0aa430",
+      "type": "text",
+      "text": "Ætt de Heimdallr — endroit — Adversaires : 1 Sanglier corrompu (bulette) — Rencontre : Des réfugiés en route vers une forteresse pour s'y protéger — Météo : Brume fine et éparse, pluie torrentielle",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!tables.results!f3325b93e9959475.053acdd12c0aa430"
+    },
+    {
+      "_id": "3f56f2a5b84636d6",
+      "type": "text",
+      "text": "Ætt de Heimdallr — envers — Adversaires : 2d6 Poules corrompues (cocatrix) — Rencontre : Un rebelle blessé. Un homme blessé et terrifié qui divague sur des morts qui se réveillent — Météo : Un orage sombre s'annonce, venant du sud",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!tables.results!f3325b93e9959475.3f56f2a5b84636d6"
+    },
+    {
+      "_id": "466d6c0e107fcfd2",
+      "type": "text",
+      "text": "Ætt de Týr — endroit — Adversaires : 1 Arbre éveillé (tertre errant) — Rencontre : — — Météo : —",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!tables.results!f3325b93e9959475.466d6c0e107fcfd2"
+    },
+    {
+      "_id": "e65b824e57661faa",
+      "type": "text",
+      "text": "Ætt de Týr — envers — Adversaires : 1 Crapaud corrompu (otyugh) — Rencontre : — — Météo : —",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!tables.results!f3325b93e9959475.e65b824e57661faa"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787667172865,
+    "modifiedTime": 1787667172865,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!tables!f3325b93e9959475"
+}
