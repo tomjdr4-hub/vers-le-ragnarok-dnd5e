@@ -29,6 +29,10 @@ Ciblé pour Foundry **v12 à v14**, avec le système **dnd5e 4.0 ou supérieur**
   sens) et poste un message de chat.
 - **Compétence Ásatrú** — ajoutée automatiquement à la liste des compétences (liée à la Sagesse) sur toutes
   les fiches de personnage dès que le module est actif, avec sa propre valeur passive.
+- **Thème visuel nordique** — reskin complet de la fiche de personnage (uniquement les fiches d'Acteur de
+  type personnage joueur, aucune autre fiche n'est touchée) : palette braise/bronze sur fond de fer sombre,
+  typographies runiques et gravées, bordures et arrière-plans thématiques. Activé automatiquement, aucun
+  réglage requis.
 
 ## Installation
 
@@ -58,6 +62,13 @@ données Foundry.
 
 ## Choix de conception (et limites connues)
 
+- **Le thème visuel** (`styles/vers-le-ragnarok.css`) fonctionne en redéfinissant les variables CSS que le
+  système dnd5e expose déjà pour son propre thème clair/sombre (`--dnd5e-color-*`, `--color-text-*`,
+  `--dnd5e-border-*`…), plutôt qu'en réécrivant sa mise en page. C'est l'approche la plus robuste aux mises
+  à jour du système : si dnd5e renomme une variable, ce détail cesse simplement de se redessiner (pas de
+  fiche cassée) — mais je n'ai pas pu vérifier son rendu dans un Foundry réel. Pour le désactiver sans
+  désinstaller le module, videz le tableau `"styles"` dans `module.json` ou supprimez la ligne
+  correspondante.
 - **Les clans n'ont pas de bonus de caractéristique** : c'est fidèle au livre, qui les traite comme une
   appartenance culturelle et recommande de jouer des personnages humains.
 - Les bonus mécaniques décrits dans le livre pour les objets de clan (avantage à tel test tant que l'objet

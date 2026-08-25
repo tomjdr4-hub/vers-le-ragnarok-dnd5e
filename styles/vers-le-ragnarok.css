@@ -1,0 +1,131 @@
+/* =========================================================================
+   Vers le Ragnarök — thème nordique pour la fiche de personnage dnd5e
+   Scope: uniquement les fiches d'Acteur de type "character" (.dnd5e2.character).
+   N'affecte ni les fiches de PNJ, ni les objets, ni le reste de l'interface.
+   Repose sur les variables CSS natives du système dnd5e (systems/dnd5e/less) :
+   cette feuille est intentionnellement non "layered", donc elle l'emporte
+   automatiquement sur les @layer "general"/"specific" du système, quel que
+   soit le thème clair/sombre choisi par le joueur dans Foundry.
+   ========================================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&family=Frank+Ruhl+Libre:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+.application.dnd5e2.character {
+  /* ---------- Typographie ---------- */
+  --dnd5e-font-modesto: "Germania One", "Cinzel", serif;
+  --font-primary: "Work Sans", "Signika", sans-serif;
+  --dnd5e-font-roboto: "Work Sans", sans-serif;
+  --dnd5e-font-roboto-condensed: "Work Sans", sans-serif;
+  --dnd5e-font-roboto-slab: "Frank Ruhl Libre", serif;
+
+  /* ---------- Palette primitive ---------- */
+  --dnd5e-color-gold: #b98a3e;
+  --dnd5e-color-card: #241f22;
+  --dnd5e-color-parchment: #1b181b;
+  --dnd5e-color-maroon: #6b2a18;
+  --dnd5e-color-crimson: #6b2a18;
+  --dnd5e-color-hd-1: #3a1c12;
+  --dnd5e-color-hd-3: #4a1f10;
+  --dnd5e-color-faint: #3b372f;
+  --dnd5e-color-beige: #b9af9c;
+  --dnd5e-color-tan: #8b8171;
+  --dnd5e-color-olive: #4a3a26;
+  --dnd5e-color-iron-gray: #26232a;
+  --dnd5e-color-light-gray: #322d31;
+  --dnd5e-color-scrollbar: var(--dnd5e-color-gold);
+
+  /* ---------- Fonds ---------- */
+  --dnd5e-background-parchment: #1b181b;
+  --dnd5e-background-card: #241f22;
+  --dnd5e-background-5: rgb(255 255 255 / 5%);
+  --dnd5e-background-alt-1: #1b181b;
+  --dnd5e-background-alt-2: #241f22;
+  --dnd5e-application-background:
+    radial-gradient(ellipse at 20% 0%, rgb(185 138 62 / 10%) 0%, transparent 45%),
+    #171519;
+  --dnd5e-character-header-image: linear-gradient(120deg, #2b1408 0%, #4a2b1a 45%, #1c0f06 100%);
+  --dnd5e-character-body-image:
+    repeating-linear-gradient(135deg, rgb(0 0 0 / 3%) 0 2px, transparent 2px 6px),
+    radial-gradient(ellipse at 50% -10%, rgb(185 138 62 / 6%) 0%, transparent 55%),
+    #1b181b;
+  --dnd5e-character-background-content: "";
+  --dnd5e-character-background-image:
+    radial-gradient(ellipse at 50% 0%, rgb(185 138 62 / 8%) 0%, transparent 60%), #171519;
+
+  /* ---------- Texte ---------- */
+  --color-text-primary: #ece5d4;
+  --color-text-secondary: #b9af9c;
+  --color-text-tertiary: #8b8171;
+  --color-text-emphatic: #f4efe3;
+  --color-text-title: #dd8759;
+  --dnd5e-attribute-color: #dd8759;
+  --dnd5e-ability-color: #dd8759;
+  --dnd5e-ability-mod-color: #ece5d4;
+  --dnd5e-heading-3-color: #ece5d4;
+  --dnd5e-quote-color: #b9af9c;
+
+  /* ---------- Bordures ---------- */
+  --dnd5e-border-gold: 1px solid #b98a3e;
+  --dnd5e-border-dark: 1px solid #3b372f;
+  --dnd5e-border-dotted: 1px dotted #4a453c;
+  --dnd5e-border-dashed: 1px dashed #4a453c;
+  --dnd5e-border-dashed-faint: 1px dashed #2b2823;
+  --dnd5e-border-heading-3: 1px solid #b98a3e;
+  --dnd5e-border-separator-faint: 1px solid #2b2823;
+  --dnd5e-border-separator-heavy: 1px solid #3b372f;
+  --dnd5e-border-separator-warning: 1px dotted #b98a3e;
+  --dnd5e-inventory-border: 1px solid #3b372f;
+  --dnd5e-slot-border: 1px solid #b98a3e;
+  --dnd5e-condition-hover: #241f22;
+
+  /* ---------- Listes, cartes, activités ---------- */
+  --separated-list-item-background-color: rgb(0 0 0 / 20%);
+  --separated-list-item-border-color: #3b372f;
+  --item-summary-background: #241f22;
+  --item-control-color: #8b8171;
+  --item-control-interactive-color: #b9af9c;
+  --item-control-active-color: #dd8759;
+  --item-control-header-color: #ece5d4;
+  --activity-icon-color: #dd8759;
+  --activity-row-border: 1px dotted #3b372f;
+  --activity-row-indent-color: #3b372f;
+  --damage-icon-color: #dd8759;
+  --filigree-background-color: #241f22;
+  --filigree-border-color: #b98a3e;
+  --context-entry-hover-background: #241f22;
+  --dnd5e-card-header-1: #491d0e;
+  --dnd5e-card-header-2: #2b150c;
+
+  /* ---------- Formulaires ---------- */
+  --slide-toggle-track-color-unchecked: rgb(0 0 0 / 30%);
+  --slide-toggle-track-color-checked: #b98a3e;
+  --multi-select-tag-background: #241f22;
+  --multi-select-tag-border: #b98a3e;
+  --radio-list-hover: #241f22;
+
+  button {
+    --button-border-color: #3b372f;
+    --button-hover-border-color: #b98a3e;
+    --button-toggle-depressed-color: color-mix(in oklab, #241f22, #b98a3e 12%);
+    --control-border-color: #3b372f;
+  }
+
+  input:not([type="range"]), textarea, select, file-picker, formula-input {
+    --input-border-color: transparent;
+    --input-hover-border-color: #b98a3e;
+    --input-background-color: rgb(0 0 0 / 25%);
+    --input-placeholder-color: #8b8171;
+  }
+}
+
+/* ---------- Coins moins arrondis : silhouette plus "gravée dans le métal" ---------- */
+.application.dnd5e2.character {
+  .window-content, .sheet-header, .tab, fieldset, .card {
+    border-radius: 4px;
+  }
+}
+
+/* ---------- Nom du personnage : accent runique discret ---------- */
+.application.dnd5e2.character .sheet-header input.document-name {
+  letter-spacing: .02em;
+}
