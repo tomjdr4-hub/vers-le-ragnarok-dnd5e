@@ -1,14 +1,14 @@
 {
-  "_id": "b34ad96082564af7",
-  "name": "Savoir du monde et Monde du savoir (École du vagabond)",
+  "_id": "abcb8d91b2d1bdad",
+  "name": "Monde du savoir (École du vagabond)",
   "type": "feat",
   "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Savoir du monde.</strong> Vous gagnez une maîtrise temporaire (jusqu'au prochain repos long) de deux compétences, armes ou outils.</p>\n        <p><strong>Monde du savoir.</strong> Vous pouvez oublier un sort préparé de niveau 2 ou plus pour apprendre temporairement (8 heures) un sort proposé par le MJ ; 3 utilisations, une minute de récupération entre chaque, repos long pour tout récupérer.</p>",
+      "value": "<p>Vous pouvez oublier un sort préparé de niveau 2 ou plus pour apprendre temporairement (8 heures) un sort proposé par le MJ ; 3 utilisations, une minute de récupération entre chaque, repos long pour tout récupérer.</p>",
       "chat": ""
     },
-    "identifier": "savoir-du-monde-et-monde-du-savoir-ecole-du-vagabond",
+    "identifier": "monde-du-savoir-ecole-du-vagabond",
     "source": "Vers le Ragnarök",
     "requirements": "École du vagabond — niveau 6",
     "type": {
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!b34ad96082564af7"
+  "_key": "!items!abcb8d91b2d1bdad"
 }

@@ -1,0 +1,46 @@
+{
+  "_id": "5fb7e9ac0218e0f0",
+  "name": "Déclencher la tempête (Voie de l'orageur)",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous êtes avantagé contre les effets qui vous déplacent, vous poussent ou vous mettent à terre ; quand vous êtes touché en mêlée, vous ripostez pour 1d6 dégâts de tonnerre et gagnez 1 charge d'orage.</p>",
+      "chat": ""
+    },
+    "identifier": "declencher-la-tempete-voie-de-l-orageur",
+    "source": "Vers le Ragnarök",
+    "requirements": "Voie de l'orageur — niveau 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455561,
+    "modifiedTime": 1787654455561,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5fb7e9ac0218e0f0"
+}

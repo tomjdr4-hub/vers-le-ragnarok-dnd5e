@@ -1,0 +1,46 @@
+{
+  "_id": "931eecd0f185248d",
+  "name": "Balafres sacrées (Domaine du sacrifice)",
+  "type": "feat",
+  "img": "icons/magic/death/skull-humanoid-crown-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Quand vous êtes touché alors que vous n'êtes pas à vos points de vie maximum (et sans PV temporaires), vous gagnez des points de vie temporaires égaux à votre modificateur de Charisme.</p>",
+      "chat": ""
+    },
+    "identifier": "balafres-sacrees-domaine-du-sacrifice",
+    "source": "Vers le Ragnarök",
+    "requirements": "Domaine du sacrifice — niveau 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455561,
+    "modifiedTime": 1787654455561,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!931eecd0f185248d"
+}

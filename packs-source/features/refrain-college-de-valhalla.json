@@ -1,14 +1,14 @@
 {
-  "_id": "2565280e51301e22",
-  "name": "Refrain et Témoignage (Collège de Valhalla)",
+  "_id": "ad826c78b101826b",
+  "name": "Refrain (Collège de Valhalla)",
   "type": "feat",
   "img": "icons/magic/holy/prayer-glowing-gold.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Refrain.</strong> À chaque fois que vous donnez une inspiration bardique, un nombre de créatures amicales égal à votre modificateur de Charisme peuvent réagir en chantant en chœur : +3 m de vitesse et +1 à leur prochain test ou jet d'attaque.</p>\n        <p><strong>Témoignage.</strong> Vous gagnez des points de vie temporaires égaux au résultat du dé d'inspiration bardique utilisé par un allié.</p>",
+      "value": "<p>À chaque fois que vous donnez une inspiration bardique, un nombre de créatures amicales égal à votre modificateur de Charisme peuvent réagir en chantant en chœur : +3 m de vitesse et +1 à leur prochain test ou jet d'attaque.</p>",
       "chat": ""
     },
-    "identifier": "refrain-et-temoignage-college-de-valhalla",
+    "identifier": "refrain-college-de-valhalla",
     "source": "Vers le Ragnarök",
     "requirements": "Collège de Valhalla — niveau 3",
     "type": {
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455561,
+    "modifiedTime": 1787654455561,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!2565280e51301e22"
+  "_key": "!items!ad826c78b101826b"
 }

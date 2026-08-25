@@ -1,0 +1,46 @@
+{
+  "_id": "1e8b00b9df0c1cb9",
+  "name": "Avec la terre (École du vagabond)",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous pouvez faire apparaître l'origine d'un sort à 4,50 m de vous ; vous êtes alors limité aux tours de magie jusqu'à votre tour suivant.</p>",
+      "chat": ""
+    },
+    "identifier": "avec-la-terre-ecole-du-vagabond",
+    "source": "Vers le Ragnarök",
+    "requirements": "École du vagabond — niveau 2",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1e8b00b9df0c1cb9"
+}

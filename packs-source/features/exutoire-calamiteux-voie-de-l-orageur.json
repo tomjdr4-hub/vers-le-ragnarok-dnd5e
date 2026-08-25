@@ -1,0 +1,46 @@
+{
+  "_id": "d480fcd134c735b8",
+  "name": "Exutoire calamiteux (Voie de l'orageur)",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Sur une attaque réussie, vous pouvez libérer toutes vos charges d'orage : 1 dégât de tonnerre par charge en rayon 1,50 m (3 m au niveau 10) autour de la cible. Si l'attaque rate, vous gagnez à la place des charges égales aux dégâts de rage.</p>",
+      "chat": ""
+    },
+    "identifier": "exutoire-calamiteux-voie-de-l-orageur",
+    "source": "Vers le Ragnarök",
+    "requirements": "Voie de l'orageur — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455561,
+    "modifiedTime": 1787654455561,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!d480fcd134c735b8"
+}

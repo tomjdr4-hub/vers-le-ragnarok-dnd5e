@@ -1,16 +1,16 @@
 {
-  "_id": "aafdc7e39b2d7b36",
-  "name": "Avec le cœur et Avec la terre (École du vagabond)",
+  "_id": "32f06a9c68d65d11",
+  "name": "Savoir du monde (École du vagabond)",
   "type": "feat",
   "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Avec le cœur.</strong> Test de Sagesse (Perspicacité) opposé pour deviner le désir principal d'un interlocuteur.</p>\n        <p><strong>Avec la terre.</strong> Vous pouvez faire apparaître l'origine d'un sort à 4,50 m de vous ; vous êtes alors limité aux tours de magie jusqu'à votre tour suivant.</p>",
+      "value": "<p>Vous gagnez une maîtrise temporaire (jusqu'au prochain repos long) de deux compétences, armes ou outils.</p>",
       "chat": ""
     },
-    "identifier": "avec-le-c-ur-et-avec-la-terre-ecole-du-vagabond",
+    "identifier": "savoir-du-monde-ecole-du-vagabond",
     "source": "Vers le Ragnarök",
-    "requirements": "École du vagabond — niveau 2",
+    "requirements": "École du vagabond — niveau 6",
     "type": {
       "value": "class",
       "subtype": ""
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!aafdc7e39b2d7b36"
+  "_key": "!items!32f06a9c68d65d11"
 }

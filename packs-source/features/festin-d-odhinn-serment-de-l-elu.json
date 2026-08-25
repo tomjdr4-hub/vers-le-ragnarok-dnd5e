@@ -1,0 +1,46 @@
+{
+  "_id": "091ede2cdbff28c2",
+  "name": "Festin d'Odhinn (Serment de l'élu)",
+  "type": "feat",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Une boisson alcoolisée vous nourrit comme un repas complet.</p>",
+      "chat": ""
+    },
+    "identifier": "festin-d-odhinn-serment-de-l-elu",
+    "source": "Vers le Ragnarök",
+    "requirements": "Serment de l'élu — niveau 7",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!091ede2cdbff28c2"
+}

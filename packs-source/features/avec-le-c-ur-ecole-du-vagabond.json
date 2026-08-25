@@ -1,0 +1,46 @@
+{
+  "_id": "aa25bfc0293de3c4",
+  "name": "Avec le cœur (École du vagabond)",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Test de Sagesse (Perspicacité) opposé pour deviner le désir principal d'un interlocuteur.</p>",
+      "chat": ""
+    },
+    "identifier": "avec-le-c-ur-ecole-du-vagabond",
+    "source": "Vers le Ragnarök",
+    "requirements": "École du vagabond — niveau 2",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!aa25bfc0293de3c4"
+}

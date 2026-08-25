@@ -1,0 +1,46 @@
+{
+  "_id": "8d86c8e3603a148a",
+  "name": "Coup de tonnerre (Voie de l'orageur)",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tant que vous êtes en rage, chaque attaque réussie inflige 1d6 dégâts de tonnerre supplémentaires (1d8 au niveau 10) et vous gagnez 1 charge d'orage (2 sur un coup critique). Si vos charges atteignent votre niveau de barbare, ou à la fin de votre rage, vous perdez toutes vos charges et subissez 1d6 dégâts de tonnerre.</p>",
+      "chat": ""
+    },
+    "identifier": "coup-de-tonnerre-voie-de-l-orageur",
+    "source": "Vers le Ragnarök",
+    "requirements": "Voie de l'orageur — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455561,
+    "modifiedTime": 1787654455561,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8d86c8e3603a148a"
+}

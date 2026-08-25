@@ -1,0 +1,46 @@
+{
+  "_id": "2459d0d71c120f7e",
+  "name": "Méchanceté éternelle (Celui qui apporte l'apocalypse)",
+  "type": "feat",
+  "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous récupérez 1 point de vie chaque fois qu'un dé de dégâts de l'un de vos sorts ou tours de magie tombe sur 1 ; cet effet s'étend à votre arme de pacte ou à votre familier selon le pacte choisi.</p>",
+      "chat": ""
+    },
+    "identifier": "mechancete-eternelle-celui-qui-apporte-l-apocalypse",
+    "source": "Vers le Ragnarök",
+    "requirements": "Celui qui apporte l'apocalypse — niveau 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2459d0d71c120f7e"
+}

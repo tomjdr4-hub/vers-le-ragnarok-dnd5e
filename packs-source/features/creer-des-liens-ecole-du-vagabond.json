@@ -1,14 +1,14 @@
 {
-  "_id": "dfe240966a990b4c",
-  "name": "Créer des liens et Liens partagés (École du vagabond)",
+  "_id": "770839eca74b8b0c",
+  "name": "Créer des liens (École du vagabond)",
   "type": "feat",
   "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Créer des liens.</strong> Vous pouvez effacer ou renforcer le souvenir de vous chez une créature (jet de sauvegarde de Charisme).</p>\n        <p><strong>Liens partagés.</strong> Si une cible rate une sauvegarde contre l'un de vos sorts, elle ne peut plus lancer de sorts ni bénéficier d'objets magiques jusqu'à son prochain tour ; 3 fois par repos long.</p>",
+      "value": "<p>Vous pouvez effacer ou renforcer le souvenir de vous chez une créature (jet de sauvegarde de Charisme).</p>",
       "chat": ""
     },
-    "identifier": "creer-des-liens-et-liens-partages-ecole-du-vagabond",
+    "identifier": "creer-des-liens-ecole-du-vagabond",
     "source": "Vers le Ragnarök",
     "requirements": "École du vagabond — niveau 14",
     "type": {
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!dfe240966a990b4c"
+  "_key": "!items!770839eca74b8b0c"
 }

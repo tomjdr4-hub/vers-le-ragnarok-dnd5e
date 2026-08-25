@@ -1,0 +1,46 @@
+{
+  "_id": "2e0088b5ca9c834c",
+  "name": "Témoignage (Collège de Valhalla)",
+  "type": "feat",
+  "img": "icons/magic/holy/prayer-glowing-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous gagnez des points de vie temporaires égaux au résultat du dé d'inspiration bardique utilisé par un allié.</p>",
+      "chat": ""
+    },
+    "identifier": "temoignage-college-de-valhalla",
+    "source": "Vers le Ragnarök",
+    "requirements": "Collège de Valhalla — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455561,
+    "modifiedTime": 1787654455561,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2e0088b5ca9c834c"
+}

@@ -25,7 +25,11 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.vers-le-ragnarok.features.Item.2565280e51301e22",
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.ad826c78b101826b",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.2e0088b5ca9c834c",
               "optional": false
             }
           ],
@@ -83,8 +87,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455561,
+    "modifiedTime": 1787654455561,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

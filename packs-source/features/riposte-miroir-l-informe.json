@@ -1,0 +1,46 @@
+{
+  "_id": "309dbac4cbed7dec",
+  "name": "Riposte miroir (L'informe)",
+  "type": "feat",
+  "img": "icons/magic/control/debuff-energy-hold-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>En réaction, échangez magiquement de place avec une autre créature à 9 m ou moins pour rediriger une attaque réussie (jet de sauvegarde de Charisme possible).</p>",
+      "chat": ""
+    },
+    "identifier": "riposte-miroir-l-informe",
+    "source": "Vers le Ragnarök",
+    "requirements": "L'informe — niveau 17",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!309dbac4cbed7dec"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "e50670cd9ecfeb06",
+  "name": "Canalisation d'énergie divine (Domaine du sacrifice)",
+  "type": "feat",
+  "img": "icons/magic/death/skull-humanoid-crown-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous gagnez deux options de canalisation d'énergie divine, en plus de celles offertes par votre classe.</p>\n        <p><strong>Contrepoids au combat.</strong> Modifiez de ±1d4 un jet d'attaque (le vôtre, celui d'un allié ou d'un ennemi), après avoir vu le résultat mais avant de savoir s'il touche (jet de sauvegarde de Charisme pour un ennemi).</p>\n        <p><strong>Vigueur surnaturelle.</strong> Dépensez 10 points de vie de vos sorts de soin plus une utilisation de canalisation pour retirer un niveau d'épuisement.</p>",
+      "chat": ""
+    },
+    "identifier": "canalisation-d-energie-divine-domaine-du-sacrifice",
+    "source": "Vers le Ragnarök",
+    "requirements": "Domaine du sacrifice — niveau 2",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455561,
+    "modifiedTime": 1787654455561,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!e50670cd9ecfeb06"
+}

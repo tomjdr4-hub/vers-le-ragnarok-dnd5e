@@ -1,0 +1,46 @@
+{
+  "_id": "1d27b84dbeb2a272",
+  "name": "Premières impressions (École du vagabond)",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous êtes avantagé au premier test social avec un inconnu.</p>",
+      "chat": ""
+    },
+    "identifier": "premieres-impressions-ecole-du-vagabond",
+    "source": "Vers le Ragnarök",
+    "requirements": "École du vagabond — niveau 10",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1d27b84dbeb2a272"
+}

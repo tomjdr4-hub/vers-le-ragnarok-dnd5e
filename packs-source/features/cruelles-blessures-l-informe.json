@@ -1,16 +1,16 @@
 {
-  "_id": "dd306d7f356e5b7d",
-  "name": "Riposte miroir et Maîtrise de l'escroc (L'informe)",
+  "_id": "5c365d3eca57e663",
+  "name": "Cruelles blessures (L'informe)",
   "type": "feat",
   "img": "icons/magic/control/debuff-energy-hold-purple.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Riposte miroir.</strong> En réaction, échangez magiquement de place avec une autre créature à 9 m ou moins pour rediriger une attaque réussie (jet de sauvegarde de Charisme possible).</p>\n        <p><strong>Maîtrise de l'escroc.</strong> Vous gagnez <em>confusion</em> et <em>invisibilité supérieure</em>.</p>",
+      "value": "<p>Après une attaque sournoise, la vitesse de la cible est réduite de moitié et ses attaques d'opportunité sont désavantagées ; si un ennemi réussit une sauvegarde contre un de vos sorts de méthode, il subit des dégâts psychiques (1d4 par dé d'attaque sournoise).</p>",
       "chat": ""
     },
-    "identifier": "riposte-miroir-et-maitrise-de-l-escroc-l-informe",
+    "identifier": "cruelles-blessures-l-informe",
     "source": "Vers le Ragnarök",
-    "requirements": "L'informe — niveau 17",
+    "requirements": "L'informe — niveau 3",
     "type": {
       "value": "class",
       "subtype": ""
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!dd306d7f356e5b7d"
+  "_key": "!items!5c365d3eca57e663"
 }

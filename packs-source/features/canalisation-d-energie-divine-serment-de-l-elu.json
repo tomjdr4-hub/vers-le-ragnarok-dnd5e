@@ -1,14 +1,14 @@
 {
-  "_id": "dbc535b37043ce3b",
-  "name": "Canalisation d'énergie divine : Contrepoids au combat et Vigueur surnaturelle (Serment de l'élu)",
+  "_id": "c814ff4a594b074d",
+  "name": "Canalisation d'énergie divine (Serment de l'élu)",
   "type": "feat",
   "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Contrepoids au combat.</strong> Modifiez de ±1d4 un jet d'attaque après en avoir vu le résultat (jet de sauvegarde de Charisme pour un ennemi).</p>\n        <p><strong>Vigueur surnaturelle.</strong> Dépensez 10 points de vie de vos sorts de soin plus une utilisation de canalisation pour retirer un niveau d'épuisement.</p>",
+      "value": "<p>Vous gagnez deux options de canalisation d'énergie divine, en plus de celles offertes par votre classe.</p>\n        <p><strong>Contrepoids au combat.</strong> Modifiez de ±1d4 un jet d'attaque après en avoir vu le résultat (jet de sauvegarde de Charisme pour un ennemi).</p>\n        <p><strong>Vigueur surnaturelle.</strong> Dépensez 10 points de vie de vos sorts de soin plus une utilisation de canalisation pour retirer un niveau d'épuisement.</p>",
       "chat": ""
     },
-    "identifier": "canalisation-d-energie-divine-contrepoids-au-combat-et-vigueur-surnaturelle-serment-de-l-elu",
+    "identifier": "canalisation-d-energie-divine-serment-de-l-elu",
     "source": "Vers le Ragnarök",
     "requirements": "Serment de l'élu — niveau 3",
     "type": {
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!dbc535b37043ce3b"
+  "_key": "!items!c814ff4a594b074d"
 }

@@ -25,7 +25,11 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.vers-le-ragnarok.features.Item.aafdc7e39b2d7b36",
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.aa25bfc0293de3c4",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.1e8b00b9df0c1cb9",
               "optional": false
             }
           ],
@@ -42,7 +46,11 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.vers-le-ragnarok.features.Item.b34ad96082564af7",
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.32f06a9c68d65d11",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.abcb8d91b2d1bdad",
               "optional": false
             }
           ],
@@ -59,7 +67,11 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.vers-le-ragnarok.features.Item.5f56c55eaf9c0c32",
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.1d27b84dbeb2a272",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.7ae8498d5d8c8218",
               "optional": false
             }
           ],
@@ -76,7 +88,11 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.vers-le-ragnarok.features.Item.dfe240966a990b4c",
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.770839eca74b8b0c",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.b1e181fb627d5d56",
               "optional": false
             }
           ],
@@ -100,8 +116,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

@@ -25,7 +25,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.vers-le-ragnarok.features.Item.dbc535b37043ce3b",
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.c814ff4a594b074d",
               "optional": false
             }
           ],
@@ -42,7 +42,11 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.vers-le-ragnarok.features.Item.ab73783341df8c95",
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.d5021dadd3310b9c",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.091ede2cdbff28c2",
               "optional": false
             }
           ],
@@ -100,8 +104,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

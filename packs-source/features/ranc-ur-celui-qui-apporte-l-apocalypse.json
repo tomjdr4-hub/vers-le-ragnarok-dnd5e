@@ -1,0 +1,46 @@
+{
+  "_id": "db7ec709f1ff6928",
+  "name": "Rancœur (Celui qui apporte l'apocalypse)",
+  "type": "feat",
+  "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Sans armure, votre classe d'armure est égale à 13 + Dextérité. En réaction, une attaque de mêlée reçue vous inflige des dégâts de force égaux à votre modificateur de Charisme (+1d8 au niveau 5, +2d8 au niveau 11, +3d8 au niveau 17) à votre agresseur.</p>",
+      "chat": ""
+    },
+    "identifier": "ranc-ur-celui-qui-apporte-l-apocalypse",
+    "source": "Vers le Ragnarök",
+    "requirements": "Celui qui apporte l'apocalypse — niveau 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!db7ec709f1ff6928"
+}

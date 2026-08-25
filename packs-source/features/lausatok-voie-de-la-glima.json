@@ -1,0 +1,46 @@
+{
+  "_id": "981df9b8f9d4d2f0",
+  "name": "Lausatok (Voie de la glíma)",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous êtes maîtrisé en Athlétisme, et pouvez utiliser votre Force à la place de votre Dextérité pour votre classe d'armure sans armure.</p>",
+      "chat": ""
+    },
+    "identifier": "lausatok-voie-de-la-glima",
+    "source": "Vers le Ragnarök",
+    "requirements": "Voie de la glíma — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!981df9b8f9d4d2f0"
+}

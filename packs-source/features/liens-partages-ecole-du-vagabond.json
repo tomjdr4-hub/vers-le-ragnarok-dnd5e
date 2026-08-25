@@ -1,16 +1,16 @@
 {
-  "_id": "5f56c55eaf9c0c32",
-  "name": "Premières impressions et Magie persistante (École du vagabond)",
+  "_id": "b1e181fb627d5d56",
+  "name": "Liens partagés (École du vagabond)",
   "type": "feat",
   "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Premières impressions.</strong> Vous êtes avantagé au premier test social avec un inconnu.</p>\n        <p><strong>Magie persistante.</strong> En réaction, après avoir subi au moins 10 dégâts, améliorez d'un niveau un emplacement de sort du même type d'énergie.</p>",
+      "value": "<p>Si une cible rate une sauvegarde contre l'un de vos sorts, elle ne peut plus lancer de sorts ni bénéficier d'objets magiques jusqu'à son prochain tour ; 3 fois par repos long.</p>",
       "chat": ""
     },
-    "identifier": "premieres-impressions-et-magie-persistante-ecole-du-vagabond",
+    "identifier": "liens-partages-ecole-du-vagabond",
     "source": "Vers le Ragnarök",
-    "requirements": "École du vagabond — niveau 10",
+    "requirements": "École du vagabond — niveau 14",
     "type": {
       "value": "class",
       "subtype": ""
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787651933667,
-    "modifiedTime": 1787651933667,
+    "createdTime": 1787654455562,
+    "modifiedTime": 1787654455562,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!5f56c55eaf9c0c32"
+  "_key": "!items!b1e181fb627d5d56"
 }
