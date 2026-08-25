@@ -1,0 +1,57 @@
+{
+  "_id": "a1c88fd99b9db0ac",
+  "name": "Svalinn, le bouclier du soleil",
+  "type": "equipment",
+  "img": "icons/equipment/shield/heater-crest-sun.webp",
+  "system": {
+    "description": {
+      "value": "<p>Bouclier légendaire qui protège Sól du soleil lorsqu'elle conduit son chariot.</p>\n      <p><strong>Bouclier magique.</strong> Bonus total de +6 à la CA au lieu du bonus normal de bouclier.</p>\n      <p><strong>Protection solaire.</strong> Tant qu'harmonisé et manié : immunisé aux dégâts de froid et de feu et à l'aise quelle que soit la température ; vous ne pouvez plus être charmé ou terrorisé ; vous ne pouvez plus être aveuglé, assourdi ou étourdi.</p>\n      <p><strong>Aura glaciale.</strong> Tant qu'harmonisé, taille Grande si ce n'était pas déjà le cas, peau couverte de givre scintillant. Attaque de corps à corps réussie : +1d6 dégâts de froid. Agresseur au corps à corps réussi contre vous : subit 2d6 dégâts de froid.</p>\n      <p><strong>Source de froid.</strong> Tant qu'harmonisé, action pour lancer <em>cône de froid</em> sans composant. Ensuite 1d6 : sur 1-5, attendre l'aube prochaine pour relancer.</p>\n      <p><strong>Destruction.</strong> Seul un effet de désintégration extrêmement puissant peut détruire Svalinn.</p>",
+      "chat": ""
+    },
+    "identifier": "svalinn-le-bouclier-du-soleil",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "type": {
+      "value": "shield"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {},
+    "armor": {
+      "value": 6,
+      "magicalBonus": "",
+      "dex": 0
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!a1c88fd99b9db0ac"
+}

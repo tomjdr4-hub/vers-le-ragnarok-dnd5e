@@ -1,0 +1,52 @@
+{
+  "_id": "2e68de36b54fcaba",
+  "name": "Skíðblaðnir, le bateau de Freyr",
+  "type": "equipment",
+  "img": "icons/tools/navigation/pouch-drawstring-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Le plus extraordinaire des bateaux magiques nains, sous la forme d'un sac de cuir d'un demi-kilo qui peut flotter. Trois mots de commande (une action chacun) :</p>\n      <p><strong>1er mot :</strong> convoque un bateau de 9 m × 3 m × 1,5 m (barre, deux paires de rames, ancre, mât et voile), transportant jusqu'à 5 créatures de taille Moyenne, naviguant toujours par vent favorable sauf effet magique contraire.</p>\n      <p><strong>2e mot :</strong> convoque un bateau de 36 m × 12 m × 4,5 m (gouvernail, cinq paires de rames, ancre, deux mâts et voiles), transportant jusqu'à 30 créatures de Grande taille, même conditions de vent favorable.</p>\n      <p><strong>3e mot :</strong> le bateau retourne dans le sac s'il n'y a personne à bord.</p>",
+      "chat": ""
+    },
+    "identifier": "ski-bla-nir-le-bateau-de-freyr",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2e68de36b54fcaba"
+}

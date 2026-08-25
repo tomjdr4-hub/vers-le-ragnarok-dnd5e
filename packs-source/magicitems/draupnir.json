@@ -1,0 +1,52 @@
+{
+  "_id": "558b3bcc402fc6c6",
+  "name": "Draupnir",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-gold-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Toutes les neuf nuits, huit nouveaux anneaux apparaissent à côté de celui-ci, identiques à l'original hormis cet effet. Déterminer lequel des simples anneaux d'or est l'original nécessite la réussite d'un test d'Intelligence (Investigation) DD 15.</p>",
+      "chat": ""
+    },
+    "identifier": "draupnir",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!558b3bcc402fc6c6"
+}

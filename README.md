@@ -22,8 +22,16 @@ Ciblé pour Foundry **v12 à v14**, avec le système **dnd5e 4.0 ou supérieur**
   Vaeringhi, Vikingr), avec compétences, outils et équipement de départ décrit dans leur description.
 - **Compendium Équipement nordique** — les deux armes nordiques (hache à barbe courte, hache d'assaut) et
   les 6 objets signature de clan.
+- **Compendium Objets magiques légendaires** — les 19 objets nommés de l'annexe du livre : Mjöllnir (le
+  marteau de Thor), Gungnir (la lance d'Odhinn), Draupnir, Skíðblaðnir (le bateau de Freyr), Týrfing,
+  Svalinn, Gramr, Skofnung, l'anneau maudit d'Andvari (Andvaranautr), la cape de Freyja, et 9 autres —
+  rareté, harmonisation et règles complètes (bonus, malédictions) telles que décrites dans le livre.
+- **Compendium Bestiaire du Ragnarök** — 5 fiches de créature complètes (caractéristiques, PV, CA,
+  résistances, aptitudes, actions et actions légendaires) pour les grandes figures du chapitre final :
+  Fenrir, Jörmungandr, Sköll, Hati et Hrimgrimnir.
 - **Compendium Grimoire runique & guide** — deux journaux : un guide de création de personnage en 7 étapes,
-  et le grimoire runique (mécanisme de tirage + les 24 runes du Futhark classées par ætt).
+  et le grimoire runique complet (mécanisme de tirage + les 24 runes du Futhark classées par ætt, avec
+  leur divinité, leur effet d'ætt et leur effet mécanique complet à l'endroit comme à l'envers).
 - **Compendium Tables de divination runique** — 4 tables de jet (ætt d6, puis rune d8 par ætt).
 - **Compendium Macros** — *Tirer une rune (Vers le Ragnarök)* : automatise le tirage complet (ætt, rune,
   sens) et poste un message de chat.
@@ -64,6 +72,13 @@ données Foundry.
 
 ## Choix de conception (et limites connues)
 
+- **Le bestiaire** donne des fiches de créature entièrement jouables (caractéristiques, PV, CA, résistances,
+  immunités, aptitudes et actions en texte complet), mais les actions ne sont pas câblées comme des
+  « activités » dnd5e cliquables (pas de bouton auto-jet d'attaque/dégâts) — la MJ lit et lance les
+  attaques manuellement à partir du texte fourni, exactement comme pour les autres aptitudes du module.
+  Par ailleurs, l'immunité aux dégâts contondants/perforants/tranchants *infligés par des armes non
+  magiques* (une nuance courante des monstres de haut niveau) n'est pas automatisée dans les résistances
+  de la fiche — elle est rappelée dans la biographie de chaque créature, à appliquer manuellement.
 - **Le bloc « Dévotion runique »** (`scripts/vers-le-ragnarok.js`) est injecté dans l'onglet Détails de la
   fiche via le hook `renderCharacterActorSheet`, et stocke l'Ætt et la rune sous forme de flags sur
   l'Acteur (`flags.vers-le-ragnarok.aett` / `.rune`) — c'est la technique standard pour ajouter un champ à

@@ -1,0 +1,82 @@
+{
+  "_id": "98c8ed9ee36df58e",
+  "name": "Týrfing",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-worn-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>Épée maudite (n'importe quel type). Bonus de +2 aux jets d'attaque et de dégâts.</p>\n      <p>Il est impossible de récupérer les points de vie perdus à cause de cette arme en se reposant : seules la régénération ou la magie peuvent soigner ces blessures. Une fois Týrfing dégainée, il est impossible de la rengainer avant d'avoir tué une créature consciente.</p>",
+      "chat": ""
+    },
+    "identifier": "tyrfing",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "attunement": "required",
+    "type": {
+      "value": "martialM",
+      "subtype": ""
+    },
+    "properties": [
+      "ver",
+      "mgc"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d8",
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!98c8ed9ee36df58e"
+}

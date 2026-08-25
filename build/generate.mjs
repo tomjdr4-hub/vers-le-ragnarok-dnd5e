@@ -168,7 +168,8 @@ function advMap(list) {
 
 // Equipment / weapon items -----------------------------------------------------
 
-function weapon({ name, img, html, damage, damageType, properties = [], weaponType = "simpleM", price = 0, weight = 1 }) {
+function weapon({ name, img, html, damage, damageType, properties = [], weaponType = "simpleM", price = 0, weight = 1, rarity = "", attunement = "" }) {
+  const finalProperties = rarity ? [...properties, "mgc"] : properties;
   return baseItem({
     name, type: "weapon", img,
     system: {
@@ -178,9 +179,10 @@ function weapon({ name, img, html, damage, damageType, properties = [], weaponTy
       quantity: 1,
       weight: { value: weight, units: "kg" },
       price: { value: price, denomination: "gp" },
-      rarity: "",
+      rarity,
+      attunement,
       type: { value: weaponType, subtype: "" },
-      properties,
+      properties: finalProperties,
       proficient: null,
       damage: { base: { number: 1, denomination: damage, bonus: "", types: [damageType], custom: { enabled: false } }, versatile: { number: null, denomination: null, bonus: "", types: [], custom: { enabled: false } } },
       range: { value: null, long: null, reach: null, units: "ft" },
@@ -189,7 +191,7 @@ function weapon({ name, img, html, damage, damageType, properties = [], weaponTy
   });
 }
 
-function equipment({ name, img, html, armorValue = null, armorType = "trinket", price = 0, weight = 1 }) {
+function equipment({ name, img, html, armorValue = null, armorType = "trinket", price = 0, weight = 1, rarity = "", attunement = "" }) {
   const system = {
     description: desc(html),
     identifier: slugify(name),
@@ -197,9 +199,10 @@ function equipment({ name, img, html, armorValue = null, armorType = "trinket", 
     quantity: 1,
     weight: { value: weight, units: "kg" },
     price: { value: price, denomination: "gp" },
-    rarity: "",
+    rarity,
+    attunement,
     type: { value: armorType },
-    properties: [],
+    properties: rarity ? ["mgc"] : [],
     proficient: null,
     activities: {}
   };
@@ -308,6 +311,136 @@ const EQUIPMENT_DOCS = [
       <p><em>Avantage aux tests de Charisme (Intimidation) contre les habitants de Miðgarðr pour qui la brandit.</em></p>
       <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>`,
     damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM", price: 0, weight: 1.5
+  })
+];
+
+// ---------------------------------------------------------------------------
+// Content: Objets magiques légendaires (Annexe, p. 296-304)
+// ---------------------------------------------------------------------------
+
+const MAGIC_ITEMS = [
+  weapon({
+    name: "Angurvadal", img: "icons/weapons/swords/sword-guard-runes.webp", rarity: "rare", attunement: "required",
+    damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM",
+    html: `<p>Épée viking avec des runes magiques gravées sur la lame (n'importe quel type d'épée). Vous gagnez un bonus de +1 aux jets d'attaques et de dégâts effectués avec cette arme.</p>
+      <p><strong>Intelligente.</strong> Angurvadal est une arme magique intelligente Loyale Honorable, Intelligence 8, Sagesse 12, Charisme 10. Elle ne peut pas parler, mais communique avec son porteur en faisant luire les runes sur sa lame dès qu'un ennemi approche dans un rayon de 18 m.</p>
+      <p><strong>Personnalité.</strong> N'ayant été utilisée qu'en combat, elle inspire une joie féroce lors des batailles.</p>`
+  }),
+  equipment({
+    name: "Andvaranautr, anneau d'Andvari", img: "icons/equipment/finger/ring-gold-worn.webp", rarity: "artifact", attunement: "required",
+    html: `<p>Cet anneau maudit augmente la durée de vie de son porteur, mais aussi sa convoitise de richesses et de trésors. Une créature qui le voit doit réussir un jet de sauvegarde de Sagesse DD 15 ou est fascinée par l'objet et souhaite le posséder à tout prix.</p>
+      <p><strong>Le trésor de son maître.</strong> On ne peut tenter d'enlever l'anneau, de le jeter, de le céder ou d'annuler l'harmonisation qu'une fois par jour en réussissant un jet de sauvegarde de Sagesse DD 15 (le DD augmente de 1 à chaque tentative).</p>
+      <p><strong>Voleur.</strong> Tant que vous êtes harmonisé, vous maîtrisez Discrétion si ce n'était pas déjà le cas et êtes avantagé aux tests de Dextérité (Discrétion) pour dérober de l'or ou des objets précieux.</p>
+      <p><strong>Longue vie et prospérité.</strong> Tant que vous êtes harmonisé : immunisé contre les maladies ; vous ne pouvez plus être charmé ou terrorisé ; vous vieillissez et vous sustentez dix fois moins vite ; +1 à la CA.</p>
+      <p><strong>Malédiction (progressive).</strong> Un mois : votre corps se couvre d'écailles luisantes (+2 CA naturelle supplémentaire, DD pour retirer l'anneau 18, convoitise accrue). Trois mois : dents et ongles deviennent crocs et griffes (morsure 1d4+For, griffe 1d6+For ; DD pour retirer 20). Six mois : vous soufflez la mort — cône de poison 9 m, 12d6 dégâts de poison, DD 16 pour moitié dégâts ; DD pour retirer 25. Un an : jet de sauvegarde de Sagesse DD 30 chaque jour ou votre corps se transforme définitivement en dragon vert adulte ; DD pour retirer 30.</p>
+      <p><strong>Destruction.</strong> L'anneau doit être jeté dans les flammes de Múspellsheimr après un jet de sauvegarde de Sagesse DD 30 réussi (sinon le porteur est charmé par l'anneau). Toute autre tentative de destruction inflige 4d8 dégâts psychiques à son auteur, qui doit réussir un jet de sauvegarde de Sagesse DD 30 pour ne pas être charmé.</p>`
+  }),
+  equipment({
+    name: "Anneau du chasseur silencieux", img: "icons/equipment/finger/ring-band-simple-gold.webp", rarity: "rare", attunement: "",
+    html: `<p>Cet anneau contient trois charges et récupère 1d3 charges à l'aube. Le porteur peut dépenser une charge par une action pour lancer le sort <em>silence</em> sans composant matériel, en rayon de 1,5 m centré sur un point situé à 36 m ou moins du porteur ou de l'anneau lui-même.</p>`
+  }),
+  equipment({
+    name: "Cape à plumes de Freyja", img: "icons/equipment/back/cape-collared-white.webp", rarity: "legendary", attunement: "required",
+    html: `<p>Cette cape de plumes de faucon tressées appartient à la déesse Freyja. Vous gagnez un bonus de +2 aux jets de sauvegarde et à la CA. Vous pouvez utiliser votre action pour vous transformer en faucon ou reprendre votre forme normale. Si vous mourez sous forme de faucon, vous reprenez votre forme d'origine en subissant tout le surplus de dégâts.</p>`
+  }),
+  equipment({
+    name: "Corne à boire d'Ægir gravée d'un arbre", img: "icons/tools/instruments/horn-drinking-white.webp", rarity: "veryRare", attunement: "",
+    html: `<p>Cette corne magique permet de boire deux fois plus rapidement, sans en subir les effets d'ivresse. Tant que vous la transportez, vous êtes avantagé aux tests de Charisme (Persuasion) pour convaincre quelqu'un de participer à un concours de boisson ou lors d'interactions sociales avec des gens alcoolisés.</p>
+      <p>Boire à cette corne vous rend avantagé aux jets de sauvegarde contre l'état terrorisé pendant 24 h.</p>`
+  }),
+  equipment({
+    name: "Draupnir", img: "icons/equipment/finger/ring-gold-red.webp", rarity: "legendary", attunement: "",
+    html: `<p>Toutes les neuf nuits, huit nouveaux anneaux apparaissent à côté de celui-ci, identiques à l'original hormis cet effet. Déterminer lequel des simples anneaux d'or est l'original nécessite la réussite d'un test d'Intelligence (Investigation) DD 15.</p>`
+  }),
+  weapon({
+    name: "Épée de Skallfoss", img: "icons/weapons/swords/sword-guard-gold.webp", rarity: "uncommon", attunement: "",
+    damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM",
+    html: `<p>Chef-d'œuvre du légendaire forgeron Skallfoss (n'importe quel type d'épée), réservée aux Æsir et aux Vanir, léguée de génération en génération de héros de Miðgarðr. Bonus de +1 aux jets d'attaque et de dégâts.</p>
+      <p>Tant que vous la portez de manière ostentatoire, vous êtes avantagé aux tests de Charisme (Persuasion) quand vous interagissez avec des Æsir ou des Vanir.</p>`
+  }),
+  weapon({
+    name: "Gramr", img: "icons/weapons/swords/greatsword-crossguard-glowing.webp", rarity: "legendary", attunement: "required",
+    damage: "d6", damageType: "slashing", properties: ["hvy", "two"], weaponType: "martialM",
+    html: `<p>Épée à deux mains. Bonus de +3 aux jets d'attaque et de dégâts. Quand vous frappez avec succès un objet, une créature portant une armure ou bénéficiant d'un bonus d'armure naturelle à la CA, vous infligez les dégâts maximaux.</p>
+      <p>Sur un 20 naturel contre un objet, vous le brisez automatiquement. Sur un 20 naturel contre une créature portant une armure, son armure est automatiquement détruite et elle ne peut plus l'utiliser.</p>`
+  }),
+  weapon({
+    name: "Gungnir, la lance d'Odhinn", img: "icons/weapons/polearms/spear-heavy-guard.webp", rarity: "artifact", attunement: "required",
+    damage: "d12", damageType: "piercing", properties: ["thr", "ver"], weaponType: "martialM",
+    html: `<p>Lance légendaire forgée pour Odhinn par les fils du nain Ivaldi, guidés par le forgeron Dvalinn.</p>
+      <p><strong>Arme magique.</strong> Gungnir inflige 1d12 dégâts. Bonus de +2 aux jets d'attaque et de dégâts, et inflige 3d8 dégâts radiants supplémentaires.</p>
+      <p><strong>Aura divine.</strong> Tant qu'harmonisé, votre taille augmente à Grande si ce n'était pas déjà le cas et votre peau émet un halo de lumière faible en rayon de 3 m.</p>
+      <p><strong>Implacable.</strong> Toutes les attaques effectuées avec Gungnir touchent automatiquement et ignorent toute résistance ou immunité.</p>
+      <p><strong>Influence divine.</strong> Tant qu'harmonisé, vos valeurs de caractéristique s'élèvent à 20 si elles ne sont pas déjà supérieures.</p>
+      <p><strong>Le pouvoir du temps.</strong> Tant qu'harmonisé, vous pouvez utiliser votre action pour lancer <em>arrêt du temps</em> ou <em>projectile magique</em> sans composant, comme avec un emplacement de sort de niveau 9. Après l'un ou l'autre, lancez 1d6 : sur 1-5, vous devez attendre l'aube prochaine avant de pouvoir relancer ce sort.</p>
+      <p><strong>Destruction.</strong> Arme parfaite en acier, il est impossible de détruire Gungnir.</p>`
+  }),
+  weapon({
+    name: "Hache du conquérant", img: "icons/weapons/axes/axe-double-bearded-worn.webp", rarity: "veryRare", attunement: "required",
+    damage: "d8", damageType: "slashing", properties: ["hvy", "two"], weaponType: "martialM",
+    html: `<p>Bonus de +2 aux jets d'attaque et de dégâts, et 2d6 dégâts supplémentaires contre les morts-vivants.</p>
+      <p>Tant que vous la maniez, vous êtes avantagé aux jets d'attaque pour bousculer et empoigner, aux tests opposés pour maintenir votre prise sur une créature empoignée et aux tests de Force (Athlétisme) pour escalader.</p>`
+  }),
+  equipment({
+    name: "Járngreipr, gantelets nains", img: "icons/equipment/hand/gauntlet-armored-steel.webp", rarity: "legendary", attunement: "required",
+    html: `<p>Chefs-d'œuvre nains conçus pour les plus grands guerriers : ils augmentent la Force de leur porteur selon leur rareté, empêchent d'être désarmé et avantagent aux tests pour empoigner et bousculer. Seul le dieu Thor possède l'unique version légendaire.</p>
+      <table><tr><th>Rareté</th><th>Bonus à la Force</th></tr>
+      <tr><td>Peu courant</td><td>+1</td></tr><tr><td>Rare</td><td>+3</td></tr><tr><td>Très rare</td><td>+4</td></tr><tr><td>Légendaire (Thor)</td><td>Valeur fixée à 30</td></tr></table>`
+  }),
+  equipment({
+    name: "Médaillon du cœur de Múspellsheimr", img: "icons/equipment/neck/pendant-red-gem.webp", rarity: "rare", attunement: "",
+    html: `<p>Tant que vous portez ce médaillon, vous pouvez supporter la chaleur de l'environnement quelle que soit son intensité, et les feux naturels ne vous infligent aucune blessure.</p>`
+  }),
+  equipment({
+    name: "Megingjörð, ceinture de force naine", img: "icons/equipment/waist/belt-leather-brown.webp", rarity: "legendary", attunement: "required",
+    html: `<p>Ceinture dans laquelle les nains ont insufflé la force des géants. Tant que vous la portez, votre valeur de Force devient celle correspondant à la rareté de la ceinture (sans effet si votre valeur est déjà égale ou supérieure). Vous êtes avantagé aux tests de Force (Athlétisme) et pour éviter d'être jeté à terre ou garder l'équilibre. Il existe quatre variantes ; seul Thor possède l'unique version légendaire.</p>
+      <table><tr><th>Rareté</th><th>Valeur de Force</th></tr>
+      <tr><td>Peu courant</td><td>20</td></tr><tr><td>Rare</td><td>22</td></tr><tr><td>Très rare</td><td>24</td></tr><tr><td>Légendaire (Thor)</td><td>26</td></tr></table>`
+  }),
+  weapon({
+    name: "Mjöllnir, le marteau de Thor", img: "icons/weapons/hammers/hammer-double-heavy.webp", rarity: "artifact", attunement: "required",
+    damage: "d8", damageType: "bludgeoning", properties: ["thr", "ver"], weaponType: "martialM",
+    html: `<p>On ne peut soulever Mjöllnir ou s'harmoniser avec lui qu'en portant une megingjörð ou des járngreipr.</p>
+      <p><strong>Arme magique.</strong> Bonus de +3 aux jets d'attaque et de dégâts. Cibles subissent 2d6 dégâts de foudre et 2d6 dégâts de tonnerre supplémentaires. Propriété lancer, portée 6/18 m, revient dans votre main après avoir été lancé.</p>
+      <p><strong>Aura d'orage.</strong> Tant qu'harmonisé, taille Grande si ce n'était pas déjà le cas ; votre peau crépite d'électricité — quand on vous frappe au corps à corps, l'agresseur subit 2d6 dégâts de foudre.</p>
+      <p><strong>Fléau des géants.</strong> Attaque réussie contre un géant : 4d8 dégâts supplémentaires.</p>
+      <p><strong>Père de la foudre.</strong> Tant qu'harmonisé, action pour lancer <em>chaîne d'éclairs</em> sans composant. Ensuite, 1d6 : sur 1-5, attendre l'aube prochaine pour relancer.</p>
+      <p><strong>Médaillon du tonnerre.</strong> Sur mot de commande, Mjöllnir prend la forme d'un petit pendentif.</p>
+      <p><strong>Infusion de force.</strong> Tant qu'harmonisé, Force fixée à 30.</p>
+      <p><strong>Destruction.</strong> Seules des décennies dans les forges où il fut créé peuvent mettre à mal sa résistance.</p>`
+  }),
+  weapon({
+    name: "Kuttnir, réplique de Mjöllnir", img: "icons/weapons/hammers/hammer-double-simple.webp", rarity: "veryRare", attunement: "required",
+    damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM",
+    html: `<p>Épée (n'importe quel type). Bonus de +2 aux jets d'attaque et de dégâts ; attaque réussie inflige 1d8 dégâts de foudre supplémentaires. Sur un 19 ou 20 au jet d'attaque, un éclair instable jaillit et inflige 2d8 dégâts de foudre supplémentaires à trois ennemis au maximum à 6 m ou moins de vous.</p>`
+  }),
+  equipment({
+    name: "Skíðblaðnir, le bateau de Freyr", img: "icons/tools/navigation/pouch-drawstring-brown.webp", rarity: "legendary", attunement: "",
+    html: `<p>Le plus extraordinaire des bateaux magiques nains, sous la forme d'un sac de cuir d'un demi-kilo qui peut flotter. Trois mots de commande (une action chacun) :</p>
+      <p><strong>1er mot :</strong> convoque un bateau de 9 m × 3 m × 1,5 m (barre, deux paires de rames, ancre, mât et voile), transportant jusqu'à 5 créatures de taille Moyenne, naviguant toujours par vent favorable sauf effet magique contraire.</p>
+      <p><strong>2e mot :</strong> convoque un bateau de 36 m × 12 m × 4,5 m (gouvernail, cinq paires de rames, ancre, deux mâts et voiles), transportant jusqu'à 30 créatures de Grande taille, même conditions de vent favorable.</p>
+      <p><strong>3e mot :</strong> le bateau retourne dans le sac s'il n'y a personne à bord.</p>`
+  }),
+  weapon({
+    name: "Skofnung", img: "icons/weapons/swords/sword-guard-worn.webp", rarity: "legendary", attunement: "required",
+    damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM",
+    html: `<p>Épée (n'importe quel type). Bonus de +1 aux jets d'attaque et de dégâts.</p>
+      <p>Action pour prononcer le mot de commande : convoque les esprits de douze berserkir en rayon de 18 m autour de vous. Si vous n'avez pas un alignement Honorable, les berserkir vous attaquent ; sinon, ils sont amicaux envers vous et vos alliés et obéissent à vos ordres.</p>`
+  }),
+  equipment({
+    name: "Svalinn, le bouclier du soleil", img: "icons/equipment/shield/heater-crest-sun.webp", rarity: "artifact", attunement: "required", armorType: "shield", armorValue: 6,
+    html: `<p>Bouclier légendaire qui protège Sól du soleil lorsqu'elle conduit son chariot.</p>
+      <p><strong>Bouclier magique.</strong> Bonus total de +6 à la CA au lieu du bonus normal de bouclier.</p>
+      <p><strong>Protection solaire.</strong> Tant qu'harmonisé et manié : immunisé aux dégâts de froid et de feu et à l'aise quelle que soit la température ; vous ne pouvez plus être charmé ou terrorisé ; vous ne pouvez plus être aveuglé, assourdi ou étourdi.</p>
+      <p><strong>Aura glaciale.</strong> Tant qu'harmonisé, taille Grande si ce n'était pas déjà le cas, peau couverte de givre scintillant. Attaque de corps à corps réussie : +1d6 dégâts de froid. Agresseur au corps à corps réussi contre vous : subit 2d6 dégâts de froid.</p>
+      <p><strong>Source de froid.</strong> Tant qu'harmonisé, action pour lancer <em>cône de froid</em> sans composant. Ensuite 1d6 : sur 1-5, attendre l'aube prochaine pour relancer.</p>
+      <p><strong>Destruction.</strong> Seul un effet de désintégration extrêmement puissant peut détruire Svalinn.</p>`
+  }),
+  weapon({
+    name: "Týrfing", img: "icons/weapons/swords/sword-worn-black.webp", rarity: "veryRare", attunement: "required",
+    damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM",
+    html: `<p>Épée maudite (n'importe quel type). Bonus de +2 aux jets d'attaque et de dégâts.</p>
+      <p>Il est impossible de récupérer les points de vie perdus à cause de cette arme en se reposant : seules la régénération ou la magie peuvent soigner ces blessures. Une fois Týrfing dégainée, il est impossible de la rengainer avant d'avoir tué une créature consciente.</p>`
   })
 ];
 
@@ -658,7 +791,7 @@ const ARCHETYPES = [
 // Build documents
 // ---------------------------------------------------------------------------
 
-const docs = { classes: [], features: [], backgrounds: [], equipment: [], journals: [], tables: [], macros: [] };
+const docs = { classes: [], features: [], backgrounds: [], equipment: [], magicitems: [], bestiary: [], journals: [], tables: [], macros: [] };
 
 // -- Clan feature items (pack: features)
 for (const clan of CLANS) {
@@ -831,37 +964,39 @@ for (const arch of ARCHETYPES) {
 // Runes journal + roll tables
 // ---------------------------------------------------------------------------
 
+const RUNES_RAW = [
+  { numero: 1, nom: "Fehu", aett: "Freyja", endroit: "Fortune, succès et bien-être mérités.", envers: "Mal, jalousie, envie.", divinite: "Le don de la vie, présidé par Auðhumla, Freyr et Freyja.", effetAett: "Vous sentez un brusque regain d'optimisme, tout semble se dérouler de la bonne manière.", effetRune: "Vous gagnez un bonus de +1 aux tests de caractéristique et un 20 naturel est toujours considéré comme un succès.", effetAettInverse: "Tout semble se dérouler de la bonne manière pour tout le monde, sauf pour vous. Vous êtes jaloux de leurs réussites et anticipez vos propres échecs.", effetRuneInverse: "Vous subissez un malus de −1 aux tests de caractéristique et un 1 naturel est toujours considéré comme un échec." },
+  { numero: 2, nom: "Ūruz", aett: "Freyja", endroit: "Force, courage, initiative.", envers: "Férocité, agression, addiction.", divinite: "L'instinct de survie, présidé par Ymir.", effetAett: "Rien dans les Neuf mondes ne peut vous arrêter, vous vivrez pour voir un nouveau jour se lever.", effetRune: "Vous appliquez votre bonus de maîtrise à vos jets d'initiative.", effetAettInverse: "La force n'est qu'apparente lorsqu'on la compare à la faiblesse, vous pressentez l'oppression et les abus de pouvoir.", effetRuneInverse: "Vous êtes avantagé lors des tests de Charisme (Intimidation) et des jets d'attaque contre des créatures dont la valeur de Force est inférieure à la vôtre. Vous êtes également désavantagé contre les créatures dont la valeur de Force est supérieure à la vôtre." },
+  { numero: 3, nom: "Thurisaz", aett: "Freyja", endroit: "Résistance, protection, bonnes décisions.", envers: "Fragilité, confusion, évènement imprévu.", divinite: "La rencontre, présidée par Thor.", effetAett: "Quand éclate le plus violent des orages, il faut s'abriter derrière des murs solides et concevoir de meilleures stratégies.", effetRune: "Chaque fois que vous subissez des dégâts d'une source unique, vous les réduisez de 1. Si le total des dégâts est réduit à 0 ou moins, vous n'en subissez aucun.", effetAettInverse: "Vous vous sentez abattu, incertain, sans défense, à la merci des évènements, toutes vos certitudes s'effondrent comme un mur sans fondations.", effetRuneInverse: "Chaque fois que vous subissez des dégâts d'une source unique, vous les augmentez de 1." },
+  { numero: 4, nom: "Ansuz", aett: "Freyja", endroit: "Guérison, sagesse, inspiration.", envers: "Tromperie, trahison, égoïsme.", divinite: "L'appel, présidé par Odhinn.", effetAett: "Vous pressentez que de nouvelles idées surgiront au cours de la journée, que des solutions seront trouvées et que chaque nœud sera dénoué.", effetRune: "Vous gagnez immédiatement de l'inspiration.", effetAettInverse: "Vous ne pouvez faire confiance à personne, la trahison et la tromperie vous attendent à chaque tournant.", effetRuneInverse: "Vous ne pouvez pas bénéficier de l'action aider ni être avantagé grâce à d'autres créatures." },
+  { numero: 5, nom: "Raido", aett: "Freyja", endroit: "Voyage, recherche, nouveaux défis.", envers: "Ralentissement, renonciation, échec.", divinite: "Le voyage du héros, présidé par les Valkyrjur.", effetAett: "Aujourd'hui, le monde s'étend devant vous, prêt à être exploré, allez simplement où vos pas vous mènent.", effetRune: "Vous ignorez les terrains difficiles.", effetAettInverse: "Vous pressentez que la route sera ardue, pleine d'obstacles, de dangers et d'incertitudes. Cela en vaut-il vraiment la peine ? Vous songez à abandonner devant le premier véritable problème.", effetRuneInverse: "Vous ne pouvez pas faire l'action se précipiter ni bénéficier de bonus à votre vitesse de déplacement de base." },
+  { numero: 6, nom: "Kenaz", aett: "Freyja", endroit: "Renaissance, compréhension, révélation.", envers: "Ignorance, superficialité, arrogance.", divinite: "Le feu de la transformation, présidé par Surtr.", effetAett: "Tout se passera bien aujourd'hui, tous les problèmes deviendront une opportunité et toutes les épreuves, une chance de s'améliorer.", effetRune: "Chaque fois que vous ratez un jet de sauvegarde, un jet d'attaque ou un test de caractéristique, vous serez avantagé lors du prochain jet du même type.", effetAettInverse: "Aujourd'hui, vous vous sentez bien trop sûr de vous. À cause de cela, vous serez confronté à de nombreux problèmes normalement évitables.", effetRuneInverse: "Chaque fois que vous réussissez un jet de sauvegarde, un jet d'attaque ou un test de caractéristique, vous serez désavantagé lors du prochain jet du même type." },
+  { numero: 7, nom: "Gebo", aett: "Freyja", endroit: "Amitié, fraternité, partage, échange, gratitude.", envers: null, divinite: "L'échange équitable, présidé par Freyr.", effetAett: "Ce présage vous rappelle que la nature est une seule et même entité, comme une toile de relations et de liens englobant aussi les humains.", effetRune: "Vous êtes avantagé lors des tests de Charisme, mais quand un allié près de vous subit des dégâts, vous subissez vous-même un quart de ces dégâts (qui ne peuvent être réduits d'aucune manière).", effetAettInverse: null, effetRuneInverse: null },
+  { numero: 8, nom: "Wunjo", aett: "Freyja", endroit: "Gloire, espoir, harmonie.", envers: "Dépression, solitude, pessimisme.", divinite: "L'émanation divine, présidée par Freyr et Freyja.", effetAett: "Le soleil est plus radieux aujourd'hui. Il remplit de joie le cœur des hommes, qui se motivent les uns les autres pour en faire davantage.", effetRune: "Quand vous faites un jet de sauvegarde, vous pouvez utiliser le bonus d'un allié adjacent s'il est supérieur au vôtre.", effetAettInverse: "Des nuages gris assombrissent le ciel. Ils cachent le soleil et font naître l'effroi dans le cœur des hommes. Les gens se sentent seuls et tristes.", effetRuneInverse: "Quand vous faites un jet de sauvegarde, vous devez utiliser le bonus d'un allié adjacent s'il est inférieur au vôtre." },
+
+  { numero: 9, nom: "Hagalaz", aett: "Heimdallr", endroit: "Purification, épreuve, chemin connu, libération, reconstruction.", envers: null, divinite: "S'écarter du plan, présidé par Urðr.", effetAett: "Vous pressentez que le chemin devant vous mène à la fin de tout ce que vous êtes, pour le meilleur ou pour le pire. La mort n'est pourtant pas la fin, mais une simple étape avant la renaissance.", effetRune: "Vous êtes désavantagé lors du premier jet de sauvegarde contre la mort que vous faites chaque fois que vos points de vie sont réduits à 0. Cependant, chaque fois que vous réussissez un jet de sauvegarde contre la mort, vous pouvez lancer l'un de vos dés de vie, comme si vous aviez fini un repos court, et vous récupérez un nombre de points de vie égal au résultat obtenu plus votre modificateur de Sagesse. Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser.", effetAettInverse: null, effetRuneInverse: null },
+  { numero: 10, nom: "Nauthiz", aett: "Heimdallr", endroit: "Résistance, vertu, détermination, force intérieure.", envers: null, divinite: "Affronter la douleur, présidé par Heimdallr.", effetAett: "Vous pressentez une grande adversité sur votre route, mais au plus profond de votre âme, vous êtes prêt à affronter tous les défis que le destin vous réserve.", effetRune: "Chaque fois qu'un allié, dans votre champ de vision et à 9 m ou moins de vous, voit ses points de vie réduits à 0, vous gagnez un nombre de points de vie temporaires égal à la moitié de votre niveau de personnage et vous êtes avantagé lors du prochain jet de sauvegarde que vous faites avant la fin de votre prochain tour. Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser.", effetAettInverse: null, effetRuneInverse: null },
+  { numero: 11, nom: "Isaz", aett: "Heimdallr", endroit: "Moment de réflexion, se concentrer sur les objectifs, séparation, limitation.", envers: null, divinite: "L'esprit sans entraves, présidé par Búri.", effetAett: "Vous réalisez brusquement que nous sommes seuls au monde. Vous devez prendre un moment pour bien réfléchir au sens de votre vie.", effetRune: "Quand vous tombez à 0 point de vie, vous pouvez faire un jet de sauvegarde de Sagesse au lieu du jet de sauvegarde contre la mort habituel, avec un DD normal (10 le plus souvent).", effetAettInverse: null, effetRuneInverse: null },
+  { numero: 12, nom: "Jera", aett: "Heimdallr", endroit: "Nature cyclique du temps, patience, contrôle, récolte, processus.", envers: null, divinite: "La voie du cosmos, présidée par Sif.", effetAett: "Vous vous représentez la nature cyclique du monde et comprenez que chaque fleur qui dépérit permet la naissance d'une vie nouvelle.", effetRune: "Quand vous tombez à 0 point de vie, vous êtes désavantagé lors de votre premier jet de sauvegarde contre la mort, mais chaque allié à 9 m ou moins de vous récupère immédiatement 1d6 points de vie (2d6 au niveau 6, 3d6 au niveau 10, 4d6 au niveau 17 et 5d6 au niveau 20). Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser.", effetAettInverse: null, effetRuneInverse: null },
+  { numero: 13, nom: "Eihwaz", aett: "Heimdallr", endroit: "Capacité défensive, fiabilité, intelligence, capacité préventive.", envers: null, divinite: "Le voyage spirituel, présidé par Hel et Ullr.", effetAett: "Le temps et l'espace sont peu de chose pour ceux capables de voyager avec leur esprit plutôt qu'avec leur corps.", effetRune: "Quand vous subissez des dégâts, vous pouvez décider de les ignorer un bref instant. Vous pouvez utiliser votre réaction pour retarder ces dégâts afin de ne les subir qu'à la fin de votre prochain tour. À la fin de votre prochain tour, vous subirez ces dégâts et réduirez de moitié votre vitesse de déplacement pendant un round. Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser.", effetAettInverse: null, effetRuneInverse: null },
+  { numero: 14, nom: "Perth", aett: "Heimdallr", endroit: "Joie, destinée, chance.", envers: "Tristesse, illusion, découragement.", divinite: "Le jeu du destin, présidé par Vé.", effetAett: "Une profonde méditation vous a permis de véritablement comprendre le sens de la vie et les plus intimes secrets du monde. Cet éveil et cette compréhension des flux du destin vous procurent un véritable et profond sentiment de joie.", effetRune: "Quand vous obtenez un 1 naturel sur l'un de vos jets d'attaque, jets de sauvegarde ou tests de caractéristique, vous pouvez le changer et considérer que vous avez obtenu un 10. Ceci peut changer l'effet.", effetAettInverse: "Votre méditation n'a pas donné les résultats attendus, peut-être que vous avez mal interprété les signes et les symboles ou que votre esprit n'était pas prêt. Vous avez mal compris leur signification et vous vous sentez à présent abattu et triste.", effetRuneInverse: "Quand vous obtenez un 20 naturel sur l'un de vos jets d'attaque, jets de sauvegarde ou tests de caractéristique, vous devez le changer et considérer que vous avez obtenu un 10. Ceci peut changer l'effet. Si vous avez changé un jet d'attaque, l'attaque n'est pas une réussite garantie, mais vous infligez toujours des dégâts critiques." },
+  { numero: 15, nom: "Algiz", aett: "Heimdallr", endroit: "Connexion divine, éveil, succès.", envers: "Perte de faveur, vulnérabilité, danger.", divinite: "L'espace sacré, présidé par Baldr.", effetAett: "Votre esprit et votre âme s'ouvrent pour atteindre un état de conscience supérieur et entrent en contact avec les entités qui contrôlent le sort de l'humanité. Elles sont contentes de vous et récompensent votre foi.", effetRune: "Quand vous subissez un coup critique, vous bénéficiez d'une résistance contre cette attaque en particulier. Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser.", effetAettInverse: "Vous tentez de toutes vos forces d'élever votre esprit vers des plans supérieurs, ceux où vivent les dieux. Malheureusement, ceux-ci n'apprécient pas votre intrusion et vous savez qu'ils vous châtieront pour cette transgression.", effetRuneInverse: "Quand une créature vous attaque et qu'elle est avantagée, cette attaque vous inflige 1d6 dégâts supplémentaires." },
+  { numero: 16, nom: "Sowilo", aett: "Heimdallr", endroit: "Pouvoir, précipitation, énergie, colère, feu purificateur.", envers: null, divinite: "Le pouvoir, présidé par Sól.", effetAett: "Votre périple était ardu, avec plein de croisements, mais vous devez à présent faire le choix ultime, celui qui fera pencher votre âme vers le bien ou le mal. Vous tremblez, mais vous savez quel sera le bon choix.", effetRune: "Quand vous subissez des dégâts infligés par une créature, vous pouvez utiliser votre réaction pour lancer un certain nombre de vos dés de vie. Vous réduisez les dégâts d'un montant égal au résultat obtenu plus votre modificateur de Sagesse (s'il est positif) et infligez à l'agresseur ce même montant en dégâts radiants ou nécrotiques. Vous pouvez utiliser jusqu'à la moitié de vos dés de vie restants de cette façon (1 au minimum). Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser.", effetAettInverse: null, effetRuneInverse: null },
+
+  { numero: 17, nom: "Teiwaz", aett: "Týr", endroit: "Bonne direction, victoire, vertu.", envers: "Sanction, malhonnêteté, défaite.", divinite: "L'ordre universel, présidé par Týr.", effetAett: "Aujourd'hui, vous savez que vous allez avancer comme un père qui protège ses enfants, comme un guerrier qui défend sa patrie, comme un homme vertueux qui affronte le mal.", effetRune: "Quand vous obtenez un coup critique, vous pouvez utiliser votre réaction pour faire une unique attaque d'arme ou pour lancer un tour de magie nécessitant un jet d'attaque.", effetAettInverse: "La bravoure peut très vite devenir de l'arrogance, la volonté de protéger ce que vous aimez de la suffisance, et la force des atermoiements.", effetRuneInverse: "Quand vous subissez un coup critique, vous devez réussir un jet de sauvegarde de Charisme (DD égal à la moitié des dégâts que vous venez de subir) ou vous êtes neutralisé jusqu'à la fin de votre prochain tour." },
+  { numero: 18, nom: "Berkana", aett: "Týr", endroit: "Fertilité, désir, amour.", envers: "Immaturité, anxiété, abandon.", divinite: "Le lien des mondes, présidé par Frigg.", effetAett: "Aujourd'hui, partout où vous regardez, vous voyez se répandre une nouvelle vie pleine de fertilité, subtile, mais irrépressible, comme un nouvel éveil des sens.", effetRune: "Vous pouvez utiliser votre action pour soigner chaque créature dans un rayon de 3 m autour de vous (vous y compris) d'un nombre de points de vie égal à 1d6 + votre modificateur de Charisme, jusqu'à un maximum égal à la moitié de votre maximum de points de vie. Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser.", effetAettInverse: "Vous constatez à quel point vous êtes incompétent et vous vous sentez comme un fruit vert face à la vie forte et florissante qui vous entoure.", effetRuneInverse: "Vous pouvez utiliser votre action bonus pour dépenser un dé de vie comme si vous veniez de terminer un repos court. Cependant, vous devez réduire de moitié le résultat de tous les dés de vie que vous lancez." },
+  { numero: 19, nom: "Ehwaz", aett: "Týr", endroit: "Amélioration, coopération, union.", envers: "Précipitation, inhibition, désaccord.", divinite: "L'harmonie des opposés, présidée par Sleipnir.", effetAett: "Vous voyez les liens et relations invisibles entre chaque chose, chaque créature, ainsi que les forces de la nature elles-mêmes. Le monde est plus grand que la somme de ses parties... tout comme vous.", effetRune: "Lors d'un repos court, vous et jusqu'à six de vos alliés peuvent se prendre la main et méditer ensemble pendant une heure. Ceux qui participent à cette méditation sont désavantagés lors des tests de Sagesse (Perception) et ne peuvent surveiller efficacement les environs. Pour chaque dé de vie dépensé à la fin du repos court, l'un de vos alliés récupère un nombre supplémentaire de points de vie égal à votre modificateur de Sagesse (1 au minimum). En même temps, vous récupérez un nombre supplémentaire de points de vie égal au nombre de participants formant le cercle de méditation.", effetAettInverse: "Même si vous tentez autant que possible de voir les choses différemment, vous devez accepter le fait que toute chose dans la nature s'oppose à une multitude d'autres choses. Pour chaque lien nouveau, beaucoup d'autres disparaissent. La nature est en perpétuel conflit. L'harmonie est une illusion.", effetRuneInverse: "Effet négatif supérieur : chaque fois que vous déterminez l'initiative, vous pouvez dépenser un certain nombre de dés de vie. Pour chaque dé de vie dépensé, vous gagnez un bonus au jet d'initiative égal à votre modificateur de Sagesse (1 au minimum)." },
+  { numero: 20, nom: "Mannaz", aett: "Týr", endroit: "Ouverture d'esprit, conscience, fraternité.", envers: "Préjudice, rigidité, fanatisme.", divinite: "L'homme cosmique, présidé par Heimdallr.", effetAett: "Dans un moment de totale lucidité, vous comprenez votre place dans le monde et savez à quel point celui-ci est en adéquation avec vous-même. Vous êtes le centre, mais vous êtes aussi tout ce qui gravite autour. L'univers s'autoanalyse et votre conscience fait de même.", effetRune: "Quand vous faites un jet de sauvegarde contre un effet invisible, vous pouvez utiliser votre réaction pour être avantagé lors du jet. Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser.", effetAettInverse: "Qui êtes-vous ? Quel est le sens de VOTRE vie ? La réalité est-elle aussi insignifiante qu'il y paraît ? Peut-être que non, peut-être qu'elle n'est pas aussi futile et dénuée de sens... peut-être est-ce vous qui l'êtes. Vous ne pouvez qu'observer ceux qui découvrent, ravis, la place glorieuse qu'ils occupent dans le grand ordre des choses et vous avez l'impression d'être un mauvais vers dans le grand poème du cosmos.", effetRuneInverse: "Chaque fois que vous infligez des dégâts, vous infligez 1 dégât supplémentaire du même type si le nombre de points de vie actuels de la cible est supérieur au vôtre. Vous infligez 2 dégâts supplémentaires au niveau 11 et 3 au niveau 20. Vous ne pouvez pas terminer votre tour volontairement à 6 m ou moins d'une créature dont le nombre de points de vie actuels est supérieur au vôtre." },
+  { numero: 21, nom: "Laguz", aett: "Týr", endroit: "Intuition, rêve, fantasme.", envers: "Manque de créativité, confusion, peur.", divinite: "Le puits du savoir, présidé par Mimir.", effetAett: "Vous voyez la réalité sous-jacente du monde matériel connu et habité par les mortels. Tout est signe ou symbole, rien n'est ce qu'il paraît si l'on se contente de ne regarder que la surface des choses, et seuls les dieux peuvent connaître et comprendre la vérité. Mais vous pouvez aujourd'hui entrapercevoir cette vérité.", effetRune: "Vous pouvez lancer le sort augure en tant que rituel sans composant matériel. À partir du niveau 11, vous pouvez lancer à la place le sort divination en tant que rituel sans composant matériel.", effetAettInverse: "Vous avez tenté de projeter votre conscience au-delà du monde matériel pour comprendre sa véritable essence, mais vous n'avez rien appris. Tout semble morne, superficiel, sans aucune signification cachée. Ceci vous effraie, vous plonge dans l'incertitude, ternit les tréfonds de votre âme et vous décourage.", effetRuneInverse: "Au début de chaque combat, vous êtes considéré comme terrorisé par toutes les créatures hostiles que vous percevez. Cet état dure jusqu'au début de votre deuxième tour de combat." },
+  { numero: 22, nom: "Ingwaz", aett: "Týr", endroit: "Sexualité, fertilité, agriculture, chaleur humaine, abondance.", envers: null, divinite: "L'avenir de la lignée, présidé par Freyr.", effetAett: "Vous sentez une puissante force vitale vous traverser, une vive énergie primordiale, telle une chaleur qui accélère votre rythme cardiaque comme si vous étiez une source d'espoir prête à donner la vie.", effetRune: "Par une action bonus, vous pouvez dépenser et lancer l'un de vos dés de vie pour soigner un nombre de points de vie égal au résultat obtenu plus votre modificateur de Charisme (1 au minimum) que vous divisez parmi n'importe quel nombre de créatures à 3 m ou moins de vous. Vous gagnez un nombre de points de vie temporaires égal à la moitié du montant soigné.", effetAettInverse: null, effetRuneInverse: null },
+  { numero: 23, nom: "Othila", aett: "Týr", endroit: "Propriété, famille, héritage.", envers: "Esclavage, racisme, avidité.", divinite: "L'honneur des ancêtres, présidé par Njörðr.", effetAett: "Vous voyez clairement, mais brièvement le présent, l'avenir et tout ce qu'il y a entre les deux. Vous voyez ce qu'il adviendra de ce que vous êtes en train de bâtir actuellement, ce que vos efforts produiront et votre contribution au monde.", effetRune: "Quand vous faites un jet d'attaque ou un test de caractéristique avec un avantage, vous pouvez relancer le dé ayant obtenu le moins bon résultat. Vous devez garder le nouveau résultat, même s'il est moins bon. Une fois ce pouvoir utilisé, vous devez terminer un repos court avant de pouvoir le réutiliser. Vous ne pouvez utiliser ce pouvoir qu'une seule fois par tour.", effetAettInverse: "Une vision de l'avenir trompeuse et pervertie vous remplit de doutes et de suspicions. Vous ne savez pas à qui vous pouvez accorder votre confiance, vous voyez vos soi-disant amis tenter de vous maltraiter et de vous dominer, vous vous méfiez de tout et tous... La seule réponse raisonnable consiste à vous préparer au pire et être le tueur et non la victime le moment venu.", effetRuneInverse: "Quand vous faites un jet d'attaque ou un test de caractéristique avec un avantage, vous ajoutez votre modificateur de Charisme au résultat final (1 au minimum), mais vous soustrayez votre modificateur de Charisme si vous êtes désavantagé lors du jet ou du test (1 au minimum)." },
+  { numero: 24, nom: "Dagaz", aett: "Týr", endroit: "Nouveau départ, espoir, croissance, sécurité, illumination.", envers: null, divinite: "La nouvelle ère, présidée par Dagr.", effetAett: "Votre voyage à travers les mondes et la réalité, sur les ailes de la conscience et les vents de l'illumination, vous mène au sommet du monde, là où tout paraît simple, petit, et parfaitement agencé dans le grand ordre des choses. Vous êtes à présent prêt à reprendre votre voyage vers l'illumination, mais l'atteinte de ce niveau de compréhension vous a renforcé.", effetRune: "Quand cette rune est tirée, vous récupérez tous vos points de vie et gagnez un nombre de points de vie temporaires égal à la moitié de votre maximum. Chaque fois que vous finissez un repos court, vous gagnez un nombre de points de vie temporaires égal à la moitié de votre modificateur de Charisme (1 au minimum).", effetAettInverse: null, effetRuneInverse: null }
+];
+
 const RUNES = {
-  "Ætt de Freyja": [
-    ["Fehu", "Fortune, succès mérité", "jalousie, envie", "+1 aux tests de caractéristique ; un 20 naturel est toujours un succès.", "−1 aux tests de caractéristique ; un 1 naturel est toujours un échec."],
-    ["Ūruz", "Force brute, vitalité", "faiblesse", ""],
-    ["Thurisaz", "Conflit, force réactive", "danger, agression subie", ""],
-    ["Ansuz", "Message, inspiration divine", "malentendu", ""],
-    ["Raido", "Voyage, mouvement juste", "stagnation", ""],
-    ["Kenaz", "Torche, savoir-faire", "instabilité", ""],
-    ["Gebo", "Don, échange, partenariat", ""],
-    ["Wunjo", "Gloire, harmonie", "dépression, solitude, pessimisme", "Quand vous faites un jet de sauvegarde, vous pouvez utiliser le bonus d'un allié adjacent s'il est supérieur au vôtre.", "Quand vous faites un jet de sauvegarde, vous devez utiliser le bonus d'un allié adjacent s'il est inférieur au vôtre."]
-  ],
-  "Ætt de Heimdallr": [
-    ["Hagalaz", "Grêle, perturbation", ""],
-    ["Nauthiz", "Besoin, contrainte", ""],
-    ["Isaz", "Glace, immobilité", ""],
-    ["Jera", "Récolte, cycle accompli", ""],
-    ["Eihwaz", "L'if, endurance", ""],
-    ["Perth", "Mystère, destin caché", ""],
-    ["Algiz", "Protection, défense", ""],
-    ["Sowilo", "Soleil, victoire", ""]
-  ],
-  "Ætt de Týr": [
-    ["Teiwaz", "Harmonie des opposés (présidée par Sleipnir)", "précipitation, inhibition, désaccord", "", "Effet négatif supérieur : pour chaque dé de vie dépensé, vous gagnez un bonus au jet d'initiative égal à votre modificateur de Sagesse (1 au minimum)."],
-    ["Berkana", "Fertilité, amour (présidée par Frigg)", "immaturité, anxiété, abandon", "Action : soignez chaque créature à 3 m ou moins de vous (vous y compris) de 1d6 + votre modificateur de Charisme, jusqu'à la moitié de votre maximum de points de vie. Un repos court recharge ce pouvoir.", "Action bonus : dépensez et lancez un dé de vie comme lors d'un repos court, mais le résultat est réduit de moitié."],
-    ["Ehwaz", "Amélioration, coopération, union (présidée par Sleipnir)", "précipitation, inhibition, désaccord", "Lors d'un repos court, vous et jusqu'à six alliés pouvez méditer ensemble une heure : chaque dé de vie dépensé rend des points de vie supplémentaires égaux à votre modificateur de Sagesse à un allié, et vous récupérez des points de vie supplémentaires égaux au nombre de participants.", "Pour chaque dé de vie dépensé, vous gagnez un bonus au jet d'initiative égal à votre modificateur de Sagesse (1 au minimum)."],
-    ["Mannaz", "L'homme cosmique (présidée par Heimdallr)", "préjudice, rigidité, fanatisme", "Quand vous faites un jet de sauvegarde contre un effet invisible, vous pouvez utiliser votre réaction pour être avantagé au jet (un repos court est requis pour réutiliser ce pouvoir).", "Chaque fois que vous infligez des dégâts à une cible dont les points de vie actuels sont supérieurs aux vôtres, vous infligez 1 dégât supplémentaire du même type (2 au niveau 11, 3 au niveau 20). Vous ne pouvez pas terminer votre tour à 6 m ou moins d'une telle créature."],
-    ["Laguz", "Le puits du savoir (présidée par Mimir)", "manque de créativité, confusion, peur", "Vous pouvez lancer <em>augure</em> en rituel sans composant matériel (à partir du niveau 11, <em>divination</em>).", "Au début de chaque combat, vous êtes terrorisé par toutes les créatures hostiles perçues, jusqu'au début de votre deuxième tour."],
-    ["Ingwaz", "L'avenir de la lignée (présidée par Freyr)", "", "Action bonus : dépensez et lancez un dé de vie pour soigner un nombre de points de vie égal au résultat plus votre modificateur de Charisme (1 au minimum), divisé entre toute créature à 3 m ou moins de vous. Vous gagnez des points de vie temporaires égaux à la moitié du montant soigné."],
-    ["Othila", "L'honneur des ancêtres (présidée par Njörðr)", "esclavage, racisme, avidité", "Quand vous faites un jet d'attaque ou un test de caractéristique avec avantage, vous pouvez relancer le dé le moins bon (le nouveau résultat est gardé). Un repos court est requis pour réutiliser ce pouvoir."],
-    ["Dagaz", "La nouvelle ère (présidée par Dagr)", "", "Quand cette rune est tirée, vous récupérez tous vos points de vie et gagnez des points de vie temporaires égaux à la moitié de votre maximum."]
-  ]
+  "Ætt de Freyja": RUNES_RAW.filter(r => r.aett === "Freyja"),
+  "Ætt de Heimdallr": RUNES_RAW.filter(r => r.aett === "Heimdallr"),
+  "Ætt de Týr": RUNES_RAW.filter(r => r.aett === "Týr")
 };
 
 const JOURNAL_ID = sid("journal-runes");
@@ -886,19 +1021,21 @@ journalPages.push({
 
 let pageSort = 100000;
 for (const [aett, runes] of Object.entries(RUNES)) {
-  const rows = runes.map(([name, up, down = "", eff = "", effInv = ""]) => `
-    <h3>${name}</h3>
-    <p><strong>À l'endroit :</strong> ${up}${down ? ` — <strong>À l'envers :</strong> ${down}` : ""}</p>
-    ${eff ? `<p><em>Effet :</em> ${eff}</p>` : ""}
-    ${effInv ? `<p><em>Effet inverse :</em> ${effInv}</p>` : ""}
-  `).join("\n");
+  const rows = runes.map(r => `
+    <h3>${r.numero}. ${r.nom}</h3>
+    <p><strong>À l'endroit :</strong> ${r.endroit}${r.envers ? ` — <strong>À l'envers :</strong> ${r.envers}` : " (aucun sens inversé)"}</p>
+    <p style="opacity:.75"><em>${r.divinite}</em></p>
+    <p><strong>Effet de l'${aett} :</strong> ${r.effetAett}</p>
+    <p><strong>Effet de la rune ${r.nom} :</strong> ${r.effetRune}</p>
+    ${r.effetAettInverse ? `<p><strong>Effet inverse de l'${aett} :</strong> ${r.effetAettInverse}</p>` : ""}
+    ${r.effetRuneInverse ? `<p><strong>Effet inverse de la rune ${r.nom} :</strong> ${r.effetRuneInverse}</p>` : ""}
+  `).join("\n<hr>\n");
   journalPages.push({
     _id: sid("rune-page-" + aett),
     name: aett,
     type: "text",
     title: { show: true, level: 1 },
-    text: { format: 1, content: `<p>Huit runes du Futhark ancien.</p>${rows}
-      <p style="opacity:.7"><em>Mots-clés et effets tels que retranscrits dans Vers le Ragnarök, p. 308 à 319 ; en cas de doute, référez-vous au livre.</em></p>` },
+    text: { format: 1, content: `<p>Huit runes du Futhark ancien.</p>${rows}` },
     sort: pageSort, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
     _key: `!journal.pages!${JOURNAL_ID}.${sid("rune-page-" + aett)}`
   });
@@ -970,7 +1107,7 @@ for (const aett of aettNames) {
     _id: tid, name: `Divination runique — ${aett} (d8)`, img: RUNE_IMG,
     description: "Lancez ensuite 1d6 pour le sens si la rune a un envers (1-3 endroit, 4-6 envers).",
     formula: "1d8", replacement: true, displayRoll: true,
-    results: runes.map((r, i) => tableResult(tid, i + 1, r[0], [i + 1, i + 1])),
+    results: runes.map((r, i) => tableResult(tid, i + 1, r.nom, [i + 1, i + 1])),
     folder: null, sort: 0, ownership: { default: -1 }, flags: {}, _stats: nowStats(),
     _key: `!tables!${tid}`
   });
@@ -1031,6 +1168,262 @@ docs.macros.push({
 
 // -- Equipment docs
 docs.equipment.push(...EQUIPMENT_DOCS);
+docs.magicitems.push(...MAGIC_ITEMS);
+
+// ---------------------------------------------------------------------------
+// Content: Bestiaire — grandes figures du Ragnarök (chapitre 13, p. 288-295)
+// ---------------------------------------------------------------------------
+
+function npcFeat({ name, img, html, actorId }) {
+  const item = baseItem({
+    name, type: "feat", img,
+    system: {
+      description: desc(html),
+      identifier: slugify(name),
+      source: "Vers le Ragnarök",
+      requirements: "",
+      type: { value: "", subtype: "" },
+      properties: [],
+      prerequisites: { items: [], level: null, repeatable: false },
+      activities: {},
+      advancement: {}
+    }
+  });
+  // Embedded items live under a different LevelDB key than standalone compendium
+  // items: !actors.items!<actorId>.<itemId>, not !items!<itemId>.
+  item._key = `!actors.items!${actorId}.${item._id}`;
+  return item;
+}
+
+const SIZE_MAP = { "Gigantesque": "grg", "Très Grande": "huge", "Grande": "lg" };
+const TYPE_MAP = { "Bête": "beast", "Géant": "giant", "Dragon": "dragon", "Monstruosité": "monstrosity" };
+const DAMAGE_MAP = { "acide": "acid", "feu": "fire", "froid": "cold", "nécrotiques": "necrotic", "nécrotique": "necrotic", "poison": "poison", "foudre": "lightning", "tonnerre": "thunder", "radiants": "radiant", "psychiques": "psychic", "force": "force" };
+const CONDITION_MAP = { "charmé": "charmed", "épuisé": "exhausted", "terrorisé": "frightened", "paralysé": "paralyzed", "empoisonné": "poisoned", "aveuglé": "blinded", "assourdi": "deafened", "étourdi": "stunned", "inconscient": "unconscious" };
+
+function npc({ name, img, size, type, alignment, ac, hp, hpFormula, movement, abilities, saves = [], skills = [], damageImmunities = [], conditionImmunities = [], languages = "", cr, legendary = false, biography, aptitudes = [], actions = [], legendaryActions = [], reactions = [] }) {
+  const abilityBlock = {};
+  for (const [k, v] of Object.entries(abilities)) {
+    abilityBlock[k] = { value: v, proficient: saves.includes(k) ? 1 : 0, bonuses: { check: "", save: "" }, max: null };
+  }
+  const skillBlock = {};
+  for (const s of skills) skillBlock[s] = { value: 1, ability: { prc: "wis", ins: "wis", itm: "cha", per: "cha" }[s] ?? "wis", bonuses: { check: "", passive: "" }, roll: { min: null, max: null, mode: 0 } };
+
+  const actorId = sid("npc-" + name);
+  const items = [];
+  for (const a of aptitudes) items.push(npcFeat({ name: a.nom, img, html: `<p>${a.texte}</p>`, actorId }));
+  for (const a of actions) items.push(npcFeat({ name: a.nom, img, html: `<p>${a.texte}</p>`, actorId }));
+  for (const a of legendaryActions) items.push(npcFeat({ name: `${a.nom} (action légendaire)`, img, html: `<p>${a.texte}</p>`, actorId }));
+  for (const a of reactions) items.push(npcFeat({ name: `${a.nom} (réaction)`, img, html: `<p>${a.texte}</p>`, actorId }));
+
+  return {
+    _id: actorId, name, type: "npc", img,
+    system: {
+      abilities: abilityBlock,
+      attributes: {
+        ac: { flat: ac, calc: "flat", formula: "" },
+        hp: { value: hp, max: hp, temp: null, tempmax: null, formula: hpFormula },
+        init: { ability: "", bonus: "0", roll: { min: null, max: null, mode: 0 } },
+        movement: { walk: movement.walk ?? 0, swim: movement.swim ?? 0, fly: movement.fly ?? 0, climb: movement.climb ?? 0, burrow: movement.burrow ?? 0, units: "m", hover: false },
+        senses: { darkvision: movement.darkvision ?? 0, blindsight: 0, tremorsense: 0, truesight: 0, units: "m", special: "" },
+        exhaustion: 0
+      },
+      details: {
+        biography: { value: `<p>${biography}</p>`, public: "" },
+        alignment,
+        type: { value: TYPE_MAP[type] ?? "", subtype: "", swarm: "", custom: type },
+        cr,
+        spellLevel: 0
+      },
+      traits: {
+        size: SIZE_MAP[size] ?? "lg",
+        di: { value: damageImmunities.map(d => DAMAGE_MAP[d] ?? d).filter(Boolean), bypasses: [], custom: "" },
+        dr: { value: [], bypasses: [], custom: "" },
+        dv: { value: [], bypasses: [], custom: "" },
+        ci: { value: conditionImmunities.map(c => CONDITION_MAP[c] ?? c).filter(Boolean), custom: "" },
+        languages: { value: [], custom: languages }
+      },
+      skills: skillBlock,
+      resources: legendary
+        ? { legact: { value: 3, max: 3 }, legres: { value: 3, max: 3 }, lair: { value: false, initiative: null } }
+        : {},
+      source: "Vers le Ragnarök"
+    },
+    items,
+    effects: [],
+    folder: null,
+    sort: 0,
+    ownership: { default: 0 },
+    flags: {},
+    prototypeToken: {
+      name, displayName: 20, actorLink: false, disposition: -1, displayBars: 20,
+      bar1: { attribute: "attributes.hp" }, bar2: legendary ? { attribute: "resources.legact" } : { attribute: null },
+      sight: { enabled: true }, texture: { src: img }
+    },
+    _stats: nowStats(),
+    _key: `!actors!${sid("npc-" + name)}`
+  };
+}
+
+const NPCS = [
+  npc({
+    name: "Fenrir", img: "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+    size: "Gigantesque", type: "Bête", alignment: "Chaotique Peu honorable",
+    ac: 24, hp: 580, hpFormula: "34d12 + 340", movement: { walk: 36, darkvision: 36 },
+    abilities: { str: 30, dex: 26, con: 28, int: 18, wis: 10, cha: 14 },
+    saves: ["str", "con"], skills: ["prc"],
+    damageImmunities: ["acide", "feu", "froid", "nécrotiques", "poison"],
+    conditionImmunities: ["charmé", "épuisé", "terrorisé", "paralysé", "empoisonné"],
+    cr: 26,
+    biography: "Également appelé Hróðvitnir, le loup Fenrir est le résultat de l'union entre Loki et la géante Angrboða. Piégé sur l'île de Lyngvi avec la chaîne Gleipnir par les Æsir, il bout de haine envers les dieux et attend le Ragnarök pour briser ses chaînes. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em>",
+    legendary: true,
+    aptitudes: [
+      { nom: "Immunité à la magie", texte: "Fenrir est immunisé contre les sorts et les effets magiques." },
+      { nom: "Résistance légendaire (3/jour)", texte: "Si Fenrir rate un jet de sauvegarde, il peut choisir à la place de le réussir." },
+      { nom: "Faim insatiable", texte: "La faim insatiable de Fenrir le fait continuellement baver. Le sol dans un rayon de 6 m autour de lui est considéré comme un terrain difficile à cause de l'extrême viscosité de sa bave." },
+      { nom: "Descendance divine", texte: "Les attaques de Fenrir sont magiques." },
+      { nom: "Vue et odorat aiguisés", texte: "Fenrir est avantagé lors de ses tests de Sagesse (Perception) basés sur la vue et l'odorat." }
+    ],
+    actions: [
+      { nom: "Attaques multiples", texte: "Fenrir peut utiliser sa présence terrifiante. Il effectue ensuite quatre attaques : une attaque de coup, deux attaques de griffe et une attaque de morsure. Il peut utiliser l'action engloutir à la place de l'attaque de morsure." },
+      { nom: "Griffe", texte: "Attaque d'arme au corps à corps : +18 pour toucher, allonge 6 m, une cible. Touché : 45 (6d10+10) dégâts tranchants plus 27 (8d6) dégâts de force." },
+      { nom: "Morsure", texte: "Attaque d'arme au corps à corps : +18 pour toucher, allonge 6 m, une cible. Touché : 55 (10d8+10) dégâts perforants plus 27 (8d6) dégâts de force. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 21 ou être empoignée et entravée. Fenrir ne peut pas mordre une autre cible." },
+      { nom: "Coup", texte: "Attaque d'arme au corps à corps : +18 pour toucher, allonge 6 m, une cible. Touché : 45 (5d12+10) dégâts tranchants plus 27 (8d6) dégâts de force. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 21 ou tomber à terre." },
+      { nom: "Engloutir", texte: "Fenrir fait une attaque de morsure contre une créature de taille Grande ou inférieure qu'il empoigne. En cas d'attaque réussie, la cible subit les dégâts normaux, elle est engloutie et l'empoignade prend fin. Une créature engloutie est aveuglée, entravée, bénéficie d'un abri total contre les attaques et effets provenant de l'extérieur de Fenrir et subit 42 (12d6) dégâts nécrotiques au début du tour de Fenrir. Si Fenrir subit 70 dégâts ou plus d'une créature qu'il a engloutie, il doit réussir un jet de sauvegarde de Constitution DD 20 à la fin de son tour ou régurgiter toutes les créatures qu'il a englouties, qui se retrouvent à terre dans un emplacement à 9 m ou moins de Fenrir. S'il meurt, une créature engloutie n'est plus entravée et peut sortir de son corps avec une vitesse de 15 m en terminant son tour à terre." },
+      { nom: "Présence terrifiante", texte: "Toutes les créatures désignées par Fenrir, dans un rayon de 36 m et conscientes de sa présence, doivent réussir un jet de sauvegarde de Sagesse DD 20 ou être terrorisées pendant une minute. Une créature peut retenter le jet à la fin de chacun de ses tours (désavantagé si Fenrir est dans son champ de vision) et met fin à l'effet en cas de réussite ; elle est alors immunisée contre la présence terrifiante de Fenrir pendant 24 h." },
+      { nom: "Hurlement puissant (recharge 5-6)", texte: "Fenrir rugit de rage, déchaînant les éléments en tornade. Chaque créature dans un cône de 36 m doit réussir un jet de sauvegarde de Force DD 21. En cas d'échec, elle tombe à terre à 9 m ou moins et subit 27 (8d6) dégâts de force et 80 (12d12) dégâts de tonnerre. En cas de réussite, elle n'est pas déplacée et subit la moitié des dégâts de tonnerre." }
+    ],
+    legendaryActions: [
+      { nom: "Détecter", texte: "Fenrir fait un test de Sagesse (Perception)." },
+      { nom: "Bave dégoûtante", texte: "Fenrir rugit sur une créature à 18 m ou moins, la recouvrant de bave. Elle doit réussir un jet de sauvegarde de Dextérité DD 21 ou être désavantagée sur toutes ses attaques jusqu'à la fin de son prochain tour." },
+      { nom: "Griffe", texte: "Fenrir effectue une attaque de griffe." }
+    ]
+  }),
+  npc({
+    name: "Sköll", img: "icons/creatures/mammals/wolf-white-yellow.webp",
+    size: "Très Grande", type: "Bête", alignment: "Chaotique Peu honorable",
+    ac: 18, hp: 204, hpFormula: "16d12 + 96", movement: { walk: 18, darkvision: 36 },
+    abilities: { str: 25, dex: 26, con: 22, int: 14, wis: 12, cha: 14 },
+    saves: ["str", "dex"], skills: ["prc"],
+    damageImmunities: ["feu"],
+    conditionImmunities: ["charmé", "épuisé", "terrorisé", "paralysé", "empoisonné"],
+    cr: 15,
+    biography: "Sköll et Hati sont des loups géants de la forêt de Járnviðr. Les jötnar l'ont chargé de suivre Sól, le soleil, détourné par les Æsir. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em>",
+    legendary: true,
+    aptitudes: [
+      { nom: "Résistance à la magie", texte: "Sköll est avantagé lors des jets de sauvegarde contre les sorts et les effets magiques." },
+      { nom: "Résistance légendaire (3/jour)", texte: "Si Sköll rate un jet de sauvegarde, il peut choisir à la place de le réussir." },
+      { nom: "Descendance divine", texte: "Les attaques de Sköll sont magiques." },
+      { nom: "Tactique de meute", texte: "Sköll est avantagé lors des jets d'attaque contre une créature si au moins un allié se trouve à 3 m ou moins de cette créature et n'est pas neutralisé." },
+      { nom: "Vue et odorat aiguisés", texte: "Sköll est avantagé lors de ses tests de Sagesse (Perception) basés sur la vue et l'odorat." }
+    ],
+    actions: [
+      { nom: "Attaques multiples", texte: "Sköll effectue trois attaques : deux attaques de griffe et une attaque de morsure. Il peut utiliser l'action engloutir à la place de l'attaque de morsure." },
+      { nom: "Griffe", texte: "Attaque d'arme au corps à corps : +12 pour toucher, allonge 3 m, une cible. Touché : 19 (2d10+7) dégâts tranchants." },
+      { nom: "Morsure", texte: "Attaque d'arme au corps à corps : +12 pour toucher, allonge 3 m, une cible. Touché : 30 (4d8+10) dégâts perforants plus 16 (4d6) dégâts de feu. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 18 ou être empoignée et entravée. Sköll ne peut pas mordre une autre cible." },
+      { nom: "Engloutir", texte: "Sköll fait une attaque de morsure contre une créature de taille Grande ou inférieure qu'il empoigne. En cas d'attaque réussie, elle est engloutie, l'empoignade prend fin, elle est aveuglée, entravée, bénéficie d'un abri total et subit 30 (8d6) dégâts de feu au début du tour de Sköll. Si Sköll subit 50 dégâts ou plus d'une créature engloutie, il doit réussir un jet de sauvegarde de Constitution DD 20 en fin de tour ou régurgiter toutes les créatures englouties à 9 m ou moins de lui. S'il meurt, une créature engloutie n'est plus entravée et peut sortir avec une vitesse de 15 m en terminant son tour à terre." },
+      { nom: "Cône de feu (recharge 5-6)", texte: "Sköll rugit, faisant jaillir un cône de feu de 18 m. Chaque créature dans la zone doit réussir un jet de sauvegarde de Dextérité DD 18 ou subir 66 (12d10) dégâts de feu (moitié en cas de réussite)." }
+    ],
+    legendaryActions: [
+      { nom: "Détecter", texte: "Sköll fait un test de Sagesse (Perception)." },
+      { nom: "Griffe", texte: "Sköll effectue une attaque de griffe." },
+      { nom: "Flamboiement explosif", texte: "Sköll crache une sphère explosive sur une créature à 15 m ou moins dans son champ de vision. Elle doit réussir un jet de sauvegarde de Dextérité DD 16 ou subir 11 (2d10) dégâts de feu et se retrouver à terre à 3 m de distance (dégâts réduits de moitié et pas de déplacement en cas de réussite)." }
+    ]
+  }),
+  npc({
+    name: "Hati", img: "icons/creatures/mammals/wolf-gray-white.webp",
+    size: "Très Grande", type: "Bête", alignment: "Chaotique Peu honorable",
+    ac: 16, hp: 234, hpFormula: "16d12 + 128", movement: { walk: 15, darkvision: 36 },
+    abilities: { str: 25, dex: 22, con: 26, int: 11, wis: 14, cha: 14 },
+    saves: ["str", "dex"], skills: ["prc"],
+    damageImmunities: ["froid"],
+    conditionImmunities: ["charmé", "épuisé", "terrorisé", "paralysé", "empoisonné"],
+    cr: 15,
+    biography: "Sköll et Hati sont des loups géants de la forêt de Járnviðr. Les jötnar l'ont chargé de suivre Máni, la lune, détournée par les Æsir. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em>",
+    legendary: true,
+    aptitudes: [
+      { nom: "Résistance à la magie", texte: "Hati est avantagé lors des jets de sauvegarde contre les sorts et les effets magiques." },
+      { nom: "Résistance légendaire (3/jour)", texte: "Si Hati rate un jet de sauvegarde, il peut choisir à la place de le réussir." },
+      { nom: "Descendance divine", texte: "Les attaques de Hati sont magiques." },
+      { nom: "Vue et odorat aiguisés", texte: "Hati est avantagé lors de ses tests de Sagesse (Perception) basés sur la vue et l'odorat." },
+      { nom: "Tactique de meute", texte: "Hati est avantagé lors des jets d'attaque contre une créature si au moins un allié se trouve à 3 m ou moins de cette créature et n'est pas neutralisé." }
+    ],
+    actions: [
+      { nom: "Attaques multiples", texte: "Hati effectue trois attaques : deux attaques de griffe et une attaque de morsure. Il peut utiliser l'action engloutir à la place de l'attaque de morsure." },
+      { nom: "Griffe", texte: "Attaque d'arme au corps à corps : +12 pour toucher, allonge 3 m, une cible. Touché : 19 (2d10+7) dégâts tranchants." },
+      { nom: "Morsure", texte: "Attaque d'arme au corps à corps : +12 pour toucher, allonge 3 m, une cible. Touché : 30 (4d8+10) dégâts perforants plus 16 (4d6) dégâts de froid. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 18 ou être empoignée et entravée. Hati ne peut pas mordre une autre cible." },
+      { nom: "Engloutir", texte: "Hati fait une attaque de morsure contre une créature de taille Grande ou inférieure qu'il empoigne. En cas d'attaque réussie, elle est engloutie, l'empoignade prend fin, elle est aveuglée, entravée, bénéficie d'un abri total et subit 30 (8d6) dégâts de froid au début du tour de Hati. Si Hati subit 50 dégâts ou plus d'une créature engloutie, il doit réussir un jet de sauvegarde de Constitution DD 20 en fin de tour ou régurgiter toutes les créatures englouties à 9 m ou moins de lui. S'il meurt, une créature engloutie n'est plus entravée et peut sortir avec une vitesse de 15 m en terminant son tour à terre." },
+      { nom: "Cône de froid (recharge 5-6)", texte: "Hati rugit, faisant jaillir un cône de froid de 18 m. Chaque créature dans la zone doit réussir un jet de sauvegarde de Dextérité DD 18 ou subir 66 (12d10) dégâts de froid (moitié en cas de réussite)." }
+    ],
+    legendaryActions: [
+      { nom: "Détecter", texte: "Hati fait un test de Sagesse (Perception)." },
+      { nom: "Griffe", texte: "Hati effectue une attaque de griffe." },
+      { nom: "Bave glaciale", texte: "Hati crache sur une créature à 15 m ou moins dans son champ de vision. Elle doit réussir un jet de sauvegarde de Dextérité DD 16 ou subir 11 (2d10) dégâts de froid et voir sa Vitesse réduite à 0 jusqu'à la fin de son prochain tour (dégâts réduits de moitié et Vitesse non réduite en cas de réussite)." }
+    ]
+  }),
+  npc({
+    name: "Hrimgrimnir", img: "icons/creatures/magical/humanoid-giant-storm.webp",
+    size: "Très Grande", type: "Géant", alignment: "Chaotique Peu honorable",
+    ac: 15, hp: 280, hpFormula: "20d12 + 160", movement: { walk: 15, darkvision: 36 },
+    abilities: { str: 30, dex: 9, con: 26, int: 20, wis: 20, cha: 14 },
+    saves: ["str", "con", "wis", "cha"], skills: ["itm", "prc"],
+    damageImmunities: ["froid"],
+    conditionImmunities: [],
+    languages: "commun",
+    cr: 19,
+    biography: "Considéré comme « l'effrayant épouvantail » de Jötunheimr, le plus terrifiant de tous les jötnar. Né du pied d'Ymir, il a six têtes, apprécie la violence et adore terroriser les jötnar. Il tire sa puissance du froid et de l'obscurité ; sociopathes, fous et assassins de Miðgarðr lui vouent un culte. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em>",
+    legendary: true,
+    aptitudes: [
+      { nom: "Têtes multiples", texte: "Hrimgrimnir est avantagé lors des tests de Sagesse (Perception) et des jets de sauvegarde contre les états aveuglé, charmé, assourdi, terrorisé, étourdi et inconscient." },
+      { nom: "Régénération", texte: "Hrimgrimnir récupère 20 points de vie au début de son tour (sauf s'il a subi des dégâts d'acide ou de feu depuis son dernier tour). Il meurt uniquement s'il débute son tour à 0 point de vie et ne se régénère pas." },
+      { nom: "Fureur sadique (rechargement après un repos, ou en tuant un ennemi)", texte: "S'il a blessé un ennemi, Hrimgrimnir peut entrer en fureur martiale pendant une minute ou jusqu'à être neutralisé : avantagé aux tests de Force et jets de sauvegarde de Force, bonus de +4 aux dégâts, résistance aux dégâts contondants, tranchants et perforants." }
+    ],
+    actions: [
+      { nom: "Attaques multiples", texte: "Hrimgrimnir effectue deux attaques de hache à deux mains et une attaque de maillet d'armes." },
+      { nom: "Hache à deux mains", texte: "Attaque d'arme au corps à corps : +15 pour toucher, allonge 3 m, une cible. Touché : 37 (4d12+10) dégâts tranchants." },
+      { nom: "Maillet d'armes", texte: "Attaque d'arme au corps à corps : +15 pour toucher, allonge 3 m, une cible. Touché : 34 (6d6+10) dégâts contondants. La cible doit réussir un jet de sauvegarde de Force DD 20 ou tomber à terre à 3 m ou moins de Hrimgrimnir." },
+      { nom: "Rocher", texte: "Attaque d'arme à distance : +15 pour toucher, portée 9/75 m, une cible. Touché : 37 (4d12+10) dégâts contondants." },
+      { nom: "Vague de froid (recharge 5-6)", texte: "Un vent froid forme une sphère de 9 m de rayon autour de Hrimgrimnir. Chaque créature dans la zone doit réussir un jet de sauvegarde de Constitution DD 18. En cas d'échec : 60 (12d8) dégâts de froid et Vitesse réduite de moitié jusqu'à la fin de son prochain tour. En cas de réussite, dégâts réduits de moitié et Vitesse non réduite." },
+      { nom: "Ténèbres", texte: "Les multiples bouches de Hrimgrimnir vomissent des ténèbres. Fonctionne comme le sort ténèbres, centré sur Hrimgrimnir, rayon 18 m." }
+    ],
+    legendaryActions: [
+      { nom: "Détecter", texte: "Hrimgrimnir fait un test de Sagesse (Perception)." },
+      { nom: "Maillet d'armes", texte: "Hrimgrimnir effectue une attaque de maillet d'armes." },
+      { nom: "Grognement terrifiant (2 actions)", texte: "Les têtes de Hrimgrimnir hurlent. Chaque créature qui l'entend à 18 m ou moins doit réussir un jet de sauvegarde de Sagesse DD 20 ou être terrorisée jusqu'à la fin de son prochain tour." }
+    ]
+  }),
+  npc({
+    name: "Jörmungandr", img: "icons/creatures/reptiles/snake-water-swirl-green.webp",
+    size: "Gigantesque", type: "Dragon", alignment: "Chaotique Peu honorable",
+    ac: 24, hp: 580, hpFormula: "34d12 + 340", movement: { walk: 18, swim: 36, darkvision: 36 },
+    abilities: { str: 30, dex: 10, con: 30, int: 7, wis: 10, cha: 11 },
+    saves: ["str", "con"], skills: ["prc"],
+    damageImmunities: ["acide", "poison"],
+    conditionImmunities: ["charmé", "épuisé", "terrorisé", "paralysé", "empoisonné"],
+    cr: 25,
+    biography: "Jörmungandr (« démon de puissance cosmique »), aussi appelé Miðgarðsormr, est un énorme serpent vivant dans les abysses de la mer de Miðgarðr, si long qu'il peut s'enrouler autour du monde et se mordre la queue. Engeance de Loki et d'Angrboða, il fut jeté dans la mer par Thor, son ennemi juré depuis. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em>",
+    legendary: true,
+    aptitudes: [
+      { nom: "Résistance à la magie", texte: "Jörmungandr est avantagé lors des jets de sauvegarde contre les sorts et les effets magiques." },
+      { nom: "Résistance légendaire (3/jour)", texte: "Si Jörmungandr rate un jet de sauvegarde, il peut choisir à la place de le réussir." },
+      { nom: "Descendance divine", texte: "Les attaques de Jörmungandr sont magiques." }
+    ],
+    actions: [
+      { nom: "Attaques multiples", texte: "Jörmungandr peut utiliser sa présence terrifiante. Il fait ensuite trois attaques : deux attaques de queue et une attaque de morsure. Il peut utiliser l'action engloutir à la place de l'attaque de morsure." },
+      { nom: "Queue", texte: "Attaque d'arme au corps à corps : +18 pour toucher, allonge 21 m, une cible. Touché : 42 (6d8+10) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 20 ou se retrouver à terre à 9 m de l'endroit où elle a été touchée." },
+      { nom: "Morsure", texte: "Attaque d'arme au corps à corps : +18 pour toucher, allonge 15 m, une cible. Touché : 32 (4d12+10) dégâts perforants plus 21 (6d6) dégâts de poison. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 20 ou être empoignée et entravée. Jörmungandr ne peut pas mordre une autre cible." },
+      { nom: "Engloutir", texte: "Jörmungandr fait une attaque de morsure contre une créature de taille Grande ou inférieure qu'il empoigne. En cas d'attaque réussie, elle est engloutie, l'empoignade prend fin, elle est aveuglée, entravée, bénéficie d'un abri total et subit 58 (15d6) dégâts nécrotiques au début du tour de Jörmungandr. Si Jörmungandr subit 50 dégâts ou plus d'une créature engloutie, il doit réussir un jet de sauvegarde de Constitution DD 20 en fin de tour ou régurgiter toutes les créatures englouties à 9 m ou moins de lui. S'il meurt, une créature engloutie n'est plus entravée et peut sortir avec une vitesse de 15 m en terminant son tour à terre." },
+      { nom: "Présence terrifiante", texte: "Toutes les créatures choisies par Jörmungandr, dans un rayon de 36 m et conscientes de sa présence, doivent réussir un jet de sauvegarde de Sagesse DD 20 ou être terrorisées pendant une minute. Une créature peut retenter le jet à la fin de chacun de ses tours (désavantagée si Jörmungandr est dans son champ de vision) et met fin à l'effet en cas de réussite ; elle est alors immunisée contre la présence terrifiante de Jörmungandr pendant 24 h." },
+      { nom: "Grognement empoisonné (recharge 5-6)", texte: "Jörmungandr souffle de la bile dans un cône de 36 m. Chaque créature dans la zone doit effectuer un jet de sauvegarde de Constitution DD 21. En cas d'échec, elle subit 80 (20d6) dégâts de poison et est empoisonnée pendant 1 h (moitié des dégâts et pas empoisonnée en cas de réussite)." }
+    ],
+    legendaryActions: [
+      { nom: "Détecter", texte: "Jörmungandr fait un test de Sagesse (Perception)." },
+      { nom: "Crachat empoisonné", texte: "Jörmungandr crache une matière visqueuse et empoisonnée sur une créature à 18 m ou moins dans son champ de vision. Elle doit réussir un jet de sauvegarde de Constitution DD 20 ou subir 24 (6d6) dégâts de poison et être empoisonnée pendant 1 h." },
+      { nom: "Queue", texte: "Jörmungandr effectue une attaque de queue." }
+    ]
+  })
+];
+
+docs.bestiary.push(...NPCS);
 
 // ---------------------------------------------------------------------------
 // Write files

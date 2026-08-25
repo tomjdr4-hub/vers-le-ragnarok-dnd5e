@@ -1,8 +1,8 @@
 {
   "id": "vers-le-ragnarok",
   "title": "Vers le Ragnarök",
-  "description": "Contenu nordique pour dnd5e : les six clans de Miðgarðr, huit historiques, la classe Maître des runes et ses trois ættir, les 12 archétypes nordiques des classes standards, l'équipement nordique, la compétence Ásatrú et un outil de divination runique. Basé sur le supplément « Vers le Ragnarök » (Mana Project Studio / Black Book Éditions). Module de contenu non officiel, fait pour être joué avec le système dnd5e.",
-  "version": "1.4.3",
+  "description": "Contenu nordique pour dnd5e : les six clans de Miðgarðr, huit historiques, la classe Maître des runes et ses trois ættir, les 12 archétypes nordiques des classes standards, l'équipement et les objets magiques légendaires nordiques, la compétence Ásatrú, le grimoire runique complet (24 runes) et un bestiaire des grandes figures du Ragnarök. Basé sur le supplément « Vers le Ragnarök » (Mana Project Studio / Black Book Éditions). Module de contenu non officiel, fait pour être joué avec le système dnd5e.",
+  "version": "1.5.0",
   "authors": [
     { "name": "Généré avec Claude" }
   ],
@@ -68,6 +68,22 @@
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
+      "name": "magicitems",
+      "label": "VLR — Objets magiques légendaires",
+      "path": "packs/magicitems",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "bestiary",
+      "label": "VLR — Bestiaire du Ragnarök",
+      "path": "packs/bestiary",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
       "name": "journals",
       "label": "VLR — Grimoire runique & guide",
       "path": "packs/journals",
@@ -94,7 +110,7 @@
   ],
   "url": "https://github.com/tomjdr4-hub/vers-le-ragnarok-dnd5e",
   "manifest": "https://github.com/tomjdr4-hub/vers-le-ragnarok-dnd5e/releases/latest/download/module.json",
-  "download": "https://github.com/tomjdr4-hub/vers-le-ragnarok-dnd5e/releases/download/v1.4.3/vers-le-ragnarok.zip",
+  "download": "https://github.com/tomjdr4-hub/vers-le-ragnarok-dnd5e/releases/download/v1.5.0/vers-le-ragnarok.zip",
   "readme": "https://github.com/tomjdr4-hub/vers-le-ragnarok-dnd5e/blob/main/README.md",
   "bugs": "https://github.com/tomjdr4-hub/vers-le-ragnarok-dnd5e/issues"
 }

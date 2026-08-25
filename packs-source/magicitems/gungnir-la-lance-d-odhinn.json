@@ -1,0 +1,83 @@
+{
+  "_id": "37977ef6fb923301",
+  "name": "Gungnir, la lance d'Odhinn",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/spear-heavy-guard.webp",
+  "system": {
+    "description": {
+      "value": "<p>Lance légendaire forgée pour Odhinn par les fils du nain Ivaldi, guidés par le forgeron Dvalinn.</p>\n      <p><strong>Arme magique.</strong> Gungnir inflige 1d12 dégâts. Bonus de +2 aux jets d'attaque et de dégâts, et inflige 3d8 dégâts radiants supplémentaires.</p>\n      <p><strong>Aura divine.</strong> Tant qu'harmonisé, votre taille augmente à Grande si ce n'était pas déjà le cas et votre peau émet un halo de lumière faible en rayon de 3 m.</p>\n      <p><strong>Implacable.</strong> Toutes les attaques effectuées avec Gungnir touchent automatiquement et ignorent toute résistance ou immunité.</p>\n      <p><strong>Influence divine.</strong> Tant qu'harmonisé, vos valeurs de caractéristique s'élèvent à 20 si elles ne sont pas déjà supérieures.</p>\n      <p><strong>Le pouvoir du temps.</strong> Tant qu'harmonisé, vous pouvez utiliser votre action pour lancer <em>arrêt du temps</em> ou <em>projectile magique</em> sans composant, comme avec un emplacement de sort de niveau 9. Après l'un ou l'autre, lancez 1d6 : sur 1-5, vous devez attendre l'aube prochaine avant de pouvoir relancer ce sort.</p>\n      <p><strong>Destruction.</strong> Arme parfaite en acier, il est impossible de détruire Gungnir.</p>",
+      "chat": ""
+    },
+    "identifier": "gungnir-la-lance-d-odhinn",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "type": {
+      "value": "martialM",
+      "subtype": ""
+    },
+    "properties": [
+      "thr",
+      "ver",
+      "mgc"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d12",
+        "bonus": "",
+        "types": [
+          "piercing"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!37977ef6fb923301"
+}

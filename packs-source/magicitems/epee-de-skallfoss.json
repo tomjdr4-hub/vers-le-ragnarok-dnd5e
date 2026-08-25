@@ -1,0 +1,82 @@
+{
+  "_id": "99a3c9a385560fec",
+  "name": "Épée de Skallfoss",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Chef-d'œuvre du légendaire forgeron Skallfoss (n'importe quel type d'épée), réservée aux Æsir et aux Vanir, léguée de génération en génération de héros de Miðgarðr. Bonus de +1 aux jets d'attaque et de dégâts.</p>\n      <p>Tant que vous la portez de manière ostentatoire, vous êtes avantagé aux tests de Charisme (Persuasion) quand vous interagissez avec des Æsir ou des Vanir.</p>",
+      "chat": ""
+    },
+    "identifier": "epee-de-skallfoss",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "attunement": "",
+    "type": {
+      "value": "martialM",
+      "subtype": ""
+    },
+    "properties": [
+      "ver",
+      "mgc"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d8",
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!99a3c9a385560fec"
+}

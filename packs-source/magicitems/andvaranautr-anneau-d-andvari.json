@@ -1,0 +1,52 @@
+{
+  "_id": "3344551d40026eb7",
+  "name": "Andvaranautr, anneau d'Andvari",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-gold-worn.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cet anneau maudit augmente la durée de vie de son porteur, mais aussi sa convoitise de richesses et de trésors. Une créature qui le voit doit réussir un jet de sauvegarde de Sagesse DD 15 ou est fascinée par l'objet et souhaite le posséder à tout prix.</p>\n      <p><strong>Le trésor de son maître.</strong> On ne peut tenter d'enlever l'anneau, de le jeter, de le céder ou d'annuler l'harmonisation qu'une fois par jour en réussissant un jet de sauvegarde de Sagesse DD 15 (le DD augmente de 1 à chaque tentative).</p>\n      <p><strong>Voleur.</strong> Tant que vous êtes harmonisé, vous maîtrisez Discrétion si ce n'était pas déjà le cas et êtes avantagé aux tests de Dextérité (Discrétion) pour dérober de l'or ou des objets précieux.</p>\n      <p><strong>Longue vie et prospérité.</strong> Tant que vous êtes harmonisé : immunisé contre les maladies ; vous ne pouvez plus être charmé ou terrorisé ; vous vieillissez et vous sustentez dix fois moins vite ; +1 à la CA.</p>\n      <p><strong>Malédiction (progressive).</strong> Un mois : votre corps se couvre d'écailles luisantes (+2 CA naturelle supplémentaire, DD pour retirer l'anneau 18, convoitise accrue). Trois mois : dents et ongles deviennent crocs et griffes (morsure 1d4+For, griffe 1d6+For ; DD pour retirer 20). Six mois : vous soufflez la mort — cône de poison 9 m, 12d6 dégâts de poison, DD 16 pour moitié dégâts ; DD pour retirer 25. Un an : jet de sauvegarde de Sagesse DD 30 chaque jour ou votre corps se transforme définitivement en dragon vert adulte ; DD pour retirer 30.</p>\n      <p><strong>Destruction.</strong> L'anneau doit être jeté dans les flammes de Múspellsheimr après un jet de sauvegarde de Sagesse DD 30 réussi (sinon le porteur est charmé par l'anneau). Toute autre tentative de destruction inflige 4d8 dégâts psychiques à son auteur, qui doit réussir un jet de sauvegarde de Sagesse DD 30 pour ne pas être charmé.</p>",
+      "chat": ""
+    },
+    "identifier": "andvaranautr-anneau-d-andvari",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3344551d40026eb7"
+}

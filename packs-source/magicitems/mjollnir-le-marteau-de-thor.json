@@ -1,0 +1,83 @@
+{
+  "_id": "f0cb3a8e99bd2ef8",
+  "name": "Mjöllnir, le marteau de Thor",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/hammer-double-heavy.webp",
+  "system": {
+    "description": {
+      "value": "<p>On ne peut soulever Mjöllnir ou s'harmoniser avec lui qu'en portant une megingjörð ou des járngreipr.</p>\n      <p><strong>Arme magique.</strong> Bonus de +3 aux jets d'attaque et de dégâts. Cibles subissent 2d6 dégâts de foudre et 2d6 dégâts de tonnerre supplémentaires. Propriété lancer, portée 6/18 m, revient dans votre main après avoir été lancé.</p>\n      <p><strong>Aura d'orage.</strong> Tant qu'harmonisé, taille Grande si ce n'était pas déjà le cas ; votre peau crépite d'électricité — quand on vous frappe au corps à corps, l'agresseur subit 2d6 dégâts de foudre.</p>\n      <p><strong>Fléau des géants.</strong> Attaque réussie contre un géant : 4d8 dégâts supplémentaires.</p>\n      <p><strong>Père de la foudre.</strong> Tant qu'harmonisé, action pour lancer <em>chaîne d'éclairs</em> sans composant. Ensuite, 1d6 : sur 1-5, attendre l'aube prochaine pour relancer.</p>\n      <p><strong>Médaillon du tonnerre.</strong> Sur mot de commande, Mjöllnir prend la forme d'un petit pendentif.</p>\n      <p><strong>Infusion de force.</strong> Tant qu'harmonisé, Force fixée à 30.</p>\n      <p><strong>Destruction.</strong> Seules des décennies dans les forges où il fut créé peuvent mettre à mal sa résistance.</p>",
+      "chat": ""
+    },
+    "identifier": "mjollnir-le-marteau-de-thor",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "type": {
+      "value": "martialM",
+      "subtype": ""
+    },
+    "properties": [
+      "thr",
+      "ver",
+      "mgc"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d8",
+        "bonus": "",
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!f0cb3a8e99bd2ef8"
+}

@@ -1,0 +1,82 @@
+{
+  "_id": "ddbec8f7113ea43a",
+  "name": "Angurvadal",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-runes.webp",
+  "system": {
+    "description": {
+      "value": "<p>Épée viking avec des runes magiques gravées sur la lame (n'importe quel type d'épée). Vous gagnez un bonus de +1 aux jets d'attaques et de dégâts effectués avec cette arme.</p>\n      <p><strong>Intelligente.</strong> Angurvadal est une arme magique intelligente Loyale Honorable, Intelligence 8, Sagesse 12, Charisme 10. Elle ne peut pas parler, mais communique avec son porteur en faisant luire les runes sur sa lame dès qu'un ennemi approche dans un rayon de 18 m.</p>\n      <p><strong>Personnalité.</strong> N'ayant été utilisée qu'en combat, elle inspire une joie féroce lors des batailles.</p>",
+      "chat": ""
+    },
+    "identifier": "angurvadal",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "type": {
+      "value": "martialM",
+      "subtype": ""
+    },
+    "properties": [
+      "ver",
+      "mgc"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d8",
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ddbec8f7113ea43a"
+}

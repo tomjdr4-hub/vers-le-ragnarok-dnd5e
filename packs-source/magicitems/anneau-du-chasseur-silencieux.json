@@ -1,0 +1,52 @@
+{
+  "_id": "4371a249903a77cb",
+  "name": "Anneau du chasseur silencieux",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-band-simple-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cet anneau contient trois charges et récupère 1d3 charges à l'aube. Le porteur peut dépenser une charge par une action pour lancer le sort <em>silence</em> sans composant matériel, en rayon de 1,5 m centré sur un point situé à 36 m ou moins du porteur ou de l'anneau lui-même.</p>",
+      "chat": ""
+    },
+    "identifier": "anneau-du-chasseur-silencieux",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!4371a249903a77cb"
+}

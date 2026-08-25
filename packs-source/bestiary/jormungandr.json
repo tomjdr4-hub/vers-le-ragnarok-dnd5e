@@ -1,0 +1,777 @@
+{
+  "_id": "b85732431d94439f",
+  "name": "Jörmungandr",
+  "type": "npc",
+  "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 30,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "con": {
+        "value": 30,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 24,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 580,
+        "max": 580,
+        "temp": null,
+        "tempmax": null,
+        "formula": "34d12 + 340"
+      },
+      "init": {
+        "ability": "",
+        "bonus": "0",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "walk": 18,
+        "swim": 36,
+        "fly": 0,
+        "climb": 0,
+        "burrow": 0,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": 36,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "m",
+        "special": ""
+      },
+      "exhaustion": 0
+    },
+    "details": {
+      "biography": {
+        "value": "<p>Jörmungandr (« démon de puissance cosmique »), aussi appelé Miðgarðsormr, est un énorme serpent vivant dans les abysses de la mer de Miðgarðr, si long qu'il peut s'enrouler autour du monde et se mordre la queue. Engeance de Loki et d'Angrboða, il fut jeté dans la mer par Thor, son ennemi juré depuis. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em></p>",
+        "public": ""
+      },
+      "alignment": "Chaotique Peu honorable",
+      "type": {
+        "value": "dragon",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Dragon"
+      },
+      "cr": 25,
+      "spellLevel": 0
+    },
+    "traits": {
+      "size": "grg",
+      "di": {
+        "value": [
+          "acid",
+          "poison"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhausted",
+          "frightened",
+          "paralyzed",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 3,
+        "max": 3
+      },
+      "legres": {
+        "value": 3,
+        "max": 3
+      },
+      "lair": {
+        "value": false,
+        "initiative": null
+      }
+    },
+    "source": "Vers le Ragnarök"
+  },
+  "items": [
+    {
+      "_id": "b21bea600b5ea23f",
+      "name": "Résistance à la magie",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Jörmungandr est avantagé lors des jets de sauvegarde contre les sorts et les effets magiques.</p>",
+          "chat": ""
+        },
+        "identifier": "resistance-a-la-magie",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.b21bea600b5ea23f"
+    },
+    {
+      "_id": "6ca780ae4ea14591",
+      "name": "Résistance légendaire (3/jour)",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Si Jörmungandr rate un jet de sauvegarde, il peut choisir à la place de le réussir.</p>",
+          "chat": ""
+        },
+        "identifier": "resistance-legendaire-3-jour",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.6ca780ae4ea14591"
+    },
+    {
+      "_id": "91a670355c54e4ec",
+      "name": "Descendance divine",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Les attaques de Jörmungandr sont magiques.</p>",
+          "chat": ""
+        },
+        "identifier": "descendance-divine",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.91a670355c54e4ec"
+    },
+    {
+      "_id": "af5cef867a7a17b6",
+      "name": "Attaques multiples",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Jörmungandr peut utiliser sa présence terrifiante. Il fait ensuite trois attaques : deux attaques de queue et une attaque de morsure. Il peut utiliser l'action engloutir à la place de l'attaque de morsure.</p>",
+          "chat": ""
+        },
+        "identifier": "attaques-multiples",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.af5cef867a7a17b6"
+    },
+    {
+      "_id": "722ad2d05ecf4868",
+      "name": "Queue",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Attaque d'arme au corps à corps : +18 pour toucher, allonge 21 m, une cible. Touché : 42 (6d8+10) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 20 ou se retrouver à terre à 9 m de l'endroit où elle a été touchée.</p>",
+          "chat": ""
+        },
+        "identifier": "queue",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.722ad2d05ecf4868"
+    },
+    {
+      "_id": "ad6be9325fbc2cfb",
+      "name": "Morsure",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Attaque d'arme au corps à corps : +18 pour toucher, allonge 15 m, une cible. Touché : 32 (4d12+10) dégâts perforants plus 21 (6d6) dégâts de poison. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 20 ou être empoignée et entravée. Jörmungandr ne peut pas mordre une autre cible.</p>",
+          "chat": ""
+        },
+        "identifier": "morsure",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.ad6be9325fbc2cfb"
+    },
+    {
+      "_id": "c1ee7d01c4ef3d41",
+      "name": "Engloutir",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Jörmungandr fait une attaque de morsure contre une créature de taille Grande ou inférieure qu'il empoigne. En cas d'attaque réussie, elle est engloutie, l'empoignade prend fin, elle est aveuglée, entravée, bénéficie d'un abri total et subit 58 (15d6) dégâts nécrotiques au début du tour de Jörmungandr. Si Jörmungandr subit 50 dégâts ou plus d'une créature engloutie, il doit réussir un jet de sauvegarde de Constitution DD 20 en fin de tour ou régurgiter toutes les créatures englouties à 9 m ou moins de lui. S'il meurt, une créature engloutie n'est plus entravée et peut sortir avec une vitesse de 15 m en terminant son tour à terre.</p>",
+          "chat": ""
+        },
+        "identifier": "engloutir",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.c1ee7d01c4ef3d41"
+    },
+    {
+      "_id": "9838ced0d99dbe8c",
+      "name": "Présence terrifiante",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Toutes les créatures choisies par Jörmungandr, dans un rayon de 36 m et conscientes de sa présence, doivent réussir un jet de sauvegarde de Sagesse DD 20 ou être terrorisées pendant une minute. Une créature peut retenter le jet à la fin de chacun de ses tours (désavantagée si Jörmungandr est dans son champ de vision) et met fin à l'effet en cas de réussite ; elle est alors immunisée contre la présence terrifiante de Jörmungandr pendant 24 h.</p>",
+          "chat": ""
+        },
+        "identifier": "presence-terrifiante",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.9838ced0d99dbe8c"
+    },
+    {
+      "_id": "8615826a8da5538d",
+      "name": "Grognement empoisonné (recharge 5-6)",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Jörmungandr souffle de la bile dans un cône de 36 m. Chaque créature dans la zone doit effectuer un jet de sauvegarde de Constitution DD 21. En cas d'échec, elle subit 80 (20d6) dégâts de poison et est empoisonnée pendant 1 h (moitié des dégâts et pas empoisonnée en cas de réussite).</p>",
+          "chat": ""
+        },
+        "identifier": "grognement-empoisonne-recharge-5-6",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.8615826a8da5538d"
+    },
+    {
+      "_id": "d3cad09933c24047",
+      "name": "Détecter (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Jörmungandr fait un test de Sagesse (Perception).</p>",
+          "chat": ""
+        },
+        "identifier": "detecter-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.d3cad09933c24047"
+    },
+    {
+      "_id": "3dcc0b0e7d0d39c4",
+      "name": "Crachat empoisonné (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Jörmungandr crache une matière visqueuse et empoisonnée sur une créature à 18 m ou moins dans son champ de vision. Elle doit réussir un jet de sauvegarde de Constitution DD 20 ou subir 24 (6d6) dégâts de poison et être empoisonnée pendant 1 h.</p>",
+          "chat": ""
+        },
+        "identifier": "crachat-empoisonne-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.3dcc0b0e7d0d39c4"
+    },
+    {
+      "_id": "2d56287db1134706",
+      "name": "Queue (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/snake-water-swirl-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Jörmungandr effectue une attaque de queue.</p>",
+          "chat": ""
+        },
+        "identifier": "queue-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!b85732431d94439f.2d56287db1134706"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "prototypeToken": {
+    "name": "Jörmungandr",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": "resources.legact"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/creatures/reptiles/snake-water-swirl-green.webp"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868286,
+    "modifiedTime": 1787664868286,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!b85732431d94439f"
+}

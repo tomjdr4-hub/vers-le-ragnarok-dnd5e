@@ -1,0 +1,83 @@
+{
+  "_id": "436d7493496cff75",
+  "name": "Hache du conquérant",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-double-bearded-worn.webp",
+  "system": {
+    "description": {
+      "value": "<p>Bonus de +2 aux jets d'attaque et de dégâts, et 2d6 dégâts supplémentaires contre les morts-vivants.</p>\n      <p>Tant que vous la maniez, vous êtes avantagé aux jets d'attaque pour bousculer et empoigner, aux tests opposés pour maintenir votre prise sur une créature empoignée et aux tests de Force (Athlétisme) pour escalader.</p>",
+      "chat": ""
+    },
+    "identifier": "hache-du-conquerant",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "attunement": "required",
+    "type": {
+      "value": "martialM",
+      "subtype": ""
+    },
+    "properties": [
+      "hvy",
+      "two",
+      "mgc"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d8",
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!436d7493496cff75"
+}

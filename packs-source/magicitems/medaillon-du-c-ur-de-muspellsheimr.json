@@ -1,0 +1,52 @@
+{
+  "_id": "c5199de6fbfce499",
+  "name": "Médaillon du cœur de Múspellsheimr",
+  "type": "equipment",
+  "img": "icons/equipment/neck/pendant-red-gem.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tant que vous portez ce médaillon, vous pouvez supporter la chaleur de l'environnement quelle que soit son intensité, et les feux naturels ne vous infligent aucune blessure.</p>",
+      "chat": ""
+    },
+    "identifier": "medaillon-du-c-ur-de-muspellsheimr",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c5199de6fbfce499"
+}

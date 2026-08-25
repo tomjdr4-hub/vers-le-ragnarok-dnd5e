@@ -1,0 +1,52 @@
+{
+  "_id": "4b38ce8bf349ed39",
+  "name": "Megingjörð, ceinture de force naine",
+  "type": "equipment",
+  "img": "icons/equipment/waist/belt-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ceinture dans laquelle les nains ont insufflé la force des géants. Tant que vous la portez, votre valeur de Force devient celle correspondant à la rareté de la ceinture (sans effet si votre valeur est déjà égale ou supérieure). Vous êtes avantagé aux tests de Force (Athlétisme) et pour éviter d'être jeté à terre ou garder l'équilibre. Il existe quatre variantes ; seul Thor possède l'unique version légendaire.</p>\n      <table><tr><th>Rareté</th><th>Valeur de Force</th></tr>\n      <tr><td>Peu courant</td><td>20</td></tr><tr><td>Rare</td><td>22</td></tr><tr><td>Très rare</td><td>24</td></tr><tr><td>Légendaire (Thor)</td><td>26</td></tr></table>",
+      "chat": ""
+    },
+    "identifier": "megingjor-ceinture-de-force-naine",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "required",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!4b38ce8bf349ed39"
+}

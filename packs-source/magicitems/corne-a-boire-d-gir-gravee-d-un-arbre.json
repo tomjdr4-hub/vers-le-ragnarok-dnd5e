@@ -1,0 +1,52 @@
+{
+  "_id": "714bf5e32485893a",
+  "name": "Corne à boire d'Ægir gravée d'un arbre",
+  "type": "equipment",
+  "img": "icons/tools/instruments/horn-drinking-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cette corne magique permet de boire deux fois plus rapidement, sans en subir les effets d'ivresse. Tant que vous la transportez, vous êtes avantagé aux tests de Charisme (Persuasion) pour convaincre quelqu'un de participer à un concours de boisson ou lors d'interactions sociales avec des gens alcoolisés.</p>\n      <p>Boire à cette corne vous rend avantagé aux jets de sauvegarde contre l'état terrorisé pendant 24 h.</p>",
+      "chat": ""
+    },
+    "identifier": "corne-a-boire-d-gir-gravee-d-un-arbre",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "attunement": "",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!714bf5e32485893a"
+}

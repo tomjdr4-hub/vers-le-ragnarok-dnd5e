@@ -1,0 +1,52 @@
+{
+  "_id": "d41e05d13e39f3fc",
+  "name": "Cape à plumes de Freyja",
+  "type": "equipment",
+  "img": "icons/equipment/back/cape-collared-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cette cape de plumes de faucon tressées appartient à la déesse Freyja. Vous gagnez un bonus de +2 aux jets de sauvegarde et à la CA. Vous pouvez utiliser votre action pour vous transformer en faucon ou reprendre votre forme normale. Si vous mourez sous forme de faucon, vous reprenez votre forme d'origine en subissant tout le surplus de dégâts.</p>",
+      "chat": ""
+    },
+    "identifier": "cape-a-plumes-de-freyja",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "required",
+    "type": {
+      "value": "trinket"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868280,
+    "modifiedTime": 1787664868280,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!d41e05d13e39f3fc"
+}

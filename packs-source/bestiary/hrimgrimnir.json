@@ -1,0 +1,783 @@
+{
+  "_id": "29fa401cd551f0f8",
+  "name": "Hrimgrimnir",
+  "type": "npc",
+  "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 30,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "dex": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "con": {
+        "value": 26,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "int": {
+        "value": 20,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "wis": {
+        "value": 20,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 15,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 280,
+        "max": 280,
+        "temp": null,
+        "tempmax": null,
+        "formula": "20d12 + 160"
+      },
+      "init": {
+        "ability": "",
+        "bonus": "0",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "walk": 15,
+        "swim": 0,
+        "fly": 0,
+        "climb": 0,
+        "burrow": 0,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": 36,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "m",
+        "special": ""
+      },
+      "exhaustion": 0
+    },
+    "details": {
+      "biography": {
+        "value": "<p>Considéré comme « l'effrayant épouvantail » de Jötunheimr, le plus terrifiant de tous les jötnar. Né du pied d'Ymir, il a six têtes, apprécie la violence et adore terroriser les jötnar. Il tire sa puissance du froid et de l'obscurité ; sociopathes, fous et assassins de Miðgarðr lui vouent un culte. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em></p>",
+        "public": ""
+      },
+      "alignment": "Chaotique Peu honorable",
+      "type": {
+        "value": "giant",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Géant"
+      },
+      "cr": 19,
+      "spellLevel": 0
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "cold"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "commun"
+      }
+    },
+    "skills": {
+      "itm": {
+        "value": 1,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 3,
+        "max": 3
+      },
+      "legres": {
+        "value": 3,
+        "max": 3
+      },
+      "lair": {
+        "value": false,
+        "initiative": null
+      }
+    },
+    "source": "Vers le Ragnarök"
+  },
+  "items": [
+    {
+      "_id": "8b51c408a2133581",
+      "name": "Têtes multiples",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Hrimgrimnir est avantagé lors des tests de Sagesse (Perception) et des jets de sauvegarde contre les états aveuglé, charmé, assourdi, terrorisé, étourdi et inconscient.</p>",
+          "chat": ""
+        },
+        "identifier": "tetes-multiples",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.8b51c408a2133581"
+    },
+    {
+      "_id": "93d68c72d0c3af53",
+      "name": "Régénération",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Hrimgrimnir récupère 20 points de vie au début de son tour (sauf s'il a subi des dégâts d'acide ou de feu depuis son dernier tour). Il meurt uniquement s'il débute son tour à 0 point de vie et ne se régénère pas.</p>",
+          "chat": ""
+        },
+        "identifier": "regeneration",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.93d68c72d0c3af53"
+    },
+    {
+      "_id": "24ccc072082becd0",
+      "name": "Fureur sadique (rechargement après un repos, ou en tuant un ennemi)",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>S'il a blessé un ennemi, Hrimgrimnir peut entrer en fureur martiale pendant une minute ou jusqu'à être neutralisé : avantagé aux tests de Force et jets de sauvegarde de Force, bonus de +4 aux dégâts, résistance aux dégâts contondants, tranchants et perforants.</p>",
+          "chat": ""
+        },
+        "identifier": "fureur-sadique-rechargement-apres-un-repos-ou-en-tuant-un-ennemi",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.24ccc072082becd0"
+    },
+    {
+      "_id": "af5cef867a7a17b6",
+      "name": "Attaques multiples",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Hrimgrimnir effectue deux attaques de hache à deux mains et une attaque de maillet d'armes.</p>",
+          "chat": ""
+        },
+        "identifier": "attaques-multiples",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.af5cef867a7a17b6"
+    },
+    {
+      "_id": "6f8a07cedf496e81",
+      "name": "Hache à deux mains",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Attaque d'arme au corps à corps : +15 pour toucher, allonge 3 m, une cible. Touché : 37 (4d12+10) dégâts tranchants.</p>",
+          "chat": ""
+        },
+        "identifier": "hache-a-deux-mains",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.6f8a07cedf496e81"
+    },
+    {
+      "_id": "5402d8cfaa6de346",
+      "name": "Maillet d'armes",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Attaque d'arme au corps à corps : +15 pour toucher, allonge 3 m, une cible. Touché : 34 (6d6+10) dégâts contondants. La cible doit réussir un jet de sauvegarde de Force DD 20 ou tomber à terre à 3 m ou moins de Hrimgrimnir.</p>",
+          "chat": ""
+        },
+        "identifier": "maillet-d-armes",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.5402d8cfaa6de346"
+    },
+    {
+      "_id": "f8be674ec33d100c",
+      "name": "Rocher",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Attaque d'arme à distance : +15 pour toucher, portée 9/75 m, une cible. Touché : 37 (4d12+10) dégâts contondants.</p>",
+          "chat": ""
+        },
+        "identifier": "rocher",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.f8be674ec33d100c"
+    },
+    {
+      "_id": "ea9c5e47123cf4f1",
+      "name": "Vague de froid (recharge 5-6)",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Un vent froid forme une sphère de 9 m de rayon autour de Hrimgrimnir. Chaque créature dans la zone doit réussir un jet de sauvegarde de Constitution DD 18. En cas d'échec : 60 (12d8) dégâts de froid et Vitesse réduite de moitié jusqu'à la fin de son prochain tour. En cas de réussite, dégâts réduits de moitié et Vitesse non réduite.</p>",
+          "chat": ""
+        },
+        "identifier": "vague-de-froid-recharge-5-6",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.ea9c5e47123cf4f1"
+    },
+    {
+      "_id": "34ce68b73da84153",
+      "name": "Ténèbres",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Les multiples bouches de Hrimgrimnir vomissent des ténèbres. Fonctionne comme le sort ténèbres, centré sur Hrimgrimnir, rayon 18 m.</p>",
+          "chat": ""
+        },
+        "identifier": "tenebres",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.34ce68b73da84153"
+    },
+    {
+      "_id": "d3cad09933c24047",
+      "name": "Détecter (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Hrimgrimnir fait un test de Sagesse (Perception).</p>",
+          "chat": ""
+        },
+        "identifier": "detecter-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.d3cad09933c24047"
+    },
+    {
+      "_id": "71e010452e3edb03",
+      "name": "Maillet d'armes (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Hrimgrimnir effectue une attaque de maillet d'armes.</p>",
+          "chat": ""
+        },
+        "identifier": "maillet-d-armes-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.71e010452e3edb03"
+    },
+    {
+      "_id": "618d34ec5c1f1d30",
+      "name": "Grognement terrifiant (2 actions) (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/magical/humanoid-giant-storm.webp",
+      "system": {
+        "description": {
+          "value": "<p>Les têtes de Hrimgrimnir hurlent. Chaque créature qui l'entend à 18 m ou moins doit réussir un jet de sauvegarde de Sagesse DD 20 ou être terrorisée jusqu'à la fin de son prochain tour.</p>",
+          "chat": ""
+        },
+        "identifier": "grognement-terrifiant-2-actions-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!29fa401cd551f0f8.618d34ec5c1f1d30"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "prototypeToken": {
+    "name": "Hrimgrimnir",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": "resources.legact"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/creatures/magical/humanoid-giant-storm.webp"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868286,
+    "modifiedTime": 1787664868286,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!29fa401cd551f0f8"
+}

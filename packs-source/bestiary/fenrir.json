@@ -1,0 +1,918 @@
+{
+  "_id": "e8bdc0a05da8b553",
+  "name": "Fenrir",
+  "type": "npc",
+  "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 30,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "dex": {
+        "value": 26,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "con": {
+        "value": 28,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "int": {
+        "value": 18,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "max": null
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 24,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 580,
+        "max": 580,
+        "temp": null,
+        "tempmax": null,
+        "formula": "34d12 + 340"
+      },
+      "init": {
+        "ability": "",
+        "bonus": "0",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "walk": 36,
+        "swim": 0,
+        "fly": 0,
+        "climb": 0,
+        "burrow": 0,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": 36,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "m",
+        "special": ""
+      },
+      "exhaustion": 0
+    },
+    "details": {
+      "biography": {
+        "value": "<p>Également appelé Hróðvitnir, le loup Fenrir est le résultat de l'union entre Loki et la géante Angrboða. Piégé sur l'île de Lyngvi avec la chaîne Gleipnir par les Æsir, il bout de haine envers les dieux et attend le Ragnarök pour briser ses chaînes. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em></p>",
+        "public": ""
+      },
+      "alignment": "Chaotique Peu honorable",
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Bête"
+      },
+      "cr": 26,
+      "spellLevel": 0
+    },
+    "traits": {
+      "size": "grg",
+      "di": {
+        "value": [
+          "acid",
+          "fire",
+          "cold",
+          "necrotic",
+          "poison"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhausted",
+          "frightened",
+          "paralyzed",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 3,
+        "max": 3
+      },
+      "legres": {
+        "value": 3,
+        "max": 3
+      },
+      "lair": {
+        "value": false,
+        "initiative": null
+      }
+    },
+    "source": "Vers le Ragnarök"
+  },
+  "items": [
+    {
+      "_id": "3a4be3512556ee77",
+      "name": "Immunité à la magie",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Fenrir est immunisé contre les sorts et les effets magiques.</p>",
+          "chat": ""
+        },
+        "identifier": "immunite-a-la-magie",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.3a4be3512556ee77"
+    },
+    {
+      "_id": "6ca780ae4ea14591",
+      "name": "Résistance légendaire (3/jour)",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Si Fenrir rate un jet de sauvegarde, il peut choisir à la place de le réussir.</p>",
+          "chat": ""
+        },
+        "identifier": "resistance-legendaire-3-jour",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.6ca780ae4ea14591"
+    },
+    {
+      "_id": "43885fef5438d324",
+      "name": "Faim insatiable",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>La faim insatiable de Fenrir le fait continuellement baver. Le sol dans un rayon de 6 m autour de lui est considéré comme un terrain difficile à cause de l'extrême viscosité de sa bave.</p>",
+          "chat": ""
+        },
+        "identifier": "faim-insatiable",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.43885fef5438d324"
+    },
+    {
+      "_id": "91a670355c54e4ec",
+      "name": "Descendance divine",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Les attaques de Fenrir sont magiques.</p>",
+          "chat": ""
+        },
+        "identifier": "descendance-divine",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.91a670355c54e4ec"
+    },
+    {
+      "_id": "1349cd9347f35291",
+      "name": "Vue et odorat aiguisés",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Fenrir est avantagé lors de ses tests de Sagesse (Perception) basés sur la vue et l'odorat.</p>",
+          "chat": ""
+        },
+        "identifier": "vue-et-odorat-aiguises",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.1349cd9347f35291"
+    },
+    {
+      "_id": "af5cef867a7a17b6",
+      "name": "Attaques multiples",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Fenrir peut utiliser sa présence terrifiante. Il effectue ensuite quatre attaques : une attaque de coup, deux attaques de griffe et une attaque de morsure. Il peut utiliser l'action engloutir à la place de l'attaque de morsure.</p>",
+          "chat": ""
+        },
+        "identifier": "attaques-multiples",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.af5cef867a7a17b6"
+    },
+    {
+      "_id": "90f571e210d39186",
+      "name": "Griffe",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Attaque d'arme au corps à corps : +18 pour toucher, allonge 6 m, une cible. Touché : 45 (6d10+10) dégâts tranchants plus 27 (8d6) dégâts de force.</p>",
+          "chat": ""
+        },
+        "identifier": "griffe",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.90f571e210d39186"
+    },
+    {
+      "_id": "ad6be9325fbc2cfb",
+      "name": "Morsure",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Attaque d'arme au corps à corps : +18 pour toucher, allonge 6 m, une cible. Touché : 55 (10d8+10) dégâts perforants plus 27 (8d6) dégâts de force. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 21 ou être empoignée et entravée. Fenrir ne peut pas mordre une autre cible.</p>",
+          "chat": ""
+        },
+        "identifier": "morsure",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.ad6be9325fbc2cfb"
+    },
+    {
+      "_id": "a07de260165e253e",
+      "name": "Coup",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Attaque d'arme au corps à corps : +18 pour toucher, allonge 6 m, une cible. Touché : 45 (5d12+10) dégâts tranchants plus 27 (8d6) dégâts de force. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 21 ou tomber à terre.</p>",
+          "chat": ""
+        },
+        "identifier": "coup",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.a07de260165e253e"
+    },
+    {
+      "_id": "c1ee7d01c4ef3d41",
+      "name": "Engloutir",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Fenrir fait une attaque de morsure contre une créature de taille Grande ou inférieure qu'il empoigne. En cas d'attaque réussie, la cible subit les dégâts normaux, elle est engloutie et l'empoignade prend fin. Une créature engloutie est aveuglée, entravée, bénéficie d'un abri total contre les attaques et effets provenant de l'extérieur de Fenrir et subit 42 (12d6) dégâts nécrotiques au début du tour de Fenrir. Si Fenrir subit 70 dégâts ou plus d'une créature qu'il a engloutie, il doit réussir un jet de sauvegarde de Constitution DD 20 à la fin de son tour ou régurgiter toutes les créatures qu'il a englouties, qui se retrouvent à terre dans un emplacement à 9 m ou moins de Fenrir. S'il meurt, une créature engloutie n'est plus entravée et peut sortir de son corps avec une vitesse de 15 m en terminant son tour à terre.</p>",
+          "chat": ""
+        },
+        "identifier": "engloutir",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.c1ee7d01c4ef3d41"
+    },
+    {
+      "_id": "9838ced0d99dbe8c",
+      "name": "Présence terrifiante",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Toutes les créatures désignées par Fenrir, dans un rayon de 36 m et conscientes de sa présence, doivent réussir un jet de sauvegarde de Sagesse DD 20 ou être terrorisées pendant une minute. Une créature peut retenter le jet à la fin de chacun de ses tours (désavantagé si Fenrir est dans son champ de vision) et met fin à l'effet en cas de réussite ; elle est alors immunisée contre la présence terrifiante de Fenrir pendant 24 h.</p>",
+          "chat": ""
+        },
+        "identifier": "presence-terrifiante",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.9838ced0d99dbe8c"
+    },
+    {
+      "_id": "681d0a8099ab8add",
+      "name": "Hurlement puissant (recharge 5-6)",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Fenrir rugit de rage, déchaînant les éléments en tornade. Chaque créature dans un cône de 36 m doit réussir un jet de sauvegarde de Force DD 21. En cas d'échec, elle tombe à terre à 9 m ou moins et subit 27 (8d6) dégâts de force et 80 (12d12) dégâts de tonnerre. En cas de réussite, elle n'est pas déplacée et subit la moitié des dégâts de tonnerre.</p>",
+          "chat": ""
+        },
+        "identifier": "hurlement-puissant-recharge-5-6",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.681d0a8099ab8add"
+    },
+    {
+      "_id": "d3cad09933c24047",
+      "name": "Détecter (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Fenrir fait un test de Sagesse (Perception).</p>",
+          "chat": ""
+        },
+        "identifier": "detecter-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.d3cad09933c24047"
+    },
+    {
+      "_id": "b7e2fd02b0ab0537",
+      "name": "Bave dégoûtante (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Fenrir rugit sur une créature à 18 m ou moins, la recouvrant de bave. Elle doit réussir un jet de sauvegarde de Dextérité DD 21 ou être désavantagée sur toutes ses attaques jusqu'à la fin de son prochain tour.</p>",
+          "chat": ""
+        },
+        "identifier": "bave-degoutante-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.b7e2fd02b0ab0537"
+    },
+    {
+      "_id": "a6bdc253dd98e121",
+      "name": "Griffe (action légendaire)",
+      "type": "feat",
+      "img": "icons/creatures/mammals/wolf-shadow-forest-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Fenrir effectue une attaque de griffe.</p>",
+          "chat": ""
+        },
+        "identifier": "griffe-action-legendaire",
+        "source": "Vers le Ragnarök",
+        "requirements": "",
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "properties": [],
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "activities": {},
+        "advancement": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787664868286,
+        "modifiedTime": 1787664868286,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!e8bdc0a05da8b553.a6bdc253dd98e121"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "prototypeToken": {
+    "name": "Fenrir",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": "resources.legact"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/creatures/mammals/wolf-shadow-forest-green.webp"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787664868286,
+    "modifiedTime": 1787664868286,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!e8bdc0a05da8b553"
+}
