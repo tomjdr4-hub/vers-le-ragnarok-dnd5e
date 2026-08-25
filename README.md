@@ -55,13 +55,21 @@ données Foundry.
   dnd5e) depuis vos compendiums habituels.
 - **Ásatrú** apparaît directement dans la liste de compétences de la fiche de personnage dès que le module
   est actif — aucune manipulation supplémentaire n'est nécessaire.
-- **Dévotion runique** : le choix d'une rune personnelle est purement narratif (voir le Grimoire runique) ;
-  notez-la dans la biographie du personnage, ou utilisez la macro pour un tirage en cours de partie.
+- **Dévotion runique** : réglez l'Ætt et la rune personnelle du personnage directement sur sa fiche, dans
+  l'onglet *Détails* (bloc « Dévotion runique », sous le type de créature et l'historique). Ce choix est
+  enregistré sur le personnage — la macro *Tirer une rune* le relit automatiquement à chaque tirage pour
+  indiquer qui est concerné (et si c'est sa rune personnelle, effet doublé).
 - **Objets de clan** : glissez l'objet correspondant au clan du personnage (compendium Équipement nordique)
   quand il l'a mérité en jeu.
 
 ## Choix de conception (et limites connues)
 
+- **Le bloc « Dévotion runique »** (`scripts/vers-le-ragnarok.js`) est injecté dans l'onglet Détails de la
+  fiche via le hook `renderCharacterActorSheet`, et stocke l'Ætt et la rune sous forme de flags sur
+  l'Acteur (`flags.vers-le-ragnarok.aett` / `.rune`) — c'est la technique standard pour ajouter un champ à
+  une fiche dnd5e sans modifier le système. Comme pour le thème visuel, je n'ai pas pu vérifier en direct
+  que le nom de hook est le bon pour votre version exacte de dnd5e ; si le bloc n'apparaît pas du tout,
+  dites-le, je l'ajusterai en fonction de la version installée.
 - **Le thème visuel** (`styles/vers-le-ragnarok.css`) fonctionne en redéfinissant les variables CSS que le
   système dnd5e expose déjà pour son propre thème clair/sombre (`--dnd5e-color-*`, `--color-text-*`,
   `--dnd5e-border-*`…), plutôt qu'en réécrivant sa mise en page. C'est l'approche la plus robuste aux mises

@@ -978,10 +978,14 @@ for (const aett of aettNames) {
 
 // -- Macro
 const macroCommand = `// Tirer une rune — Vers le Ragnarök
+// Lit les flags "vers-le-ragnarok" (ætt / rune) posés sur chaque PJ via le bloc
+// "Dévotion runique" de la fiche de personnage, et rapporte automatiquement qui
+// est concerné par le tirage (ætt correspondant, doublé si c'est la rune propre).
+const MODULE_ID = "vers-le-ragnarok";
 const AETTS = {
-  "Ætt de Freyja": ["Fehu","Ūruz","Thurisaz","Ansuz","Raido","Kenaz","Gebo","Wunjo"],
-  "Ætt de Heimdallr": ["Hagalaz","Nauthiz","Isaz","Jera","Eihwaz","Perth","Algiz","Sowilo"],
-  "Ætt de Týr": ["Teiwaz","Berkana","Ehwaz","Mannaz","Laguz","Ingwaz","Othila","Dagaz"]
+  "Freyja": ["Fehu","Ūruz","Thurisaz","Ansuz","Raido","Kenaz","Gebo","Wunjo"],
+  "Heimdallr": ["Hagalaz","Nauthiz","Isaz","Jera","Eihwaz","Perth","Algiz","Sowilo"],
+  "Týr": ["Teiwaz","Berkana","Ehwaz","Mannaz","Laguz","Ingwaz","Othila","Dagaz"]
 };
 const aettNames = Object.keys(AETTS);
 
@@ -995,13 +999,23 @@ const rune = AETTS[aettName][runeRoll.total - 1];
 const senseRoll = await new Roll("1d6").roll();
 const sense = senseRoll.total <= 3 ? "à l'endroit" : "à l'envers";
 
+const party = game.actors.filter(a => a.type === "character" && a.hasPlayerOwner);
+const rows = party.map(actor => {
+  const actorAett = actor.getFlag(MODULE_ID, "aett");
+  const actorRune = actor.getFlag(MODULE_ID, "rune");
+  if (actorAett !== aettName) return \`<li style="opacity:.5;">\${actor.name} — aucun effet (\${actorAett || "aucune dévotion"})</li>\`;
+  if (actorRune === rune) return \`<li><strong>\${actor.name}</strong> — <strong>rune personnelle</strong> : effet doublé !</li>\`;
+  return \`<li><strong>\${actor.name}</strong> — concerné (dévoué à l'ætt de \${aettName})</li>\`;
+}).join("");
+
 const content = \`
   <div style="text-align:center;">
     <h2 style="margin-bottom:0;">\${rune}</h2>
-    <p style="opacity:.75; margin-top:0;">\${aettName} — \${sense}</p>
+    <p style="opacity:.75; margin-top:0;">Ætt de \${aettName} — \${sense}</p>
     <p style="font-size:.85em;">Ætt : d6 = \${aettRoll.total} · Rune : d8 = \${runeRoll.total} · Sens : d6 = \${senseRoll.total}</p>
-    <p style="font-size:.85em; opacity:.75;">Consultez le <em>Grimoire runique</em> (compendium Journaux) pour l'effet complet.</p>
   </div>
+  \${party.length ? \`<ul style="text-align:left; margin-top:.5em;">\${rows}</ul>\` : \`<p style="font-size:.85em; opacity:.75;">Aucun personnage joueur trouvé dans ce monde.</p>\`}
+  <p style="font-size:.85em; opacity:.75;">Consultez le <em>Grimoire runique</em> (compendium Journaux) pour l'effet complet. La dévotion de chaque personnage se règle dans l'onglet Détails de sa fiche.</p>
 \`;
 
 ChatMessage.create({ content, speaker: ChatMessage.getSpeaker() });

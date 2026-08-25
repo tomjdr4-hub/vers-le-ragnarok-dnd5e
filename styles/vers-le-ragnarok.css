@@ -179,3 +179,50 @@
 .application.dnd5e2.character .sheet-header input.document-name {
   letter-spacing: .02em;
 }
+
+/* ---------- Bloc "Dévotion runique" (injecté par scripts/vers-le-ragnarok.js) ---------- */
+.application.dnd5e2.character .vlr-rune-block {
+  margin: .5rem 0;
+  padding: .6rem .8rem;
+  background: #241f22;
+  border: 1px solid #b98a3e;
+  border-radius: 4px;
+}
+.application.dnd5e2.character .vlr-rune-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 600;
+  font-size: .78rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #dd8759;
+  margin-bottom: .4rem;
+}
+.application.dnd5e2.character .vlr-rune-row {
+  display: flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+.application.dnd5e2.character .vlr-rune-field {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  flex: 1 1 140px;
+}
+.application.dnd5e2.character .vlr-rune-field span {
+  font-family: "Work Sans", sans-serif;
+  font-size: .65rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #b9af9c;
+}
+.application.dnd5e2.character .vlr-rune-field select {
+  background: rgb(0 0 0 / 25%);
+  border: 1px solid #3b372f;
+  border-radius: 3px;
+  color: #ece5d4;
+  padding: .25rem .4rem;
+  font-family: "Work Sans", sans-serif;
+}
+.application.dnd5e2.character .vlr-rune-field select:hover {
+  border-color: #b98a3e;
+}
