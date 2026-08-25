@@ -1,0 +1,82 @@
+{
+  "_id": "7f549a10eddeb685",
+  "name": "Dent de la sorcière",
+  "type": "weapon",
+  "img": "icons/weapons/daggers/dagger-bone.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Objet de clan des Fils de jötunn.</strong> Couteau en corne de renne à lame en alliage spécial, permettant d'allumer un feu par étincelles même en conditions défavorables. Une petite crécelle est insérée dans la poignée en os, censée éloigner les mauvais esprits.</p>\n      <p><em>Avantage aux tests de Sagesse (Survie) pour son possesseur.</em></p>\n      <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>",
+      "chat": ""
+    },
+    "identifier": "dent-de-la-sorciere",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "type": {
+      "value": "simpleM",
+      "subtype": ""
+    },
+    "properties": [
+      "fin",
+      "lgt",
+      "thr"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d4",
+        "bonus": "",
+        "types": [
+          "piercing"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492922,
+    "modifiedTime": 1787650492922,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7f549a10eddeb685"
+}

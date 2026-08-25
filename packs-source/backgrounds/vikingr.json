@@ -1,0 +1,73 @@
+{
+  "_id": "0e502cb2436e9e47",
+  "name": "Vikingr",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Le pillard indépendant.</strong> « Fara í víkingu » — pirate, raider ou mercenaire cherchant gloire et richesse loin de sa terre natale.</p>\n      <p><strong>Compétences :</strong> Athlétisme, Intimidation. <strong>Outils :</strong> instruments de navigateur.</p>\n      <p><strong>Équipement de départ :</strong> vêtements tape-à-l'œil, un cadran solaire en pierre gravé d'une rune (faisant office d'instruments de navigateur), une arme de guerre, une canule de tatouage pointue, une sacoche de cuir et 20 po.</p>",
+      "chat": ""
+    },
+    "identifier": "vikingr",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "advancement": {
+      "9594154b3de0018b": {
+        "_id": "9594154b3de0018b",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ath",
+            "skills:itm",
+            "tool:navg"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Compétences d'historique"
+      },
+      "fc875a8d0e4fc72d": {
+        "_id": "fc875a8d0e4fc72d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.c5e210f07c9ac324",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Privilège"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0e502cb2436e9e47"
+}

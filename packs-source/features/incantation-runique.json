@@ -1,0 +1,46 @@
+{
+  "_id": "0265f243da77637d",
+  "name": "Incantation runique",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>À la fin d'un repos long, choisissez un tour de magie parmi la liste suivante : <em>message, bouffée de poison, partager le sang, produire une flamme</em>. Vous connaissez et pouvez lancer ce tour de magie jusqu'à la fin de votre prochain repos long, où vous pourrez en choisir un différent.</p>",
+      "chat": ""
+    },
+    "identifier": "incantation-runique",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0265f243da77637d"
+}

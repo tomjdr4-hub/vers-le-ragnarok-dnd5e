@@ -1,0 +1,111 @@
+{
+  "_id": "b0c5bce96c3144d5",
+  "name": "Ætt de Heimdallr",
+  "type": "subclass",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous vous vouez à la protection et l'adversité.</p>",
+      "chat": ""
+    },
+    "identifier": "tt-de-heimdallr",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "maitre-des-runes",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "02a3ce2f0744fd2f": {
+        "_id": "02a3ce2f0744fd2f",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.5b616fcd29d607e4",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Aptitudes de l'ætt"
+      },
+      "669948983dac8e60": {
+        "_id": "669948983dac8e60",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.fc4ea55263c1eef8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Aptitudes de l'ætt"
+      },
+      "2468f5c375f954d0": {
+        "_id": "2468f5c375f954d0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.cd6209dfe0895352",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Aptitudes de l'ætt"
+      },
+      "efa743ecd619a98b": {
+        "_id": "efa743ecd619a98b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.b584c6a56f0e71e4",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Aptitudes de l'ætt"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!b0c5bce96c3144d5"
+}

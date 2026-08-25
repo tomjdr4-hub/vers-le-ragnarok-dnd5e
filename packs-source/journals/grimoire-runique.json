@@ -1,0 +1,144 @@
+{
+  "_id": "cf288db8b8c81b69",
+  "name": "Grimoire runique",
+  "pages": [
+    {
+      "_id": "a1a6c99e6e68b9c8",
+      "name": "Mécanisme de la dévotion runique",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Tout personnage peut se vouer à une rune du Futhark ancien (24 runes réparties en trois ættir de huit) et, dans une moindre mesure, à l'ætt qui la contient. C'est un choix du joueur — portée en talisman, gravée ou tatouée — et non un tirage imposé à la création.</p>\n    <h3>Tirer une rune sans matériel dédié</h3>\n    <ol>\n      <li><strong>1d6</strong> pour l'ætt : 1–2 Freyja, 3–4 Heimdallr, 5–6 Týr.</li>\n      <li><strong>1d8</strong> pour la rune au sein de cet ætt.</li>\n      <li><strong>1d6</strong> pour le sens (runes bidirectionnelles uniquement) : 1–3 à l'endroit, 4–6 à l'envers.</li>\n    </ol>\n    <p>En cours de partie, un maître des runes peut tirer une rune par personnage présent à chaque repos long : si elle correspond à l'ætt d'un personnage, elle produit un effet — doublé si c'est sa rune personnelle — jusqu'à la fin du prochain repos long.</p>\n    <p>La macro <strong>Tirer une rune (Vers le Ragnarök)</strong> fournie par ce module automatise ce tirage.</p>"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787650492924,
+        "modifiedTime": 1787650492924,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cf288db8b8c81b69.a1a6c99e6e68b9c8"
+    },
+    {
+      "_id": "05734a279280f05e",
+      "name": "Ætt de Freyja",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Huit runes du Futhark ancien.</p>\n    <h3>Fehu</h3>\n    <p><strong>À l'endroit :</strong> Fortune, succès mérité — <strong>À l'envers :</strong> jalousie, envie</p>\n    <p><em>Effet :</em> +1 aux tests de caractéristique ; un 20 naturel est toujours un succès.</p>\n    <p><em>Effet inverse :</em> −1 aux tests de caractéristique ; un 1 naturel est toujours un échec.</p>\n  \n\n    <h3>Ūruz</h3>\n    <p><strong>À l'endroit :</strong> Force brute, vitalité — <strong>À l'envers :</strong> faiblesse</p>\n    \n    \n  \n\n    <h3>Thurisaz</h3>\n    <p><strong>À l'endroit :</strong> Conflit, force réactive — <strong>À l'envers :</strong> danger, agression subie</p>\n    \n    \n  \n\n    <h3>Ansuz</h3>\n    <p><strong>À l'endroit :</strong> Message, inspiration divine — <strong>À l'envers :</strong> malentendu</p>\n    \n    \n  \n\n    <h3>Raido</h3>\n    <p><strong>À l'endroit :</strong> Voyage, mouvement juste — <strong>À l'envers :</strong> stagnation</p>\n    \n    \n  \n\n    <h3>Kenaz</h3>\n    <p><strong>À l'endroit :</strong> Torche, savoir-faire — <strong>À l'envers :</strong> instabilité</p>\n    \n    \n  \n\n    <h3>Gebo</h3>\n    <p><strong>À l'endroit :</strong> Don, échange, partenariat</p>\n    \n    \n  \n\n    <h3>Wunjo</h3>\n    <p><strong>À l'endroit :</strong> Gloire, harmonie — <strong>À l'envers :</strong> dépression, solitude, pessimisme</p>\n    <p><em>Effet :</em> Quand vous faites un jet de sauvegarde, vous pouvez utiliser le bonus d'un allié adjacent s'il est supérieur au vôtre.</p>\n    <p><em>Effet inverse :</em> Quand vous faites un jet de sauvegarde, vous devez utiliser le bonus d'un allié adjacent s'il est inférieur au vôtre.</p>\n  \n      <p style=\"opacity:.7\"><em>Mots-clés et effets tels que retranscrits dans Vers le Ragnarök, p. 308 à 319 ; en cas de doute, référez-vous au livre.</em></p>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787650492924,
+        "modifiedTime": 1787650492924,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cf288db8b8c81b69.05734a279280f05e"
+    },
+    {
+      "_id": "53ce10cfac7d9e60",
+      "name": "Ætt de Heimdallr",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Huit runes du Futhark ancien.</p>\n    <h3>Hagalaz</h3>\n    <p><strong>À l'endroit :</strong> Grêle, perturbation</p>\n    \n    \n  \n\n    <h3>Nauthiz</h3>\n    <p><strong>À l'endroit :</strong> Besoin, contrainte</p>\n    \n    \n  \n\n    <h3>Isaz</h3>\n    <p><strong>À l'endroit :</strong> Glace, immobilité</p>\n    \n    \n  \n\n    <h3>Jera</h3>\n    <p><strong>À l'endroit :</strong> Récolte, cycle accompli</p>\n    \n    \n  \n\n    <h3>Eihwaz</h3>\n    <p><strong>À l'endroit :</strong> L'if, endurance</p>\n    \n    \n  \n\n    <h3>Perth</h3>\n    <p><strong>À l'endroit :</strong> Mystère, destin caché</p>\n    \n    \n  \n\n    <h3>Algiz</h3>\n    <p><strong>À l'endroit :</strong> Protection, défense</p>\n    \n    \n  \n\n    <h3>Sowilo</h3>\n    <p><strong>À l'endroit :</strong> Soleil, victoire</p>\n    \n    \n  \n      <p style=\"opacity:.7\"><em>Mots-clés et effets tels que retranscrits dans Vers le Ragnarök, p. 308 à 319 ; en cas de doute, référez-vous au livre.</em></p>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787650492924,
+        "modifiedTime": 1787650492924,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cf288db8b8c81b69.53ce10cfac7d9e60"
+    },
+    {
+      "_id": "cdc491968eb78d7b",
+      "name": "Ætt de Týr",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Huit runes du Futhark ancien.</p>\n    <h3>Teiwaz</h3>\n    <p><strong>À l'endroit :</strong> Harmonie des opposés (présidée par Sleipnir) — <strong>À l'envers :</strong> précipitation, inhibition, désaccord</p>\n    \n    <p><em>Effet inverse :</em> Effet négatif supérieur : pour chaque dé de vie dépensé, vous gagnez un bonus au jet d'initiative égal à votre modificateur de Sagesse (1 au minimum).</p>\n  \n\n    <h3>Berkana</h3>\n    <p><strong>À l'endroit :</strong> Fertilité, amour (présidée par Frigg) — <strong>À l'envers :</strong> immaturité, anxiété, abandon</p>\n    <p><em>Effet :</em> Action : soignez chaque créature à 3 m ou moins de vous (vous y compris) de 1d6 + votre modificateur de Charisme, jusqu'à la moitié de votre maximum de points de vie. Un repos court recharge ce pouvoir.</p>\n    <p><em>Effet inverse :</em> Action bonus : dépensez et lancez un dé de vie comme lors d'un repos court, mais le résultat est réduit de moitié.</p>\n  \n\n    <h3>Ehwaz</h3>\n    <p><strong>À l'endroit :</strong> Amélioration, coopération, union (présidée par Sleipnir) — <strong>À l'envers :</strong> précipitation, inhibition, désaccord</p>\n    <p><em>Effet :</em> Lors d'un repos court, vous et jusqu'à six alliés pouvez méditer ensemble une heure : chaque dé de vie dépensé rend des points de vie supplémentaires égaux à votre modificateur de Sagesse à un allié, et vous récupérez des points de vie supplémentaires égaux au nombre de participants.</p>\n    <p><em>Effet inverse :</em> Pour chaque dé de vie dépensé, vous gagnez un bonus au jet d'initiative égal à votre modificateur de Sagesse (1 au minimum).</p>\n  \n\n    <h3>Mannaz</h3>\n    <p><strong>À l'endroit :</strong> L'homme cosmique (présidée par Heimdallr) — <strong>À l'envers :</strong> préjudice, rigidité, fanatisme</p>\n    <p><em>Effet :</em> Quand vous faites un jet de sauvegarde contre un effet invisible, vous pouvez utiliser votre réaction pour être avantagé au jet (un repos court est requis pour réutiliser ce pouvoir).</p>\n    <p><em>Effet inverse :</em> Chaque fois que vous infligez des dégâts à une cible dont les points de vie actuels sont supérieurs aux vôtres, vous infligez 1 dégât supplémentaire du même type (2 au niveau 11, 3 au niveau 20). Vous ne pouvez pas terminer votre tour à 6 m ou moins d'une telle créature.</p>\n  \n\n    <h3>Laguz</h3>\n    <p><strong>À l'endroit :</strong> Le puits du savoir (présidée par Mimir) — <strong>À l'envers :</strong> manque de créativité, confusion, peur</p>\n    <p><em>Effet :</em> Vous pouvez lancer <em>augure</em> en rituel sans composant matériel (à partir du niveau 11, <em>divination</em>).</p>\n    <p><em>Effet inverse :</em> Au début de chaque combat, vous êtes terrorisé par toutes les créatures hostiles perçues, jusqu'au début de votre deuxième tour.</p>\n  \n\n    <h3>Ingwaz</h3>\n    <p><strong>À l'endroit :</strong> L'avenir de la lignée (présidée par Freyr)</p>\n    <p><em>Effet :</em> Action bonus : dépensez et lancez un dé de vie pour soigner un nombre de points de vie égal au résultat plus votre modificateur de Charisme (1 au minimum), divisé entre toute créature à 3 m ou moins de vous. Vous gagnez des points de vie temporaires égaux à la moitié du montant soigné.</p>\n    \n  \n\n    <h3>Othila</h3>\n    <p><strong>À l'endroit :</strong> L'honneur des ancêtres (présidée par Njörðr) — <strong>À l'envers :</strong> esclavage, racisme, avidité</p>\n    <p><em>Effet :</em> Quand vous faites un jet d'attaque ou un test de caractéristique avec avantage, vous pouvez relancer le dé le moins bon (le nouveau résultat est gardé). Un repos court est requis pour réutiliser ce pouvoir.</p>\n    \n  \n\n    <h3>Dagaz</h3>\n    <p><strong>À l'endroit :</strong> La nouvelle ère (présidée par Dagr)</p>\n    <p><em>Effet :</em> Quand cette rune est tirée, vous récupérez tous vos points de vie et gagnez des points de vie temporaires égaux à la moitié de votre maximum.</p>\n    \n  \n      <p style=\"opacity:.7\"><em>Mots-clés et effets tels que retranscrits dans Vers le Ragnarök, p. 308 à 319 ; en cas de doute, référez-vous au livre.</em></p>"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787650492924,
+        "modifiedTime": 1787650492924,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cf288db8b8c81b69.cdc491968eb78d7b"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!cf288db8b8c81b69"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "557eaef2eb25750e",
+  "name": "Tisseur du destin",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Quand une attaque ou un sort visant une seule créature visible dans votre cercle de futhark réussit, vous pouvez dépenser un dé de cercle de futhark en réaction pour reproduire cet effet contre une autre créature du cercle. Le jet d'attaque d'origine doit rester suffisant contre la classe d'armure de la nouvelle cible ; celle-ci effectue les mêmes jets de sauvegarde que la cible d'origine.</p>\n      <p>Vous ne pouvez utiliser cette aptitude qu'une fois entre chaque repos long.</p>",
+      "chat": ""
+    },
+    "identifier": "tisseur-du-destin",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 14",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!557eaef2eb25750e"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "34c25c884657ec8c",
+  "name": "Cercle de futhark",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Par une action, vous désignez un point au sol que vous pouvez voir à 18 m ou moins : cela crée un <strong>cercle de futhark</strong> de 3 m de rayon centré sur ce point. Pour le maintenir actif, vous devez utiliser une action bonus à chaque tour et le cercle doit rester dans votre champ de vision.</p>\n      <p>Quand une créature dans votre champ de vision attaque une cible se trouvant dans le cercle (autre que vous-même), vous pouvez dépenser un <strong>dé de cercle de futhark</strong> en réaction pour soustraire le résultat obtenu au jet d'attaque de cette créature.</p>\n      <p>Vous disposez d'un nombre de dés de cercle de futhark égal à votre modificateur de Sagesse (1 au minimum), récupérés à la fin d'un repos long. Le dé est un <strong>d6</strong>, qui devient un <strong>d8</strong> au niveau 5, un <strong>d10</strong> au niveau 10 et un <strong>d12</strong> au niveau 15 (voir la valeur mise à l'échelle sur cette aptitude).</p>",
+      "chat": ""
+    },
+    "identifier": "cercle-de-futhark",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!34c25c884657ec8c"
+}

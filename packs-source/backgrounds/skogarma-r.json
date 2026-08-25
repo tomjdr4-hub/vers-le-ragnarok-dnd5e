@@ -1,0 +1,72 @@
+{
+  "_id": "778c8ad08612dd1f",
+  "name": "Skógarmaðr",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Le banni des bois.</strong> Déchu de tous droits, condamné à mort à vue, contraint de survivre seul en forêt.</p>\n      <p><strong>Compétences :</strong> Discrétion, Survie.</p>\n      <p><strong>Équipement de départ :</strong> vêtements en lambeaux, un bracelet de serment à la rune brisée, un couteau en silex et 5 po.</p>",
+      "chat": ""
+    },
+    "identifier": "skogarma-r",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "advancement": {
+      "5b68978bb1f012e6": {
+        "_id": "5b68978bb1f012e6",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ste",
+            "skills:sur"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Compétences d'historique"
+      },
+      "4c869b00ee8b633f": {
+        "_id": "4c869b00ee8b633f",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.3bcb59f455061cba",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Privilège"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!778c8ad08612dd1f"
+}

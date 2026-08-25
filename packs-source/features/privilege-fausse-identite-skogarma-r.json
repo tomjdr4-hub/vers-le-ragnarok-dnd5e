@@ -1,0 +1,46 @@
+{
+  "_id": "3bcb59f455061cba",
+  "name": "Privilège : Fausse identité (Skógarmaðr)",
+  "type": "feat",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p>Après avoir survécu seul à l'hiver, le personnage s'est reconstruit une nouvelle identité dans une région lointaine (oracle mendiant, esclave affranchi, seul survivant d'une tragédie…). Il peut croiser d'autres skógarmenn dans des refuges cachés en forêt.</p>",
+      "chat": ""
+    },
+    "identifier": "privilege-fausse-identite-skogarma-r",
+    "source": "Vers le Ragnarök",
+    "requirements": "Skógarmaðr",
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3bcb59f455061cba"
+}

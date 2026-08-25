@@ -1,0 +1,46 @@
+{
+  "_id": "42f671cf5337315d",
+  "name": "Clan : Fils de jötunn",
+  "type": "feat",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Fenmark</strong></p><p><em>Clan de parias — bannis, voleurs, porteurs du « sang bleu » — cachés dans les marais de Fínnbol.</em></p>\n      <p>Seul clan à rejeter ouvertement les Neuf vertus, ses membres se surnomment eux-mêmes <strong>gargans</strong> (« serpents ») et vénèrent Loki plutôt que les autres Æsir. Fondé par le demi-géant Hrókr Fjalson, un ancien mímistafr des Corbeaux de glace banni.</p>\n      <p>Un personnage de ce clan a droit à l'objet de clan <strong>Dent de la sorcière</strong> s'il s'en montre digne.</p>",
+      "chat": ""
+    },
+    "identifier": "clan-fils-de-jotunn",
+    "source": "Vers le Ragnarök",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!42f671cf5337315d"
+}

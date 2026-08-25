@@ -1,0 +1,111 @@
+{
+  "_id": "2b4e1b0aa772df24",
+  "name": "Ætt de Týr",
+  "type": "subclass",
+  "img": "icons/magic/lightning/bolt-strike-sky-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous vous vouez à la justice et le châtiment.</p>",
+      "chat": ""
+    },
+    "identifier": "tt-de-tyr",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "maitre-des-runes",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "62a97092e7d84fa7": {
+        "_id": "62a97092e7d84fa7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.5bbdbfa6314fc375",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Aptitudes de l'ætt"
+      },
+      "5a5fde0eef2047d2": {
+        "_id": "5a5fde0eef2047d2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.b0cbdb070acd3cf6",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Aptitudes de l'ætt"
+      },
+      "eca02d2674d2c385": {
+        "_id": "eca02d2674d2c385",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.b4a62b6dad522b77",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Aptitudes de l'ætt"
+      },
+      "cbef5e28d98cd3eb": {
+        "_id": "cbef5e28d98cd3eb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.27b23e9ca88243e8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Aptitudes de l'ætt"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2b4e1b0aa772df24"
+}

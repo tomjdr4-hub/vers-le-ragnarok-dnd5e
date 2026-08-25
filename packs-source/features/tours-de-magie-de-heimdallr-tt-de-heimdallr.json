@@ -1,0 +1,46 @@
+{
+  "_id": "cd6209dfe0895352",
+  "name": "Tours de magie de Heimdallr (Ætt de Heimdallr)",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Les tours de magie <em>rayon de givre</em> et <em>résistance</em> s'ajoutent à votre liste de tours de magie runiques (voir Incantation runique).</p>",
+      "chat": ""
+    },
+    "identifier": "tours-de-magie-de-heimdallr-tt-de-heimdallr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 9 (Ætt de Heimdallr)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!cd6209dfe0895352"
+}

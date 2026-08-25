@@ -1,0 +1,46 @@
+{
+  "_id": "32c2b6dd056e9e14",
+  "name": "Bénédiction d'Ansuz (Ætt de Freyja)",
+  "type": "feat",
+  "img": "icons/magic/life/heart-cross-strong-flame-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Par une action, vous pouvez dépenser un dé de cercle de futhark pour soigner une créature se trouvant dans votre cercle d'un nombre de points de vie égal au résultat du dé plus votre modificateur de Sagesse.</p>",
+      "chat": ""
+    },
+    "identifier": "benediction-d-ansuz-tt-de-freyja",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 2 (Ætt de Freyja)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!32c2b6dd056e9e14"
+}

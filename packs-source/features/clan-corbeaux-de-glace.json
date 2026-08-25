@@ -1,0 +1,46 @@
+{
+  "_id": "1e0c077006b62f04",
+  "name": "Clan : Corbeaux de glace",
+  "type": "feat",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Svitjod</strong></p><p><em>Cercle de voyants, d'ermites et de skalds voués à l'ordre divin, plus qu'un clan à proprement parler.</em></p>\n      <p>Basé au temple d'Uppsala, ce cercle sert de conseillers, de juges (løgsøgumaður) et d'enseignants aux autres clans. Sa hiérarchie va du <strong>rót</strong> (« racine », nouvelle recrue) au <strong>mímistafr</strong> (« pilier de sagesse »), jusqu'au <strong>léradhr</strong> et au <strong>mímaneidhr</strong> (« arbre de sagesse »), le conseil de trois membres qui tranche en dernier ressort.</p>\n      <p>Un personnage de ce clan a droit à l'objet de clan <strong>Branche runique</strong> s'il s'en montre digne.</p>",
+      "chat": ""
+    },
+    "identifier": "clan-corbeaux-de-glace",
+    "source": "Vers le Ragnarök",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1e0c077006b62f04"
+}

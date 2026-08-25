@@ -1,0 +1,72 @@
+{
+  "_id": "49c2fc8dcbd08d97",
+  "name": "Huscarl",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Le garde du corps professionnel.</strong> Engagé pour défendre une maison, une personne ou un seigneur, au prix de sa propre sécurité.</p>\n      <p><strong>Compétences :</strong> Investigation, Perspicacité.</p>\n      <p><strong>Équipement de départ :</strong> habits courants, uniforme d'huscarl, une grande cape, un casque orné d'une rune, une arme de guerre, une sacoche de cuir et 20 po.</p>",
+      "chat": ""
+    },
+    "identifier": "huscarl",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "advancement": {
+      "3832410270311aa2": {
+        "_id": "3832410270311aa2",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:inv",
+            "skills:ins"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Compétences d'historique"
+      },
+      "f3b112d0cca240c8": {
+        "_id": "f3b112d0cca240c8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.2093f005088679a2",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Privilège"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!49c2fc8dcbd08d97"
+}

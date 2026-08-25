@@ -1,0 +1,80 @@
+{
+  "_id": "417cd58117e18054",
+  "name": "Hache d'assaut",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-double-worn-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Hache lourde à deux mains, taillée pour l'assaut plutôt que le travail du bois.</p>",
+      "chat": ""
+    },
+    "identifier": "hache-d-assaut",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "kg"
+    },
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "type": {
+      "value": "simpleM",
+      "subtype": ""
+    },
+    "properties": [
+      "fin"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d8",
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492922,
+    "modifiedTime": 1787650492922,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!417cd58117e18054"
+}

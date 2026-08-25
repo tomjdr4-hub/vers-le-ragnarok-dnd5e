@@ -1,0 +1,111 @@
+{
+  "_id": "9f6504768277f6c7",
+  "name": "Ætt de Freyja",
+  "type": "subclass",
+  "img": "icons/magic/life/heart-cross-strong-flame-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous vous vouez à l'abondance, la guérison et la prospérité.</p>",
+      "chat": ""
+    },
+    "identifier": "tt-de-freyja",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "maitre-des-runes",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "c13a59df93d56508": {
+        "_id": "c13a59df93d56508",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.32c2b6dd056e9e14",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Aptitudes de l'ætt"
+      },
+      "e3fb55cec8c23dda": {
+        "_id": "e3fb55cec8c23dda",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.e528e3c8e5ef5704",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Aptitudes de l'ætt"
+      },
+      "767b354280c9de6d": {
+        "_id": "767b354280c9de6d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.6eb3c4a76763f06c",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Aptitudes de l'ætt"
+      },
+      "20ffaf64a4243b66": {
+        "_id": "20ffaf64a4243b66",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.876a030182d4e5a2",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Aptitudes de l'ætt"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!9f6504768277f6c7"
+}

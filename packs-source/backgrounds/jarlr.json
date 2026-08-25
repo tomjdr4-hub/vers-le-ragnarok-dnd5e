@@ -1,0 +1,72 @@
+{
+  "_id": "78bea32299331eec",
+  "name": "Jarlr",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Le chef de lignée.</strong> Issu d'une lignée prestigieuse, à la tête d'une armée régionale, juge lors des procès, souvent élu par le þing.</p>\n      <p><strong>Compétences :</strong> Ásatrú, Histoire.</p>\n      <p><strong>Équipement de départ :</strong> beaux habits, une cape brodée, un anneau précieux gravé d'une rune, une broche à symbole familial, une sacoche de cuir et 25 po.</p>",
+      "chat": ""
+    },
+    "identifier": "jarlr",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "advancement": {
+      "6b22969832c71649": {
+        "_id": "6b22969832c71649",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:asa",
+            "skills:his"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Compétences d'historique"
+      },
+      "be7ac7fd6cb15b8b": {
+        "_id": "be7ac7fd6cb15b8b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.eedba171a5fb4afe",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Privilège"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!78bea32299331eec"
+}

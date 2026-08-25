@@ -1,0 +1,72 @@
+{
+  "_id": "b1d0964fb1550320",
+  "name": "Bondhi",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Le paysan libre.</strong> Cultivateur et guerrier occasionnel, propriétaire de son lopin de terre.</p>\n      <p><strong>Compétences :</strong> Dressage, Perception. <strong>Outils :</strong> un ensemble d'outils d'artisan au choix.</p>\n      <p><strong>Équipement de départ :</strong> habits courants, un ensemble d'outils d'artisan, un bracelet orné d'une rune, une arme courante, un récipient en terre cuite, une sacoche de cuir et 15 po.</p>",
+      "chat": ""
+    },
+    "identifier": "bondhi",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "advancement": {
+      "933bb36997e4a5c2": {
+        "_id": "933bb36997e4a5c2",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ani",
+            "skills:prc"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Compétences d'historique"
+      },
+      "3a8040d5aaf55415": {
+        "_id": "3a8040d5aaf55415",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.c8e53138bf7c9b0a",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Privilège"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!b1d0964fb1550320"
+}

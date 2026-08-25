@@ -1,0 +1,46 @@
+{
+  "_id": "e528e3c8e5ef5704",
+  "name": "Cercle de Freyja (Ætt de Freyja)",
+  "type": "feat",
+  "img": "icons/magic/life/heart-cross-strong-flame-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Les alliés se trouvant dans votre cercle sont avantagés aux jets de sauvegarde contre la mort ; un allié récupère 1 point de vie s'il obtient 19 ou 20 à ce jet. En maintenant le cercle par une action bonus, vous pouvez augmenter son rayon de 1,50 m, jusqu'à un maximum de 9 m.</p>",
+      "chat": ""
+    },
+    "identifier": "cercle-de-freyja-tt-de-freyja",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 7 (Ætt de Freyja)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!e528e3c8e5ef5704"
+}

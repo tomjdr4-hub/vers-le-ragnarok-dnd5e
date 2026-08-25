@@ -1,0 +1,46 @@
+{
+  "_id": "c8d453f354452281",
+  "name": "Clan : Cornes de Gjallar",
+  "type": "feat",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Jutland</strong></p><p><em>Peuple fier et pragmatique, gardien du grand mur du Danevirke, se disant issu d'Heimdallr.</em></p>\n      <p>Le royaume le plus riche et le plus stable du Nord, dirigé par la reine Thorunn Horiksdóttir. Le clan tire son nom d'une corne gigantesque conservée dans sa capitale, utilisée pour alerter tout Miðgarðr en cas d'invasion.</p>\n      <p>Un personnage de ce clan a droit à l'objet de clan <strong>Cor retentissant</strong> s'il s'en montre digne.</p>",
+      "chat": ""
+    },
+    "identifier": "clan-cornes-de-gjallar",
+    "source": "Vers le Ragnarök",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c8d453f354452281"
+}

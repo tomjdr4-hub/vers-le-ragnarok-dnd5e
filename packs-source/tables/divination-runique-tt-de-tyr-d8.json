@@ -1,0 +1,125 @@
+{
+  "_id": "0e7afea9c0339bbf",
+  "name": "Divination runique — Ætt de Týr (d8)",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "description": "Lancez ensuite 1d6 pour le sens si la rune a un envers (1-3 endroit, 4-6 envers).",
+  "formula": "1d8",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "1aae20141f6a332d",
+      "type": "text",
+      "text": "Teiwaz",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!tables.results!0e7afea9c0339bbf.1aae20141f6a332d"
+    },
+    {
+      "_id": "5035d56cd7265013",
+      "type": "text",
+      "text": "Berkana",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!tables.results!0e7afea9c0339bbf.5035d56cd7265013"
+    },
+    {
+      "_id": "ebbcca3bcec5059a",
+      "type": "text",
+      "text": "Ehwaz",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!tables.results!0e7afea9c0339bbf.ebbcca3bcec5059a"
+    },
+    {
+      "_id": "76e241d15f4f7923",
+      "type": "text",
+      "text": "Mannaz",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!tables.results!0e7afea9c0339bbf.76e241d15f4f7923"
+    },
+    {
+      "_id": "0ee4f836f1a7722a",
+      "type": "text",
+      "text": "Laguz",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!tables.results!0e7afea9c0339bbf.0ee4f836f1a7722a"
+    },
+    {
+      "_id": "39844dff7a31c41b",
+      "type": "text",
+      "text": "Ingwaz",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!tables.results!0e7afea9c0339bbf.39844dff7a31c41b"
+    },
+    {
+      "_id": "78036983c748d614",
+      "type": "text",
+      "text": "Othila",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!tables.results!0e7afea9c0339bbf.78036983c748d614"
+    },
+    {
+      "_id": "869e96bb71fc6c3d",
+      "type": "text",
+      "text": "Dagaz",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!tables.results!0e7afea9c0339bbf.869e96bb71fc6c3d"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!tables!0e7afea9c0339bbf"
+}

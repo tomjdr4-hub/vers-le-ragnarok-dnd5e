@@ -1,0 +1,72 @@
+{
+  "_id": "cc41df9a619b7547",
+  "name": "Thrallr",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>L'esclave.</strong> Condamné par dette ou capture, soumis à un maître, mais nourri, logé, et pouvant racheter sa liberté par le travail ou de bonnes actions.</p>\n      <p><strong>Compétences :</strong> Dressage, Représentation.</p>\n      <p><strong>Équipement de départ :</strong> vêtements de piètre qualité, des outils de travail, une rune gravée sur bois donnée par le maître, un bol de bois et 5 po.</p>",
+      "chat": ""
+    },
+    "identifier": "thrallr",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "advancement": {
+      "b3b4821bfd2e118a": {
+        "_id": "b3b4821bfd2e118a",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ani",
+            "skills:prf"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Compétences d'historique"
+      },
+      "b143e364ac13229d": {
+        "_id": "b143e364ac13229d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.23f0473e9390aad3",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Privilège"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!cc41df9a619b7547"
+}

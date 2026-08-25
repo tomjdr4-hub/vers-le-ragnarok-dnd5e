@@ -1,0 +1,81 @@
+{
+  "_id": "7392f562e277726c",
+  "name": "Griffe de la Montagne",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/hammer-double-stone.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Objet de clan des Guerriers ours.</strong> Maillet d'armes dont la tête a été taillée dans une roche froide extraite du cœur de la Montagne. Statistiques d'un maillet d'armes.</p>\n      <p><em>Avantage aux tests de Force (Athlétisme) pour briser un objet. Sur un coup critique contre un adversaire tenant un bouclier, possibilité de briser le bouclier au lieu d'infliger les dégâts.</em></p>\n      <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>",
+      "chat": ""
+    },
+    "identifier": "griffe-de-la-montagne",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 4,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "type": {
+      "value": "martialM",
+      "subtype": ""
+    },
+    "properties": [
+      "hvy",
+      "two"
+    ],
+    "proficient": null,
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": "d6",
+        "bonus": "",
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492922,
+    "modifiedTime": 1787650492922,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7392f562e277726c"
+}

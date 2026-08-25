@@ -1,0 +1,46 @@
+{
+  "_id": "b584c6a56f0e71e4",
+  "name": "Vigilance d'Eihwaz (Ætt de Heimdallr)",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous et votre marqué n'avez besoin que d'une heure de sommeil lors d'un repos long pour être considérés comme reposés, et pouvez consacrer le reste du temps à des activités mineures. Vous êtes tous deux avantagés aux tests de Sagesse (Perception).</p>",
+      "chat": ""
+    },
+    "identifier": "vigilance-d-eihwaz-tt-de-heimdallr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 11 (Ætt de Heimdallr)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!b584c6a56f0e71e4"
+}

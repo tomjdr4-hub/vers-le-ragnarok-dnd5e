@@ -1,0 +1,46 @@
+{
+  "_id": "5b616fcd29d607e4",
+  "name": "Sceau d'Algiz (Ætt de Heimdallr)",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous pouvez dépenser un dé de cercle de futhark en réaction pour forcer une créature à relancer un jet d'attaque d'opportunité qu'elle vient de réussir contre une cible se trouvant dans votre cercle.</p>",
+      "chat": ""
+    },
+    "identifier": "sceau-d-algiz-tt-de-heimdallr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 2 (Ætt de Heimdallr)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5b616fcd29d607e4"
+}

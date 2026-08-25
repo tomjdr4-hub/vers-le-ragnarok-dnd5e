@@ -1,0 +1,46 @@
+{
+  "_id": "23f0473e9390aad3",
+  "name": "Privilège : Protégé par le maître (Thrallr)",
+  "type": "feat",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p>Nourriture et abri garantis chez son maître (sauf fuite ou déshonneur), un soutien possible même après le rachat de la liberté.</p>\n      <p><em>Variante « esclave étranger » : origine lointaine (butin de raid, achat, capture). Privilège remplacé par <strong>connaissances étrangères</strong> : avantage aux tests d'Arcanes, Religion et Histoire sur les cultures étrangères ; peut interroger son maître sur son pays d'origine.</em></p>",
+      "chat": ""
+    },
+    "identifier": "privilege-protege-par-le-maitre-thrallr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Thrallr",
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!23f0473e9390aad3"
+}

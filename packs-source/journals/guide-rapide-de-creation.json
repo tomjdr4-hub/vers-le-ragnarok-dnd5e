@@ -1,0 +1,54 @@
+{
+  "_id": "8793fb1ec992dc90",
+  "name": "Guide rapide de création",
+  "pages": [
+    {
+      "_id": "d0394eef26e870f4",
+      "name": "Créer un héros de Miðgarðr",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ol>\n      <li><strong>Choisissez un clan</strong> (compendium Objets/Fonctionnalités) — culturel, sans bonus de caractéristique.</li>\n      <li><strong>Race humaine recommandée</strong>, et un alignement : Loyal Honorable, Chaotique Honorable, Loyal Peu honorable, ou Chaotique Peu honorable.</li>\n      <li><strong>Choisissez un historique</strong> parmi les huit du compendium Historiques.</li>\n      <li><strong>Choisissez une classe</strong>, dont la nouvelle classe <em>Maître des runes</em>.</li>\n      <li><strong>Ajoutez la compétence Ásatrú</strong> (Sagesse) — automatiquement disponible sur la fiche grâce à ce module.</li>\n      <li><strong>Dévouez-vous à une rune</strong> (facultatif) — voir le Grimoire runique.</li>\n      <li><strong>Équipez votre héros</strong> avec l'équipement de classe et d'historique, plus un objet de clan mérité en jeu.</li>\n    </ol>"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787650492924,
+        "modifiedTime": 1787650492924,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "compendiumSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!8793fb1ec992dc90.d0394eef26e870f4"
+    }
+  ],
+  "folder": null,
+  "sort": 100000,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!8793fb1ec992dc90"
+}

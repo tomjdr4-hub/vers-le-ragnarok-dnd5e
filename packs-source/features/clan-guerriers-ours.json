@@ -1,0 +1,46 @@
+{
+  "_id": "7c9b8af5c3cf3088",
+  "name": "Clan : Guerriers ours",
+  "type": "feat",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Norðrvegr, montagnes Enneigées</strong></p><p><em>Berserkir des montagnes, aussi appelés hommes-ours ou sauvages ; la force y est la seule loi.</em></p>\n      <p>Nominalement dirigés par la famille Snjallrson, mais tout chef peut être défié par la force. Chaque village a un prêtre communiant avec « l'esprit de la Montagne », vénérée comme une divinité en plus des Æsir et des Vanir.</p>\n      <p>Un personnage de ce clan a droit à l'objet de clan <strong>Griffe de la Montagne</strong> s'il s'en montre digne.</p>",
+      "chat": ""
+    },
+    "identifier": "clan-guerriers-ours",
+    "source": "Vers le Ragnarök",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7c9b8af5c3cf3088"
+}

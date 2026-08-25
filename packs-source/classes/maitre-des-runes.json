@@ -1,0 +1,481 @@
+{
+  "_id": "06c23e99dcf0388c",
+  "name": "Maître des runes",
+  "type": "class",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "system": {
+    "description": {
+      "value": "<h3>Traits fondamentaux</h3>\n        <p><strong>Caractéristique principale :</strong> Sagesse. <strong>Dé de vie :</strong> d8 par niveau. <strong>Jets de sauvegarde :</strong> Force, Sagesse.</p>\n        <p><strong>Compétences :</strong> deux au choix parmi Arcanes, Histoire, Perspicacité, Nature, Perception, Religion, Survie.</p>\n        <p><strong>Armes :</strong> armes courantes. <strong>Armures :</strong> armures légères. <strong>Outils :</strong> outils de graveur de runes.</p>\n        <p><strong>Équipement de départ :</strong> un bâton ou une fronde ; un jeu de runes ; un paquetage d'ecclésiastique ou d'exploration souterraine ; une armure de cuir et deux dagues.</p>\n        <p>Un incantateur du Futhark qui trace un <strong>cercle de futhark</strong> au sol et se voue à l'un des trois ætts (Freyja, Heimdallr ou Týr) pour infléchir le sort de la bataille en faveur de ses alliés — ou au détriment de ses ennemis.</p>\n        <p>Au niveau 2, choisissez votre ætt de dévotion en ajoutant le sous-type de classe (subclass) correspondant.</p>",
+      "chat": ""
+    },
+    "identifier": "maitre-des-runes",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "levels": 1,
+    "hd": {
+      "denomination": "d8",
+      "spent": 0,
+      "additional": ""
+    },
+    "primaryAbility": {
+      "value": [
+        "wis"
+      ],
+      "all": true
+    },
+    "properties": [],
+    "spellcasting": {
+      "progression": "full",
+      "ability": "wis",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "72c5c601ed72ae57": {
+        "_id": "72c5c601ed72ae57",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {}
+      },
+      "29f03b1bb16dac56": {
+        "_id": "29f03b1bb16dac56",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:str",
+            "saves:wis"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Jets de sauvegarde",
+        "classRestriction": "primary"
+      },
+      "423937cafc426f52": {
+        "_id": "423937cafc426f52",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:arc",
+                "skills:his",
+                "skills:ins",
+                "skills:nat",
+                "skills:prc",
+                "skills:rel",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Compétences",
+        "classRestriction": "primary"
+      },
+      "016dc77a4f34a2d3": {
+        "_id": "016dc77a4f34a2d3",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:sim"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Armes",
+        "classRestriction": "primary"
+      },
+      "f961572228793cf4": {
+        "_id": "f961572228793cf4",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Armures",
+        "classRestriction": "primary"
+      },
+      "f2ea283b88fec483": {
+        "_id": "f2ea283b88fec483",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.34c25c884657ec8c",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.0265f243da77637d",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Aptitudes de classe"
+      },
+      "f1f3e52bdf5f8dbb": {
+        "_id": "f1f3e52bdf5f8dbb",
+        "type": "Subclass",
+        "configuration": {},
+        "value": {
+          "document": null,
+          "uuid": null
+        },
+        "level": 2,
+        "title": "",
+        "hint": ""
+      },
+      "e20a86c62b5bb5bb": {
+        "_id": "e20a86c62b5bb5bb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.8235cd42c26e3582",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.85139b4450b5bf18",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Aptitudes de classe"
+      },
+      "f3db5437457af094": {
+        "_id": "f3db5437457af094",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": []
+        },
+        "value": {},
+        "level": 4,
+        "title": ""
+      },
+      "c27453df62d928bd": {
+        "_id": "c27453df62d928bd",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.62be2185faa7eff8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes de classe"
+      },
+      "31f80c66afe868a5": {
+        "_id": "31f80c66afe868a5",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": []
+        },
+        "value": {},
+        "level": 8,
+        "title": ""
+      },
+      "1f8b28f6756f7525": {
+        "_id": "1f8b28f6756f7525",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": []
+        },
+        "value": {},
+        "level": 12,
+        "title": ""
+      },
+      "0bdce2136a1041c8": {
+        "_id": "0bdce2136a1041c8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.557eaef2eb25750e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Aptitudes de classe"
+      },
+      "9039d926e7cb370e": {
+        "_id": "9039d926e7cb370e",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": []
+        },
+        "value": {},
+        "level": 16,
+        "title": ""
+      },
+      "9c970a1f19066371": {
+        "_id": "9c970a1f19066371",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.f0e8c4a1ad193f53",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Aptitudes de classe"
+      },
+      "3ce86e3bd08f0a28": {
+        "_id": "3ce86e3bd08f0a28",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": []
+        },
+        "value": {},
+        "level": 19,
+        "title": ""
+      },
+      "ff53595ea753bc94": {
+        "_id": "ff53595ea753bc94",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.113aa13bdf550c79",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "Aptitudes de classe"
+      },
+      "653f82b80b3f0220": {
+        "_id": "653f82b80b3f0220",
+        "type": "ScaleValue",
+        "title": "Sorts connus",
+        "hint": "",
+        "configuration": {
+          "identifier": "spells-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": 4
+            },
+            "2": {
+              "value": 5
+            },
+            "3": {
+              "value": 6
+            },
+            "4": {
+              "value": 7
+            },
+            "5": {
+              "value": 8
+            },
+            "6": {
+              "value": 9
+            },
+            "7": {
+              "value": 10
+            },
+            "8": {
+              "value": 11
+            },
+            "9": {
+              "value": 12
+            },
+            "10": {
+              "value": 13
+            },
+            "11": {
+              "value": 14
+            },
+            "12": {
+              "value": 15
+            },
+            "13": {
+              "value": 16
+            },
+            "14": {
+              "value": 17
+            },
+            "15": {
+              "value": 18
+            },
+            "16": {
+              "value": 19
+            },
+            "17": {
+              "value": 20
+            },
+            "18": {
+              "value": 22
+            },
+            "19": {
+              "value": 22
+            },
+            "20": {
+              "value": 22
+            }
+          }
+        },
+        "value": {}
+      },
+      "820937b592dcfb01": {
+        "_id": "820937b592dcfb01",
+        "type": "ScaleValue",
+        "title": "Dé de cercle de futhark",
+        "hint": "",
+        "configuration": {
+          "identifier": "futhark-die",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "number": 1,
+              "faces": 6,
+              "modifiers": []
+            },
+            "5": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "10": {
+              "number": 1,
+              "faces": 10,
+              "modifiers": []
+            },
+            "15": {
+              "number": 1,
+              "faces": 12,
+              "modifiers": []
+            }
+          }
+        },
+        "value": {}
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!06c23e99dcf0388c"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "b76f23ea179fd224",
+  "name": "Tirer une rune (Vers le Ragnarök)",
+  "type": "script",
+  "author": null,
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "command": "// Tirer une rune — Vers le Ragnarök\nconst AETTS = {\n  \"Ætt de Freyja\": [\"Fehu\",\"Ūruz\",\"Thurisaz\",\"Ansuz\",\"Raido\",\"Kenaz\",\"Gebo\",\"Wunjo\"],\n  \"Ætt de Heimdallr\": [\"Hagalaz\",\"Nauthiz\",\"Isaz\",\"Jera\",\"Eihwaz\",\"Perth\",\"Algiz\",\"Sowilo\"],\n  \"Ætt de Týr\": [\"Teiwaz\",\"Berkana\",\"Ehwaz\",\"Mannaz\",\"Laguz\",\"Ingwaz\",\"Othila\",\"Dagaz\"]\n};\nconst aettNames = Object.keys(AETTS);\n\nconst aettRoll = await new Roll(\"1d6\").roll();\nconst aettIndex = aettRoll.total <= 2 ? 0 : (aettRoll.total <= 4 ? 1 : 2);\nconst aettName = aettNames[aettIndex];\n\nconst runeRoll = await new Roll(\"1d8\").roll();\nconst rune = AETTS[aettName][runeRoll.total - 1];\n\nconst senseRoll = await new Roll(\"1d6\").roll();\nconst sense = senseRoll.total <= 3 ? \"à l'endroit\" : \"à l'envers\";\n\nconst content = `\n  <div style=\"text-align:center;\">\n    <h2 style=\"margin-bottom:0;\">${rune}</h2>\n    <p style=\"opacity:.75; margin-top:0;\">${aettName} — ${sense}</p>\n    <p style=\"font-size:.85em;\">Ætt : d6 = ${aettRoll.total} · Rune : d8 = ${runeRoll.total} · Sens : d6 = ${senseRoll.total}</p>\n    <p style=\"font-size:.85em; opacity:.75;\">Consultez le <em>Grimoire runique</em> (compendium Journaux) pour l'effet complet.</p>\n  </div>\n`;\n\nChatMessage.create({ content, speaker: ChatMessage.getSpeaker() });\n",
+  "scope": "global",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!macros!b76f23ea179fd224"
+}

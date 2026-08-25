@@ -1,0 +1,46 @@
+{
+  "_id": "fc4ea55263c1eef8",
+  "name": "Cercle de Heimdallr (Ætt de Heimdallr)",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Les alliés se trouvant dans votre cercle réduisent les dégâts qu'ils subissent d'un montant égal à la moitié de votre modificateur de Sagesse, avant application des résistances et vulnérabilités. En maintenant le cercle par une action bonus, vous pouvez le déplacer de 1,50 m.</p>",
+      "chat": ""
+    },
+    "identifier": "cercle-de-heimdallr-tt-de-heimdallr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 7 (Ætt de Heimdallr)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fc4ea55263c1eef8"
+}

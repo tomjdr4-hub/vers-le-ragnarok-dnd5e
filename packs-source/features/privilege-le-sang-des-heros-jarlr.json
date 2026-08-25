@@ -1,0 +1,46 @@
+{
+  "_id": "eedba171a5fb4afe",
+  "name": "Privilège : Le sang des héros (Jarlr)",
+  "type": "feat",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dans le lieu choisi à la création du personnage, celui-ci est reconnu comme le chef de la région.</p>",
+      "chat": ""
+    },
+    "identifier": "privilege-le-sang-des-heros-jarlr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Jarlr",
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!eedba171a5fb4afe"
+}

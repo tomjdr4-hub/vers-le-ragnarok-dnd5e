@@ -1,0 +1,46 @@
+{
+  "_id": "113aa13bdf550c79",
+  "name": "Prophétie persistante",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Quand vous faites un jet d'initiative et qu'il ne vous reste plus de dé de cercle de futhark, vous en récupérez un.</p>",
+      "chat": ""
+    },
+    "identifier": "prophetie-persistante",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 20",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!113aa13bdf550c79"
+}

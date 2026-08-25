@@ -1,0 +1,125 @@
+{
+  "_id": "167297b3e60ba50c",
+  "name": "Divination runique — Ætt de Heimdallr (d8)",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "description": "Lancez ensuite 1d6 pour le sens si la rune a un envers (1-3 endroit, 4-6 envers).",
+  "formula": "1d8",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "dc4f99633f72b966",
+      "type": "text",
+      "text": "Hagalaz",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!tables.results!167297b3e60ba50c.dc4f99633f72b966"
+    },
+    {
+      "_id": "e01b747448d687e6",
+      "type": "text",
+      "text": "Nauthiz",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!tables.results!167297b3e60ba50c.e01b747448d687e6"
+    },
+    {
+      "_id": "f22e8d84c4e65947",
+      "type": "text",
+      "text": "Isaz",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!tables.results!167297b3e60ba50c.f22e8d84c4e65947"
+    },
+    {
+      "_id": "cd8a5332610c71c9",
+      "type": "text",
+      "text": "Jera",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!tables.results!167297b3e60ba50c.cd8a5332610c71c9"
+    },
+    {
+      "_id": "fb62e62835d21263",
+      "type": "text",
+      "text": "Eihwaz",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!tables.results!167297b3e60ba50c.fb62e62835d21263"
+    },
+    {
+      "_id": "867f853cd4ee5961",
+      "type": "text",
+      "text": "Perth",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!tables.results!167297b3e60ba50c.867f853cd4ee5961"
+    },
+    {
+      "_id": "27b6c8df8a084b38",
+      "type": "text",
+      "text": "Algiz",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!tables.results!167297b3e60ba50c.27b6c8df8a084b38"
+    },
+    {
+      "_id": "13dda7a723b64faf",
+      "type": "text",
+      "text": "Sowilo",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!tables.results!167297b3e60ba50c.13dda7a723b64faf"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!tables!167297b3e60ba50c"
+}

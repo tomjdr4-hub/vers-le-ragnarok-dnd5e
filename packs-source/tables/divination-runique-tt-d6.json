@@ -1,0 +1,65 @@
+{
+  "_id": "88717c84933b68b5",
+  "name": "Divination runique — Ætt (d6)",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "description": "Déterminez l'ætt tiré, puis lancez 1d8 sur la table de runes correspondante.",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "b62c3cbfbb51360e",
+      "type": "text",
+      "text": "Ætt de Freyja",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "drawn": false,
+      "_key": "!tables.results!88717c84933b68b5.b62c3cbfbb51360e"
+    },
+    {
+      "_id": "f683abe307d5ede6",
+      "type": "text",
+      "text": "Ætt de Heimdallr",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "drawn": false,
+      "_key": "!tables.results!88717c84933b68b5.f683abe307d5ede6"
+    },
+    {
+      "_id": "d24368c71c902c70",
+      "type": "text",
+      "text": "Ætt de Týr",
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "drawn": false,
+      "_key": "!tables.results!88717c84933b68b5.d24368c71c902c70"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": -1
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!tables!88717c84933b68b5"
+}

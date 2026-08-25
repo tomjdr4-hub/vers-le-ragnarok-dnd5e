@@ -1,0 +1,46 @@
+{
+  "_id": "8235cd42c26e3582",
+  "name": "Protéger le marqué",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Lors d'un repos long, vous peignez une combinaison runique sur un allié consentant qui devient votre <strong>marqué</strong>. Il compte toujours comme se trouvant à l'intérieur de votre cercle de futhark, et la portée de vos sorts est doublée pour déterminer s'il en est une cible valide (même hors de votre champ de vision).</p>\n      <p>Vous ne pouvez avoir qu'un seul marqué à la fois ; en marquer un nouveau retire tous les bénéfices au précédent.</p>",
+      "chat": ""
+    },
+    "identifier": "proteger-le-marque",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8235cd42c26e3582"
+}

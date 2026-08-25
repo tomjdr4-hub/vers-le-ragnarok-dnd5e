@@ -1,0 +1,79 @@
+{
+  "_id": "b603133cc313dfb4",
+  "name": "Vaeringhi",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Le marchand-guerrier.</strong> Voyage par fleuves et mers pour commercer, organisé en confréries jurées par serment sur l'épée.</p>\n      <p><strong>Compétences :</strong> Perspicacité, Persuasion. <strong>Outils :</strong> un ensemble d'outils d'artisan au choix.</p>\n      <p><strong>Équipement de départ :</strong> habits courants, une balance portable rudimentaire, un poids métallique gravé d'une rune, un petit bijou étranger, une sacoche de cuir et 15 po.</p>",
+      "chat": ""
+    },
+    "identifier": "vaeringhi",
+    "source": "Vers le Ragnarök",
+    "startingEquipment": [],
+    "wealth": "",
+    "advancement": {
+      "e7dd5742b38279f9": {
+        "_id": "e7dd5742b38279f9",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:per"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Compétences d'historique"
+      },
+      "18ec4902090c69b0": {
+        "_id": "18ec4902090c69b0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.4a8b42f5c059ea72",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Privilège"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!b603133cc313dfb4"
+}

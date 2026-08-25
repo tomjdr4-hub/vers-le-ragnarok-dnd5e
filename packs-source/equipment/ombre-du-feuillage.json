@@ -1,0 +1,54 @@
+{
+  "_id": "c7d503671e8b4e0c",
+  "name": "Ombre du feuillage",
+  "type": "equipment",
+  "img": "icons/equipment/shield/round-wooden-boss-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Objet de clan des Loups de l'ombre.</strong> Bouclier de bois léger mais résistant, recouvert de feuillage persistant tissé.</p>\n      <p><em>Avantage aux tests de Dextérité (Discrétion) en se cachant dans la végétation, tout en conservant le bonus de classe d'armure du bouclier.</em></p>\n      <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>",
+      "chat": ""
+    },
+    "identifier": "ombre-du-feuillage",
+    "source": "Vers le Ragnarök",
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "kg"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "type": {
+      "value": "shield"
+    },
+    "properties": [],
+    "proficient": null,
+    "activities": {},
+    "armor": {
+      "value": 2,
+      "magicalBonus": "",
+      "dex": 0
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c7d503671e8b4e0c"
+}

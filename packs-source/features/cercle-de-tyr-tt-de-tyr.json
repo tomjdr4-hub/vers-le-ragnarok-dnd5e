@@ -1,0 +1,46 @@
+{
+  "_id": "b0cbdb070acd3cf6",
+  "name": "Cercle de Týr (Ætt de Týr)",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-sky-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Les ennemis se trouvant dans votre cercle perdent leurs résistances aux dégâts contondants, perforants et tranchants non magiques. En maintenant le cercle par une action bonus, vous créez un second cercle de 1,50 m de rayon centré sur vous, qui vous suit dans vos déplacements et dure jusqu'au début de votre tour suivant.</p>",
+      "chat": ""
+    },
+    "identifier": "cercle-de-tyr-tt-de-tyr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 7 (Ætt de Týr)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492924,
+    "modifiedTime": 1787650492924,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!b0cbdb070acd3cf6"
+}

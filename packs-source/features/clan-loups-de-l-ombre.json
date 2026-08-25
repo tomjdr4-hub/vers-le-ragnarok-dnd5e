@@ -1,0 +1,46 @@
+{
+  "_id": "50c8b3beaf125f85",
+  "name": "Clan : Loups de l'ombre",
+  "type": "feat",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Svitjod, grande forêt</strong></p><p><em>Chasseurs nomades, maîtres des tactiques de groupe, comptant de nombreux úlfheðnar.</em></p>\n      <p>Fidèles aux Neuf vertus et vivant en harmonie avec la nature, ils s'opposent farouchement à toute réunification des clans sous un seul souverain. Dirigés par Koltønn Ginnungason.</p>\n      <p>Un personnage de ce clan a droit à l'objet de clan <strong>Ombre du feuillage</strong> s'il s'en montre digne.</p>",
+      "chat": ""
+    },
+    "identifier": "clan-loups-de-l-ombre",
+    "source": "Vers le Ragnarök",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!50c8b3beaf125f85"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "40f13d0ef728c7bf",
+  "name": "Clan : Yeux d'Odhinn",
+  "type": "feat",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Norðrvegr, côte</strong></p><p><em>Le clan le plus puissant et le plus craint des vikingar, marins et conquérants se disant descendants d'Odhinn.</em></p>\n      <p>Capitale : Heill Hofn, dirigée par le roi Asbjørn le Rouge. Le clan est secoué par un schisme religieux : la reine Sknaht, prêtresse d'un culte étranger d'Hibernia, gagne en influence face aux fidèles d'Odhinn.</p>\n      <p>Un personnage de ce clan a droit à l'objet de clan <strong>Épée Ulfberht</strong> s'il s'en montre digne.</p>",
+      "chat": ""
+    },
+    "identifier": "clan-yeux-d-odhinn",
+    "source": "Vers le Ragnarök",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787650492923,
+    "modifiedTime": 1787650492923,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!40f13d0ef728c7bf"
+}
