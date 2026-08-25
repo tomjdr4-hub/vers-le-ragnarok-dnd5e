@@ -5,7 +5,7 @@
   "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Choisissez une tactique supplémentaire, par exemple <strong>Expert des manœuvres</strong> (résistance aux dégâts d'attaque d'opportunité).</p>",
+      "value": "<p>Choisissez une tactique supplémentaire parmi : <strong>Expert des manœuvres</strong> (résistance aux dégâts d'attaque d'opportunité), <strong>Couvrir la retraite</strong> (les alliés dans votre zone d'allonge, ou jusqu'à 6 m si vous maniez une arme à distance, peuvent se désengager par une action bonus), <strong>Double réaction supérieure</strong> (vous obtenez la tactique double réaction, ou une utilisation supplémentaire de celle-ci si vous l'avez déjà).</p>",
       "chat": ""
     },
     "identifier": "tactiques-superieures-archetype-martial-gardien",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787681191395,
-    "modifiedTime": 1787681191395,
+    "createdTime": 1787682282996,
+    "modifiedTime": 1787682282996,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

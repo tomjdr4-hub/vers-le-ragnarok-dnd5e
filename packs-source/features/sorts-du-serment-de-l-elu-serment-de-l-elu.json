@@ -1,0 +1,46 @@
+{
+  "_id": "d12d443789299beb",
+  "name": "Sorts du serment de l'élu (Serment de l'élu)",
+  "type": "feat",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Au niveau de paladin approprié, vous ajoutez les sorts suivants à votre liste de sorts de paladin préparés, sans qu'ils comptent dans le nombre de sorts que vous pouvez préparer :</p>\n          <table><tr><th>Niveau</th><th>Sorts</th></tr>\n          <tr><td>3e</td><td>Héroïsme, injonction</td></tr>\n          <tr><td>5e</td><td>Envoûtement, voir l'invisible</td></tr>\n          <tr><td>9e</td><td>Jeter une malédiction, lueur d'espoir</td></tr>\n          <tr><td>13e</td><td>Compulsion, dominer une bête</td></tr>\n          <tr><td>17e</td><td>Coercition mystique, immobiliser un monstre</td></tr></table>",
+      "chat": ""
+    },
+    "identifier": "sorts-du-serment-de-l-elu-serment-de-l-elu",
+    "source": "Vers le Ragnarök",
+    "requirements": "Serment de l'élu — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787682282996,
+    "modifiedTime": 1787682282996,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!d12d443789299beb"
+}

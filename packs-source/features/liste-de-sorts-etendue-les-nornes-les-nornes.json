@@ -1,0 +1,46 @@
+{
+  "_id": "44efd923ded16474",
+  "name": "Liste de sorts étendue (Les Nornes) (Les Nornes)",
+  "type": "feat",
+  "img": "icons/magic/divination/crystal-ball-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous donne accès à une liste de sorts étendue quand vous apprenez un sort de sorcier. Les sorts suivants sont ajoutés à votre liste de sorts de sorcier :</p>\n          <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>\n          <tr><td>1er</td><td>Bénédiction, création ou destruction d'eau</td></tr>\n          <tr><td>2e</td><td>Augure, localiser un objet</td></tr>\n          <tr><td>3e</td><td>Clairvoyance, non-détection</td></tr>\n          <tr><td>4e</td><td>Divination, localiser une créature</td></tr>\n          <tr><td>5e</td><td>Communion, éveil</td></tr></table>",
+      "chat": ""
+    },
+    "identifier": "liste-de-sorts-etendue-les-nornes-les-nornes",
+    "source": "Vers le Ragnarök",
+    "requirements": "Les Nornes — niveau 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787682282997,
+    "modifiedTime": 1787682282997,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!44efd923ded16474"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "2f5960f582422a84",
+  "name": "Liste de sorts étendue (Celui qui apporte l'apocalypse) (Celui qui apporte l'apocalypse)",
+  "type": "feat",
+  "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous donne accès à une liste de sorts étendue quand vous apprenez un sort de sorcier. Les sorts suivants sont ajoutés à votre liste de sorts de sorcier :</p>\n          <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>\n          <tr><td>1er</td><td>Blessure, bouclier</td></tr>\n          <tr><td>2e</td><td>Agrandir/rétrécir, modifier son apparence</td></tr>\n          <tr><td>3e</td><td>Hâte, nuage puant</td></tr>\n          <tr><td>4e</td><td>Peau de pierre, tentacules noirs d'Évard</td></tr>\n          <tr><td>5e</td><td>Coquille antivie, nuage mortel</td></tr></table>",
+      "chat": ""
+    },
+    "identifier": "liste-de-sorts-etendue-celui-qui-apporte-l-apocalypse-celui-qui-apporte-l-apocalypse",
+    "source": "Vers le Ragnarök",
+    "requirements": "Celui qui apporte l'apocalypse — niveau 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787682282997,
+    "modifiedTime": 1787682282997,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2f5960f582422a84"
+}

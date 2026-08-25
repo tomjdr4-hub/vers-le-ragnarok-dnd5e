@@ -1,0 +1,46 @@
+{
+  "_id": "82428b6efdf6b7d7",
+  "name": "Sorts du domaine du sacrifice (Domaine du sacrifice)",
+  "type": "feat",
+  "img": "icons/magic/death/skull-humanoid-crown-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Au niveau approprié (dès que vous disposez d'un emplacement de sort du niveau correspondant), vous ajoutez les sorts suivants à votre liste de sorts de clerc préparés, sans qu'ils comptent dans le nombre de sorts que vous pouvez préparer :</p>\n          <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>\n          <tr><td>1er</td><td>Purification de la nourriture et de l'eau, simulacre de vie</td></tr>\n          <tr><td>3e</td><td>Amélioration de caractéristique, cécité/surdité</td></tr>\n          <tr><td>5e</td><td>Jeter une malédiction, lueur d'espoir</td></tr>\n          <tr><td>7e</td><td>Flétrissement, protection contre la mort</td></tr>\n          <tr><td>9e</td><td>Coercition mystique, sanctification</td></tr></table>",
+      "chat": ""
+    },
+    "identifier": "sorts-du-domaine-du-sacrifice-domaine-du-sacrifice",
+    "source": "Vers le Ragnarök",
+    "requirements": "Domaine du sacrifice — niveau 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787682282996,
+    "modifiedTime": 1787682282996,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!82428b6efdf6b7d7"
+}

@@ -740,6 +740,13 @@ const ARCHETYPES = [
     theme: `<p>Les blessures et les sacrifices volontaires deviennent une source de pouvoir divin.</p>`,
     levels: [
       { level: 1, features: [
+        { name: "Sorts du domaine du sacrifice", html: `<p>Au niveau approprié (dès que vous disposez d'un emplacement de sort du niveau correspondant), vous ajoutez les sorts suivants à votre liste de sorts de clerc préparés, sans qu'ils comptent dans le nombre de sorts que vous pouvez préparer :</p>
+          <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>
+          <tr><td>1er</td><td>Purification de la nourriture et de l'eau, simulacre de vie</td></tr>
+          <tr><td>3e</td><td>Amélioration de caractéristique, cécité/surdité</td></tr>
+          <tr><td>5e</td><td>Jeter une malédiction, lueur d'espoir</td></tr>
+          <tr><td>7e</td><td>Flétrissement, protection contre la mort</td></tr>
+          <tr><td>9e</td><td>Coercition mystique, sanctification</td></tr></table>` },
         { name: "Rituel de l'offrande honorable", html: `<p>Lors d'un repos long, vous pouvez infliger un nombre de blessures permanentes (œil, oreille, membre… à l'appréciation du MJ) égal à votre modificateur de Sagesse parmi les créatures consentantes dans votre champ de vision.</p>
           <p>Pour chaque blessure offerte durant le rituel, le participant qui l'a livrée choisit l'un des avantages suivants, qui dure jusqu'au prochain repos long :</p>
           <p><strong>Avantage de chance.</strong> Refaire un unique test de caractéristique, jet de sauvegarde ou jet d'attaque.</p>
@@ -782,8 +789,8 @@ const ARCHETYPES = [
     levels: [
       { level: 3, features: [{ name: "Tactiques du gardien", html: `<p>Choisissez deux tactiques parmi : <strong>Interposer</strong>, <strong>Tir préventif</strong>, <strong>Double réaction</strong>, <strong>Violentes représailles</strong>, <strong>Mur de bouclier</strong>.</p>` }] },
       { level: 7, features: [{ name: "Porteur de bouclier", html: `<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié à 1,50 m ou moins de vous jusqu'au début de votre prochain tour.</p>` }] },
-      { level: 10, features: [{ name: "Tactiques améliorées", html: `<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>, <strong>Couvrir la retraite</strong> (les alliés dans votre zone d'allonge, ou jusqu'à 6 m si vous maniez une arme à distance, peuvent se désengager par une action bonus).</p>` }] },
-      { level: 15, features: [{ name: "Tactiques supérieures", html: `<p>Choisissez une tactique supplémentaire, par exemple <strong>Expert des manœuvres</strong> (résistance aux dégâts d'attaque d'opportunité).</p>` }] },
+      { level: 10, features: [{ name: "Tactiques améliorées", html: `<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>.</p>` }] },
+      { level: 15, features: [{ name: "Tactiques supérieures", html: `<p>Choisissez une tactique supplémentaire parmi : <strong>Expert des manœuvres</strong> (résistance aux dégâts d'attaque d'opportunité), <strong>Couvrir la retraite</strong> (les alliés dans votre zone d'allonge, ou jusqu'à 6 m si vous maniez une arme à distance, peuvent se désengager par une action bonus), <strong>Double réaction supérieure</strong> (vous obtenez la tactique double réaction, ou une utilisation supplémentaire de celle-ci si vous l'avez déjà).</p>` }] },
       { level: 18, features: [{ name: "Tactiques légendaires", html: `<p>Choisissez une dernière tactique, par exemple <strong>Inévitable</strong> ou <strong>Bastion</strong> (réduit de moitié les dégâts d'une attaque dont le résultat est inférieur ou égal à votre CA, 3 fois par repos long).</p>` }] }
     ]
   },
@@ -802,7 +809,7 @@ const ARCHETYPES = [
       ] },
       { level: 10, features: [
         { name: "Premières impressions", html: `<p>Vous êtes avantagé au premier test social avec un inconnu. Cette aptitude ne fonctionne pas sur les créatures immunisées contre l'état charmé.</p>` },
-        { name: "Magie persistante", html: `<p>Par une réaction effectuée quand une ou plusieurs cibles à 4,50 m ou moins de vous subissent 10 dégâts d'énergie ou plus, vous puisez dans les résidus de cette énergie : jusqu'à la fin de votre prochain tour, les sorts que vous lancez qui infligent ce type de dégâts sont considérés comme lancés avec un emplacement d'un niveau de plus que la normale. Après avoir lancé un sort ainsi amélioré, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>` }
+        { name: "Magie persistante", html: `<p>Par une réaction effectuée quand une ou plusieurs cibles à 4,50 m ou moins de vous subissent 10 dégâts d'énergie ou plus, vous puisez dans les résidus de cette énergie : jusqu'à la fin de votre prochain tour, les sorts que vous lancez qui infligent ce type de dégâts ou comportent ce type d'énergie parmi leurs effets sont considérés comme lancés avec un emplacement d'un niveau de plus que la normale. Après avoir lancé un sort ainsi amélioré, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>` }
       ] },
       { level: 14, features: [
         { name: "Créer des liens", html: `<p>Quand vous conversez pendant au moins dix minutes avec une créature dans votre champ de vision, vous pouvez renforcer ou effacer le souvenir de vous dans son esprit (jet de sauvegarde de Charisme contre votre DD de sauvegarde des sorts). En cas d'échec, vous décidez si la créature vous oublie dès que vous sortez de son champ de vision ou si elle se rappelle parfaitement de votre apparence et du sujet de votre conversation. En cas de réussite, la créature est immunisée contre cette aptitude pendant un mois. Cette aptitude ne fonctionne pas sur les créatures immunisées contre l'état charmé.</p>` },
@@ -828,7 +835,15 @@ const ARCHETYPES = [
     name: "Serment de l'élu", classIdentifier: "paladin", img: "icons/magic/holy/angel-winged-humanoid-blue.webp",
     theme: `<p>Honneur au combat, position à faire respecter, et générosité rendue au centuple : les préceptes de l'Élu.</p>`,
     levels: [
-      { level: 3, features: [{ name: "Canalisation d'énergie divine", html: `<p>Vous gagnez deux options de canalisation d'énergie divine, en plus de celles offertes par votre classe.</p>
+      { level: 3, features: [
+        { name: "Sorts du serment de l'élu", html: `<p>Au niveau de paladin approprié, vous ajoutez les sorts suivants à votre liste de sorts de paladin préparés, sans qu'ils comptent dans le nombre de sorts que vous pouvez préparer :</p>
+          <table><tr><th>Niveau</th><th>Sorts</th></tr>
+          <tr><td>3e</td><td>Héroïsme, injonction</td></tr>
+          <tr><td>5e</td><td>Envoûtement, voir l'invisible</td></tr>
+          <tr><td>9e</td><td>Jeter une malédiction, lueur d'espoir</td></tr>
+          <tr><td>13e</td><td>Compulsion, dominer une bête</td></tr>
+          <tr><td>17e</td><td>Coercition mystique, immobiliser un monstre</td></tr></table>` },
+        { name: "Canalisation d'énergie divine", html: `<p>Vous gagnez deux options de canalisation d'énergie divine, en plus de celles offertes par votre classe.</p>
         <p><strong>Contrepoids au combat.</strong> Par une action, désignez une créature hostile et une créature amicale situées à 9 m ou moins de vous. La créature hostile fait un jet de sauvegarde de Charisme. En cas d'échec, chaque fois qu'elle effectue un jet d'attaque, elle lance également 1d4 et soustrait le résultat à son jet d'attaque, tandis que la créature amicale lance 1d4 et l'ajoute au sien ; ces effets durent 1 minute. En cas de réussite, seule la créature amicale bénéficie de l'effet.</p>
         <p><strong>Vigueur surnaturelle.</strong> Quand vous utilisez l'imposition des mains, vous pouvez dépenser 10 points de guérison et votre canalisation d'énergie divine pour supprimer un niveau d'épuisement (un seul par utilisation).</p>` }] },
       { level: 7, features: [
@@ -873,6 +888,13 @@ const ARCHETYPES = [
     theme: `<p>Un protecteur d'outre-monde parmi Níðhöggr, Fenrir ou Jörmungandr, présage vivant du Ragnarök.</p>`,
     levels: [
       { level: 1, features: [
+        { name: "Liste de sorts étendue (Celui qui apporte l'apocalypse)", html: `<p>Vous donne accès à une liste de sorts étendue quand vous apprenez un sort de sorcier. Les sorts suivants sont ajoutés à votre liste de sorts de sorcier :</p>
+          <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>
+          <tr><td>1er</td><td>Blessure, bouclier</td></tr>
+          <tr><td>2e</td><td>Agrandir/rétrécir, modifier son apparence</td></tr>
+          <tr><td>3e</td><td>Hâte, nuage puant</td></tr>
+          <tr><td>4e</td><td>Peau de pierre, tentacules noirs d'Évard</td></tr>
+          <tr><td>5e</td><td>Coquille antivie, nuage mortel</td></tr></table>` },
         { name: "Rancœur", html: `<p>Sans armure, votre classe d'armure est égale à 13 + Dextérité. En réaction, une attaque de mêlée reçue vous inflige des dégâts de force égaux à votre modificateur de Charisme (minimum 1) à votre agresseur (+1d8 au niveau 5, +2d8 au niveau 11, +3d8 au niveau 17).</p>` },
         { name: "Méchanceté éternelle", html: `<p>Vous récupérez 1 point de vie chaque fois qu'un dé de dégâts de l'un de vos sorts ou tours de magie tombe sur 1 ; cet effet s'étend à votre arme de pacte si vous avez choisi le pacte de la lame, ou aux dégâts infligés par votre familier si vous avez choisi le pacte de la chaîne (auquel cas votre familier bénéficie aussi du soin octroyé).</p>` }
       ] },
@@ -887,7 +909,16 @@ const ARCHETYPES = [
     name: "Les Nornes", classIdentifier: "warlock", img: "icons/magic/divination/crystal-ball-blue.webp",
     theme: `<p>Un pacte avec les trois Nornes — Urðr, Verðandi et Skuld — tisseuses du destin des hommes et des dieux.</p>`,
     levels: [
-      { level: 1, features: [{ name: "Urðr, Verðandi et Skuld", html: `<p>En réaction, vous pouvez modifier de ±1d6 un jet (attaque, test ou sauvegarde) d'une créature visible. Une utilisation par catégorie de créature (humanoïde/mort-vivant/bête ; aberration/géant/monstrueuse ; céleste/dragon/élémentaire/fiélon), rechargée à un repos court ou long.</p>` }] },
+      { level: 1, features: [
+        { name: "Liste de sorts étendue (Les Nornes)", html: `<p>Vous donne accès à une liste de sorts étendue quand vous apprenez un sort de sorcier. Les sorts suivants sont ajoutés à votre liste de sorts de sorcier :</p>
+          <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>
+          <tr><td>1er</td><td>Bénédiction, création ou destruction d'eau</td></tr>
+          <tr><td>2e</td><td>Augure, localiser un objet</td></tr>
+          <tr><td>3e</td><td>Clairvoyance, non-détection</td></tr>
+          <tr><td>4e</td><td>Divination, localiser une créature</td></tr>
+          <tr><td>5e</td><td>Communion, éveil</td></tr></table>` },
+        { name: "Urðr, Verðandi et Skuld", html: `<p>En réaction, vous pouvez modifier de ±1d6 un jet (attaque, test ou sauvegarde) d'une créature visible. Une utilisation par catégorie de créature (humanoïde/mort-vivant/bête ; aberration/géant/monstrueuse ; céleste/dragon/élémentaire/fiélon), rechargée à un repos court ou long.</p>` }
+      ] },
       { level: 6, features: [{ name: "De l'argile pour les affaiblis", html: `<p>Vous retirez un état (aveuglé, charmé, assourdi, paralysé, pétrifié ou empoisonné) et accordez l'immunité à cet état pendant 1 minute. Rechargé à un repos court ou long.</p>` }] },
       { level: 10, features: [{ name: "Briser Gungnir", html: `<p>Vous redirigez une attaque à distance réussie contre vous vers une autre cible (jet d'attaque de sort opposé). Une minute de récupération.</p>` }] },
       { level: 14, features: [{ name: "Tisser votre propre destin", html: `<p>Tout test de caractéristique, jet d'attaque ou jet de sauvegarde obtenant 3 ou moins doit être relancé ; vous devez accepter le second résultat, même s'il est moins bon. Si le jet est avantagé ou désavantagé, vous ne pouvez relancer que l'un des deux dés.</p>` }] }

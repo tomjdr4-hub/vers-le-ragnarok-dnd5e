@@ -122,9 +122,11 @@ données Foundry.
   incertaine, les points d'intégrité, l'équipage et les règles de réparation par un Skipasmidhr sont
   documentés en toutes lettres dans l'objet et dans le journal *Règles de navigation*, à suivre
   manuellement par la table — comme pour le bestiaire, aucun automatisme de dégâts/PV n'est câblé.
-- Les **listes de sorts par ætt** (Maître des runes) sont données en toutes lettres dans la description de
-  chaque sous-classe plutôt que liées objet par objet au compendium de sorts du SRD, pour éviter toute
-  référence cassée vers des sorts qui ne sont pas fournis par ce module.
+- Les **listes de sorts bonus** (les trois ættir du Maître des runes, le Domaine du sacrifice, le Serment de
+  l'élu, et les listes de sorts étendues des deux protecteurs d'outre-monde du Sorcier) sont données en
+  toutes lettres, sous forme de tableau, dans une aptitude dédiée de chaque sous-classe, plutôt que liées
+  objet par objet au compendium de sorts du SRD, pour éviter toute référence cassée vers des sorts qui ne
+  sont pas fournis par ce module.
 - La maîtrise des **outils de graveur de runes** (Maître des runes) et de certains outils d'historiques
   n'est pas reliée au système de maîtrises de dnd5e quand aucun outil correspondant n'existe nativement ;
   elle reste mentionnée en texte dans la description de l'objet ou de la classe.
