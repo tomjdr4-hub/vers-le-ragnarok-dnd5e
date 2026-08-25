@@ -15,49 +15,49 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/germania-one.woff2") format("woff2");
+  src: url("modules/vers-le-ragnarok/fonts/germania-one.woff2") format("woff2");
 }
 @font-face {
   font-family: "Frank Ruhl Libre";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/frank-ruhl-libre-500.woff2") format("woff2");
+  src: url("modules/vers-le-ragnarok/fonts/frank-ruhl-libre-500.woff2") format("woff2");
 }
 @font-face {
   font-family: "Frank Ruhl Libre";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/frank-ruhl-libre-600.woff2") format("woff2");
+  src: url("modules/vers-le-ragnarok/fonts/frank-ruhl-libre-600.woff2") format("woff2");
 }
 @font-face {
   font-family: "Frank Ruhl Libre";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/frank-ruhl-libre-700.woff2") format("woff2");
+  src: url("modules/vers-le-ragnarok/fonts/frank-ruhl-libre-700.woff2") format("woff2");
 }
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/work-sans-400.woff2") format("woff2");
+  src: url("modules/vers-le-ragnarok/fonts/work-sans-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/work-sans-500.woff2") format("woff2");
+  src: url("modules/vers-le-ragnarok/fonts/work-sans-500.woff2") format("woff2");
 }
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/work-sans-600.woff2") format("woff2");
+  src: url("modules/vers-le-ragnarok/fonts/work-sans-600.woff2") format("woff2");
 }
 
 .application.dnd5e2.character {
@@ -69,7 +69,7 @@
   --dnd5e-font-roboto-slab: "Frank Ruhl Libre", serif;
 
   /* ---------- Badge de caractéristique : forme et fond propres au module ---------- */
-  --dnd5e-ability-tab: url("../ui/ability-hex.svg");
+  --dnd5e-ability-tab: url("modules/vers-le-ragnarok/ui/ability-hex.svg");
 
   /* ---------- Palette primitive ---------- */
   --dnd5e-color-gold: #c69a52;
