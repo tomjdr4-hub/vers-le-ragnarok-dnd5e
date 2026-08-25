@@ -8,7 +8,57 @@
    soit le thème clair/sombre choisi par le joueur dans Foundry.
    ========================================================================= */
 
-@import url("https://fonts.googleapis.com/css2?family=Germania+One&family=Frank+Ruhl+Libre:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap");
+/* Polices intégrées localement au module (pas de dépendance réseau à Google Fonts,
+   qui peut être bloqué selon la configuration de l'hôte Foundry). */
+@font-face {
+  font-family: "Germania One";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/germania-one.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/frank-ruhl-libre-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/frank-ruhl-libre-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/frank-ruhl-libre-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/work-sans-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/work-sans-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/work-sans-600.woff2") format("woff2");
+}
 
 .application.dnd5e2.character {
   /* ---------- Typographie ---------- */
