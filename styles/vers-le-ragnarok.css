@@ -69,8 +69,8 @@
   --dnd5e-font-roboto-slab: "Frank Ruhl Libre", serif;
 
   /* ---------- Palette primitive ---------- */
-  --dnd5e-color-gold: #b98a3e;
-  --dnd5e-color-card: #241f22;
+  --dnd5e-color-gold: #c69a52;
+  --dnd5e-color-card: #2b2529;
   --dnd5e-color-parchment: #1b181b;
   --dnd5e-color-maroon: #6b2a18;
   --dnd5e-color-crimson: #6b2a18;
@@ -86,10 +86,10 @@
 
   /* ---------- Fonds ---------- */
   --dnd5e-background-parchment: #1b181b;
-  --dnd5e-background-card: #241f22;
+  --dnd5e-background-card: #2b2529;
   --dnd5e-background-5: rgb(255 255 255 / 5%);
   --dnd5e-background-alt-1: #1b181b;
-  --dnd5e-background-alt-2: #241f22;
+  --dnd5e-background-alt-2: #2b2529;
   --dnd5e-application-background:
     radial-gradient(ellipse at 20% 0%, rgb(185 138 62 / 10%) 0%, transparent 45%),
     #171519;
@@ -115,23 +115,23 @@
   --dnd5e-quote-color: #b9af9c;
 
   /* ---------- Bordures ---------- */
-  --dnd5e-border-gold: 1px solid #b98a3e;
+  --dnd5e-border-gold: 1px solid #c69a52;
   --dnd5e-border-dark: 1px solid #3b372f;
   --dnd5e-border-dotted: 1px dotted #4a453c;
   --dnd5e-border-dashed: 1px dashed #4a453c;
   --dnd5e-border-dashed-faint: 1px dashed #2b2823;
-  --dnd5e-border-heading-3: 1px solid #b98a3e;
+  --dnd5e-border-heading-3: 1px solid #c69a52;
   --dnd5e-border-separator-faint: 1px solid #2b2823;
   --dnd5e-border-separator-heavy: 1px solid #3b372f;
-  --dnd5e-border-separator-warning: 1px dotted #b98a3e;
+  --dnd5e-border-separator-warning: 1px dotted #c69a52;
   --dnd5e-inventory-border: 1px solid #3b372f;
-  --dnd5e-slot-border: 1px solid #b98a3e;
-  --dnd5e-condition-hover: #241f22;
+  --dnd5e-slot-border: 1px solid #c69a52;
+  --dnd5e-condition-hover: #2b2529;
 
   /* ---------- Listes, cartes, activités ---------- */
   --separated-list-item-background-color: rgb(0 0 0 / 20%);
   --separated-list-item-border-color: #3b372f;
-  --item-summary-background: #241f22;
+  --item-summary-background: #2b2529;
   --item-control-color: #8b8171;
   --item-control-interactive-color: #b9af9c;
   --item-control-active-color: #dd8759;
@@ -140,29 +140,29 @@
   --activity-row-border: 1px dotted #3b372f;
   --activity-row-indent-color: #3b372f;
   --damage-icon-color: #dd8759;
-  --filigree-background-color: #241f22;
-  --filigree-border-color: #b98a3e;
-  --context-entry-hover-background: #241f22;
+  --filigree-background-color: #2b2529;
+  --filigree-border-color: #c69a52;
+  --context-entry-hover-background: #2b2529;
   --dnd5e-card-header-1: #491d0e;
   --dnd5e-card-header-2: #2b150c;
 
   /* ---------- Formulaires ---------- */
   --slide-toggle-track-color-unchecked: rgb(0 0 0 / 30%);
-  --slide-toggle-track-color-checked: #b98a3e;
-  --multi-select-tag-background: #241f22;
-  --multi-select-tag-border: #b98a3e;
-  --radio-list-hover: #241f22;
+  --slide-toggle-track-color-checked: #c69a52;
+  --multi-select-tag-background: #2b2529;
+  --multi-select-tag-border: #c69a52;
+  --radio-list-hover: #2b2529;
 
   button {
     --button-border-color: #3b372f;
-    --button-hover-border-color: #b98a3e;
-    --button-toggle-depressed-color: color-mix(in oklab, #241f22, #b98a3e 12%);
+    --button-hover-border-color: #c69a52;
+    --button-toggle-depressed-color: color-mix(in oklab, #2b2529, #c69a52 12%);
     --control-border-color: #3b372f;
   }
 
   input:not([type="range"]), textarea, select, file-picker, formula-input {
     --input-border-color: transparent;
-    --input-hover-border-color: #b98a3e;
+    --input-hover-border-color: #c69a52;
     --input-background-color: rgb(0 0 0 / 25%);
     --input-placeholder-color: #8b8171;
   }
@@ -175,6 +175,37 @@
   }
 }
 
+/* ---------- Relief : dégradés et ombres internes sur les encadrés ----------
+   Les variables seules donnent des aplats plats ; ces règles ajoutent une
+   couche décorative par-dessus (background-image + box-shadow), sans
+   remplacer les couleurs de fond posées par les variables ci-dessus. */
+.application.dnd5e2.character {
+  filigree-box, .pill-lg, .card, .meter-group, .lozenge {
+    position: relative;
+    background-image:
+      linear-gradient(180deg, rgb(255 255 255 / 4%) 0%, transparent 12%),
+      radial-gradient(ellipse at 50% -30%, rgb(198 154 82 / 10%) 0%, transparent 65%);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 5%),
+      inset 0 -1px 0 rgb(0 0 0 / 45%),
+      0 3px 8px rgb(0 0 0 / 35%);
+  }
+
+  filigree-box {
+    border-width: 1px;
+    outline: 1px solid rgb(198 154 82 / 25%);
+    outline-offset: 2px;
+  }
+
+  .sheet-header {
+    box-shadow: inset 0 -40px 60px -20px rgb(0 0 0 / 55%), inset 0 1px 0 rgb(255 255 255 / 6%);
+  }
+
+  .window-content {
+    box-shadow: inset 0 0 120px rgb(0 0 0 / 45%);
+  }
+}
+
 /* ---------- Nom du personnage : accent runique discret ---------- */
 .application.dnd5e2.character .sheet-header input.document-name {
   letter-spacing: .02em;
@@ -184,8 +215,17 @@
 .application.dnd5e2.character .vlr-rune-block {
   margin: .5rem 0;
   padding: .6rem .8rem;
-  background: #241f22;
-  border: 1px solid #b98a3e;
+  background: #2b2529;
+  background-image:
+    linear-gradient(180deg, rgb(255 255 255 / 4%) 0%, transparent 12%),
+    radial-gradient(ellipse at 50% -30%, rgb(198 154 82 / 10%) 0%, transparent 65%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 5%),
+    inset 0 -1px 0 rgb(0 0 0 / 45%),
+    0 3px 8px rgb(0 0 0 / 35%);
+  outline: 1px solid rgb(198 154 82 / 25%);
+  outline-offset: 2px;
+  border: 1px solid #c69a52;
   border-radius: 4px;
 }
 .application.dnd5e2.character .vlr-rune-title {
@@ -224,5 +264,5 @@
   font-family: "Work Sans", sans-serif;
 }
 .application.dnd5e2.character .vlr-rune-field select:hover {
-  border-color: #b98a3e;
+  border-color: #c69a52;
 }
