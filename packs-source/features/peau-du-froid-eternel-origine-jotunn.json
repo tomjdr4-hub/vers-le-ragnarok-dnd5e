@@ -1,0 +1,46 @@
+{
+  "_id": "1eaf51b1a56e6b7c",
+  "name": "Peau du froid éternel (Origine jötunn)",
+  "type": "feat",
+  "img": "icons/magic/water/orb-ice-web.webp",
+  "system": {
+    "description": {
+      "value": "<p>En réaction, pour 2 points de sorcellerie, quand vous êtes touché en mêlée vous neutralisez ou ralentissez votre attaquant (jet de sauvegarde de Dextérité).</p>",
+      "chat": ""
+    },
+    "identifier": "peau-du-froid-eternel-origine-jotunn",
+    "source": "Vers le Ragnarök",
+    "requirements": "Origine jötunn — niveau 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1eaf51b1a56e6b7c"
+}

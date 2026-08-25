@@ -1,0 +1,111 @@
+{
+  "_id": "68a529631fa5a65c",
+  "name": "École du vagabond",
+  "type": "subclass",
+  "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un savoir porté sur soi plutôt que relié à un grimoire relié — runes, dessins ou fétiches remplacent la tradition écrite à Miðgarðr.</p>",
+      "chat": ""
+    },
+    "identifier": "ecole-du-vagabond",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "wizard",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "c1690b9765f6bf70": {
+        "_id": "c1690b9765f6bf70",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.aafdc7e39b2d7b36",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Aptitudes d'archétype"
+      },
+      "936dfdef4a9c3b23": {
+        "_id": "936dfdef4a9c3b23",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.b34ad96082564af7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes d'archétype"
+      },
+      "b697b65c012c1c14": {
+        "_id": "b697b65c012c1c14",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.5f56c55eaf9c0c32",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Aptitudes d'archétype"
+      },
+      "50e523dde9491adb": {
+        "_id": "50e523dde9491adb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.dfe240966a990b4c",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!68a529631fa5a65c"
+}

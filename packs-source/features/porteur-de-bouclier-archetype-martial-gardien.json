@@ -1,0 +1,46 @@
+{
+  "_id": "3c277ddb98325110",
+  "name": "Porteur de bouclier (Archétype martial : Gardien)",
+  "type": "feat",
+  "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié adjacent.</p>",
+      "chat": ""
+    },
+    "identifier": "porteur-de-bouclier-archetype-martial-gardien",
+    "source": "Vers le Ragnarök",
+    "requirements": "Archétype martial : Gardien — niveau 7",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3c277ddb98325110"
+}

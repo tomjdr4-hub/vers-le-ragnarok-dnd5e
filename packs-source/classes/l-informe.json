@@ -1,0 +1,128 @@
+{
+  "_id": "0c1e464ee663b4eb",
+  "name": "L'informe",
+  "type": "subclass",
+  "img": "icons/magic/control/debuff-energy-hold-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Une magie innée d'illusion et de tromperie, façon pacte, réveillée par le roublard (DD = 8 + bonus de maîtrise + modificateur de Charisme).</p>",
+      "chat": ""
+    },
+    "identifier": "l-informe",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "rogue",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "d4eeb71adfa22c45": {
+        "_id": "d4eeb71adfa22c45",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.a28f0e990b868b8d",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Aptitudes d'archétype"
+      },
+      "6c9fe79a72430604": {
+        "_id": "6c9fe79a72430604",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.f59a323256d93223",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes d'archétype"
+      },
+      "96953e5bc5ed4da8": {
+        "_id": "96953e5bc5ed4da8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.60dd760e4ac22920",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Aptitudes d'archétype"
+      },
+      "03fee4470c3a4fa7": {
+        "_id": "03fee4470c3a4fa7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.95f239c161219ac8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 13,
+        "title": "Aptitudes d'archétype"
+      },
+      "1086b73d95b62280": {
+        "_id": "1086b73d95b62280",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.dd306d7f356e5b7d",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0c1e464ee663b4eb"
+}

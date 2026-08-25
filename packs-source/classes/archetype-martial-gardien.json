@@ -1,0 +1,128 @@
+{
+  "_id": "d51d5f31c5239da9",
+  "name": "Archétype martial : Gardien",
+  "type": "subclass",
+  "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Le protecteur de la ligne, bouclier levé pour les autres plutôt que pour lui-même — la « vierge au bouclier » en est une incarnation narrative.</p>",
+      "chat": ""
+    },
+    "identifier": "archetype-martial-gardien",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "fighter",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "a3fc0b8741b9f384": {
+        "_id": "a3fc0b8741b9f384",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.87d1f9661cc45e9e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Aptitudes d'archétype"
+      },
+      "b13018fba78b8722": {
+        "_id": "b13018fba78b8722",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.3c277ddb98325110",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Aptitudes d'archétype"
+      },
+      "34053a1dca8af7b4": {
+        "_id": "34053a1dca8af7b4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.2255d35699842932",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Aptitudes d'archétype"
+      },
+      "5b11553ebc2ab9e0": {
+        "_id": "5b11553ebc2ab9e0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.9a526a8c223edcda",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Aptitudes d'archétype"
+      },
+      "8ba9c7225ad935d5": {
+        "_id": "8ba9c7225ad935d5",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.593371f4a7ed7a1f",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!d51d5f31c5239da9"
+}

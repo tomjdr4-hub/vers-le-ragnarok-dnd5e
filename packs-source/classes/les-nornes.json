@@ -1,0 +1,111 @@
+{
+  "_id": "c5805c12aea9953e",
+  "name": "Les Nornes",
+  "type": "subclass",
+  "img": "icons/magic/divination/crystal-ball-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un pacte avec les trois Nornes — Urðr, Verðandi et Skuld — tisseuses du destin des hommes et des dieux.</p>",
+      "chat": ""
+    },
+    "identifier": "les-nornes",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "warlock",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "6d61dc0298a0741d": {
+        "_id": "6d61dc0298a0741d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.6fa933b7c1a2c71c",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Aptitudes d'archétype"
+      },
+      "e426bcc15c29122b": {
+        "_id": "e426bcc15c29122b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.1bdb0abc206ddc1c",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes d'archétype"
+      },
+      "df65dcf710a57298": {
+        "_id": "df65dcf710a57298",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.8d2142f60a39804e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Aptitudes d'archétype"
+      },
+      "4d40a5485ba8b5e1": {
+        "_id": "4d40a5485ba8b5e1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.48bde5bb064529fe",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933668,
+    "modifiedTime": 1787651933668,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c5805c12aea9953e"
+}

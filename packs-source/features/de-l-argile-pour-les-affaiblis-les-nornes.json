@@ -1,0 +1,46 @@
+{
+  "_id": "1bdb0abc206ddc1c",
+  "name": "De l'argile pour les affaiblis (Les Nornes)",
+  "type": "feat",
+  "img": "icons/magic/divination/crystal-ball-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous retirez un état (aveuglé, charmé, assourdi, paralysé, pétrifié ou empoisonné) et accordez l'immunité à cet état pendant 1 minute. Rechargé à un repos court ou long.</p>",
+      "chat": ""
+    },
+    "identifier": "de-l-argile-pour-les-affaiblis-les-nornes",
+    "source": "Vers le Ragnarök",
+    "requirements": "Les Nornes — niveau 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933668,
+    "modifiedTime": 1787651933668,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1bdb0abc206ddc1c"
+}

@@ -1,0 +1,111 @@
+{
+  "_id": "d0faa8c676c6013e",
+  "name": "Origine jötunn",
+  "type": "subclass",
+  "img": "icons/magic/water/orb-ice-web.webp",
+  "system": {
+    "description": {
+      "value": "<p>Le sang froid d'Ymir coule dans vos veines et se réveille lorsque vous puisez à sec dans votre magie.</p>",
+      "chat": ""
+    },
+    "identifier": "origine-jotunn",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "sorcerer",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "43a89b3611451b21": {
+        "_id": "43a89b3611451b21",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.eda4f946ae95694e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Aptitudes d'archétype"
+      },
+      "972c880e417c28b3": {
+        "_id": "972c880e417c28b3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.1eaf51b1a56e6b7c",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes d'archétype"
+      },
+      "daf5f6815ecf5712": {
+        "_id": "daf5f6815ecf5712",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.278c0ea412c1a4bd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Aptitudes d'archétype"
+      },
+      "73fe06305073841a": {
+        "_id": "73fe06305073841a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.409dd46a895f9a65",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!d0faa8c676c6013e"
+}

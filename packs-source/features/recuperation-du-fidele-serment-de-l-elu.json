@@ -1,0 +1,46 @@
+{
+  "_id": "bb8a91f9ebf2b6b5",
+  "name": "Récupération du fidèle (Serment de l'élu)",
+  "type": "feat",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>En réaction, en tombant à 0 point de vie, vous pouvez vous imposer les mains à vous-même.</p>",
+      "chat": ""
+    },
+    "identifier": "recuperation-du-fidele-serment-de-l-elu",
+    "source": "Vers le Ragnarök",
+    "requirements": "Serment de l'élu — niveau 15",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bb8a91f9ebf2b6b5"
+}

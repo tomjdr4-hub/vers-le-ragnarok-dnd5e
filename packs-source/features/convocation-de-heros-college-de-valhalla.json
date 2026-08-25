@@ -1,0 +1,46 @@
+{
+  "_id": "07b1b520601f3929",
+  "name": "Convocation de héros (Collège de Valhalla)",
+  "type": "feat",
+  "img": "icons/magic/holy/prayer-glowing-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>En dépensant une inspiration bardique, vous invoquez un esprit combattant (profil de gladiateur) pendant 1 minute. Utilisable une fois par repos long, renouvelé si un allié meurt sous vos yeux.</p>",
+      "chat": ""
+    },
+    "identifier": "convocation-de-heros-college-de-valhalla",
+    "source": "Vers le Ragnarök",
+    "requirements": "Collège de Valhalla — niveau 14",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!07b1b520601f3929"
+}

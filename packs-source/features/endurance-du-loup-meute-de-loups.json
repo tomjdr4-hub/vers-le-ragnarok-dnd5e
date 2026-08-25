@@ -1,0 +1,46 @@
+{
+  "_id": "67566a18f3f104dc",
+  "name": "Endurance du loup (Meute de loups)",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-howl-moon-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Une fois par round, sans action, vous pouvez dépenser un dé de vie pour récupérer 1d8 + votre modificateur de Constitution en points de vie.</p>",
+      "chat": ""
+    },
+    "identifier": "endurance-du-loup-meute-de-loups",
+    "source": "Vers le Ragnarök",
+    "requirements": "Meute de loups — niveau 15",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!67566a18f3f104dc"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "2255d35699842932",
+  "name": "Tactiques améliorées (Archétype martial : Gardien)",
+  "type": "feat",
+  "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>.</p>",
+      "chat": ""
+    },
+    "identifier": "tactiques-ameliorees-archetype-martial-gardien",
+    "source": "Vers le Ragnarök",
+    "requirements": "Archétype martial : Gardien — niveau 10",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2255d35699842932"
+}

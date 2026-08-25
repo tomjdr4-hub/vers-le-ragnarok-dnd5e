@@ -1,0 +1,46 @@
+{
+  "_id": "95f239c161219ac8",
+  "name": "Méthode supérieure (L'informe)",
+  "type": "feat",
+  "img": "icons/magic/control/debuff-energy-hold-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous gagnez <em>image majeure</em> et <em>monture fantôme</em>.</p>",
+      "chat": ""
+    },
+    "identifier": "methode-superieure-l-informe",
+    "source": "Vers le Ragnarök",
+    "requirements": "L'informe — niveau 13",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!95f239c161219ac8"
+}

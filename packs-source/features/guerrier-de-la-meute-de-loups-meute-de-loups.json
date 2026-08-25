@@ -1,0 +1,46 @@
+{
+  "_id": "94041923387d6cab",
+  "name": "Guerrier de la meute de loups (Meute de loups)",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-howl-moon-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Une attaque de mêlée réussie donne l'avantage à la prochaine attaque d'un allié contre la même cible. Une attaque à distance réussie désavantage les attaques d'opportunité de la cible. En réaction, quand un allié est blessé, vous pouvez hurler pour infliger 1d6 dégâts psychiques.</p>",
+      "chat": ""
+    },
+    "identifier": "guerrier-de-la-meute-de-loups-meute-de-loups",
+    "source": "Vers le Ragnarök",
+    "requirements": "Meute de loups — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!94041923387d6cab"
+}

@@ -1,0 +1,111 @@
+{
+  "_id": "c9063bb634ca83c4",
+  "name": "Celui qui apporte l'apocalypse",
+  "type": "subclass",
+  "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un protecteur d'outre-monde parmi Níðhöggr, Fenrir ou Jörmungandr, présage vivant du Ragnarök.</p>",
+      "chat": ""
+    },
+    "identifier": "celui-qui-apporte-l-apocalypse",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "warlock",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "f836d6f132d19c19": {
+        "_id": "f836d6f132d19c19",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.0cc418fcd4197abe",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Aptitudes d'archétype"
+      },
+      "ed9845650943a553": {
+        "_id": "ed9845650943a553",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.07b1985cb9750432",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes d'archétype"
+      },
+      "9348629f2d124342": {
+        "_id": "9348629f2d124342",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.2b32557c466cea03",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Aptitudes d'archétype"
+      },
+      "c5cb2d1206143562": {
+        "_id": "c5cb2d1206143562",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.fa3a6323c75ccd66",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c9063bb634ca83c4"
+}

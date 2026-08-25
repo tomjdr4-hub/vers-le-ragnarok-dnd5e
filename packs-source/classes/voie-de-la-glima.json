@@ -1,0 +1,111 @@
+{
+  "_id": "7f386fb45cea1bf9",
+  "name": "Voie de la glíma",
+  "type": "subclass",
+  "img": "icons/skills/melee/unarmed-punch-fist-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>La lutte traditionnelle islandaise (glíma) élevée au rang d'art martial.</p>",
+      "chat": ""
+    },
+    "identifier": "voie-de-la-glima",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "monk",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "250341030acdbb93": {
+        "_id": "250341030acdbb93",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.2a65ebc7cd334300",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Aptitudes d'archétype"
+      },
+      "f32986f8c3773a96": {
+        "_id": "f32986f8c3773a96",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.a41d05d314eda1df",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes d'archétype"
+      },
+      "e78528ed2cbc3243": {
+        "_id": "e78528ed2cbc3243",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.520e3ce9f51497ee",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Aptitudes d'archétype"
+      },
+      "e4e458b5fa36daea": {
+        "_id": "e4e458b5fa36daea",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.07a40050e62b30fd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7f386fb45cea1bf9"
+}

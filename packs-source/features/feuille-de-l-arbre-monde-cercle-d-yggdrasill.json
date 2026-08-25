@@ -1,0 +1,46 @@
+{
+  "_id": "192f1672273942da",
+  "name": "Feuille de l'Arbre-Monde (Cercle d'Yggdrasill)",
+  "type": "feat",
+  "img": "icons/magic/nature/tree-icy-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous créez une zone de 12 m qui applique les lois d'un autre monde pendant 1 minute.</p>",
+      "chat": ""
+    },
+    "identifier": "feuille-de-l-arbre-monde-cercle-d-yggdrasill",
+    "source": "Vers le Ragnarök",
+    "requirements": "Cercle d'Yggdrasill — niveau 10",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!192f1672273942da"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "1b11f51411caef95",
+  "name": "Explorateur des ramures (Cercle d'Yggdrasill)",
+  "type": "feat",
+  "img": "icons/magic/nature/tree-icy-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Sur votre monde natal, vous détectez les créatures non natives à 18 m ou moins. Ailleurs, vous êtes avantagé aux jets de sauvegarde liés à l'environnement.</p>",
+      "chat": ""
+    },
+    "identifier": "explorateur-des-ramures-cercle-d-yggdrasill",
+    "source": "Vers le Ragnarök",
+    "requirements": "Cercle d'Yggdrasill — niveau 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1b11f51411caef95"
+}

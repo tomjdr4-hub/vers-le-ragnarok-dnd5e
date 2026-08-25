@@ -1,0 +1,46 @@
+{
+  "_id": "fa3a6323c75ccd66",
+  "name": "Dévoreur de vie (Celui qui apporte l'apocalypse)",
+  "type": "feat",
+  "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous « dévorez » un attaquant qui vous a touché : il est entravé ou neutralisé ; en cas d'échec à une sauvegarde de Force, il subit 3d10 dégâts d'acide. Un repos long est nécessaire pour réutiliser cette aptitude.</p>",
+      "chat": ""
+    },
+    "identifier": "devoreur-de-vie-celui-qui-apporte-l-apocalypse",
+    "source": "Vers le Ragnarök",
+    "requirements": "Celui qui apporte l'apocalypse — niveau 14",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fa3a6323c75ccd66"
+}

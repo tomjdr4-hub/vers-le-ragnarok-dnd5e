@@ -1,0 +1,46 @@
+{
+  "_id": "130b891ae5ce2be9",
+  "name": "Perte sacrée (Domaine du sacrifice)",
+  "type": "feat",
+  "img": "icons/magic/death/skull-humanoid-crown-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Par une réaction, vous pouvez donner l'effet de Balafres sacrées à un allié touché, à 9 m ou moins de vous.</p>",
+      "chat": ""
+    },
+    "identifier": "perte-sacree-domaine-du-sacrifice",
+    "source": "Vers le Ragnarök",
+    "requirements": "Domaine du sacrifice — niveau 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!130b891ae5ce2be9"
+}

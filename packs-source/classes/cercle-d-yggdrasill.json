@@ -1,0 +1,111 @@
+{
+  "_id": "000f3640e9d5bfcc",
+  "name": "Cercle d'Yggdrasill",
+  "type": "subclass",
+  "img": "icons/magic/nature/tree-icy-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un lien avec les Neuf mondes tout entiers, plutôt qu'avec un unique territoire natal.</p>",
+      "chat": ""
+    },
+    "identifier": "cercle-d-yggdrasill",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "druid",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "40e4373a8145aadc": {
+        "_id": "40e4373a8145aadc",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.8fdd762eed2f68b6",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Aptitudes d'archétype"
+      },
+      "d763f2dfb45dee45": {
+        "_id": "d763f2dfb45dee45",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.1b11f51411caef95",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes d'archétype"
+      },
+      "6d3337ff968b2590": {
+        "_id": "6d3337ff968b2590",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.192f1672273942da",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Aptitudes d'archétype"
+      },
+      "1ae45509bfd1cd9c": {
+        "_id": "1ae45509bfd1cd9c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.686813b6eca32bdd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!000f3640e9d5bfcc"
+}

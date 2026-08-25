@@ -1,0 +1,46 @@
+{
+  "_id": "a28f0e990b868b8d",
+  "name": "Méthode de l'escroc et Cruelles blessures (L'informe)",
+  "type": "feat",
+  "img": "icons/magic/control/debuff-energy-hold-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Méthode de l'escroc.</strong> Vous gagnez le tour de magie <em>illusion mineure</em>, et les sorts <em>déguisement</em> et <em>charme-personne</em> via des emplacements de sort dédiés.</p>\n        <p><strong>Cruelles blessures.</strong> Après une attaque sournoise, la vitesse de la cible est réduite de moitié et ses attaques d'opportunité sont désavantagées ; si un ennemi réussit une sauvegarde contre un de vos sorts de méthode, il subit des dégâts psychiques (1d4 par dé d'attaque sournoise).</p>",
+      "chat": ""
+    },
+    "identifier": "methode-de-l-escroc-et-cruelles-blessures-l-informe",
+    "source": "Vers le Ragnarök",
+    "requirements": "L'informe — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!a28f0e990b868b8d"
+}

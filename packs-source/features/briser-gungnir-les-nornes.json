@@ -1,0 +1,46 @@
+{
+  "_id": "8d2142f60a39804e",
+  "name": "Briser Gungnir (Les Nornes)",
+  "type": "feat",
+  "img": "icons/magic/divination/crystal-ball-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous redirigez une attaque à distance réussie contre vous vers une autre cible (jet d'attaque de sort opposé). Une minute de récupération.</p>",
+      "chat": ""
+    },
+    "identifier": "briser-gungnir-les-nornes",
+    "source": "Vers le Ragnarök",
+    "requirements": "Les Nornes — niveau 10",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933668,
+    "modifiedTime": 1787651933668,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8d2142f60a39804e"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "48bde5bb064529fe",
+  "name": "Tisser votre propre destin (Les Nornes)",
+  "type": "feat",
+  "img": "icons/magic/divination/crystal-ball-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tout test, attaque ou sauvegarde obtenant 3 ou moins doit être relancé.</p>",
+      "chat": ""
+    },
+    "identifier": "tisser-votre-propre-destin-les-nornes",
+    "source": "Vers le Ragnarök",
+    "requirements": "Les Nornes — niveau 14",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933668,
+    "modifiedTime": 1787651933668,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!48bde5bb064529fe"
+}

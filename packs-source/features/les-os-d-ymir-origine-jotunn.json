@@ -1,0 +1,46 @@
+{
+  "_id": "409dd46a895f9a65",
+  "name": "Les os d'Ymir (Origine jötunn)",
+  "type": "feat",
+  "img": "icons/magic/water/orb-ice-web.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous déclenchez une tempête de neige en rayon 750 m ; en rayon 9 m, dégâts de froid égaux à votre niveau d'emplacement plus Charisme et invocation d'élémentaires de la glace. Dure 1 minute, un repos long est nécessaire pour réutiliser cette aptitude.</p>",
+      "chat": ""
+    },
+    "identifier": "les-os-d-ymir-origine-jotunn",
+    "source": "Vers le Ragnarök",
+    "requirements": "Origine jötunn — niveau 18",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!409dd46a895f9a65"
+}

@@ -1,0 +1,111 @@
+{
+  "_id": "a29de0b85fccc561",
+  "name": "Meute de loups",
+  "type": "subclass",
+  "img": "icons/creatures/mammals/wolf-howl-moon-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Le rôdeur chasse et combat comme un membre à part entière d'une meute de loups.</p>",
+      "chat": ""
+    },
+    "identifier": "meute-de-loups",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "ranger",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "3ce0a8b1fe1f75ca": {
+        "_id": "3ce0a8b1fe1f75ca",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.94041923387d6cab",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Aptitudes d'archétype"
+      },
+      "ff07f3bf62f9f8a8": {
+        "_id": "ff07f3bf62f9f8a8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.37d7c53a1aa736b2",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Aptitudes d'archétype"
+      },
+      "3e21998a23a8fc72": {
+        "_id": "3e21998a23a8fc72",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.22c7e6654815b083",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Aptitudes d'archétype"
+      },
+      "6a947c353f20d0a7": {
+        "_id": "6a947c353f20d0a7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.67566a18f3f104dc",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!a29de0b85fccc561"
+}

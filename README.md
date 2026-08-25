@@ -7,10 +7,17 @@ Ciblé pour Foundry **v12 à v14**, avec le système **dnd5e 4.0 ou supérieur**
 
 ## Contenu
 
-- **Compendium Classes** — la classe *Maître des runes* (progression complète niveau 1 à 20, cercle de
-  futhark, incantation runique…) et ses trois sous-classes (ættir de Freyja, Heimdallr et Týr).
+- **Compendium Classes & archétypes nordiques** — la classe *Maître des runes* (progression complète niveau
+  1 à 20, cercle de futhark, incantation runique…) et ses trois sous-classes (ættir de Freyja, Heimdallr et
+  Týr), plus les **12 archétypes nordiques** des classes standards de la 5e, chacun comme une vraie
+  sous-classe attachable dans Foundry : Voie de l'orageur (Barbare), Collège de Valhalla (Barde), Domaine
+  du sacrifice (Clerc), Cercle d'Yggdrasill (Druide), Origine jötunn (Ensorceleur), Archétype martial :
+  Gardien (Guerrier), École du vagabond (Magicien), Voie de la glíma (Moine), Serment de l'élu (Paladin),
+  Meute de loups (Rôdeur), L'informe (Roublard), et les deux protecteurs d'outre-monde du Sorcier — Celui
+  qui apporte l'apocalypse et Les Nornes.
 - **Compendium Fonctionnalités** — les 6 clans de Miðgarðr (fiches culturelles), les 8 aptitudes de
-  privilège d'historique, les 8 aptitudes de classe du Maître des runes, les 12 aptitudes d'ætt.
+  privilège d'historique, les 8 aptitudes de classe du Maître des runes, les 12 aptitudes d'ætt, et les
+  aptitudes de niveau des 12 archétypes nordiques ci-dessus.
 - **Compendium Historiques** — les 8 historiques (Bondhi, Gothi, Huscarl, Jarlr, Skógarmaðr, Thrallr,
   Vaeringhi, Vikingr), avec compétences, outils et équipement de départ décrit dans leur description.
 - **Compendium Équipement nordique** — les deux armes nordiques (hache à barbe courte, hache d'assaut) et

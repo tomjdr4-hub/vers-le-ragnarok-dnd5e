@@ -1,0 +1,46 @@
+{
+  "_id": "5544c7871f9053be",
+  "name": "Coup de tonnerre et Exutoire calamiteux (Voie de l'orageur)",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Coup de tonnerre.</strong> Tant que vous êtes en rage, chaque attaque réussie inflige 1d6 dégâts de tonnerre supplémentaires (1d8 au niveau 10) et vous gagnez 1 charge d'orage (2 sur un coup critique). Si vos charges atteignent votre niveau de barbare, ou à la fin de votre rage, vous perdez toutes vos charges et subissez 1d6 dégâts de tonnerre.</p>\n        <p><strong>Exutoire calamiteux.</strong> Sur une attaque réussie, vous pouvez libérer toutes vos charges : 1 dégât de tonnerre par charge en rayon 1,50 m (3 m au niveau 10) autour de la cible. Si l'attaque rate, vous gagnez à la place des charges égales aux dégâts de rage.</p>",
+      "chat": ""
+    },
+    "identifier": "coup-de-tonnerre-et-exutoire-calamiteux-voie-de-l-orageur",
+    "source": "Vers le Ragnarök",
+    "requirements": "Voie de l'orageur — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933665,
+    "modifiedTime": 1787651933665,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5544c7871f9053be"
+}

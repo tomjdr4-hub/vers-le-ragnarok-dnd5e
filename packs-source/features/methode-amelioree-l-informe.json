@@ -1,0 +1,46 @@
+{
+  "_id": "60dd760e4ac22920",
+  "name": "Méthode améliorée (L'informe)",
+  "type": "feat",
+  "img": "icons/magic/control/debuff-energy-hold-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous gagnez <em>modifier son apparence</em>, <em>amélioration de caractéristique</em> et <em>image miroir</em>.</p>",
+      "chat": ""
+    },
+    "identifier": "methode-amelioree-l-informe",
+    "source": "Vers le Ragnarök",
+    "requirements": "L'informe — niveau 9",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!60dd760e4ac22920"
+}

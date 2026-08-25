@@ -1,0 +1,94 @@
+{
+  "_id": "b39e2f60924c5302",
+  "name": "Collège de Valhalla",
+  "type": "subclass",
+  "img": "icons/magic/holy/prayer-glowing-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un collège de skalds qui font résonner leur inspiration bardique comme un chant de guerre partagé.</p>",
+      "chat": ""
+    },
+    "identifier": "college-de-valhalla",
+    "source": "Vers le Ragnarök",
+    "classIdentifier": "bard",
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "advancement": {
+      "7050ac922382b6f4": {
+        "_id": "7050ac922382b6f4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.2565280e51301e22",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Aptitudes d'archétype"
+      },
+      "b3a10327b3cd4815": {
+        "_id": "b3a10327b3cd4815",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.3582a7d58868f2f1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aptitudes d'archétype"
+      },
+      "af43cb2ee1dc741d": {
+        "_id": "af43cb2ee1dc741d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.vers-le-ragnarok.features.Item.07b1b520601f3929",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Aptitudes d'archétype"
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!b39e2f60924c5302"
+}

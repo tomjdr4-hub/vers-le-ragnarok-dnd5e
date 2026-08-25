@@ -1,0 +1,46 @@
+{
+  "_id": "dd306d7f356e5b7d",
+  "name": "Riposte miroir et Maîtrise de l'escroc (L'informe)",
+  "type": "feat",
+  "img": "icons/magic/control/debuff-energy-hold-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Riposte miroir.</strong> En réaction, échangez magiquement de place avec une autre créature à 9 m ou moins pour rediriger une attaque réussie (jet de sauvegarde de Charisme possible).</p>\n        <p><strong>Maîtrise de l'escroc.</strong> Vous gagnez <em>confusion</em> et <em>invisibilité supérieure</em>.</p>",
+      "chat": ""
+    },
+    "identifier": "riposte-miroir-et-maitrise-de-l-escroc-l-informe",
+    "source": "Vers le Ragnarök",
+    "requirements": "L'informe — niveau 17",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!dd306d7f356e5b7d"
+}

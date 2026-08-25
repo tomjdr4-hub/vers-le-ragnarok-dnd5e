@@ -1,0 +1,46 @@
+{
+  "_id": "e57c8de0c668a39b",
+  "name": "Valkyrja, l'Einherji (Serment de l'élu)",
+  "type": "feat",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous n'avez plus besoin de boire ni de manger. Une fois par repos long, vous vous transformez pendant 1 minute : vous n'avez pas besoin de respirer, êtes immunisé aux sorts de Sagesse et de Charisme, et pouvez vous téléporter et attaquer ou lancer un sort en bonus si une créature meurt dans votre aura.</p>",
+      "chat": ""
+    },
+    "identifier": "valkyrja-l-einherji-serment-de-l-elu",
+    "source": "Vers le Ragnarök",
+    "requirements": "Serment de l'élu — niveau 20",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!e57c8de0c668a39b"
+}

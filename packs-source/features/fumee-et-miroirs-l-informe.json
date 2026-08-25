@@ -1,0 +1,46 @@
+{
+  "_id": "f59a323256d93223",
+  "name": "Fumée et miroirs (L'informe)",
+  "type": "feat",
+  "img": "icons/magic/control/debuff-energy-hold-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Une réussite en Supercherie ou en déguisement devient incontestable pendant 1 heure.</p>",
+      "chat": ""
+    },
+    "identifier": "fumee-et-miroirs-l-informe",
+    "source": "Vers le Ragnarök",
+    "requirements": "L'informe — niveau 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!f59a323256d93223"
+}

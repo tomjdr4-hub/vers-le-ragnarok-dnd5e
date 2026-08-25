@@ -1,0 +1,46 @@
+{
+  "_id": "278c0ea412c1a4bd",
+  "name": "Cœur gelé (Origine jötunn)",
+  "type": "feat",
+  "img": "icons/magic/water/orb-ice-web.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous êtes avantagé contre l'intimidation, être charmé et être terrorisé.</p>",
+      "chat": ""
+    },
+    "identifier": "c-ur-gele-origine-jotunn",
+    "source": "Vers le Ragnarök",
+    "requirements": "Origine jötunn — niveau 14",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!278c0ea412c1a4bd"
+}

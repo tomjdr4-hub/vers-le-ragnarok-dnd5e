@@ -1,0 +1,46 @@
+{
+  "_id": "87d1f9661cc45e9e",
+  "name": "Tactiques du gardien (Archétype martial : Gardien)",
+  "type": "feat",
+  "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Choisissez deux tactiques parmi : <strong>Interposer</strong>, <strong>Tir préventif</strong>, <strong>Double réaction</strong>, <strong>Violentes représailles</strong>, <strong>Mur de bouclier</strong>.</p>",
+      "chat": ""
+    },
+    "identifier": "tactiques-du-gardien-archetype-martial-gardien",
+    "source": "Vers le Ragnarök",
+    "requirements": "Archétype martial : Gardien — niveau 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!87d1f9661cc45e9e"
+}

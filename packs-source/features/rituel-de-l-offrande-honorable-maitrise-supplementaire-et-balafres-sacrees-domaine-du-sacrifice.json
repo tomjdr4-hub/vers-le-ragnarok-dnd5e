@@ -1,0 +1,46 @@
+{
+  "_id": "288909704b8a26ad",
+  "name": "Rituel de l'offrande honorable, Maîtrise supplémentaire et Balafres sacrées (Domaine du sacrifice)",
+  "type": "feat",
+  "img": "icons/magic/death/skull-humanoid-crown-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Rituel de l'offrande honorable.</strong> Lors d'un repos long, vous pouvez vous infliger un nombre de blessures permanentes égal à votre modificateur de Sagesse (œil, oreille, membre… à l'appréciation du MJ) ; chaque blessure offerte accorde un avantage durable (chance, endurance ou savoir) jusqu'au prochain repos long.</p>\n        <p><strong>Maîtrise supplémentaire.</strong> Vous gagnez la maîtrise des armures lourdes.</p>\n        <p><strong>Balafres sacrées.</strong> Quand vous êtes touché alors que vous n'êtes pas à vos points de vie maximum (et sans PV temporaires), vous gagnez des points de vie temporaires égaux à votre modificateur de Charisme.</p>",
+      "chat": ""
+    },
+    "identifier": "rituel-de-l-offrande-honorable-maitrise-supplementaire-et-balafres-sacrees-domaine-du-sacrifice",
+    "source": "Vers le Ragnarök",
+    "requirements": "Domaine du sacrifice — niveau 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!288909704b8a26ad"
+}

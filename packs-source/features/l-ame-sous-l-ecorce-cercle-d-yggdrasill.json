@@ -1,0 +1,46 @@
+{
+  "_id": "8fdd762eed2f68b6",
+  "name": "L'âme sous l'écorce (Cercle d'Yggdrasill)",
+  "type": "feat",
+  "img": "icons/magic/nature/tree-icy-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>À chaque repos long, choisissez un type d'énergie favori (radiant ou nécrotique). Sur votre monde natal, vous bénéficiez d'avantages renforcés liés à ce type (dégâts de sorts, résistance, avantage aux sauvegardes, forme sauvage) ; ailleurs, le MJ peut vous assigner un autre type.</p>",
+      "chat": ""
+    },
+    "identifier": "l-ame-sous-l-ecorce-cercle-d-yggdrasill",
+    "source": "Vers le Ragnarök",
+    "requirements": "Cercle d'Yggdrasill — niveau 2",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8fdd762eed2f68b6"
+}

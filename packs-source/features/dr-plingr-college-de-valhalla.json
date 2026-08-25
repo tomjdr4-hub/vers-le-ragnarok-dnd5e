@@ -1,0 +1,46 @@
+{
+  "_id": "3582a7d58868f2f1",
+  "name": "Dræplingr (Collège de Valhalla)",
+  "type": "feat",
+  "img": "icons/magic/holy/prayer-glowing-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous conférez à une créature une maîtrise doublée dans une compétence, un outil, une arme ou un instrument de votre choix ; les témoins de la scène peuvent être « envoûtés » (jet de sauvegarde de Charisme).</p>",
+      "chat": ""
+    },
+    "identifier": "dr-plingr-college-de-valhalla",
+    "source": "Vers le Ragnarök",
+    "requirements": "Collège de Valhalla — niveau 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3582a7d58868f2f1"
+}

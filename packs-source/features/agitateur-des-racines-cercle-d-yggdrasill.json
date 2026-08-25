@@ -1,0 +1,46 @@
+{
+  "_id": "686813b6eca32bdd",
+  "name": "Agitateur des racines (Cercle d'Yggdrasill)",
+  "type": "feat",
+  "img": "icons/magic/nature/tree-icy-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un coup critique ou un sort de niveau 1 ou plus déclenche une explosion de 2d6 dégâts (de votre type favori) en rayon 3 m.</p>",
+      "chat": ""
+    },
+    "identifier": "agitateur-des-racines-cercle-d-yggdrasill",
+    "source": "Vers le Ragnarök",
+    "requirements": "Cercle d'Yggdrasill — niveau 14",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787651933667,
+    "modifiedTime": 1787651933667,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!686813b6eca32bdd"
+}
