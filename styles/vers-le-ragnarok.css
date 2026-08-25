@@ -68,6 +68,9 @@
   --dnd5e-font-roboto-condensed: "Work Sans", sans-serif;
   --dnd5e-font-roboto-slab: "Frank Ruhl Libre", serif;
 
+  /* ---------- Badge de caractéristique : forme et fond propres au module ---------- */
+  --dnd5e-ability-tab: url("../ui/ability-hex.svg");
+
   /* ---------- Palette primitive ---------- */
   --dnd5e-color-gold: #c69a52;
   --dnd5e-color-card: #2b2529;
@@ -109,7 +112,7 @@
   --color-text-emphatic: #f4efe3;
   --color-text-title: #dd8759;
   --dnd5e-attribute-color: #dd8759;
-  --dnd5e-ability-color: #dd8759;
+  --dnd5e-ability-color: #c9a876;
   --dnd5e-ability-mod-color: #ece5d4;
   --dnd5e-heading-3-color: #ece5d4;
   --dnd5e-quote-color: #b9af9c;
@@ -166,6 +169,14 @@
     --input-background-color: rgb(0 0 0 / 25%);
     --input-placeholder-color: #8b8171;
   }
+}
+
+/* ---------- Badges de caractéristiques (FOR/DEX/CON...) : police dédiée ----------
+   Ciblé précisément sur ces 6 badges plutôt que sur la variable partagée
+   --dnd5e-font-roboto(-condensed), utilisée ailleurs pour beaucoup de petits
+   libellés où une police display serait moins lisible. */
+.application.dnd5e2.character .ability-scores .ability-score {
+  font-family: "Germania One", "Cinzel", serif;
 }
 
 /* ---------- Coins moins arrondis : silhouette plus "gravée dans le métal" ---------- */

@@ -1,0 +1,11 @@
+<svg width="68" height="64" viewBox="0 0 68 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vlr-hex-fill" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#4a4038"/>
+      <stop offset="40%" stop-color="#332c27"/>
+      <stop offset="100%" stop-color="#241f1c"/>
+    </linearGradient>
+  </defs>
+  <path d="M13,2 L55,2 L66,14 L66,50 L55,62 L13,62 L2,50 L2,14 Z"
+        fill="url(#vlr-hex-fill)" stroke="#8a7554" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
