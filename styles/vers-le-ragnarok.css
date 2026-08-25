@@ -69,7 +69,7 @@
   --dnd5e-font-roboto-slab: "Frank Ruhl Libre", serif;
 
   /* ---------- Badge de caractéristique : forme et fond propres au module ---------- */
-  --dnd5e-ability-tab: url("modules/vers-le-ragnarok/ui/ability-hex.svg");
+  --dnd5e-ability-tab: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjgiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2OCA2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idmxyLWhleC1maWxsIiB4MT0iMTUlIiB5MT0iMCUiIHgyPSI4NSUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRhNDAzOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzMzMmMyNyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNDFmMWMiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxwYXRoIGQ9Ik0xMywyIEw1NSwyIEw2NiwxNCBMNjYsNTAgTDU1LDYyIEwxMyw2MiBMMiw1MCBMMiwxNCBaIgogICAgICAgIGZpbGw9InVybCgjdmxyLWhleC1maWxsKSIgc3Ryb2tlPSIjOGE3NTU0IiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
 
   /* ---------- Palette primitive ---------- */
   --dnd5e-color-gold: #c69a52;
