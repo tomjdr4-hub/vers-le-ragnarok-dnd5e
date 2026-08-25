@@ -236,19 +236,19 @@ const CLANS = [
       <p>Un personnage de ce clan a droit à l'objet de clan <strong>Dent de la sorcière</strong> s'il s'en montre digne.</p>`
   },
   {
-    name: "Clan : Guerriers ours", region: "Norðrvegr, montagnes Enneigées",
+    name: "Clan : Guerriers ours", region: "Norvgr, montagnes Enneigées",
     html: `<p><em>Berserkir des montagnes, aussi appelés hommes-ours ou sauvages ; la force y est la seule loi.</em></p>
       <p>Nominalement dirigés par la famille Snjallrson, mais tout chef peut être défié par la force. Chaque village a un prêtre communiant avec « l'esprit de la Montagne », vénérée comme une divinité en plus des Æsir et des Vanir.</p>
       <p>Un personnage de ce clan a droit à l'objet de clan <strong>Griffe de la Montagne</strong> s'il s'en montre digne.</p>`
   },
   {
     name: "Clan : Loups de l'ombre", region: "Svitjod, grande forêt",
-    html: `<p><em>Chasseurs nomades, maîtres des tactiques de groupe, comptant de nombreux úlfheðnar.</em></p>
+    html: `<p><em>Chasseurs nomades, maîtres des tactiques de groupe.</em></p>
       <p>Fidèles aux Neuf vertus et vivant en harmonie avec la nature, ils s'opposent farouchement à toute réunification des clans sous un seul souverain. Dirigés par Koltønn Ginnungason.</p>
       <p>Un personnage de ce clan a droit à l'objet de clan <strong>Ombre du feuillage</strong> s'il s'en montre digne.</p>`
   },
   {
-    name: "Clan : Yeux d'Odhinn", region: "Norðrvegr, côte",
+    name: "Clan : Yeux d'Odhinn", region: "Norvgr, côte",
     html: `<p><em>Le clan le plus puissant et le plus craint des vikingar, marins et conquérants se disant descendants d'Odhinn.</em></p>
       <p>Capitale : Heill Hofn, dirigée par le roi Asbjørn le Rouge. Le clan est secoué par un schisme religieux : la reine Sknaht, prêtresse d'un culte étranger d'Hibernia, gagne en influence face aux fidèles d'Odhinn.</p>
       <p>Un personnage de ce clan a droit à l'objet de clan <strong>Épée Ulfberht</strong> s'il s'en montre digne.</p>`
@@ -454,6 +454,10 @@ const MAGIC_ITEMS = [
     damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM",
     html: `<p>Épée (n'importe quel type). Bonus de +1 aux jets d'attaque et de dégâts.</p>
       <p>Action pour prononcer le mot de commande : convoque les esprits de douze berserkir en rayon de 18 m autour de vous. Si vous n'avez pas un alignement Honorable, les berserkir vous attaquent ; sinon, ils sont amicaux envers vous et vos alliés et obéissent à vos ordres.</p>`
+  }),
+  equipment({
+    name: "Pierre solaire véritable", img: "icons/commodities/gems/gem-faceted-round-yellow.webp", rarity: "veryRare", attunement: "",
+    html: `<p>En utilisant cette pierre solaire comme outil d'orientation, les personnages ne peuvent pas se perdre en voyageant sur mer ou sur terre. Elle indique également la direction des lieux ou des objets que l'utilisateur a déjà vus et qu'il souhaite atteindre.</p>`
   }),
   equipment({
     name: "Svalinn, le bouclier du soleil", img: "icons/equipment/shield/heater-crest-sun.webp", rarity: "artifact", attunement: "required", armorType: "shield", armorValue: 6,

@@ -25,11 +25,11 @@ Ciblé pour Foundry **v12 à v14**, avec le système **dnd5e 4.0 ou supérieur**
 - **Compendium Équipement nordique** — les deux armes nordiques (hache à barbe courte, hache d'assaut),
   les 6 objets signature de clan, et deux navires (**Karve**, **Snekkja**) avec leurs statistiques
   complètes (points d'intégrité, équipage, coût, vitesse).
-- **Compendium Objets magiques légendaires** — les 19 objets nommés de l'annexe du livre de base : Mjöllnir
+- **Compendium Objets magiques légendaires** — les 20 objets nommés de l'annexe du livre de base : Mjöllnir
   (le marteau de Thor), Gungnir (la lance d'Odhinn), Draupnir, Skíðblaðnir (le bateau de Freyr), Týrfing,
-  Svalinn, Gramr, Skofnung, l'anneau maudit d'Andvari (Andvaranautr), la cape de Freyja, et 9 autres,
-  plus 4 objets tirés de *Battle Beyond the Sea* : Dyrnwyn, la Main de justice, le Pendentif de quartz
-  solaire et l'Orbe murmurant — rareté, harmonisation et règles complètes (bonus, malédictions) telles
+  Svalinn, Gramr, Skofnung, l'anneau maudit d'Andvari (Andvaranautr), la cape de Freyja, la Pierre solaire
+  véritable, et 9 autres, plus 4 objets tirés de *Battle Beyond the Sea* : Dyrnwyn, la Main de justice, le
+  Pendentif de quartz solaire et l'Orbe murmurant — rareté, harmonisation et règles complètes (bonus, malédictions) telles
   que décrites dans les livres.
 - **Compendium Bestiaire du Ragnarök** — 5 fiches de créature complètes (caractéristiques, PV, CA,
   résistances, aptitudes, actions et actions légendaires) pour les grandes figures du chapitre final :
