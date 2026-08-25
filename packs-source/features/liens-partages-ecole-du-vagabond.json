@@ -5,7 +5,7 @@
   "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Si une cible rate une sauvegarde contre l'un de vos sorts, elle ne peut plus lancer de sorts ni bénéficier d'objets magiques jusqu'à son prochain tour ; 3 fois par repos long.</p>",
+      "value": "<p>Si la cible de l'un de vos sorts rate un jet de sauvegarde contre celui-ci, vous pouvez également rompre son lien avec la magie : elle ne peut plus lancer de sorts, bénéficier des effets d'objets magiques, et toutes les attaques magiques qu'elle porte sont considérées comme non magiques. Ces effets durent jusqu'à la fin de son prochain tour.</p>\n          <p>Vous pouvez utiliser cette aptitude trois fois avant un repos long. Une fois cette aptitude utilisée, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>",
       "chat": ""
     },
     "identifier": "liens-partages-ecole-du-vagabond",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191395,
+    "modifiedTime": 1787681191395,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

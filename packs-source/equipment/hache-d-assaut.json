@@ -22,7 +22,7 @@
     "rarity": "",
     "attunement": "",
     "type": {
-      "value": "simpleM",
+      "value": "martialM",
       "subtype": ""
     },
     "properties": [
@@ -70,8 +70,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743371,
-    "modifiedTime": 1787676743371,
+    "createdTime": 1787681191392,
+    "modifiedTime": 1787681191392,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

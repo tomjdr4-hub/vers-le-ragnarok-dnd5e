@@ -5,7 +5,7 @@
   "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
   "system": {
     "description": {
-      "value": "<p>Vous « dévorez » un attaquant qui vous a touché : il est entravé ou neutralisé ; en cas d'échec à une sauvegarde de Force, il subit 3d10 dégâts d'acide. Un repos long est nécessaire pour réutiliser cette aptitude.</p>",
+      "value": "<p>Quand une créature réussit une attaque contre vous, vous pouvez utiliser cette aptitude pour la dévorer : elle rapetisse par magie et se retrouve à l'intérieur de votre corps, entravée et neutralisée.</p>\n        <p>Au début de son tour, elle peut faire un jet de sauvegarde de Force ; en cas de réussite, elle se libère en s'extirpant de votre corps dans l'emplacement inoccupé le plus proche. En cas d'échec, elle subit 3d10 dégâts d'acide tandis que votre corps la dissout peu à peu.</p>\n        <p>Si une créature est tuée par ces dégâts, son enveloppe charnelle est complètement désintégrée, mais vous pouvez régurgiter les objets qu'elle portait ou transportait sans les abîmer. Une fois cette aptitude utilisée, vous ne pouvez plus y faire appel avant d'avoir terminé un repos long.</p>",
       "chat": ""
     },
     "identifier": "devoreur-de-vie-celui-qui-apporte-l-apocalypse",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191396,
+    "modifiedTime": 1787681191396,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

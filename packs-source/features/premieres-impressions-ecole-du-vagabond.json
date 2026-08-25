@@ -5,7 +5,7 @@
   "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Vous êtes avantagé au premier test social avec un inconnu.</p>",
+      "value": "<p>Vous êtes avantagé au premier test social avec un inconnu. Cette aptitude ne fonctionne pas sur les créatures immunisées contre l'état charmé.</p>",
       "chat": ""
     },
     "identifier": "premieres-impressions-ecole-du-vagabond",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191395,
+    "modifiedTime": 1787681191395,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

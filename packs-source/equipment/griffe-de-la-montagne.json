@@ -32,7 +32,7 @@
     "proficient": null,
     "damage": {
       "base": {
-        "number": 1,
+        "number": 2,
         "denomination": "d6",
         "bonus": "",
         "types": [
@@ -71,8 +71,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743371,
-    "modifiedTime": 1787676743371,
+    "createdTime": 1787681191393,
+    "modifiedTime": 1787681191393,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

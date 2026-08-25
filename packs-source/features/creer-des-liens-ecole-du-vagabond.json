@@ -5,7 +5,7 @@
   "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Vous pouvez effacer ou renforcer le souvenir de vous chez une créature (jet de sauvegarde de Charisme).</p>",
+      "value": "<p>Quand vous conversez pendant au moins dix minutes avec une créature dans votre champ de vision, vous pouvez renforcer ou effacer le souvenir de vous dans son esprit (jet de sauvegarde de Charisme contre votre DD de sauvegarde des sorts). En cas d'échec, vous décidez si la créature vous oublie dès que vous sortez de son champ de vision ou si elle se rappelle parfaitement de votre apparence et du sujet de votre conversation. En cas de réussite, la créature est immunisée contre cette aptitude pendant un mois. Cette aptitude ne fonctionne pas sur les créatures immunisées contre l'état charmé.</p>",
       "chat": ""
     },
     "identifier": "creer-des-liens-ecole-du-vagabond",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191395,
+    "modifiedTime": 1787681191395,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

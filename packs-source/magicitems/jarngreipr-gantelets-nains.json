@@ -5,7 +5,7 @@
   "img": "icons/equipment/hand/gauntlet-armored-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Chefs-d'œuvre nains conçus pour les plus grands guerriers : ils augmentent la Force de leur porteur selon leur rareté, empêchent d'être désarmé et avantagent aux tests pour empoigner et bousculer. Seul le dieu Thor possède l'unique version légendaire.</p>\n      <table><tr><th>Rareté</th><th>Bonus à la Force</th></tr>\n      <tr><td>Peu courant</td><td>+1</td></tr><tr><td>Rare</td><td>+3</td></tr><tr><td>Très rare</td><td>+4</td></tr><tr><td>Légendaire (Thor)</td><td>Valeur fixée à 30</td></tr></table>",
+      "value": "<p>Chefs-d'œuvre nains conçus pour les plus grands guerriers : ils augmentent la Force de leur porteur selon leur rareté, empêchent d'être désarmé et avantagent aux tests pour empoigner et bousculer. Seul le dieu Thor possède l'unique version légendaire.</p>\n      <table><tr><th>Rareté</th><th>Bonus à la Force</th></tr>\n      <tr><td>Peu courant</td><td>+1</td></tr><tr><td>Rare</td><td>+2</td></tr><tr><td>Très rare</td><td>+3</td></tr><tr><td>Légendaire (Thor)</td><td>+4</td></tr></table>",
       "chat": ""
     },
     "identifier": "jarngreipr-gantelets-nains",
@@ -41,8 +41,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743372,
-    "modifiedTime": 1787676743372,
+    "createdTime": 1787681191393,
+    "modifiedTime": 1787681191393,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

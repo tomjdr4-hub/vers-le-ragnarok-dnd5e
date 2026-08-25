@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/unarmed-punch-fist-white.webp",
   "system": {
     "description": {
-      "value": "<p>Pour 2 points de ki, vous réussissez automatiquement un test d'empoignade que vous étiez sur le point de perdre, au prix de quelques dégâts.</p>",
+      "value": "<p>Si vous êtes sur le point de perdre un test d'empoignade opposé, vous pouvez dépenser 2 points de ki pour resserrer votre prise : vous réussissez automatiquement le test, mais vous subissez des dégâts égaux à votre niveau + la différence entre votre résultat et celui de votre adversaire. Ces dégâts ne peuvent être annulés par quelque moyen que ce soit.</p>",
       "chat": ""
     },
     "identifier": "poigne-de-fer-voie-de-la-glima",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191396,
+    "modifiedTime": 1787681191396,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

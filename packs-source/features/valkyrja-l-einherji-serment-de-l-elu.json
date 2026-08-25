@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous n'avez plus besoin de boire ni de manger. Une fois par repos long, vous vous transformez pendant 1 minute : vous n'avez pas besoin de respirer, êtes immunisé aux sorts de Sagesse et de Charisme, et pouvez vous téléporter et attaquer ou lancer un sort en bonus si une créature meurt dans votre aura.</p>",
+      "value": "<p>Vous n'avez plus besoin de boire ni de manger. Par une action, vous vous transformez en émissaire divin pendant 1 minute : vous n'avez pas besoin de respirer, êtes immunisé contre tous les sorts nécessitant un jet de sauvegarde de Sagesse ou de Charisme, et si une créature meurt dans votre aura de vaillance vous pouvez vous téléporter sur son emplacement par une réaction et effectuer immédiatement une unique attaque d'arme ou lancer un sort dont la durée d'incantation est une action ou une action bonus.</p>",
       "chat": ""
     },
     "identifier": "valkyrja-l-einherji-serment-de-l-elu",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191396,
+    "modifiedTime": 1787681191396,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

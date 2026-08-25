@@ -5,7 +5,7 @@
   "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
   "system": {
     "description": {
-      "value": "<p>Sans armure, votre classe d'armure est égale à 13 + Dextérité. En réaction, une attaque de mêlée reçue vous inflige des dégâts de force égaux à votre modificateur de Charisme (+1d8 au niveau 5, +2d8 au niveau 11, +3d8 au niveau 17) à votre agresseur.</p>",
+      "value": "<p>Sans armure, votre classe d'armure est égale à 13 + Dextérité. En réaction, une attaque de mêlée reçue vous inflige des dégâts de force égaux à votre modificateur de Charisme (minimum 1) à votre agresseur (+1d8 au niveau 5, +2d8 au niveau 11, +3d8 au niveau 17).</p>",
       "chat": ""
     },
     "identifier": "ranc-ur-celui-qui-apporte-l-apocalypse",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191396,
+    "modifiedTime": 1787681191396,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

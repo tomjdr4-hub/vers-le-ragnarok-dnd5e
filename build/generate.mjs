@@ -168,7 +168,7 @@ function advMap(list) {
 
 // Equipment / weapon items -----------------------------------------------------
 
-function weapon({ name, img, html, damage, damageType, properties = [], weaponType = "simpleM", price = 0, weight = 1, rarity = "", attunement = "" }) {
+function weapon({ name, img, html, damage, damageType, diceCount = 1, properties = [], weaponType = "simpleM", price = 0, weight = 1, rarity = "", attunement = "" }) {
   const finalProperties = rarity ? [...properties, "mgc"] : properties;
   return baseItem({
     name, type: "weapon", img,
@@ -184,7 +184,7 @@ function weapon({ name, img, html, damage, damageType, properties = [], weaponTy
       type: { value: weaponType, subtype: "" },
       properties: finalProperties,
       proficient: null,
-      damage: { base: { number: 1, denomination: damage, bonus: "", types: [damageType], custom: { enabled: false } }, versatile: { number: null, denomination: null, bonus: "", types: [], custom: { enabled: false } } },
+      damage: { base: { number: diceCount, denomination: damage, bonus: "", types: [damageType], custom: { enabled: false } }, versatile: { number: null, denomination: null, bonus: "", types: [], custom: { enabled: false } } },
       range: { value: null, long: null, reach: null, units: "ft" },
       activities: {}
     }
@@ -263,12 +263,12 @@ const EQUIPMENT_DOCS = [
   weapon({
     name: "Hache à barbe courte", img: "icons/weapons/axes/axe-broad-brown.webp",
     html: `<p>Petite hache nordique à lame élargie, aussi maniable au corps à corps qu'au lancer.</p>`,
-    damage: "d6", damageType: "slashing", properties: ["fin", "lgt", "thr"], weaponType: "simpleM", price: 6, weight: 1
+    damage: "d6", damageType: "slashing", properties: ["fin", "lgt", "thr"], weaponType: "martialM", price: 6, weight: 1
   }),
   weapon({
     name: "Hache d'assaut", img: "icons/weapons/axes/axe-double-worn-steel.webp",
     html: `<p>Hache lourde à deux mains, taillée pour l'assaut plutôt que le travail du bois.</p>`,
-    damage: "d8", damageType: "slashing", properties: ["fin"], weaponType: "simpleM", price: 12, weight: 2
+    damage: "d8", damageType: "slashing", properties: ["fin"], weaponType: "martialM", price: 12, weight: 2
   }),
   weapon({
     name: "Branche runique", img: "icons/weapons/staves/staff-simple.webp",
@@ -296,7 +296,7 @@ const EQUIPMENT_DOCS = [
     html: `<p><strong>Objet de clan des Guerriers ours.</strong> Maillet d'armes dont la tête a été taillée dans une roche froide extraite du cœur de la Montagne. Statistiques d'un maillet d'armes.</p>
       <p><em>Avantage aux tests de Force (Athlétisme) pour briser un objet. Sur un coup critique contre un adversaire tenant un bouclier, possibilité de briser le bouclier au lieu d'infliger les dégâts.</em></p>
       <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>`,
-    damage: "d6", damageType: "bludgeoning", properties: ["hvy", "two"], weaponType: "martialM", price: 0, weight: 4
+    damage: "d6", diceCount: 2, damageType: "bludgeoning", properties: ["hvy", "two"], weaponType: "martialM", price: 0, weight: 4
   }),
   equipment({
     name: "Ombre du feuillage", img: "icons/equipment/shield/round-wooden-boss-steel.webp",
@@ -364,7 +364,7 @@ const MAGIC_ITEMS = [
       <p><strong>Destruction.</strong> L'anneau doit être jeté dans les flammes de Múspellsheimr après un jet de sauvegarde de Sagesse DD 30 réussi (sinon le porteur est charmé par l'anneau). Toute autre tentative de destruction inflige 4d8 dégâts psychiques à son auteur, qui doit réussir un jet de sauvegarde de Sagesse DD 30 pour ne pas être charmé.</p>`
   }),
   equipment({
-    name: "Anneau du chasseur silencieux", img: "icons/equipment/finger/ring-band-simple-gold.webp", rarity: "rare", attunement: "",
+    name: "Anneau du chasseur silencieux", img: "icons/equipment/finger/ring-band-simple-gold.webp", rarity: "rare", attunement: "required",
     html: `<p>Cet anneau contient trois charges et récupère 1d3 charges à l'aube. Le porteur peut dépenser une charge par une action pour lancer le sort <em>silence</em> sans composant matériel, en rayon de 1,5 m centré sur un point situé à 36 m ou moins du porteur ou de l'anneau lui-même.</p>`
   }),
   equipment({
@@ -413,7 +413,7 @@ const MAGIC_ITEMS = [
     name: "Járngreipr, gantelets nains", img: "icons/equipment/hand/gauntlet-armored-steel.webp", rarity: "legendary", attunement: "required",
     html: `<p>Chefs-d'œuvre nains conçus pour les plus grands guerriers : ils augmentent la Force de leur porteur selon leur rareté, empêchent d'être désarmé et avantagent aux tests pour empoigner et bousculer. Seul le dieu Thor possède l'unique version légendaire.</p>
       <table><tr><th>Rareté</th><th>Bonus à la Force</th></tr>
-      <tr><td>Peu courant</td><td>+1</td></tr><tr><td>Rare</td><td>+3</td></tr><tr><td>Très rare</td><td>+4</td></tr><tr><td>Légendaire (Thor)</td><td>Valeur fixée à 30</td></tr></table>`
+      <tr><td>Peu courant</td><td>+1</td></tr><tr><td>Rare</td><td>+2</td></tr><tr><td>Très rare</td><td>+3</td></tr><tr><td>Légendaire (Thor)</td><td>+4</td></tr></table>`
   }),
   equipment({
     name: "Médaillon du cœur de Múspellsheimr", img: "icons/equipment/neck/pendant-red-gem.webp", rarity: "rare", attunement: "",
@@ -509,7 +509,7 @@ const BACKGROUND_IMG = "icons/environment/people/commoner.webp";
 
 const BACKGROUNDS = [
   {
-    name: "Bondhi", skills: ["ani", "prc"], tool: null,
+    name: "Bondhi", skills: ["ani", "prc"], tool: "art",
     privilege: "Un foyer où revenir",
     privilegeHtml: `<p>En choisissant un lieu à Miðgarðr, votre personnage y possède une maison et une terre (et une famille, si vous le souhaitez). La communauté locale l'apprécie et l'aide dans les moments difficiles.</p>
       <p><em>Variante « hersir » : membre plus influent, participant aux débats du þing. Privilège remplacé par <strong>grande propriété</strong> : +5 po de départ et 2 po/jour récupérables au retour chez soi, au risque d'une usurpation en cas d'absence prolongée.</em></p>`,
@@ -518,7 +518,7 @@ const BACKGROUNDS = [
       <p><strong>Équipement de départ :</strong> habits courants, un ensemble d'outils d'artisan, un bracelet orné d'une rune, une arme courante, un récipient en terre cuite, une sacoche de cuir et 15 po.</p>`
   },
   {
-    name: "Gothi", skills: ["asa", "med"], tool: "art",
+    name: "Gothi", skills: ["asa", "med"], tool: "herb",
     privilege: "Témoignage de sympathie et hospitalité",
     privilegeHtml: `<p>Un accueil (nourriture, abri) est garanti dans toute communauté respectant les anciens dieux, en échange de rituels — un accueil qui s'étend à ses compagnons.</p>`,
     html: `<p><strong>L'officiant des rites du quotidien.</strong> Sans être un prêtre au sens strict, il accomplit les rituels courants et fait le lien entre sa communauté et les esprits ; fonction souvent héréditaire, interdite aux esclaves et aux renégats.</p>
@@ -768,10 +768,12 @@ const ARCHETYPES = [
     name: "Origine jötunn", classIdentifier: "sorcerer", img: "icons/magic/water/orb-ice-web.webp",
     theme: `<p>Le sang froid d'Ymir coule dans vos veines et se réveille lorsque vous puisez à sec dans votre magie.</p>`,
     levels: [
-      { level: 1, features: [{ name: "Fils de Jötunheimr", html: `<p>Quand vous épuisez tous vos emplacements de sort d'un niveau donné, vous vous transformez pendant 1 minute : vous récupérez des points de vie égaux au niveau de l'emplacement plus votre niveau de personnage (le triple en points de vie temporaires), gagnez une résistance au froid, et une attaque de contact glacial (1d6 + Charisme + niveau de l'emplacement, jusqu'à 4d6 au niveau 17). Se recharge par niveau d'emplacement à un repos long.</p>` }] },
+      { level: 1, features: [{ name: "Fils de Jötunheimr", html: `<p>Quand vous épuisez tous vos emplacements de sort d'un niveau donné, vous vous transformez pendant 1 minute : vous récupérez des points de vie égaux au niveau de l'emplacement plus votre niveau de personnage (le triple en points de vie temporaires), gagnez une résistance au froid, et une attaque de contact glacial en 1d6 + Charisme + niveau de l'emplacement (2d6 au niveau 5, 3d6 au niveau 11, 4d6 au niveau 17). Une fois utilisée pour un niveau d'emplacement donné, cette aptitude ne peut être réutilisée pour ce même niveau qu'après un repos long.</p>` }] },
       { level: 6, features: [{ name: "Peau du froid éternel", html: `<p>En réaction, pour 2 points de sorcellerie, quand vous êtes touché en mêlée vous neutralisez ou ralentissez votre attaquant (jet de sauvegarde de Dextérité).</p>` }] },
       { level: 14, features: [{ name: "Cœur gelé", html: `<p>Vous êtes avantagé contre l'intimidation, être charmé et être terrorisé.</p>` }] },
-      { level: 18, features: [{ name: "Les os d'Ymir", html: `<p>Vous déclenchez une tempête de neige en rayon 750 m ; en rayon 9 m, dégâts de froid égaux à votre niveau d'emplacement plus Charisme et invocation d'élémentaires de la glace. Dure 1 minute, un repos long est nécessaire pour réutiliser cette aptitude.</p>` }] }
+      { level: 18, features: [{ name: "Les os d'Ymir", html: `<p>Par une action, vous dépensez un emplacement de sort pour déclencher une tempête de neige en rayon 750 m (la neige ne vous atteint pas si vous êtes sous terre ou sous l'eau). Chaque créature à 9 m ou moins de vous subit, au début de son tour, des dégâts de froid égaux au niveau de l'emplacement plus votre modificateur de Charisme (moitié en cas de réussite d'un jet de sauvegarde de Constitution).</p>
+        <p>Tant que cette aptitude est active, vous pouvez dépenser une action pour convoquer un élémentaire de la glace qui apparaît à 1,50 m de vous, agit à votre tour et vous obéit — vous pouvez le faire un nombre de fois égal au niveau de l'emplacement utilisé.</p>
+        <p>Ces effets durent 1 minute (les élémentaires invoqués disparaissent alors). Un repos long est nécessaire pour réutiliser cette aptitude.</p>` }] }
     ]
   },
   {
@@ -779,8 +781,8 @@ const ARCHETYPES = [
     theme: `<p>Le protecteur de la ligne, bouclier levé pour les autres plutôt que pour lui-même — la « vierge au bouclier » en est une incarnation narrative.</p>`,
     levels: [
       { level: 3, features: [{ name: "Tactiques du gardien", html: `<p>Choisissez deux tactiques parmi : <strong>Interposer</strong>, <strong>Tir préventif</strong>, <strong>Double réaction</strong>, <strong>Violentes représailles</strong>, <strong>Mur de bouclier</strong>.</p>` }] },
-      { level: 7, features: [{ name: "Porteur de bouclier", html: `<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié adjacent.</p>` }] },
-      { level: 10, features: [{ name: "Tactiques améliorées", html: `<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>.</p>` }] },
+      { level: 7, features: [{ name: "Porteur de bouclier", html: `<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié à 1,50 m ou moins de vous jusqu'au début de votre prochain tour.</p>` }] },
+      { level: 10, features: [{ name: "Tactiques améliorées", html: `<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>, <strong>Couvrir la retraite</strong> (les alliés dans votre zone d'allonge, ou jusqu'à 6 m si vous maniez une arme à distance, peuvent se désengager par une action bonus).</p>` }] },
       { level: 15, features: [{ name: "Tactiques supérieures", html: `<p>Choisissez une tactique supplémentaire, par exemple <strong>Expert des manœuvres</strong> (résistance aux dégâts d'attaque d'opportunité).</p>` }] },
       { level: 18, features: [{ name: "Tactiques légendaires", html: `<p>Choisissez une dernière tactique, par exemple <strong>Inévitable</strong> ou <strong>Bastion</strong> (réduit de moitié les dégâts d'une attaque dont le résultat est inférieur ou égal à votre CA, 3 fois par repos long).</p>` }] }
     ]
@@ -795,15 +797,17 @@ const ARCHETYPES = [
       ] },
       { level: 6, features: [
         { name: "Savoir du monde", html: `<p>Vous gagnez une maîtrise temporaire (jusqu'au prochain repos long) de deux compétences, armes ou outils.</p>` },
-        { name: "Monde du savoir", html: `<p>Vous pouvez oublier un sort préparé de niveau 2 ou plus pour apprendre temporairement (8 heures) un sort proposé par le MJ ; 3 utilisations, une minute de récupération entre chaque, repos long pour tout récupérer.</p>` }
+        { name: "Monde du savoir", html: `<p>Par une action, vous pouvez oublier un sort préparé de niveau 2 ou plus. Le MJ choisit alors deux sorts de magicien que vous ne connaissez pas, d'un niveau égal à celui que vous avez oublié moins 1 ; vous en choisissez un qui devient un sort préparé pendant 8 heures. Vous n'avez pas mémorisé ce sort et il n'apparaît pas dans votre grimoire : vous ne pouvez ni l'y inscrire ni l'utiliser pour créer un parchemin magique.</p>
+          <p>Vous pouvez utiliser cette aptitude jusqu'à trois fois, en attendant au moins une minute entre chaque utilisation ; une fois vos utilisations dépensées, il faut terminer un repos long pour les récupérer. Chaque fois que vous utilisez cette aptitude, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>` }
       ] },
       { level: 10, features: [
-        { name: "Premières impressions", html: `<p>Vous êtes avantagé au premier test social avec un inconnu.</p>` },
-        { name: "Magie persistante", html: `<p>En réaction, après avoir subi au moins 10 dégâts, améliorez d'un niveau un emplacement de sort du même type d'énergie.</p>` }
+        { name: "Premières impressions", html: `<p>Vous êtes avantagé au premier test social avec un inconnu. Cette aptitude ne fonctionne pas sur les créatures immunisées contre l'état charmé.</p>` },
+        { name: "Magie persistante", html: `<p>Par une réaction effectuée quand une ou plusieurs cibles à 4,50 m ou moins de vous subissent 10 dégâts d'énergie ou plus, vous puisez dans les résidus de cette énergie : jusqu'à la fin de votre prochain tour, les sorts que vous lancez qui infligent ce type de dégâts sont considérés comme lancés avec un emplacement d'un niveau de plus que la normale. Après avoir lancé un sort ainsi amélioré, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>` }
       ] },
       { level: 14, features: [
-        { name: "Créer des liens", html: `<p>Vous pouvez effacer ou renforcer le souvenir de vous chez une créature (jet de sauvegarde de Charisme).</p>` },
-        { name: "Liens partagés", html: `<p>Si une cible rate une sauvegarde contre l'un de vos sorts, elle ne peut plus lancer de sorts ni bénéficier d'objets magiques jusqu'à son prochain tour ; 3 fois par repos long.</p>` }
+        { name: "Créer des liens", html: `<p>Quand vous conversez pendant au moins dix minutes avec une créature dans votre champ de vision, vous pouvez renforcer ou effacer le souvenir de vous dans son esprit (jet de sauvegarde de Charisme contre votre DD de sauvegarde des sorts). En cas d'échec, vous décidez si la créature vous oublie dès que vous sortez de son champ de vision ou si elle se rappelle parfaitement de votre apparence et du sujet de votre conversation. En cas de réussite, la créature est immunisée contre cette aptitude pendant un mois. Cette aptitude ne fonctionne pas sur les créatures immunisées contre l'état charmé.</p>` },
+        { name: "Liens partagés", html: `<p>Si la cible de l'un de vos sorts rate un jet de sauvegarde contre celui-ci, vous pouvez également rompre son lien avec la magie : elle ne peut plus lancer de sorts, bénéficier des effets d'objets magiques, et toutes les attaques magiques qu'elle porte sont considérées comme non magiques. Ces effets durent jusqu'à la fin de son prochain tour.</p>
+          <p>Vous pouvez utiliser cette aptitude trois fois avant un repos long. Une fois cette aptitude utilisée, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>` }
       ] }
     ]
   },
@@ -815,8 +819,8 @@ const ARCHETYPES = [
         { name: "Lausatok", html: `<p>Vous êtes maîtrisé en Athlétisme, et pouvez utiliser votre Force à la place de votre Dextérité pour votre classe d'armure sans armure.</p>` },
         { name: "La main sur la nuque", html: `<p>Les créatures que vous empoignez sont désavantagées à leurs jets d'attaque. Sur une empoignade réussie ou rompue, vous pouvez dépenser 1 point de ki pour infliger des dégâts (dé d'arts martiaux + Force ou Dextérité).</p>` }
       ] },
-      { level: 6, features: [{ name: "Lancer destructeur", html: `<p>Pour 1 point de ki, vous pouvez lancer un objet ou une créature que vous tenez (jusqu'à taille Grande) comme une arme de jet (portée 3 m/9 m).</p>` }] },
-      { level: 11, features: [{ name: "Poigne de fer", html: `<p>Pour 2 points de ki, vous réussissez automatiquement un test d'empoignade que vous étiez sur le point de perdre, au prix de quelques dégâts.</p>` }] },
+      { level: 6, features: [{ name: "Lancer destructeur", html: `<p>Pour 1 point de ki, vous pouvez lancer un objet ou une créature que vous tenez (jusqu'à taille Grande) comme une arme de jet simple improvisée (portée 3 m/9 m), infligeant votre dé d'arts martiaux + votre modificateur de Force ou de Dextérité. Si vous lancez une créature de la sorte, elle subit le même montant de dégâts, que l'attaque soit réussie ou non.</p>` }] },
+      { level: 11, features: [{ name: "Poigne de fer", html: `<p>Si vous êtes sur le point de perdre un test d'empoignade opposé, vous pouvez dépenser 2 points de ki pour resserrer votre prise : vous réussissez automatiquement le test, mais vous subissez des dégâts égaux à votre niveau + la différence entre votre résultat et celui de votre adversaire. Ces dégâts ne peuvent être annulés par quelque moyen que ce soit.</p>` }] },
       { level: 17, features: [{ name: "Victoire éclair", html: `<p>Pour 4 points de ki, vous tentez une empoignade avant même le jet d'initiative, avec avantage, et pouvez utiliser Lancer destructeur par une action bonus.</p>` }] }
     ]
   },
@@ -832,15 +836,15 @@ const ARCHETYPES = [
         { name: "Festin d'Odhinn", html: `<p>Une boisson alcoolisée vous nourrit comme un repas complet.</p>` }
       ] },
       { level: 15, features: [{ name: "Récupération du fidèle", html: `<p>En réaction, en tombant à 0 point de vie, vous pouvez vous imposer les mains à vous-même.</p>` }] },
-      { level: 20, features: [{ name: "Valkyrja, l'Einherji", html: `<p>Vous n'avez plus besoin de boire ni de manger. Une fois par repos long, vous vous transformez pendant 1 minute : vous n'avez pas besoin de respirer, êtes immunisé aux sorts de Sagesse et de Charisme, et pouvez vous téléporter et attaquer ou lancer un sort en bonus si une créature meurt dans votre aura.</p>` }] }
+      { level: 20, features: [{ name: "Valkyrja, l'Einherji", html: `<p>Vous n'avez plus besoin de boire ni de manger. Par une action, vous vous transformez en émissaire divin pendant 1 minute : vous n'avez pas besoin de respirer, êtes immunisé contre tous les sorts nécessitant un jet de sauvegarde de Sagesse ou de Charisme, et si une créature meurt dans votre aura de vaillance vous pouvez vous téléporter sur son emplacement par une réaction et effectuer immédiatement une unique attaque d'arme ou lancer un sort dont la durée d'incantation est une action ou une action bonus.</p>` }] }
     ]
   },
   {
     name: "Meute de loups", classIdentifier: "ranger", img: "icons/creatures/mammals/wolf-howl-moon-blue.webp",
     theme: `<p>Le rôdeur chasse et combat comme un membre à part entière d'une meute de loups.</p>`,
     levels: [
-      { level: 3, features: [{ name: "Guerrier de la meute de loups", html: `<p>Une attaque de mêlée réussie donne l'avantage à la prochaine attaque d'un allié contre la même cible. Une attaque à distance réussie désavantage les attaques d'opportunité de la cible. En réaction, quand un allié est blessé, vous pouvez hurler pour infliger 1d6 dégâts psychiques.</p>` }] },
-      { level: 7, features: [{ name: "Chef de la meute de loups", html: `<p>Vous avez un sens de l'orientation aiguisé. Vous voyagez discrètement à vitesse normale, ou sans malus à la perception passive du groupe (pas les deux à la fois). En réaction, vous pouvez déplacer vous-même ou un allié de 3 m quand un ennemi se déplace (communication requise).</p>` }] },
+      { level: 3, features: [{ name: "Guerrier de la meute de loups", html: `<p>Une attaque de mêlée réussie donne l'avantage à la prochaine attaque d'un allié contre la même cible. Une attaque à distance ou de jet réussie désavantage les attaques d'opportunité de la cible jusqu'au début de votre prochain tour. En réaction, quand un allié est blessé, vous pouvez hurler pour infliger 1d6 dégâts psychiques.</p>` }] },
+      { level: 7, features: [{ name: "Chef de la meute de loups", html: `<p>Vous avez un sens de l'orientation aiguisé. Vous et vos alliés pouvez voyager discrètement à un rythme rapide, ou sans malus à la perception passive, mais pas les deux à la fois. En réaction, vous pouvez déplacer vous-même ou un allié conscient de 3 m au maximum quand un ennemi se déplace (communication ou signe visuel requis, et l'allié doit pouvoir vous entendre ou vous voir).</p>` }] },
       { level: 11, features: [{ name: "Frappe rapide", html: `<p>Tuer une créature vous accorde une attaque supplémentaire immédiate.</p>` }] },
       { level: 15, features: [{ name: "Endurance du loup", html: `<p>Une fois par round, sans action, vous pouvez dépenser un dé de vie pour récupérer 1d8 + votre modificateur de Constitution en points de vie.</p>` }] }
     ]
@@ -869,12 +873,14 @@ const ARCHETYPES = [
     theme: `<p>Un protecteur d'outre-monde parmi Níðhöggr, Fenrir ou Jörmungandr, présage vivant du Ragnarök.</p>`,
     levels: [
       { level: 1, features: [
-        { name: "Rancœur", html: `<p>Sans armure, votre classe d'armure est égale à 13 + Dextérité. En réaction, une attaque de mêlée reçue vous inflige des dégâts de force égaux à votre modificateur de Charisme (+1d8 au niveau 5, +2d8 au niveau 11, +3d8 au niveau 17) à votre agresseur.</p>` },
-        { name: "Méchanceté éternelle", html: `<p>Vous récupérez 1 point de vie chaque fois qu'un dé de dégâts de l'un de vos sorts ou tours de magie tombe sur 1 ; cet effet s'étend à votre arme de pacte ou à votre familier selon le pacte choisi.</p>` }
+        { name: "Rancœur", html: `<p>Sans armure, votre classe d'armure est égale à 13 + Dextérité. En réaction, une attaque de mêlée reçue vous inflige des dégâts de force égaux à votre modificateur de Charisme (minimum 1) à votre agresseur (+1d8 au niveau 5, +2d8 au niveau 11, +3d8 au niveau 17).</p>` },
+        { name: "Méchanceté éternelle", html: `<p>Vous récupérez 1 point de vie chaque fois qu'un dé de dégâts de l'un de vos sorts ou tours de magie tombe sur 1 ; cet effet s'étend à votre arme de pacte si vous avez choisi le pacte de la lame, ou aux dégâts infligés par votre familier si vous avez choisi le pacte de la chaîne (auquel cas votre familier bénéficie aussi du soin octroyé).</p>` }
       ] },
       { level: 6, features: [{ name: "Implacable", html: `<p>Les attaques d'opportunité contre vous sont désavantagées, vous relever ne coûte que 1,50 m de mouvement, et votre vitesse n'est jamais réduite (l'entrave et la paralysie restent possibles).</p>` }] },
-      { level: 10, features: [{ name: "Dernier assaut", html: `<p>En réaction, à 0 point de vie, vous pouvez lancer un sort ou effectuer une attaque.</p>` }] },
-      { level: 14, features: [{ name: "Dévoreur de vie", html: `<p>Vous « dévorez » un attaquant qui vous a touché : il est entravé ou neutralisé ; en cas d'échec à une sauvegarde de Force, il subit 3d10 dégâts d'acide. Un repos long est nécessaire pour réutiliser cette aptitude.</p>` }] }
+      { level: 10, features: [{ name: "Dernier assaut", html: `<p>Quand vos points de vie sont réduits à 0, vous pouvez utiliser votre réaction pour lancer un sort de sorcier, faire une attaque avec votre arme de pacte, ou permettre à votre familier de porter une attaque. Une fois cette aptitude utilisée, vous ne pouvez plus y faire appel avant d'avoir terminé un repos long ou court.</p>` }] },
+      { level: 14, features: [{ name: "Dévoreur de vie", html: `<p>Quand une créature réussit une attaque contre vous, vous pouvez utiliser cette aptitude pour la dévorer : elle rapetisse par magie et se retrouve à l'intérieur de votre corps, entravée et neutralisée.</p>
+        <p>Au début de son tour, elle peut faire un jet de sauvegarde de Force ; en cas de réussite, elle se libère en s'extirpant de votre corps dans l'emplacement inoccupé le plus proche. En cas d'échec, elle subit 3d10 dégâts d'acide tandis que votre corps la dissout peu à peu.</p>
+        <p>Si une créature est tuée par ces dégâts, son enveloppe charnelle est complètement désintégrée, mais vous pouvez régurgiter les objets qu'elle portait ou transportait sans les abîmer. Une fois cette aptitude utilisée, vous ne pouvez plus y faire appel avant d'avoir terminé un repos long.</p>` }] }
     ]
   },
   {
@@ -884,7 +890,7 @@ const ARCHETYPES = [
       { level: 1, features: [{ name: "Urðr, Verðandi et Skuld", html: `<p>En réaction, vous pouvez modifier de ±1d6 un jet (attaque, test ou sauvegarde) d'une créature visible. Une utilisation par catégorie de créature (humanoïde/mort-vivant/bête ; aberration/géant/monstrueuse ; céleste/dragon/élémentaire/fiélon), rechargée à un repos court ou long.</p>` }] },
       { level: 6, features: [{ name: "De l'argile pour les affaiblis", html: `<p>Vous retirez un état (aveuglé, charmé, assourdi, paralysé, pétrifié ou empoisonné) et accordez l'immunité à cet état pendant 1 minute. Rechargé à un repos court ou long.</p>` }] },
       { level: 10, features: [{ name: "Briser Gungnir", html: `<p>Vous redirigez une attaque à distance réussie contre vous vers une autre cible (jet d'attaque de sort opposé). Une minute de récupération.</p>` }] },
-      { level: 14, features: [{ name: "Tisser votre propre destin", html: `<p>Tout test, attaque ou sauvegarde obtenant 3 ou moins doit être relancé.</p>` }] }
+      { level: 14, features: [{ name: "Tisser votre propre destin", html: `<p>Tout test de caractéristique, jet d'attaque ou jet de sauvegarde obtenant 3 ou moins doit être relancé ; vous devez accepter le second résultat, même s'il est moins bon. Si le jet est avantagé ou désavantagé, vous ne pouvez relancer que l'un des deux dés.</p>` }] }
     ]
   }
 ];
@@ -1016,6 +1022,10 @@ for (const arch of ARCHETYPES) {
     }),
     traitAdv({ id: sid("mdr-weapon"), level: 1, title: "Armes", classRestriction: "primary", grants: ["weapon:sim"] }),
     traitAdv({ id: sid("mdr-armor"), level: 1, title: "Armures", classRestriction: "primary", grants: ["armor:lgt"] }),
+    traitAdv({
+      id: sid("mdr-languages"), level: 1, title: "Langues", classRestriction: "primary",
+      choices: [{ count: 1, pool: ["languages:standard:*", "languages:exotic:*"] }]
+    }),
     itemGrant({ id: sid("mdr-lvl1"), level: 1, title: "Aptitudes de classe", items: [uuidItem("features", "Cercle de futhark"), uuidItem("features", "Incantation runique")] }),
     subclassAdv(sid("mdr-subclass"), 2),
     itemGrant({ id: sid("mdr-lvl3"), level: 3, title: "Aptitudes de classe", items: [uuidItem("features", "Protéger le marqué"), uuidItem("features", "Expertise (Maître des runes)")] }),
@@ -1031,6 +1041,10 @@ for (const arch of ARCHETYPES) {
     scaleValueNumber({
       id: sid("mdr-spells-known"), title: "Sorts connus", identifier: "spells-known",
       scale: { 1: 4, 2: 5, 3: 6, 4: 7, 5: 8, 6: 9, 7: 10, 8: 11, 9: 12, 10: 13, 11: 14, 12: 15, 13: 16, 14: 17, 15: 18, 16: 19, 17: 20, 18: 22, 19: 22, 20: 22 }
+    }),
+    scaleValueNumber({
+      id: sid("mdr-cantrips-known"), title: "Tours de magie connus", identifier: "cantrips-known",
+      scale: { 1: 1, 4: 2, 10: 3 }
     }),
     scaleValueDice({
       id: sid("mdr-die"), title: "Dé de cercle de futhark", identifier: "futhark-die",
@@ -1421,16 +1435,16 @@ function npcFeat({ name, img, html, actorId }) {
 
 const SIZE_MAP = { "Gigantesque": "grg", "Très Grande": "huge", "Grande": "lg" };
 const TYPE_MAP = { "Bête": "beast", "Géant": "giant", "Dragon": "dragon", "Monstruosité": "monstrosity" };
-const DAMAGE_MAP = { "acide": "acid", "feu": "fire", "froid": "cold", "nécrotiques": "necrotic", "nécrotique": "necrotic", "poison": "poison", "foudre": "lightning", "tonnerre": "thunder", "radiants": "radiant", "psychiques": "psychic", "force": "force" };
+const DAMAGE_MAP = { "acide": "acid", "feu": "fire", "froid": "cold", "nécrotiques": "necrotic", "nécrotique": "necrotic", "poison": "poison", "foudre": "lightning", "tonnerre": "thunder", "radiants": "radiant", "psychiques": "psychic", "force": "force", "contondants": "bludgeoning", "perforants": "piercing", "tranchants": "slashing" };
 const CONDITION_MAP = { "charmé": "charmed", "épuisé": "exhausted", "terrorisé": "frightened", "paralysé": "paralyzed", "empoisonné": "poisoned", "aveuglé": "blinded", "assourdi": "deafened", "étourdi": "stunned", "inconscient": "unconscious" };
 
-function npc({ name, img, size, type, alignment, ac, hp, hpFormula, movement, abilities, saves = [], skills = [], damageImmunities = [], conditionImmunities = [], languages = "", cr, legendary = false, biography, aptitudes = [], actions = [], legendaryActions = [], reactions = [] }) {
+function npc({ name, img, size, type, alignment, ac, hp, hpFormula, movement, abilities, saves = [], skills = [], skillExpertise = [], damageImmunities = [], damageResistances = [], conditionImmunities = [], languages = "", cr, legendary = false, biography, aptitudes = [], actions = [], legendaryActions = [], reactions = [] }) {
   const abilityBlock = {};
   for (const [k, v] of Object.entries(abilities)) {
     abilityBlock[k] = { value: v, proficient: saves.includes(k) ? 1 : 0, bonuses: { check: "", save: "" }, max: null };
   }
   const skillBlock = {};
-  for (const s of skills) skillBlock[s] = { value: 1, ability: { prc: "wis", ins: "wis", itm: "cha", per: "cha" }[s] ?? "wis", bonuses: { check: "", passive: "" }, roll: { min: null, max: null, mode: 0 } };
+  for (const s of skills) skillBlock[s] = { value: skillExpertise.includes(s) ? 2 : 1, ability: { prc: "wis", ins: "wis", itm: "cha", per: "cha" }[s] ?? "wis", bonuses: { check: "", passive: "" }, roll: { min: null, max: null, mode: 0 } };
 
   const actorId = sid("npc-" + name);
   const items = [];
@@ -1461,7 +1475,7 @@ function npc({ name, img, size, type, alignment, ac, hp, hpFormula, movement, ab
       traits: {
         size: SIZE_MAP[size] ?? "lg",
         di: { value: damageImmunities.map(d => DAMAGE_MAP[d] ?? d).filter(Boolean), bypasses: [], custom: "" },
-        dr: { value: [], bypasses: [], custom: "" },
+        dr: { value: damageResistances.map(d => DAMAGE_MAP[d] ?? d).filter(Boolean), bypasses: [], custom: "" },
         dv: { value: [], bypasses: [], custom: "" },
         ci: { value: conditionImmunities.map(c => CONDITION_MAP[c] ?? c).filter(Boolean), custom: "" },
         languages: { value: [], custom: languages }
@@ -1494,7 +1508,8 @@ const NPCS = [
     size: "Gigantesque", type: "Bête", alignment: "Chaotique Peu honorable",
     ac: 24, hp: 580, hpFormula: "34d12 + 340", movement: { walk: 36, darkvision: 36 },
     abilities: { str: 30, dex: 26, con: 28, int: 18, wis: 10, cha: 14 },
-    saves: ["str", "con"], skills: ["prc"],
+    saves: ["str", "con"], skills: ["prc"], skillExpertise: ["prc"],
+    damageResistances: ["contondants", "perforants", "tranchants"],
     damageImmunities: ["acide", "feu", "froid", "nécrotiques", "poison"],
     conditionImmunities: ["charmé", "épuisé", "terrorisé", "paralysé", "empoisonné"],
     cr: 26,
@@ -1528,6 +1543,7 @@ const NPCS = [
     ac: 18, hp: 204, hpFormula: "16d12 + 96", movement: { walk: 18, darkvision: 36 },
     abilities: { str: 25, dex: 26, con: 22, int: 14, wis: 12, cha: 14 },
     saves: ["str", "dex"], skills: ["prc"],
+    damageResistances: ["contondants", "perforants", "tranchants"],
     damageImmunities: ["feu"],
     conditionImmunities: ["charmé", "épuisé", "terrorisé", "paralysé", "empoisonné"],
     cr: 15,
@@ -1559,6 +1575,7 @@ const NPCS = [
     ac: 16, hp: 234, hpFormula: "16d12 + 128", movement: { walk: 15, darkvision: 36 },
     abilities: { str: 25, dex: 22, con: 26, int: 11, wis: 14, cha: 14 },
     saves: ["str", "dex"], skills: ["prc"],
+    damageResistances: ["contondants", "perforants", "tranchants"],
     damageImmunities: ["froid"],
     conditionImmunities: ["charmé", "épuisé", "terrorisé", "paralysé", "empoisonné"],
     cr: 15,
@@ -1588,8 +1605,8 @@ const NPCS = [
     name: "Hrimgrimnir", img: "icons/creatures/magical/humanoid-giant-storm.webp",
     size: "Très Grande", type: "Géant", alignment: "Chaotique Peu honorable",
     ac: 15, hp: 280, hpFormula: "20d12 + 160", movement: { walk: 15, darkvision: 36 },
-    abilities: { str: 30, dex: 9, con: 26, int: 20, wis: 20, cha: 14 },
-    saves: ["str", "con", "wis", "cha"], skills: ["itm", "prc"],
+    abilities: { str: 30, dex: 9, con: 26, int: 20, wis: 13, cha: 13 },
+    saves: ["str", "con", "wis", "cha"], skills: ["itm", "prc"], skillExpertise: ["itm", "prc"],
     damageImmunities: ["froid"],
     conditionImmunities: [],
     languages: "commun",

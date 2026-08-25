@@ -5,7 +5,7 @@
   "img": "icons/magic/divination/crystal-ball-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Tout test, attaque ou sauvegarde obtenant 3 ou moins doit être relancé.</p>",
+      "value": "<p>Tout test de caractéristique, jet d'attaque ou jet de sauvegarde obtenant 3 ou moins doit être relancé ; vous devez accepter le second résultat, même s'il est moins bon. Si le jet est avantagé ou désavantagé, vous ne pouvez relancer que l'un des deux dés.</p>",
       "chat": ""
     },
     "identifier": "tisser-votre-propre-destin-les-nornes",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191396,
+    "modifiedTime": 1787681191396,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

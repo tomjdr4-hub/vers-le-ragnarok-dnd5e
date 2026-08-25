@@ -5,7 +5,7 @@
   "img": "icons/sundries/scrolls/scroll-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Vous pouvez oublier un sort préparé de niveau 2 ou plus pour apprendre temporairement (8 heures) un sort proposé par le MJ ; 3 utilisations, une minute de récupération entre chaque, repos long pour tout récupérer.</p>",
+      "value": "<p>Par une action, vous pouvez oublier un sort préparé de niveau 2 ou plus. Le MJ choisit alors deux sorts de magicien que vous ne connaissez pas, d'un niveau égal à celui que vous avez oublié moins 1 ; vous en choisissez un qui devient un sort préparé pendant 8 heures. Vous n'avez pas mémorisé ce sort et il n'apparaît pas dans votre grimoire : vous ne pouvez ni l'y inscrire ni l'utiliser pour créer un parchemin magique.</p>\n          <p>Vous pouvez utiliser cette aptitude jusqu'à trois fois, en attendant au moins une minute entre chaque utilisation ; une fois vos utilisations dépensées, il faut terminer un repos long pour les récupérer. Chaque fois que vous utilisez cette aptitude, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>",
       "chat": ""
     },
     "identifier": "monde-du-savoir-ecole-du-vagabond",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191395,
+    "modifiedTime": 1787681191395,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

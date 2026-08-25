@@ -5,7 +5,7 @@
   "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
   "system": {
     "description": {
-      "value": "<p>En réaction, à 0 point de vie, vous pouvez lancer un sort ou effectuer une attaque.</p>",
+      "value": "<p>Quand vos points de vie sont réduits à 0, vous pouvez utiliser votre réaction pour lancer un sort de sorcier, faire une attaque avec votre arme de pacte, ou permettre à votre familier de porter une attaque. Une fois cette aptitude utilisée, vous ne pouvez plus y faire appel avant d'avoir terminé un repos long ou court.</p>",
       "chat": ""
     },
     "identifier": "dernier-assaut-celui-qui-apporte-l-apocalypse",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191396,
+    "modifiedTime": 1787681191396,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

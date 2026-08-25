@@ -5,7 +5,7 @@
   "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>.</p>",
+      "value": "<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>, <strong>Couvrir la retraite</strong> (les alliés dans votre zone d'allonge, ou jusqu'à 6 m si vous maniez une arme à distance, peuvent se désengager par une action bonus).</p>",
       "chat": ""
     },
     "identifier": "tactiques-ameliorees-archetype-martial-gardien",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191395,
+    "modifiedTime": 1787681191395,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

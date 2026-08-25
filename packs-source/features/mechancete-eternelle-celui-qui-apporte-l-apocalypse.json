@@ -5,7 +5,7 @@
   "img": "icons/creatures/reptiles/wyrm-serpent-teal.webp",
   "system": {
     "description": {
-      "value": "<p>Vous récupérez 1 point de vie chaque fois qu'un dé de dégâts de l'un de vos sorts ou tours de magie tombe sur 1 ; cet effet s'étend à votre arme de pacte ou à votre familier selon le pacte choisi.</p>",
+      "value": "<p>Vous récupérez 1 point de vie chaque fois qu'un dé de dégâts de l'un de vos sorts ou tours de magie tombe sur 1 ; cet effet s'étend à votre arme de pacte si vous avez choisi le pacte de la lame, ou aux dégâts infligés par votre familier si vous avez choisi le pacte de la chaîne (auquel cas votre familier bénéficie aussi du soin octroyé).</p>",
       "chat": ""
     },
     "identifier": "mechancete-eternelle-celui-qui-apporte-l-apocalypse",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191396,
+    "modifiedTime": 1787681191396,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

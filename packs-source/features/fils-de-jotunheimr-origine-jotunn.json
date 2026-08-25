@@ -5,7 +5,7 @@
   "img": "icons/magic/water/orb-ice-web.webp",
   "system": {
     "description": {
-      "value": "<p>Quand vous épuisez tous vos emplacements de sort d'un niveau donné, vous vous transformez pendant 1 minute : vous récupérez des points de vie égaux au niveau de l'emplacement plus votre niveau de personnage (le triple en points de vie temporaires), gagnez une résistance au froid, et une attaque de contact glacial (1d6 + Charisme + niveau de l'emplacement, jusqu'à 4d6 au niveau 17). Se recharge par niveau d'emplacement à un repos long.</p>",
+      "value": "<p>Quand vous épuisez tous vos emplacements de sort d'un niveau donné, vous vous transformez pendant 1 minute : vous récupérez des points de vie égaux au niveau de l'emplacement plus votre niveau de personnage (le triple en points de vie temporaires), gagnez une résistance au froid, et une attaque de contact glacial en 1d6 + Charisme + niveau de l'emplacement (2d6 au niveau 5, 3d6 au niveau 11, 4d6 au niveau 17). Une fois utilisée pour un niveau d'emplacement donné, cette aptitude ne peut être réutilisée pour ce même niveau qu'après un repos long.</p>",
       "chat": ""
     },
     "identifier": "fils-de-jotunheimr-origine-jotunn",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743377,
-    "modifiedTime": 1787676743377,
+    "createdTime": 1787681191395,
+    "modifiedTime": 1787681191395,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

@@ -89,6 +89,14 @@ données Foundry.
   Par ailleurs, l'immunité aux dégâts contondants/perforants/tranchants *infligés par des armes non
   magiques* (une nuance courante des monstres de haut niveau) n'est pas automatisée dans les résistances
   de la fiche — elle est rappelée dans la biographie de chaque créature, à appliquer manuellement.
+- **Hrimgrimnir** a un désaccord interne dans le livre entre son tableau de caractéristiques imprimé
+  (Sagesse 20, Charisme 14) et ses bonus de jets de sauvegarde/compétences imprimés (Sag +7, Cha +7,
+  Intimidation +13, Perception +13, Perception passive 23) : avec les scores imprimés et son bonus de
+  maîtrise de +6 (confirmé par ses bonus de Force/Constitution, cohérents), ces bonus ne se recalculent
+  pas. Comme les quatre valeurs indépendantes s'accordent exactement avec Sagesse **13** et Charisme
+  **13** combinés à une maîtrise doublée (expertise) en Intimidation et Perception, ce sont ces valeurs
+  qui ont été retenues plutôt que le tableau de caractéristiques, pour préserver les nombres réellement
+  utilisés à la table.
 - **Le bloc « Dévotion runique »** (`scripts/vers-le-ragnarok.js`) est injecté dans l'onglet Détails de la
   fiche via le hook `renderCharacterActorSheet`, et stocke l'Ætt et la rune sous forme de flags sur
   l'Acteur (`flags.vers-le-ragnarok.aett` / `.rune`) — c'est la technique standard pour ajouter un champ à

@@ -5,7 +5,7 @@
   "img": "icons/magic/water/orb-ice-web.webp",
   "system": {
     "description": {
-      "value": "<p>Vous déclenchez une tempête de neige en rayon 750 m ; en rayon 9 m, dégâts de froid égaux à votre niveau d'emplacement plus Charisme et invocation d'élémentaires de la glace. Dure 1 minute, un repos long est nécessaire pour réutiliser cette aptitude.</p>",
+      "value": "<p>Par une action, vous dépensez un emplacement de sort pour déclencher une tempête de neige en rayon 750 m (la neige ne vous atteint pas si vous êtes sous terre ou sous l'eau). Chaque créature à 9 m ou moins de vous subit, au début de son tour, des dégâts de froid égaux au niveau de l'emplacement plus votre modificateur de Charisme (moitié en cas de réussite d'un jet de sauvegarde de Constitution).</p>\n        <p>Tant que cette aptitude est active, vous pouvez dépenser une action pour convoquer un élémentaire de la glace qui apparaît à 1,50 m de vous, agit à votre tour et vous obéit — vous pouvez le faire un nombre de fois égal au niveau de l'emplacement utilisé.</p>\n        <p>Ces effets durent 1 minute (les élémentaires invoqués disparaissent alors). Un repos long est nécessaire pour réutiliser cette aptitude.</p>",
       "chat": ""
     },
     "identifier": "les-os-d-ymir-origine-jotunn",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743377,
-    "modifiedTime": 1787676743377,
+    "createdTime": 1787681191395,
+    "modifiedTime": 1787681191395,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

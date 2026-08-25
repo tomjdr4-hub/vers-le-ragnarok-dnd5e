@@ -5,7 +5,7 @@
   "img": "icons/creatures/mammals/wolf-howl-moon-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Une attaque de mêlée réussie donne l'avantage à la prochaine attaque d'un allié contre la même cible. Une attaque à distance réussie désavantage les attaques d'opportunité de la cible. En réaction, quand un allié est blessé, vous pouvez hurler pour infliger 1d6 dégâts psychiques.</p>",
+      "value": "<p>Une attaque de mêlée réussie donne l'avantage à la prochaine attaque d'un allié contre la même cible. Une attaque à distance ou de jet réussie désavantage les attaques d'opportunité de la cible jusqu'au début de votre prochain tour. En réaction, quand un allié est blessé, vous pouvez hurler pour infliger 1d6 dégâts psychiques.</p>",
       "chat": ""
     },
     "identifier": "guerrier-de-la-meute-de-loups-meute-de-loups",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787676743378,
-    "modifiedTime": 1787676743378,
+    "createdTime": 1787681191396,
+    "modifiedTime": 1787681191396,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
