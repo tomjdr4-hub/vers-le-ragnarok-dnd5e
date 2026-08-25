@@ -1,0 +1,46 @@
+{
+  "_id": "a86724ffbed87673",
+  "name": "Sorts de l'ætt de Heimdallr (Ætt de Heimdallr)",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Au niveau approprié (dès que vous disposez d'un emplacement de sort du niveau correspondant), vous ajoutez les sorts suivants à votre liste de sorts de maître des runes :</p>\n        <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>\n        <tr><td>1er</td><td>Bouclier de la foi, héroïsme</td></tr>\n        <tr><td>2e</td><td>Peau d'écorce, protection contre le poison</td></tr>\n        <tr><td>3e</td><td>Esprits gardiens, glyphe de protection</td></tr>\n        <tr><td>4e</td><td>Peau de pierre, sanctuaire privé</td></tr>\n        <tr><td>5e</td><td>Coquille antivie, mur de force</td></tr>\n        <tr><td>6e</td><td>Protections et sceaux</td></tr>\n        <tr><td>7e</td><td>Manoir somptueux</td></tr>\n        <tr><td>8e</td><td>Mot de pouvoir étourdissant</td></tr>\n        <tr><td>9e</td><td>Emprisonnement</td></tr></table>",
+      "chat": ""
+    },
+    "identifier": "sorts-de-l-tt-de-heimdallr-tt-de-heimdallr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 2 (Ætt de Heimdallr)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787676743377,
+    "modifiedTime": 1787676743377,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!a86724ffbed87673"
+}

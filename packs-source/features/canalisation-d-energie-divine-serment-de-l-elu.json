@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous gagnez deux options de canalisation d'énergie divine, en plus de celles offertes par votre classe.</p>\n        <p><strong>Contrepoids au combat.</strong> Modifiez de ±1d4 un jet d'attaque après en avoir vu le résultat (jet de sauvegarde de Charisme pour un ennemi).</p>\n        <p><strong>Vigueur surnaturelle.</strong> Dépensez 10 points de vie de vos sorts de soin plus une utilisation de canalisation pour retirer un niveau d'épuisement.</p>",
+      "value": "<p>Vous gagnez deux options de canalisation d'énergie divine, en plus de celles offertes par votre classe.</p>\n        <p><strong>Contrepoids au combat.</strong> Par une action, désignez une créature hostile et une créature amicale situées à 9 m ou moins de vous. La créature hostile fait un jet de sauvegarde de Charisme. En cas d'échec, chaque fois qu'elle effectue un jet d'attaque, elle lance également 1d4 et soustrait le résultat à son jet d'attaque, tandis que la créature amicale lance 1d4 et l'ajoute au sien ; ces effets durent 1 minute. En cas de réussite, seule la créature amicale bénéficie de l'effet.</p>\n        <p><strong>Vigueur surnaturelle.</strong> Quand vous utilisez l'imposition des mains, vous pouvez dépenser 10 points de guérison et votre canalisation d'énergie divine pour supprimer un niveau d'épuisement (un seul par utilisation).</p>",
       "chat": ""
     },
     "identifier": "canalisation-d-energie-divine-serment-de-l-elu",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787667172862,
-    "modifiedTime": 1787667172862,
+    "createdTime": 1787676743378,
+    "modifiedTime": 1787676743378,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

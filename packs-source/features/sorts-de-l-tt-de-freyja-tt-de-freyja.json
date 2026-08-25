@@ -1,0 +1,46 @@
+{
+  "_id": "685643e0fbe6c3d5",
+  "name": "Sorts de l'ætt de Freyja (Ætt de Freyja)",
+  "type": "feat",
+  "img": "icons/magic/life/heart-cross-strong-flame-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Au niveau approprié (dès que vous disposez d'un emplacement de sort du niveau correspondant), vous ajoutez les sorts suivants à votre liste de sorts de maître des runes :</p>\n        <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>\n        <tr><td>1er</td><td>Baies nourricières, création ou destruction d'eau</td></tr>\n        <tr><td>2e</td><td>Aide, restauration inférieure</td></tr>\n        <tr><td>3e</td><td>Respiration aquatique, revigorer</td></tr>\n        <tr><td>4e</td><td>Fabrication, protection contre la mort</td></tr>\n        <tr><td>5e</td><td>Création, relever les morts</td></tr>\n        <tr><td>6e</td><td>Festin des héros</td></tr>\n        <tr><td>7e</td><td>Régénération</td></tr>\n        <tr><td>8e</td><td>Répulsion/attirance</td></tr>\n        <tr><td>9e</td><td>Résurrection suprême</td></tr></table>",
+      "chat": ""
+    },
+    "identifier": "sorts-de-l-tt-de-freyja-tt-de-freyja",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 2 (Ætt de Freyja)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787676743377,
+    "modifiedTime": 1787676743377,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!685643e0fbe6c3d5"
+}

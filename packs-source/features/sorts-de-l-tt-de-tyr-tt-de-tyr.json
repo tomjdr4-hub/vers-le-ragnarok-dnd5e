@@ -1,0 +1,46 @@
+{
+  "_id": "8ddbe972213be144",
+  "name": "Sorts de l'ætt de Týr (Ætt de Týr)",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-sky-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Au niveau approprié (dès que vous disposez d'un emplacement de sort du niveau correspondant), vous ajoutez les sorts suivants à votre liste de sorts de maître des runes :</p>\n        <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>\n        <tr><td>1er</td><td>Balisage, bouclier</td></tr>\n        <tr><td>2e</td><td>Arme magique, arme spirituelle</td></tr>\n        <tr><td>3e</td><td>Éclair, tempête de neige</td></tr>\n        <tr><td>4e</td><td>Bannissement, tempête de grêle</td></tr>\n        <tr><td>5e</td><td>Colonne de flamme, immobiliser un monstre</td></tr>\n        <tr><td>6e</td><td>Chaîne d'éclairs</td></tr>\n        <tr><td>7e</td><td>Épée magique</td></tr>\n        <tr><td>8e</td><td>Nuage incendiaire</td></tr>\n        <tr><td>9e</td><td>Tempête vengeresse</td></tr></table>",
+      "chat": ""
+    },
+    "identifier": "sorts-de-l-tt-de-tyr-tt-de-tyr",
+    "source": "Vers le Ragnarök",
+    "requirements": "Maître des runes 2 (Ætt de Týr)",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "activities": {},
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1787676743377,
+    "modifiedTime": 1787676743377,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "compendiumSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8ddbe972213be144"
+}

@@ -642,6 +642,17 @@ const AETTS = [
   {
     name: "Ætt de Heimdallr", theme: "la protection et l'adversité", img: "icons/magic/defensive/shield-barrier-blue.webp",
     features: [
+      { level: 2, name: "Sorts de l'ætt de Heimdallr", html: `<p>Au niveau approprié (dès que vous disposez d'un emplacement de sort du niveau correspondant), vous ajoutez les sorts suivants à votre liste de sorts de maître des runes :</p>
+        <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>
+        <tr><td>1er</td><td>Bouclier de la foi, héroïsme</td></tr>
+        <tr><td>2e</td><td>Peau d'écorce, protection contre le poison</td></tr>
+        <tr><td>3e</td><td>Esprits gardiens, glyphe de protection</td></tr>
+        <tr><td>4e</td><td>Peau de pierre, sanctuaire privé</td></tr>
+        <tr><td>5e</td><td>Coquille antivie, mur de force</td></tr>
+        <tr><td>6e</td><td>Protections et sceaux</td></tr>
+        <tr><td>7e</td><td>Manoir somptueux</td></tr>
+        <tr><td>8e</td><td>Mot de pouvoir étourdissant</td></tr>
+        <tr><td>9e</td><td>Emprisonnement</td></tr></table>` },
       { level: 2, name: "Sceau d'Algiz", html: `<p>Vous pouvez dépenser un dé de cercle de futhark en réaction pour forcer une créature à relancer un jet d'attaque d'opportunité qu'elle vient de réussir contre une cible se trouvant dans votre cercle.</p>` },
       { level: 7, name: "Cercle de Heimdallr", html: `<p>Les alliés se trouvant dans votre cercle réduisent les dégâts qu'ils subissent d'un montant égal à la moitié de votre modificateur de Sagesse, avant application des résistances et vulnérabilités. En maintenant le cercle par une action bonus, vous pouvez le déplacer de 1,50 m.</p>` },
       { level: 9, name: "Tours de magie de Heimdallr", html: `<p>Les tours de magie <em>rayon de givre</em> et <em>résistance</em> s'ajoutent à votre liste de tours de magie runiques (voir Incantation runique).</p>` },
@@ -651,6 +662,17 @@ const AETTS = [
   {
     name: "Ætt de Freyja", theme: "l'abondance, la guérison et la prospérité", img: "icons/magic/life/heart-cross-strong-flame-purple.webp",
     features: [
+      { level: 2, name: "Sorts de l'ætt de Freyja", html: `<p>Au niveau approprié (dès que vous disposez d'un emplacement de sort du niveau correspondant), vous ajoutez les sorts suivants à votre liste de sorts de maître des runes :</p>
+        <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>
+        <tr><td>1er</td><td>Baies nourricières, création ou destruction d'eau</td></tr>
+        <tr><td>2e</td><td>Aide, restauration inférieure</td></tr>
+        <tr><td>3e</td><td>Respiration aquatique, revigorer</td></tr>
+        <tr><td>4e</td><td>Fabrication, protection contre la mort</td></tr>
+        <tr><td>5e</td><td>Création, relever les morts</td></tr>
+        <tr><td>6e</td><td>Festin des héros</td></tr>
+        <tr><td>7e</td><td>Régénération</td></tr>
+        <tr><td>8e</td><td>Répulsion/attirance</td></tr>
+        <tr><td>9e</td><td>Résurrection suprême</td></tr></table>` },
       { level: 2, name: "Bénédiction d'Ansuz", html: `<p>Par une action, vous pouvez dépenser un dé de cercle de futhark pour soigner une créature se trouvant dans votre cercle d'un nombre de points de vie égal au résultat du dé plus votre modificateur de Sagesse.</p>` },
       { level: 7, name: "Cercle de Freyja", html: `<p>Les alliés se trouvant dans votre cercle sont avantagés aux jets de sauvegarde contre la mort ; un allié récupère 1 point de vie s'il obtient 19 ou 20 à ce jet. En maintenant le cercle par une action bonus, vous pouvez augmenter son rayon de 1,50 m, jusqu'à un maximum de 9 m.</p>` },
       { level: 9, name: "Tours de magie de Freyja", html: `<p>Les tours de magie <em>lumières dansantes</em> et <em>réparation</em> s'ajoutent à votre liste de tours de magie runiques (voir Incantation runique).</p>` },
@@ -660,6 +682,17 @@ const AETTS = [
   {
     name: "Ætt de Týr", theme: "la justice et le châtiment", img: "icons/magic/lightning/bolt-strike-sky-blue.webp",
     features: [
+      { level: 2, name: "Sorts de l'ætt de Týr", html: `<p>Au niveau approprié (dès que vous disposez d'un emplacement de sort du niveau correspondant), vous ajoutez les sorts suivants à votre liste de sorts de maître des runes :</p>
+        <table><tr><th>Niveau de sort</th><th>Sorts</th></tr>
+        <tr><td>1er</td><td>Balisage, bouclier</td></tr>
+        <tr><td>2e</td><td>Arme magique, arme spirituelle</td></tr>
+        <tr><td>3e</td><td>Éclair, tempête de neige</td></tr>
+        <tr><td>4e</td><td>Bannissement, tempête de grêle</td></tr>
+        <tr><td>5e</td><td>Colonne de flamme, immobiliser un monstre</td></tr>
+        <tr><td>6e</td><td>Chaîne d'éclairs</td></tr>
+        <tr><td>7e</td><td>Épée magique</td></tr>
+        <tr><td>8e</td><td>Nuage incendiaire</td></tr>
+        <tr><td>9e</td><td>Tempête vengeresse</td></tr></table>` },
       { level: 2, name: "Châtiment de Teiwaz", html: `<p>Quand vous ou un allié dans votre cercle subissez une attaque réussie, vous pouvez dépenser un dé de cercle de futhark en réaction : chaque ennemi se trouvant dans le cercle subit alors des dégâts radiants égaux au résultat du dé.</p>` },
       { level: 7, name: "Cercle de Týr", html: `<p>Les ennemis se trouvant dans votre cercle perdent leurs résistances aux dégâts contondants, perforants et tranchants non magiques. En maintenant le cercle par une action bonus, vous créez un second cercle de 1,50 m de rayon centré sur vous, qui vous suit dans vos déplacements et dure jusqu'au début de votre tour suivant.</p>` },
       { level: 9, name: "Tours de magie de Týr", html: `<p>Les tours de magie <em>flamme sacrée</em> et <em>viser juste</em> s'ajoutent à votre liste de tours de magie runiques (voir Incantation runique).</p>` },
@@ -707,13 +740,15 @@ const ARCHETYPES = [
     theme: `<p>Les blessures et les sacrifices volontaires deviennent une source de pouvoir divin.</p>`,
     levels: [
       { level: 1, features: [
-        { name: "Rituel de l'offrande honorable", html: `<p>Lors d'un repos long, vous pouvez vous infliger un nombre de blessures permanentes égal à votre modificateur de Sagesse (œil, oreille, membre… à l'appréciation du MJ) ; chaque blessure offerte accorde un avantage durable (chance, endurance ou savoir) jusqu'au prochain repos long.</p>` },
+        { name: "Rituel de l'offrande honorable", html: `<p>Lors d'un repos long, vous pouvez infliger un nombre de blessures permanentes (œil, oreille, membre… à l'appréciation du MJ) égal à votre modificateur de Sagesse parmi les créatures consentantes dans votre champ de vision.</p>
+          <p>Pour chaque blessure offerte durant le rituel, le participant qui l'a livrée choisit l'un des avantages suivants, qui dure jusqu'au prochain repos long :</p>
+          <p><strong>Avantage de chance.</strong> Refaire un unique test de caractéristique, jet de sauvegarde ou jet d'attaque.</p>
+          <p><strong>Avantage d'endurance.</strong> Par une action bonus, dépenser et jeter l'un de ses dés de vie pour récupérer un nombre de points de vie égal au résultat (cumulable en dépensant plusieurs dés lors d'une même action bonus si l'avantage a été choisi plusieurs fois).</p>
+          <p><strong>Avantage de savoir.</strong> Choisir un sort de niveau 1 non connu ou non préparable ; en choisissant cet avantage plusieurs fois, apprendre un sort de plus haut niveau à condition de disposer d'un emplacement de sort du niveau correspondant.</p>` },
         { name: "Maîtrise supplémentaire", html: `<p>Vous gagnez la maîtrise des armures lourdes.</p>` },
-        { name: "Balafres sacrées", html: `<p>Quand vous êtes touché alors que vous n'êtes pas à vos points de vie maximum (et sans PV temporaires), vous gagnez des points de vie temporaires égaux à votre modificateur de Charisme.</p>` }
+        { name: "Balafres sacrées", html: `<p>Quand vous êtes touché alors que vous n'êtes pas à vos points de vie maximum (et sans PV temporaires), vous gagnez des points de vie temporaires égaux à votre modificateur de Charisme, et vous ajoutez ce même montant au prochain jet d'attaque d'arme et jet de dégâts que vous effectuez lors de votre prochain tour.</p>` }
       ] },
-      { level: 2, features: [{ name: "Canalisation d'énergie divine", html: `<p>Vous gagnez deux options de canalisation d'énergie divine, en plus de celles offertes par votre classe.</p>
-        <p><strong>Contrepoids au combat.</strong> Modifiez de ±1d4 un jet d'attaque (le vôtre, celui d'un allié ou d'un ennemi), après avoir vu le résultat mais avant de savoir s'il touche (jet de sauvegarde de Charisme pour un ennemi).</p>
-        <p><strong>Vigueur surnaturelle.</strong> Dépensez 10 points de vie de vos sorts de soin plus une utilisation de canalisation pour retirer un niveau d'épuisement.</p>` }] },
+      { level: 2, features: [{ name: "Canalisation d'énergie divine : gloire du martyr", html: `<p>Vous pouvez sacrifier une partie de la vie d'un volontaire sur l'autel de la guerre. Par une action, vous ou une créature consentante dans votre champ de vision réduisez tous les dégâts subis de 2 (avant application des résistances et vulnérabilités) et êtes avantagé sur les jets de sauvegarde, mais les effets de guérison dont vous bénéficiez sont réduits de moitié. Ces effets durent 1 minute.</p>` }] },
       { level: 6, features: [{ name: "Perte sacrée", html: `<p>Par une réaction, vous pouvez donner l'effet de Balafres sacrées à un allié touché, à 9 m ou moins de vous.</p>` }] },
       { level: 8, features: [{ name: "Frappe divine", html: `<p>Une fois par tour, une attaque d'arme réussie inflige 1d8 dégâts radiants supplémentaires (2d8 au niveau 14).</p>` }] },
       { level: 17, features: [{ name: "Voilà qui satisfait les dieux", html: `<p>Vous choisissez l'avantage ou le désavantage aux jets de sauvegarde contre la mort d'une créature. Vous pouvez transférer une résistance physique et une annulation de dégâts à une créature que vous venez de soigner.</p>` }] }
@@ -790,8 +825,8 @@ const ARCHETYPES = [
     theme: `<p>Honneur au combat, position à faire respecter, et générosité rendue au centuple : les préceptes de l'Élu.</p>`,
     levels: [
       { level: 3, features: [{ name: "Canalisation d'énergie divine", html: `<p>Vous gagnez deux options de canalisation d'énergie divine, en plus de celles offertes par votre classe.</p>
-        <p><strong>Contrepoids au combat.</strong> Modifiez de ±1d4 un jet d'attaque après en avoir vu le résultat (jet de sauvegarde de Charisme pour un ennemi).</p>
-        <p><strong>Vigueur surnaturelle.</strong> Dépensez 10 points de vie de vos sorts de soin plus une utilisation de canalisation pour retirer un niveau d'épuisement.</p>` }] },
+        <p><strong>Contrepoids au combat.</strong> Par une action, désignez une créature hostile et une créature amicale situées à 9 m ou moins de vous. La créature hostile fait un jet de sauvegarde de Charisme. En cas d'échec, chaque fois qu'elle effectue un jet d'attaque, elle lance également 1d4 et soustrait le résultat à son jet d'attaque, tandis que la créature amicale lance 1d4 et l'ajoute au sien ; ces effets durent 1 minute. En cas de réussite, seule la créature amicale bénéficie de l'effet.</p>
+        <p><strong>Vigueur surnaturelle.</strong> Quand vous utilisez l'imposition des mains, vous pouvez dépenser 10 points de guérison et votre canalisation d'énergie divine pour supprimer un niveau d'épuisement (un seul par utilisation).</p>` }] },
       { level: 7, features: [
         { name: "Aura de vaillance", html: `<p>Après une sauvegarde réussie, vous et les alliés à 6 m (12 m au niveau 18) êtes avantagés à votre prochain test ou attaque.</p>` },
         { name: "Festin d'Odhinn", html: `<p>Une boisson alcoolisée vous nourrit comme un repas complet.</p>` }
@@ -816,7 +851,9 @@ const ARCHETYPES = [
     levels: [
       { level: 3, features: [
         { name: "Méthode de l'escroc", html: `<p>Vous gagnez le tour de magie <em>illusion mineure</em>, et les sorts <em>déguisement</em> et <em>charme-personne</em> via des emplacements de sort dédiés.</p>` },
-        { name: "Cruelles blessures", html: `<p>Après une attaque sournoise, la vitesse de la cible est réduite de moitié et ses attaques d'opportunité sont désavantagées ; si un ennemi réussit une sauvegarde contre un de vos sorts de méthode, il subit des dégâts psychiques (1d4 par dé d'attaque sournoise).</p>` }
+        { name: "Cruelles blessures", html: `<p>Après une attaque sournoise réussie, vous pouvez remuer l'arme (ou le projectile) enfoncée dans le corps de la cible : sa vitesse de déplacement est réduite de moitié et elle est désavantagée à ses attaques d'opportunité jusqu'à ce qu'elle utilise une action pour retirer l'arme ou le projectile.</p>
+          <p>De plus, si un ennemi réussit une sauvegarde contre l'un de vos sorts de méthode de l'escroc, il subit des dégâts psychiques (1d4 par dé d'attaque sournoise).</p>
+          <p>Une créature qui a subi une cruelle blessure (par un sort ou une attaque) est immunisée à ces effets pendant 1 heure.</p>` }
       ] },
       { level: 6, features: [{ name: "Fumée et miroirs", html: `<p>Une réussite en Supercherie ou en déguisement devient incontestable pendant 1 heure.</p>` }] },
       { level: 9, features: [{ name: "Méthode améliorée", html: `<p>Vous gagnez <em>modifier son apparence</em>, <em>amélioration de caractéristique</em> et <em>image miroir</em>.</p>` }] },

@@ -5,7 +5,7 @@
   "img": "icons/magic/control/debuff-energy-hold-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Après une attaque sournoise, la vitesse de la cible est réduite de moitié et ses attaques d'opportunité sont désavantagées ; si un ennemi réussit une sauvegarde contre un de vos sorts de méthode, il subit des dégâts psychiques (1d4 par dé d'attaque sournoise).</p>",
+      "value": "<p>Après une attaque sournoise réussie, vous pouvez remuer l'arme (ou le projectile) enfoncée dans le corps de la cible : sa vitesse de déplacement est réduite de moitié et elle est désavantagée à ses attaques d'opportunité jusqu'à ce qu'elle utilise une action pour retirer l'arme ou le projectile.</p>\n          <p>De plus, si un ennemi réussit une sauvegarde contre l'un de vos sorts de méthode de l'escroc, il subit des dégâts psychiques (1d4 par dé d'attaque sournoise).</p>\n          <p>Une créature qui a subi une cruelle blessure (par un sort ou une attaque) est immunisée à ces effets pendant 1 heure.</p>",
       "chat": ""
     },
     "identifier": "cruelles-blessures-l-informe",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787667172863,
-    "modifiedTime": 1787667172863,
+    "createdTime": 1787676743378,
+    "modifiedTime": 1787676743378,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

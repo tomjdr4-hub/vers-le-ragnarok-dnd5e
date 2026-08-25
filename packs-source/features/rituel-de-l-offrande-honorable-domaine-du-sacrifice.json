@@ -5,7 +5,7 @@
   "img": "icons/magic/death/skull-humanoid-crown-white.webp",
   "system": {
     "description": {
-      "value": "<p>Lors d'un repos long, vous pouvez vous infliger un nombre de blessures permanentes égal à votre modificateur de Sagesse (œil, oreille, membre… à l'appréciation du MJ) ; chaque blessure offerte accorde un avantage durable (chance, endurance ou savoir) jusqu'au prochain repos long.</p>",
+      "value": "<p>Lors d'un repos long, vous pouvez infliger un nombre de blessures permanentes (œil, oreille, membre… à l'appréciation du MJ) égal à votre modificateur de Sagesse parmi les créatures consentantes dans votre champ de vision.</p>\n          <p>Pour chaque blessure offerte durant le rituel, le participant qui l'a livrée choisit l'un des avantages suivants, qui dure jusqu'au prochain repos long :</p>\n          <p><strong>Avantage de chance.</strong> Refaire un unique test de caractéristique, jet de sauvegarde ou jet d'attaque.</p>\n          <p><strong>Avantage d'endurance.</strong> Par une action bonus, dépenser et jeter l'un de ses dés de vie pour récupérer un nombre de points de vie égal au résultat (cumulable en dépensant plusieurs dés lors d'une même action bonus si l'avantage a été choisi plusieurs fois).</p>\n          <p><strong>Avantage de savoir.</strong> Choisir un sort de niveau 1 non connu ou non préparable ; en choisissant cet avantage plusieurs fois, apprendre un sort de plus haut niveau à condition de disposer d'un emplacement de sort du niveau correspondant.</p>",
       "chat": ""
     },
     "identifier": "rituel-de-l-offrande-honorable-domaine-du-sacrifice",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787667172862,
-    "modifiedTime": 1787667172862,
+    "createdTime": 1787676743377,
+    "modifiedTime": 1787676743377,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

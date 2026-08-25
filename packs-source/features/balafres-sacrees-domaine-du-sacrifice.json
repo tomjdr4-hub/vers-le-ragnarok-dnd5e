@@ -5,7 +5,7 @@
   "img": "icons/magic/death/skull-humanoid-crown-white.webp",
   "system": {
     "description": {
-      "value": "<p>Quand vous êtes touché alors que vous n'êtes pas à vos points de vie maximum (et sans PV temporaires), vous gagnez des points de vie temporaires égaux à votre modificateur de Charisme.</p>",
+      "value": "<p>Quand vous êtes touché alors que vous n'êtes pas à vos points de vie maximum (et sans PV temporaires), vous gagnez des points de vie temporaires égaux à votre modificateur de Charisme, et vous ajoutez ce même montant au prochain jet d'attaque d'arme et jet de dégâts que vous effectuez lors de votre prochain tour.</p>",
       "chat": ""
     },
     "identifier": "balafres-sacrees-domaine-du-sacrifice",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787667172862,
-    "modifiedTime": 1787667172862,
+    "createdTime": 1787676743377,
+    "modifiedTime": 1787676743377,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
