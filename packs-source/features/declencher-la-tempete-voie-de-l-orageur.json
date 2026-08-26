@@ -5,7 +5,7 @@
   "img": "icons/magic/lightning/bolt-strike-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous êtes avantagé contre les effets qui vous déplacent, vous poussent ou vous mettent à terre ; quand vous êtes touché en mêlée, vous ripostez pour 1d6 dégâts de tonnerre et gagnez 1 charge d'orage.</p>",
+      "value": "<p>Vous êtes avantagé lors des jets de sauvegarde effectués pour résister aux tentatives pour vous déplacer, vous pousser ou vous mettre à terre. De plus, quand une attaque au corps à corps vous touche, vous pouvez déclencher un vent soudain qui inflige 1d6 dégâts de tonnerre à l'attaquant et vous fait gagner une charge d'orage.</p>",
       "chat": ""
     },
     "identifier": "declencher-la-tempete-voie-de-l-orageur",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

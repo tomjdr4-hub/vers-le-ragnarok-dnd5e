@@ -5,7 +5,7 @@
   "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Choisissez une dernière tactique, par exemple <strong>Inévitable</strong> ou <strong>Bastion</strong> (réduit de moitié les dégâts d'une attaque dont le résultat est inférieur ou égal à votre CA, 3 fois par repos long).</p>",
+      "value": "<p>Au niveau 18, vous apprenez une tactique de gardien supplémentaire parmi celles décrites ci-après. Sauf indication contraire, ces tactiques sont toujours actives.</p>\n        <p><strong>Inévitable.</strong> Si vous infligez des dégâts à un ennemi d'une catégorie de taille de plus que vous au maximum, vous pouvez le faire tomber à terre par une réaction.</p>\n        <p><strong>Bastion.</strong> Si vous êtes sur le point de subir un montant de dégâts égal ou inférieur à votre classe d'armure, vous pouvez réduire ce montant de moitié par une réaction (avant application des résistances ou vulnérabilités). Vous pouvez utiliser cette tactique trois fois et vous récupérez toutes les utilisations dépensées après un repos long.</p>",
       "chat": ""
     },
     "identifier": "tactiques-legendaires-archetype-martial-gardien",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

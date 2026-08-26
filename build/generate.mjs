@@ -605,7 +605,8 @@ const CLASS_FEATURES = [
   feat({
     name: "Incantation runique", img: RUNE_IMG, requirements: "Maître des runes 1",
     featureType: "class",
-    html: `<p>À la fin d'un repos long, choisissez un tour de magie parmi la liste suivante : <em>message, bouffée de poison, partager le sang, produire une flamme</em>. Vous connaissez et pouvez lancer ce tour de magie jusqu'à la fin de votre prochain repos long, où vous pourrez en choisir un différent.</p>`
+    html: `<p>À la fin d'un repos long, choisissez un tour de magie parmi la liste suivante : <em>message, bouffée de poison, partager le sang, produire une flamme</em>. Vous connaissez et pouvez lancer ce tour de magie jusqu'à la fin de votre prochain repos long, où vous pourrez en choisir un différent.</p>
+      <p>À partir du niveau 9, quand vous gagnez un nouveau tour de magie, vous le choisissez parmi la liste des tours de magie de maître des runes ou celle des tours de magie runiques ci-dessus. Si vous choisissez un tour de magie runique de cette façon, il est retiré de la liste des tours de magie runiques et ajouté de façon permanente à votre liste de tours de magie de maître des runes.</p>`
   }),
   feat({
     name: "Protéger le marqué", img: RUNE_IMG, requirements: "Maître des runes 3",
@@ -716,15 +717,16 @@ const ARCHETYPES = [
     theme: `<p>Une rage chargée de foudre : le barbare noue un lien dangereux avec l'orage, accumulant des <strong>charges d'orage</strong> (maximum égal à son niveau de barbare) au fil du combat.</p>`,
     levels: [
       { level: 3, features: [
-        { name: "Coup de tonnerre", html: `<p>Tant que vous êtes en rage, chaque attaque réussie inflige 1d6 dégâts de tonnerre supplémentaires (1d8 au niveau 10) et vous gagnez 1 charge d'orage (2 sur un coup critique). Si vos charges atteignent votre niveau de barbare, ou à la fin de votre rage, vous perdez toutes vos charges et subissez 1d6 dégâts de tonnerre.</p>` },
-        { name: "Exutoire calamiteux", html: `<p>Sur une attaque réussie, vous pouvez libérer toutes vos charges d'orage : 1 dégât de tonnerre par charge en rayon 1,50 m (3 m au niveau 10) autour de la cible. Si l'attaque rate, vous gagnez à la place des charges égales aux dégâts de rage.</p>` }
+        { name: "Coup de tonnerre", html: `<p>Tant que vous êtes en rage, chaque attaque réussie inflige 1d6 dégâts de tonnerre supplémentaires (1d8 au niveau 10) et vous gagnez 1 charge d'orage (2 sur un coup critique). Si vos charges atteignent votre niveau de barbare, ou à la fin de votre rage, vous perdez toutes vos charges et subissez 1d6 dégâts de tonnerre. Rien ne peut empêcher ces dégâts.</p>` },
+        { name: "Exutoire calamiteux", html: `<p>Par une action pendant que vous êtes en rage, effectuez une unique attaque d'arme au corps à corps contre une créature. Si elle touche, la cible et toutes les créatures dans un rayon de 1,50 m (3 m au niveau 10) autour d'elle subissent 1 dégât de tonnerre par charge d'orage que vous possédez, et vous perdez toutes vos charges d'orage. Si l'attaque rate, vous gagnez à la place un nombre de charges d'orage égal à vos dégâts de rage.</p>` }
       ] },
       { level: 6, features: [
-        { name: "Déclencher la tempête", html: `<p>Vous êtes avantagé contre les effets qui vous déplacent, vous poussent ou vous mettent à terre ; quand vous êtes touché en mêlée, vous ripostez pour 1d6 dégâts de tonnerre et gagnez 1 charge d'orage.</p>` },
-        { name: "Imprégnation nuageuse", html: `<p>Vous pouvez convertir les dégâts de vos attaques d'arme en dégâts de froid ou de foudre, et gagnez 1 charge d'orage à chaque fois.</p>` }
+        { name: "Déclencher la tempête", html: `<p>Vous êtes avantagé lors des jets de sauvegarde effectués pour résister aux tentatives pour vous déplacer, vous pousser ou vous mettre à terre. De plus, quand une attaque au corps à corps vous touche, vous pouvez déclencher un vent soudain qui inflige 1d6 dégâts de tonnerre à l'attaquant et vous fait gagner une charge d'orage.</p>` },
+        { name: "Imprégnation nuageuse", html: `<p>Quand vous activez votre aptitude Coup de tonnerre, vous pouvez convertir tous les dégâts d'arme (tranchants, perforants ou contondants) en dégâts de froid ou de foudre. Cette aptitude convertit également les éventuels dégâts supplémentaires, y compris votre bonus de Force ou de Dextérité.</p>
+          <p>Chaque fois que vous effectuez une attaque avec Imprégnation nuageuse, vous gagnez une charge d'orage en plus de celle gagnée avec Coup de tonnerre.</p>` }
       ] },
       { level: 10, features: [{ name: "En harmonie avec les vents", html: `<p>Vous pouvez lancer <em>contrôle du climat</em> en rituel.</p>` }] },
-      { level: 14, features: [{ name: "Démarche du tonnerre", html: `<p>Par une action bonus, vous gagnez 5 charges d'orage puis les libérez aussitôt en une explosion de 5d6 dégâts de foudre (jet de sauvegarde de Constitution, DD = 8 + bonus de maîtrise + modificateur de Constitution) en rayon 1,50 m autour de vous.</p>` }] }
+      { level: 14, features: [{ name: "Démarche du tonnerre", html: `<p>Par une action bonus, vous gagnez 5 charges d'orage puis les libérez aussitôt en une explosion en rayon 1,50 m autour de vous. Chaque créature dans la zone doit faire un jet de sauvegarde de Dextérité (DD = 8 + bonus de maîtrise + modificateur de Constitution) : en cas d'échec, elle subit 5d6 dégâts de foudre ; en cas de réussite, elle ne subit que la moitié des dégâts.</p>` }] }
     ]
   },
   {
@@ -732,11 +734,14 @@ const ARCHETYPES = [
     theme: `<p>Un collège de skalds qui font résonner leur inspiration bardique comme un chant de guerre partagé.</p>`,
     levels: [
       { level: 3, features: [
-        { name: "Refrain", html: `<p>À chaque fois que vous donnez une inspiration bardique, un nombre de créatures amicales égal à votre modificateur de Charisme peuvent réagir en chantant en chœur : +3 m de vitesse et +1 à leur prochain test ou jet d'attaque.</p>` },
+        { name: "Refrain", html: `<p>Chaque fois que vous utilisez l'inspiration bardique, un nombre de créatures amicales égal à votre modificateur de Charisme peuvent utiliser leur réaction pour chanter en chœur. Chacune gagne un bonus de 3 m à sa vitesse de déplacement et un bonus de +1 à son prochain test de caractéristique ou jet d'attaque. Ces bonus durent jusqu'au début de votre prochain tour.</p>
+          <p>Une créature doit vous voir, vous entendre et vous répondre vocalement pour pouvoir bénéficier de cette aptitude.</p>` },
         { name: "Témoignage", html: `<p>Vous gagnez des points de vie temporaires égaux au résultat du dé d'inspiration bardique utilisé par un allié.</p>` }
       ] },
-      { level: 6, features: [{ name: "Dræplingr", html: `<p>Vous conférez à une créature une maîtrise doublée dans une compétence, un outil, une arme ou un instrument de votre choix ; les témoins de la scène peuvent être « envoûtés » (jet de sauvegarde de Charisme).</p>` }] },
-      { level: 14, features: [{ name: "Convocation de héros", html: `<p>En dépensant une inspiration bardique, vous invoquez un esprit combattant (profil de gladiateur) pendant 1 minute. Utilisable une fois par repos long, renouvelé si un allié meurt sous vos yeux.</p>` }] }
+      { level: 6, features: [{ name: "Dræplingr", html: `<p>Choisissez une créature dans un rayon de 9 m (vous pouvez vous désigner vous-même) et une compétence, un assortiment d'outils, une arme ou un instrument de musique. La créature obtient la maîtrise de l'élément choisi et son bonus de maîtrise est doublé.</p>
+        <p>Si une créature voit la cible désignée utiliser la compétence ou l'objet choisi, elle doit faire un jet de sauvegarde de Charisme pour éviter d'être envoûtée par la performance. Une créature envoûtée de la sorte n'attaquera ni la créature désignée ni vous, et sera généralement amicale avec vous deux pendant toute la durée.</p>` }] },
+      { level: 14, features: [{ name: "Convocation de héros", html: `<p>Par une action, vous pouvez dépenser une utilisation de votre inspiration bardique pour convoquer un esprit qui prend la forme d'un combattant typique de la région (profil de gladiateur). L'esprit suit vos ordres verbaux, agit lors de votre tour et disparaît s'il tombe à 0 point de vie. Cette apparition dure une minute, et seul un esprit à la fois peut être présent avec cette aptitude.</p>
+        <p>Une fois utilisée, vous ne pouvez plus y faire appel avant d'avoir terminé un repos long. Si l'un de vos alliés meurt dans votre champ de vision, vous récupérez l'utilisation de cette aptitude.</p>` }] }
     ]
   },
   {
@@ -771,10 +776,19 @@ const ARCHETYPES = [
     name: "Cercle d'Yggdrasill", classIdentifier: "druid", img: "icons/magic/nature/tree-icy-green.webp",
     theme: `<p>Un lien avec les Neuf mondes tout entiers, plutôt qu'avec un unique territoire natal.</p>`,
     levels: [
-      { level: 2, features: [{ name: "L'âme sous l'écorce", html: `<p>À chaque repos long, choisissez un type d'énergie favori (radiant ou nécrotique). Sur votre monde natal, vous bénéficiez d'avantages renforcés liés à ce type (dégâts de sorts, résistance, avantage aux sauvegardes, forme sauvage) ; ailleurs, le MJ peut vous assigner un autre type.</p>` }] },
-      { level: 6, features: [{ name: "Explorateur des ramures", html: `<p>Sur votre monde natal, vous détectez les créatures non natives à 18 m ou moins. Ailleurs, vous êtes avantagé aux jets de sauvegarde liés à l'environnement.</p>` }] },
-      { level: 10, features: [{ name: "Feuille de l'Arbre-Monde", html: `<p>Vous créez une zone de 12 m qui applique les lois d'un autre monde pendant 1 minute.</p>` }] },
-      { level: 14, features: [{ name: "Agitateur des racines", html: `<p>Un coup critique ou un sort de niveau 1 ou plus déclenche une explosion de 2d6 dégâts (de votre type favori) en rayon 3 m.</p>` }] }
+      { level: 2, features: [{ name: "L'âme sous l'écorce", html: `<p>À la fin d'un repos long, choisissez un type d'énergie favori : radiant ou nécrotique. L'autre devient votre type d'énergie opposé. Tant que vous vous trouvez dans votre monde natal, vous gagnez les avantages suivants :</p>
+        <ul>
+          <li>Vous ajoutez votre modificateur de Sagesse aux jets de dégâts des sorts et des tours de magie qui infligent les dégâts de votre type d'énergie favori.</li>
+          <li>Vous êtes avantagé lors des jets de sauvegarde contre les effets qui infligent des dégâts de votre type d'énergie opposé.</li>
+          <li>Vous obtenez une résistance contre votre type d'énergie opposé.</li>
+          <li>Lorsque vous êtes sous forme sauvage, chaque fois que vous parvenez à toucher une créature avec l'une de vos attaques naturelles, vous pouvez décider de remplacer le type de dégâts par votre type d'énergie favori.</li>
+        </ul>
+        <p>Quand vous vous trouvez dans d'autres mondes, le MJ peut choisir deux types d'énergie différents et conformes à la nature du monde ; vous choisissez alors un type favori parmi les deux, l'autre devenant votre type opposé.</p>` }] },
+      { level: 6, features: [{ name: "Explorateur des ramures", html: `<p>Tant que vous êtes sur votre monde natal, vous pouvez utiliser une action pour détecter la présence de créatures non natives dans un rayon de 18 m. Cette aptitude vous révèle leur nombre et leur direction générale, mais rien sur le type de créatures ni leur emplacement exact.</p>
+        <p>Quand vous n'êtes pas sur votre monde natal, vous vous acclimatez aux conditions extrêmes de l'endroit où vous vous trouvez : vous êtes avantagé lors des jets de sauvegarde occasionnés par les conditions environnementales.</p>` }] },
+      { level: 10, features: [{ name: "Feuille de l'Arbre-Monde", html: `<p>Par une action, choisissez un monde autre que celui où vous vous trouvez. Une zone sphérique d'un rayon de 12 m, centrée sur vous, est dotée des caractéristiques de ce monde. Cette zone est fixe (elle ne vous suit pas), elle ne modifie pas l'environnement local et ne provoque pas la matérialisation de créatures originaires du monde choisi.</p>
+        <p>Cet effet dure 1 minute. La zone compte effectivement comme une partie du monde choisi et change ainsi en conséquence les lois de la magie et de la physique. Si le MJ le souhaite, cette aptitude peut introduire certains aspects dangereux du monde choisi.</p>` }] },
+      { level: 14, features: [{ name: "Agitateur des racines", html: `<p>Chaque fois que vous infligez un coup critique ou que vous lancez un sort de niveau 1 ou plus, vous produisez une explosion de votre type d'énergie favori dans un rayon de 3 m autour de vous. Chaque créature dans la zone subit 2d6 dégâts, ou la moitié seulement en cas de réussite d'un jet de sauvegarde de Dextérité.</p>` }] }
     ]
   },
   {
@@ -793,11 +807,25 @@ const ARCHETYPES = [
     name: "Archétype martial : Gardien", classIdentifier: "fighter", img: "icons/equipment/shield/heater-crest-cross-blue.webp",
     theme: `<p>Le protecteur de la ligne, bouclier levé pour les autres plutôt que pour lui-même — la « vierge au bouclier » en est une incarnation narrative.</p>`,
     levels: [
-      { level: 3, features: [{ name: "Tactiques du gardien", html: `<p>Choisissez deux tactiques parmi : <strong>Interposer</strong>, <strong>Tir préventif</strong>, <strong>Double réaction</strong>, <strong>Violentes représailles</strong>, <strong>Mur de bouclier</strong>.</p>` }] },
+      { level: 3, features: [{ name: "Tactiques du gardien", html: `<p>Quand vous choisissez cet archétype au niveau 3, vous apprenez deux tactiques parmi celles décrites ci-après. Sauf indication contraire, ces tactiques sont toujours actives.</p>
+        <p><strong>Interposer.</strong> Si un ennemi dans la zone d'allonge de votre arme de corps à corps frappe avec succès une créature autre que vous, vous pouvez interposer votre arme. Par une réaction, lancez les dés de dégâts de votre arme et soustrayez le résultat obtenu aux dégâts de la créature. Si tous les dégâts sont annulés de cette façon, vous infligez à l'attaquant la moitié des dégâts annulés. Si vous maniez deux armes de corps à corps, lancez les dés de dégâts des deux armes et choisissez le meilleur résultat. Vous devez annoncer l'utilisation de cette aptitude avant de connaître le total des dégâts.</p>
+        <p><strong>Tir préventif.</strong> En tenant une arme de jet ou à projectiles, vous surveillez une zone pour détourner préventivement l'attention d'un attaquant. Si un ennemi à 6 m ou moins de vous réussit à frapper une créature autre que vous, par une réaction, vous pouvez lancer vos dés de dégâts d'arme et soustraire le résultat obtenu aux dégâts de l'ennemi. Si les dégâts de l'ennemi sont réduits à 0, il ne se passe rien d'autre. Si l'attaque inflige tout de même des dégâts, vous infligez à l'attaquant la moitié des dégâts annulés. Les munitions sont détruites ou l'arme de jet est perdue, quel que soit le résultat. Vous devez annoncer l'utilisation de cette aptitude avant de connaître le total des dégâts.</p>
+        <p><strong>Double réaction.</strong> Vous avez appris à réagir plus vite que quiconque. Lors d'un round, vous disposez d'une réaction supplémentaire. Vous ne pouvez utiliser qu'une réaction par évènement déclencheur. Une fois cette aptitude utilisée, vous devez terminer un repos court ou long pour pouvoir la réutiliser.</p>
+        <p><strong>Violentes représailles.</strong> Lorsque vous faites une attaque d'opportunité, vous bénéficiez d'un bonus sur votre jet d'attaque et de dégâts égal au nombre de tactiques de gardien que vous connaissez.</p>
+        <p><strong>Mur de bouclier.</strong> Vous coordonnez vos alliés pour résister à un assaut. Quand vous effectuez l'action Esquiver, vous et vos alliés à 1,50 m de vous êtes avantagés lors des jets de sauvegarde de Force et de Dextérité. Les ennemis considèrent comme difficile le terrain dans votre zone d'allonge et celles des alliés affectés par cette aptitude.</p>` }] },
       { level: 7, features: [{ name: "Porteur de bouclier", html: `<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié à 1,50 m ou moins de vous jusqu'au début de votre prochain tour.</p>` }] },
-      { level: 10, features: [{ name: "Tactiques améliorées", html: `<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>.</p>` }] },
-      { level: 15, features: [{ name: "Tactiques supérieures", html: `<p>Choisissez une tactique supplémentaire parmi : <strong>Expert des manœuvres</strong> (résistance aux dégâts d'attaque d'opportunité), <strong>Couvrir la retraite</strong> (les alliés dans votre zone d'allonge, ou jusqu'à 6 m si vous maniez une arme à distance, peuvent se désengager par une action bonus), <strong>Double réaction supérieure</strong> (vous obtenez la tactique double réaction, ou une utilisation supplémentaire de celle-ci si vous l'avez déjà).</p>` }] },
-      { level: 18, features: [{ name: "Tactiques légendaires", html: `<p>Choisissez une dernière tactique, par exemple <strong>Inévitable</strong> ou <strong>Bastion</strong> (réduit de moitié les dégâts d'une attaque dont le résultat est inférieur ou égal à votre CA, 3 fois par repos long).</p>` }] }
+      { level: 10, features: [{ name: "Tactiques améliorées", html: `<p>Au niveau 10, vous apprenez deux tactiques de gardien supplémentaires parmi celles décrites ci-après. Sauf indication contraire, ces tactiques sont toujours actives.</p>
+        <p><strong>Double réaction améliorée.</strong> Vous obtenez la tactique double réaction, ou une utilisation supplémentaire de celle-ci si vous l'avez déjà.</p>
+        <p><strong>Frappe revigorante.</strong> Quand vous frappez avec succès une créature avec une attaque d'arme, vous pouvez décider de ne pas ajouter le modificateur de caractéristique approprié au jet de dégâts pour gagner 1d8 points de vie temporaires.</p>
+        <p><strong>Posture de protection.</strong> Par une action, vous adoptez une posture défensive particulière. Vous protégez tous les alliés dans la zone d'allonge de votre arme de corps à corps (ou jusqu'à 1,50 m si vous ne maniez pas une arme de corps à corps). Si une attaque touche l'un d'eux, comparez sa CA à la vôtre : si la vôtre est plus élevée, l'attaque est redirigée sur vous. Cette posture dure jusqu'au début de votre prochain tour. Tant que vous adoptez cette posture, vous pouvez faire une unique attaque d'arme par une action bonus. Si vous connaissez la tactique mur de fer, vous bénéficiez de ses avantages lorsque vous adoptez la posture de protection.</p>
+        <p><strong>Riposte puissante.</strong> Vous apprenez la tactique interposer ou tir préventif. Si vous connaissez déjà l'une des deux, à la place vous pouvez ajouter votre modificateur de Force ou de Dextérité (en fonction de votre arme) aux dégâts annulés quand vous utilisez l'une ou l'autre de ces tactiques.</p>` }] },
+      { level: 15, features: [{ name: "Tactiques supérieures", html: `<p>Au niveau 15, vous apprenez une tactique de gardien supplémentaire parmi celles décrites ci-après. Sauf indication contraire, ces tactiques sont toujours actives.</p>
+        <p><strong>Expert des manœuvres.</strong> Vous bénéficiez d'une résistance contre les dégâts des attaques d'opportunité.</p>
+        <p><strong>Couvrir la retraite.</strong> Les alliés dans la zone d'allonge de votre arme (ou jusqu'à 6 m si vous maniez une arme à distance) peuvent se désengager par une action bonus.</p>
+        <p><strong>Double réaction supérieure.</strong> Vous obtenez la tactique double réaction, ou une utilisation supplémentaire de celle-ci si vous l'avez déjà.</p>` }] },
+      { level: 18, features: [{ name: "Tactiques légendaires", html: `<p>Au niveau 18, vous apprenez une tactique de gardien supplémentaire parmi celles décrites ci-après. Sauf indication contraire, ces tactiques sont toujours actives.</p>
+        <p><strong>Inévitable.</strong> Si vous infligez des dégâts à un ennemi d'une catégorie de taille de plus que vous au maximum, vous pouvez le faire tomber à terre par une réaction.</p>
+        <p><strong>Bastion.</strong> Si vous êtes sur le point de subir un montant de dégâts égal ou inférieur à votre classe d'armure, vous pouvez réduire ce montant de moitié par une réaction (avant application des résistances ou vulnérabilités). Vous pouvez utiliser cette tactique trois fois et vous récupérez toutes les utilisations dépensées après un repos long.</p>` }] }
     ]
   },
   {
@@ -805,11 +833,12 @@ const ARCHETYPES = [
     theme: `<p>Un savoir porté sur soi plutôt que relié à un grimoire relié — runes, dessins ou fétiches remplacent la tradition écrite à Miðgarðr.</p>`,
     levels: [
       { level: 2, features: [
-        { name: "Avec le cœur", html: `<p>Test de Sagesse (Perspicacité) opposé pour deviner le désir principal d'un interlocuteur.</p>` },
-        { name: "Avec la terre", html: `<p>Vous pouvez faire apparaître l'origine d'un sort à 4,50 m de vous ; vous êtes alors limité aux tours de magie jusqu'à votre tour suivant.</p>` }
+        { name: "Avec le cœur", html: `<p>Lors d'une conversation de plus d'une minute, vous pouvez tenter un test de Sagesse (Perspicacité) opposé à un test de Charisme (Supercherie ou Persuasion, au choix de la cible). En cas de réussite, vous savez exactement ce que la cible désire le plus actuellement. Cette aptitude ne fonctionne pas sur les créatures immunisées contre l'état charmé.</p>` },
+        { name: "Avec la terre", html: `<p>Si vous lancez un sort de niveau 1 ou plus avec une portée contact ou exprimée en mètres, vous pouvez décider de le canaliser par le biais de l'environnement. Désignez un point dans un emplacement que vous pouvez voir à 4,50 m ou moins de vous : il devient le point d'origine du sort, et vous calculez la ligne d'effet depuis ce point au lieu de l'emplacement que vous occupez.</p>
+          <p>Une fois cette aptitude utilisée, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>` }
       ] },
       { level: 6, features: [
-        { name: "Savoir du monde", html: `<p>Vous gagnez une maîtrise temporaire (jusqu'au prochain repos long) de deux compétences, armes ou outils.</p>` },
+        { name: "Savoir du monde", html: `<p>À la fin d'un repos long, vous pouvez vous rappeler les actions des multiples personnes que vous avez rencontrées et apprendre de vos souvenirs. Choisissez deux compétences, armes ou outils : vous gagnez la maîtrise des éléments choisis jusqu'à la fin de votre prochain repos long.</p>` },
         { name: "Monde du savoir", html: `<p>Par une action, vous pouvez oublier un sort préparé de niveau 2 ou plus. Le MJ choisit alors deux sorts de magicien que vous ne connaissez pas, d'un niveau égal à celui que vous avez oublié moins 1 ; vous en choisissez un qui devient un sort préparé pendant 8 heures. Vous n'avez pas mémorisé ce sort et il n'apparaît pas dans votre grimoire : vous ne pouvez ni l'y inscrire ni l'utiliser pour créer un parchemin magique.</p>
           <p>Vous pouvez utiliser cette aptitude jusqu'à trois fois, en attendant au moins une minute entre chaque utilisation ; une fois vos utilisations dépensées, il faut terminer un repos long pour les récupérer. Chaque fois que vous utilisez cette aptitude, vous ne pouvez plus lancer que des tours de magie jusqu'à la fin de votre prochain tour.</p>` }
       ] },
@@ -832,9 +861,9 @@ const ARCHETYPES = [
         { name: "Lausatok", html: `<p>Vous êtes maîtrisé en Athlétisme, et pouvez utiliser votre Force à la place de votre Dextérité pour votre classe d'armure sans armure.</p>` },
         { name: "La main sur la nuque", html: `<p>Les créatures que vous empoignez sont désavantagées à leurs jets d'attaque. Sur une empoignade réussie ou rompue, vous pouvez dépenser 1 point de ki pour infliger des dégâts (dé d'arts martiaux + Force ou Dextérité).</p>` }
       ] },
-      { level: 6, features: [{ name: "Lancer destructeur", html: `<p>Pour 1 point de ki, vous pouvez lancer un objet ou une créature que vous tenez (jusqu'à taille Grande) comme une arme de jet simple improvisée (portée 3 m/9 m), infligeant votre dé d'arts martiaux + votre modificateur de Force ou de Dextérité. Si vous lancez une créature de la sorte, elle subit le même montant de dégâts, que l'attaque soit réussie ou non.</p>` }] },
+      { level: 6, features: [{ name: "Lancer destructeur", html: `<p>Par une action, vous pouvez dépenser un point de ki pour que tout ce que vous tenez en main et qui n'est pas fixé au sol soit considéré comme un projectile (jusqu'à taille Grande au maximum). L'objet ou la créature est alors considéré comme une arme de jet simple improvisée avec une portée de 3 m/9 m, infligeant votre dé d'arts martiaux + votre modificateur de Force ou de Dextérité. Si vous lancez une créature de la sorte, elle subit le même montant de dégâts, que l'attaque soit réussie ou non.</p>` }] },
       { level: 11, features: [{ name: "Poigne de fer", html: `<p>Si vous êtes sur le point de perdre un test d'empoignade opposé, vous pouvez dépenser 2 points de ki pour resserrer votre prise : vous réussissez automatiquement le test, mais vous subissez des dégâts égaux à votre niveau + la différence entre votre résultat et celui de votre adversaire. Ces dégâts ne peuvent être annulés par quelque moyen que ce soit.</p>` }] },
-      { level: 17, features: [{ name: "Victoire éclair", html: `<p>Pour 4 points de ki, vous tentez une empoignade avant même le jet d'initiative, avec avantage, et pouvez utiliser Lancer destructeur par une action bonus.</p>` }] }
+      { level: 17, features: [{ name: "Victoire éclair", html: `<p>Si un ennemi se trouve dans votre zone d'allonge au début du round, vous pouvez dépenser 4 points de ki pour effectuer une tentative d'empoignade (vous êtes avantagé lors du test). Ce test est effectué avant le décompte normal de l'initiative, et vous pouvez jouer normalement quand votre tour arrive. Vous pouvez utiliser Lancer destructeur par une action bonus.</p>` }] }
     ]
   },
   {
@@ -853,7 +882,7 @@ const ARCHETYPES = [
         <p><strong>Contrepoids au combat.</strong> Par une action, désignez une créature hostile et une créature amicale situées à 9 m ou moins de vous. La créature hostile fait un jet de sauvegarde de Charisme. En cas d'échec, chaque fois qu'elle effectue un jet d'attaque, elle lance également 1d4 et soustrait le résultat à son jet d'attaque, tandis que la créature amicale lance 1d4 et l'ajoute au sien ; ces effets durent 1 minute. En cas de réussite, seule la créature amicale bénéficie de l'effet.</p>
         <p><strong>Vigueur surnaturelle.</strong> Quand vous utilisez l'imposition des mains, vous pouvez dépenser 10 points de guérison et votre canalisation d'énergie divine pour supprimer un niveau d'épuisement (un seul par utilisation).</p>` }] },
       { level: 7, features: [
-        { name: "Aura de vaillance", html: `<p>Après une sauvegarde réussie, vous et les alliés à 6 m (12 m au niveau 18) êtes avantagés à votre prochain test ou attaque.</p>` },
+        { name: "Aura de vaillance", html: `<p>Tous les alliés dans un rayon de 6 m (12 m au niveau 18) qui réussissent un jet de sauvegarde sont avantagés lors du premier test de caractéristique ou jet d'attaque effectué lors de leur prochain tour.</p>` },
         { name: "Festin d'Odhinn", html: `<p>Une boisson alcoolisée vous nourrit comme un repas complet.</p>` }
       ] },
       { level: 15, features: [{ name: "Récupération du fidèle", html: `<p>En réaction, en tombant à 0 point de vie, vous pouvez vous imposer les mains à vous-même.</p>` }] },
@@ -866,8 +895,8 @@ const ARCHETYPES = [
     levels: [
       { level: 3, features: [{ name: "Guerrier de la meute de loups", html: `<p>Une attaque de mêlée réussie donne l'avantage à la prochaine attaque d'un allié contre la même cible. Une attaque à distance ou de jet réussie désavantage les attaques d'opportunité de la cible jusqu'au début de votre prochain tour. En réaction, quand un allié est blessé, vous pouvez hurler pour infliger 1d6 dégâts psychiques.</p>` }] },
       { level: 7, features: [{ name: "Chef de la meute de loups", html: `<p>Vous avez un sens de l'orientation aiguisé. Vous et vos alliés pouvez voyager discrètement à un rythme rapide, ou sans malus à la perception passive, mais pas les deux à la fois. En réaction, vous pouvez déplacer vous-même ou un allié conscient de 3 m au maximum quand un ennemi se déplace (communication ou signe visuel requis, et l'allié doit pouvoir vous entendre ou vous voir).</p>` }] },
-      { level: 11, features: [{ name: "Frappe rapide", html: `<p>Tuer une créature vous accorde une attaque supplémentaire immédiate.</p>` }] },
-      { level: 15, features: [{ name: "Endurance du loup", html: `<p>Une fois par round, sans action, vous pouvez dépenser un dé de vie pour récupérer 1d8 + votre modificateur de Constitution en points de vie.</p>` }] }
+      { level: 11, features: [{ name: "Frappe rapide", html: `<p>Chaque fois que vous tuez une créature ennemie avec une attaque, vous pouvez effectuer immédiatement une attaque supplémentaire avec une arme de corps à corps ou de jet.</p>` }] },
+      { level: 15, features: [{ name: "Endurance du loup", html: `<p>Une fois par round pendant votre tour, vous pouvez dépenser l'un de vos dés de vie pour récupérer un nombre de points de vie égal à 1d8 + votre modificateur de Constitution. Cette aptitude ne nécessite l'utilisation d'aucune action ni action bonus.</p>` }] }
     ]
   },
   {
@@ -875,7 +904,27 @@ const ARCHETYPES = [
     theme: `<p>Une magie innée d'illusion et de tromperie, façon pacte, réveillée par le roublard (DD = 8 + bonus de maîtrise + modificateur de Charisme).</p>`,
     levels: [
       { level: 3, features: [
-        { name: "Méthode de l'escroc", html: `<p>Vous gagnez le tour de magie <em>illusion mineure</em>, et les sorts <em>déguisement</em> et <em>charme-personne</em> via des emplacements de sort dédiés.</p>` },
+        { name: "Méthode de l'escroc", html: `<p>Au niveau 3, vous apprenez le tour de magie <em>illusion mineure</em>. Vous savez corrompre les esprits et les corps au gré de vos humeurs : vous obtenez un ensemble de sorts et d'emplacements de sort selon le tableau suivant. Vous récupérez tous les emplacements de sort dépensés après avoir terminé un repos long ou court. Le DD du jet de sauvegarde des sorts de la méthode de l'escroc est égal à 8 + votre bonus de maîtrise + votre modificateur de Charisme.</p>
+          <p>À partir du niveau 3, vous pouvez lancer <em>déguisement</em> et <em>charme-personne</em> grâce à la méthode de l'escroc.</p>
+          <table><tr><th>Niveau</th><th>Emplacements</th><th>Niveau des emplacements</th></tr>
+          <tr><td>3</td><td>1</td><td>—</td></tr>
+          <tr><td>4</td><td>1</td><td>—</td></tr>
+          <tr><td>5</td><td>1</td><td>1</td></tr>
+          <tr><td>6</td><td>1</td><td>1</td></tr>
+          <tr><td>7</td><td>1</td><td>1</td></tr>
+          <tr><td>8</td><td>1</td><td>1</td></tr>
+          <tr><td>9</td><td>2</td><td>1</td></tr>
+          <tr><td>10</td><td>2</td><td>1</td></tr>
+          <tr><td>11</td><td>2</td><td>2</td></tr>
+          <tr><td>12</td><td>2</td><td>2</td></tr>
+          <tr><td>13</td><td>3</td><td>2</td></tr>
+          <tr><td>14</td><td>3</td><td>2</td></tr>
+          <tr><td>15</td><td>3</td><td>3</td></tr>
+          <tr><td>16</td><td>3</td><td>3</td></tr>
+          <tr><td>17</td><td>4</td><td>3</td></tr>
+          <tr><td>18</td><td>4</td><td>3</td></tr>
+          <tr><td>19</td><td>4</td><td>4</td></tr>
+          <tr><td>20</td><td>4</td><td>4</td></tr></table>` },
         { name: "Cruelles blessures", html: `<p>Après une attaque sournoise réussie, vous pouvez remuer l'arme (ou le projectile) enfoncée dans le corps de la cible : sa vitesse de déplacement est réduite de moitié et elle est désavantagée à ses attaques d'opportunité jusqu'à ce qu'elle utilise une action pour retirer l'arme ou le projectile.</p>
           <p>De plus, si un ennemi réussit une sauvegarde contre l'un de vos sorts de méthode de l'escroc, il subit des dégâts psychiques (1d4 par dé d'attaque sournoise).</p>
           <p>Une créature qui a subi une cruelle blessure (par un sort ou une attaque) est immunisée à ces effets pendant 1 heure.</p>` }
@@ -884,7 +933,9 @@ const ARCHETYPES = [
       { level: 9, features: [{ name: "Méthode améliorée", html: `<p>Vous gagnez <em>modifier son apparence</em>, <em>amélioration de caractéristique</em> et <em>image miroir</em>.</p>` }] },
       { level: 13, features: [{ name: "Méthode supérieure", html: `<p>Vous gagnez <em>image majeure</em> et <em>monture fantôme</em>.</p>` }] },
       { level: 17, features: [
-        { name: "Riposte miroir", html: `<p>Par une réaction, quand vous ou une autre créature à 9 m ou moins de vous êtes la cible d'une attaque réussie, vous pouvez échanger par magie l'emplacement de la cible avec l'emplacement d'une autre créature à 9 m ou moins de vous, redirigeant ainsi l'attaque. Si l'une ou les deux créatures ne veulent pas échanger leur emplacement, elles peuvent tenter un jet de sauvegarde de Charisme ; ce pouvoir ne fonctionne pas si un jet de sauvegarde est réussi.</p>` },
+        { name: "Riposte miroir", html: `<p>Par une réaction, quand vous ou une autre créature à 9 m ou moins êtes la cible d'une attaque réussie, vous pouvez échanger par magie votre emplacement ou celui de la créature avec l'emplacement d'une autre créature située à 9 m ou moins de vous. Si l'une ou les deux créatures ne veulent pas échanger leur emplacement, elles peuvent tenter un jet de sauvegarde de Charisme ; ce pouvoir ne fonctionne pas si un jet de sauvegarde est réussi.</p>
+          <p>Si l'échange a lieu, la créature ayant remplacé celle touchée par l'attaque subit celle-ci à sa place. Elle peut faire les éventuels jets de sauvegarde imposés par l'attaque.</p>
+          <p>Cette aptitude ne peut être réutilisée qu'après un repos court ou long.</p>` },
         { name: "Maîtrise de l'escroc", html: `<p>Vous gagnez <em>confusion</em> et <em>invisibilité supérieure</em>.</p>` }
       ] }
     ]
@@ -923,10 +974,13 @@ const ARCHETYPES = [
           <tr><td>3e</td><td>Clairvoyance, non-détection</td></tr>
           <tr><td>4e</td><td>Divination, localiser une créature</td></tr>
           <tr><td>5e</td><td>Communion, éveil</td></tr></table>` },
-        { name: "Urðr, Verðandi et Skuld", html: `<p>En réaction, vous pouvez modifier de ±1d6 un jet (attaque, test ou sauvegarde) d'une créature visible. Une utilisation par catégorie de créature (humanoïde/mort-vivant/bête ; aberration/géant/monstrueuse ; céleste/dragon/élémentaire/fiélon), rechargée à un repos court ou long.</p>` }
+        { name: "Urðr, Verðandi et Skuld", html: `<p>Quand une créature dans votre champ de vision fait un jet d'attaque, un test de caractéristique ou un jet de sauvegarde, vous pouvez utiliser votre réaction pour lancer 1d6 et ajouter ou soustraire le résultat de celui du d20. Vous devez utiliser cette aptitude avant de connaître le résultat de l'action que vous tentez de manipuler.</p>
+          <p>Vous pouvez utiliser cette aptitude une fois sur un humanoïde, un mort-vivant ou une bête ; une fois sur une aberration, un géant ou une créature monstrueuse ; et une fois sur un céleste, un dragon, un élémentaire ou un fiélon. Vous récupérez toutes vos utilisations dépensées après un repos court ou long.</p>` }
       ] },
-      { level: 6, features: [{ name: "De l'argile pour les affaiblis", html: `<p>Vous retirez un état (aveuglé, charmé, assourdi, paralysé, pétrifié ou empoisonné) et accordez l'immunité à cet état pendant 1 minute. Rechargé à un repos court ou long.</p>` }] },
-      { level: 10, features: [{ name: "Briser Gungnir", html: `<p>Vous redirigez une attaque à distance réussie contre vous vers une autre cible (jet d'attaque de sort opposé). Une minute de récupération.</p>` }] },
+      { level: 6, features: [{ name: "De l'argile pour les affaiblis", html: `<p>Par une action, vous pouvez toucher une créature consentante et supprimer un des états suivants qui l'affecte : aveuglé, charmé, assourdi, paralysé, pétrifié ou empoisonné. La créature est ensuite immunisée pendant une minute contre l'état supprimé par l'utilisation de cette aptitude.</p>
+        <p>Une fois cette aptitude utilisée, vous ne pouvez plus y faire appel avant d'avoir terminé un repos long ou court.</p>` }] },
+      { level: 10, features: [{ name: "Briser Gungnir", html: `<p>Si une attaque à distance vous touche, vous pouvez faire un jet d'attaque de sort. Si votre résultat est supérieur à celui de l'ennemi, vous redirigez l'attaque vers une autre cible de votre choix à portée de l'attaque utilisée, en utilisant à la place le résultat de votre jet d'attaque.</p>
+        <p>Une fois qu'une attaque a été redirigée avec succès grâce à cette aptitude, il vous faut attendre une minute avant de pouvoir la réutiliser.</p>` }] },
       { level: 14, features: [{ name: "Tisser votre propre destin", html: `<p>Tout test de caractéristique, jet d'attaque ou jet de sauvegarde obtenant 3 ou moins doit être relancé ; vous devez accepter le second résultat, même s'il est moins bon. Si le jet est avantagé ou désavantagé, vous ne pouvez relancer que l'un des deux dés.</p>` }] }
     ]
   }

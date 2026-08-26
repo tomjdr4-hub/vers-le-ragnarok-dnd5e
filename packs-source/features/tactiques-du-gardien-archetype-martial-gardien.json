@@ -5,7 +5,7 @@
   "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Choisissez deux tactiques parmi : <strong>Interposer</strong>, <strong>Tir préventif</strong>, <strong>Double réaction</strong>, <strong>Violentes représailles</strong>, <strong>Mur de bouclier</strong>.</p>",
+      "value": "<p>Quand vous choisissez cet archétype au niveau 3, vous apprenez deux tactiques parmi celles décrites ci-après. Sauf indication contraire, ces tactiques sont toujours actives.</p>\n        <p><strong>Interposer.</strong> Si un ennemi dans la zone d'allonge de votre arme de corps à corps frappe avec succès une créature autre que vous, vous pouvez interposer votre arme. Par une réaction, lancez les dés de dégâts de votre arme et soustrayez le résultat obtenu aux dégâts de la créature. Si tous les dégâts sont annulés de cette façon, vous infligez à l'attaquant la moitié des dégâts annulés. Si vous maniez deux armes de corps à corps, lancez les dés de dégâts des deux armes et choisissez le meilleur résultat. Vous devez annoncer l'utilisation de cette aptitude avant de connaître le total des dégâts.</p>\n        <p><strong>Tir préventif.</strong> En tenant une arme de jet ou à projectiles, vous surveillez une zone pour détourner préventivement l'attention d'un attaquant. Si un ennemi à 6 m ou moins de vous réussit à frapper une créature autre que vous, par une réaction, vous pouvez lancer vos dés de dégâts d'arme et soustraire le résultat obtenu aux dégâts de l'ennemi. Si les dégâts de l'ennemi sont réduits à 0, il ne se passe rien d'autre. Si l'attaque inflige tout de même des dégâts, vous infligez à l'attaquant la moitié des dégâts annulés. Les munitions sont détruites ou l'arme de jet est perdue, quel que soit le résultat. Vous devez annoncer l'utilisation de cette aptitude avant de connaître le total des dégâts.</p>\n        <p><strong>Double réaction.</strong> Vous avez appris à réagir plus vite que quiconque. Lors d'un round, vous disposez d'une réaction supplémentaire. Vous ne pouvez utiliser qu'une réaction par évènement déclencheur. Une fois cette aptitude utilisée, vous devez terminer un repos court ou long pour pouvoir la réutiliser.</p>\n        <p><strong>Violentes représailles.</strong> Lorsque vous faites une attaque d'opportunité, vous bénéficiez d'un bonus sur votre jet d'attaque et de dégâts égal au nombre de tactiques de gardien que vous connaissez.</p>\n        <p><strong>Mur de bouclier.</strong> Vous coordonnez vos alliés pour résister à un assaut. Quand vous effectuez l'action Esquiver, vous et vos alliés à 1,50 m de vous êtes avantagés lors des jets de sauvegarde de Force et de Dextérité. Les ennemis considèrent comme difficile le terrain dans votre zone d'allonge et celles des alliés affectés par cette aptitude.</p>",
       "chat": ""
     },
     "identifier": "tactiques-du-gardien-archetype-martial-gardien",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

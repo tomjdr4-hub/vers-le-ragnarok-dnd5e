@@ -5,7 +5,7 @@
   "img": "icons/magic/divination/crystal-ball-blue.webp",
   "system": {
     "description": {
-      "value": "<p>En réaction, vous pouvez modifier de ±1d6 un jet (attaque, test ou sauvegarde) d'une créature visible. Une utilisation par catégorie de créature (humanoïde/mort-vivant/bête ; aberration/géant/monstrueuse ; céleste/dragon/élémentaire/fiélon), rechargée à un repos court ou long.</p>",
+      "value": "<p>Quand une créature dans votre champ de vision fait un jet d'attaque, un test de caractéristique ou un jet de sauvegarde, vous pouvez utiliser votre réaction pour lancer 1d6 et ajouter ou soustraire le résultat de celui du d20. Vous devez utiliser cette aptitude avant de connaître le résultat de l'action que vous tentez de manipuler.</p>\n          <p>Vous pouvez utiliser cette aptitude une fois sur un humanoïde, un mort-vivant ou une bête ; une fois sur une aberration, un géant ou une créature monstrueuse ; et une fois sur un céleste, un dragon, un élémentaire ou un fiélon. Vous récupérez toutes vos utilisations dépensées après un repos court ou long.</p>",
       "chat": ""
     },
     "identifier": "ur-r-ver-andi-et-skuld-les-nornes",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836318,
-    "modifiedTime": 1787722836318,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

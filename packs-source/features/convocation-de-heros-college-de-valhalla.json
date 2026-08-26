@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/prayer-glowing-gold.webp",
   "system": {
     "description": {
-      "value": "<p>En dépensant une inspiration bardique, vous invoquez un esprit combattant (profil de gladiateur) pendant 1 minute. Utilisable une fois par repos long, renouvelé si un allié meurt sous vos yeux.</p>",
+      "value": "<p>Par une action, vous pouvez dépenser une utilisation de votre inspiration bardique pour convoquer un esprit qui prend la forme d'un combattant typique de la région (profil de gladiateur). L'esprit suit vos ordres verbaux, agit lors de votre tour et disparaît s'il tombe à 0 point de vie. Cette apparition dure une minute, et seul un esprit à la fois peut être présent avec cette aptitude.</p>\n        <p>Une fois utilisée, vous ne pouvez plus y faire appel avant d'avoir terminé un repos long. Si l'un de vos alliés meurt dans votre champ de vision, vous récupérez l'utilisation de cette aptitude.</p>",
       "chat": ""
     },
     "identifier": "convocation-de-heros-college-de-valhalla",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

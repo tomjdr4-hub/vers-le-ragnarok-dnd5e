@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Après une sauvegarde réussie, vous et les alliés à 6 m (12 m au niveau 18) êtes avantagés à votre prochain test ou attaque.</p>",
+      "value": "<p>Tous les alliés dans un rayon de 6 m (12 m au niveau 18) qui réussissent un jet de sauvegarde sont avantagés lors du premier test de caractéristique ou jet d'attaque effectué lors de leur prochain tour.</p>",
       "chat": ""
     },
     "identifier": "aura-de-vaillance-serment-de-l-elu",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836318,
-    "modifiedTime": 1787722836318,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

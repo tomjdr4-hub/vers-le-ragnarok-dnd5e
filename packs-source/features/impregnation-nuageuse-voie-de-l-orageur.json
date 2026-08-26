@@ -5,7 +5,7 @@
   "img": "icons/magic/lightning/bolt-strike-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous pouvez convertir les dégâts de vos attaques d'arme en dégâts de froid ou de foudre, et gagnez 1 charge d'orage à chaque fois.</p>",
+      "value": "<p>Quand vous activez votre aptitude Coup de tonnerre, vous pouvez convertir tous les dégâts d'arme (tranchants, perforants ou contondants) en dégâts de froid ou de foudre. Cette aptitude convertit également les éventuels dégâts supplémentaires, y compris votre bonus de Force ou de Dextérité.</p>\n          <p>Chaque fois que vous effectuez une attaque avec Imprégnation nuageuse, vous gagnez une charge d'orage en plus de celle gagnée avec Coup de tonnerre.</p>",
       "chat": ""
     },
     "identifier": "impregnation-nuageuse-voie-de-l-orageur",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

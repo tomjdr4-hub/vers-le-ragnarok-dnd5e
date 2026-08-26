@@ -5,7 +5,7 @@
   "img": "icons/magic/lightning/bolt-strike-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Tant que vous êtes en rage, chaque attaque réussie inflige 1d6 dégâts de tonnerre supplémentaires (1d8 au niveau 10) et vous gagnez 1 charge d'orage (2 sur un coup critique). Si vos charges atteignent votre niveau de barbare, ou à la fin de votre rage, vous perdez toutes vos charges et subissez 1d6 dégâts de tonnerre.</p>",
+      "value": "<p>Tant que vous êtes en rage, chaque attaque réussie inflige 1d6 dégâts de tonnerre supplémentaires (1d8 au niveau 10) et vous gagnez 1 charge d'orage (2 sur un coup critique). Si vos charges atteignent votre niveau de barbare, ou à la fin de votre rage, vous perdez toutes vos charges et subissez 1d6 dégâts de tonnerre. Rien ne peut empêcher ces dégâts.</p>",
       "chat": ""
     },
     "identifier": "coup-de-tonnerre-voie-de-l-orageur",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

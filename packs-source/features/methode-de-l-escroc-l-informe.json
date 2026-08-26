@@ -5,7 +5,7 @@
   "img": "icons/magic/control/debuff-energy-hold-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Vous gagnez le tour de magie <em>illusion mineure</em>, et les sorts <em>déguisement</em> et <em>charme-personne</em> via des emplacements de sort dédiés.</p>",
+      "value": "<p>Au niveau 3, vous apprenez le tour de magie <em>illusion mineure</em>. Vous savez corrompre les esprits et les corps au gré de vos humeurs : vous obtenez un ensemble de sorts et d'emplacements de sort selon le tableau suivant. Vous récupérez tous les emplacements de sort dépensés après avoir terminé un repos long ou court. Le DD du jet de sauvegarde des sorts de la méthode de l'escroc est égal à 8 + votre bonus de maîtrise + votre modificateur de Charisme.</p>\n          <p>À partir du niveau 3, vous pouvez lancer <em>déguisement</em> et <em>charme-personne</em> grâce à la méthode de l'escroc.</p>\n          <table><tr><th>Niveau</th><th>Emplacements</th><th>Niveau des emplacements</th></tr>\n          <tr><td>3</td><td>1</td><td>—</td></tr>\n          <tr><td>4</td><td>1</td><td>—</td></tr>\n          <tr><td>5</td><td>1</td><td>1</td></tr>\n          <tr><td>6</td><td>1</td><td>1</td></tr>\n          <tr><td>7</td><td>1</td><td>1</td></tr>\n          <tr><td>8</td><td>1</td><td>1</td></tr>\n          <tr><td>9</td><td>2</td><td>1</td></tr>\n          <tr><td>10</td><td>2</td><td>1</td></tr>\n          <tr><td>11</td><td>2</td><td>2</td></tr>\n          <tr><td>12</td><td>2</td><td>2</td></tr>\n          <tr><td>13</td><td>3</td><td>2</td></tr>\n          <tr><td>14</td><td>3</td><td>2</td></tr>\n          <tr><td>15</td><td>3</td><td>3</td></tr>\n          <tr><td>16</td><td>3</td><td>3</td></tr>\n          <tr><td>17</td><td>4</td><td>3</td></tr>\n          <tr><td>18</td><td>4</td><td>3</td></tr>\n          <tr><td>19</td><td>4</td><td>4</td></tr>\n          <tr><td>20</td><td>4</td><td>4</td></tr></table>",
       "chat": ""
     },
     "identifier": "methode-de-l-escroc-l-informe",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836318,
-    "modifiedTime": 1787722836318,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

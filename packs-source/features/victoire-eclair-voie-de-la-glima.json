@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/unarmed-punch-fist-white.webp",
   "system": {
     "description": {
-      "value": "<p>Pour 4 points de ki, vous tentez une empoignade avant même le jet d'initiative, avec avantage, et pouvez utiliser Lancer destructeur par une action bonus.</p>",
+      "value": "<p>Si un ennemi se trouve dans votre zone d'allonge au début du round, vous pouvez dépenser 4 points de ki pour effectuer une tentative d'empoignade (vous êtes avantagé lors du test). Ce test est effectué avant le décompte normal de l'initiative, et vous pouvez jouer normalement quand votre tour arrive. Vous pouvez utiliser Lancer destructeur par une action bonus.</p>",
       "chat": ""
     },
     "identifier": "victoire-eclair-voie-de-la-glima",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

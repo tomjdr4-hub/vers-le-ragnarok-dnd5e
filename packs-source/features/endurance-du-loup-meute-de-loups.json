@@ -5,7 +5,7 @@
   "img": "icons/creatures/mammals/wolf-howl-moon-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Une fois par round, sans action, vous pouvez dépenser un dé de vie pour récupérer 1d8 + votre modificateur de Constitution en points de vie.</p>",
+      "value": "<p>Une fois par round pendant votre tour, vous pouvez dépenser l'un de vos dés de vie pour récupérer un nombre de points de vie égal à 1d8 + votre modificateur de Constitution. Cette aptitude ne nécessite l'utilisation d'aucune action ni action bonus.</p>",
       "chat": ""
     },
     "identifier": "endurance-du-loup-meute-de-loups",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836318,
-    "modifiedTime": 1787722836318,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

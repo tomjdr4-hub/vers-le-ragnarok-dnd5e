@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/prayer-glowing-gold.webp",
   "system": {
     "description": {
-      "value": "<p>À chaque fois que vous donnez une inspiration bardique, un nombre de créatures amicales égal à votre modificateur de Charisme peuvent réagir en chantant en chœur : +3 m de vitesse et +1 à leur prochain test ou jet d'attaque.</p>",
+      "value": "<p>Chaque fois que vous utilisez l'inspiration bardique, un nombre de créatures amicales égal à votre modificateur de Charisme peuvent utiliser leur réaction pour chanter en chœur. Chacune gagne un bonus de 3 m à sa vitesse de déplacement et un bonus de +1 à son prochain test de caractéristique ou jet d'attaque. Ces bonus durent jusqu'au début de votre prochain tour.</p>\n          <p>Une créature doit vous voir, vous entendre et vous répondre vocalement pour pouvoir bénéficier de cette aptitude.</p>",
       "chat": ""
     },
     "identifier": "refrain-college-de-valhalla",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

@@ -5,7 +5,7 @@
   "img": "icons/magic/divination/crystal-ball-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous retirez un état (aveuglé, charmé, assourdi, paralysé, pétrifié ou empoisonné) et accordez l'immunité à cet état pendant 1 minute. Rechargé à un repos court ou long.</p>",
+      "value": "<p>Par une action, vous pouvez toucher une créature consentante et supprimer un des états suivants qui l'affecte : aveuglé, charmé, assourdi, paralysé, pétrifié ou empoisonné. La créature est ensuite immunisée pendant une minute contre l'état supprimé par l'utilisation de cette aptitude.</p>\n        <p>Une fois cette aptitude utilisée, vous ne pouvez plus y faire appel avant d'avoir terminé un repos long ou court.</p>",
       "chat": ""
     },
     "identifier": "de-l-argile-pour-les-affaiblis-les-nornes",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836318,
-    "modifiedTime": 1787722836318,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

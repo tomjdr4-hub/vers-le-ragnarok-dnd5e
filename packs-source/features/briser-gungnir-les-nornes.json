@@ -5,7 +5,7 @@
   "img": "icons/magic/divination/crystal-ball-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous redirigez une attaque à distance réussie contre vous vers une autre cible (jet d'attaque de sort opposé). Une minute de récupération.</p>",
+      "value": "<p>Si une attaque à distance vous touche, vous pouvez faire un jet d'attaque de sort. Si votre résultat est supérieur à celui de l'ennemi, vous redirigez l'attaque vers une autre cible de votre choix à portée de l'attaque utilisée, en utilisant à la place le résultat de votre jet d'attaque.</p>\n        <p>Une fois qu'une attaque a été redirigée avec succès grâce à cette aptitude, il vous faut attendre une minute avant de pouvoir la réutiliser.</p>",
       "chat": ""
     },
     "identifier": "briser-gungnir-les-nornes",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836318,
-    "modifiedTime": 1787722836318,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

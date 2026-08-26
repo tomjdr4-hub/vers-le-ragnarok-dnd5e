@@ -5,7 +5,7 @@
   "img": "icons/sundries/scrolls/scroll-bound-rune-brown.webp",
   "system": {
     "description": {
-      "value": "<p>À la fin d'un repos long, choisissez un tour de magie parmi la liste suivante : <em>message, bouffée de poison, partager le sang, produire une flamme</em>. Vous connaissez et pouvez lancer ce tour de magie jusqu'à la fin de votre prochain repos long, où vous pourrez en choisir un différent.</p>",
+      "value": "<p>À la fin d'un repos long, choisissez un tour de magie parmi la liste suivante : <em>message, bouffée de poison, partager le sang, produire une flamme</em>. Vous connaissez et pouvez lancer ce tour de magie jusqu'à la fin de votre prochain repos long, où vous pourrez en choisir un différent.</p>\n      <p>À partir du niveau 9, quand vous gagnez un nouveau tour de magie, vous le choisissez parmi la liste des tours de magie de maître des runes ou celle des tours de magie runiques ci-dessus. Si vous choisissez un tour de magie runique de cette façon, il est retiré de la liste des tours de magie runiques et ajouté de façon permanente à votre liste de tours de magie de maître des runes.</p>",
       "chat": ""
     },
     "identifier": "incantation-runique",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836315,
-    "modifiedTime": 1787722836315,
+    "createdTime": 1787723877439,
+    "modifiedTime": 1787723877439,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

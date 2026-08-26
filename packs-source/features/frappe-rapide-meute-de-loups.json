@@ -5,7 +5,7 @@
   "img": "icons/creatures/mammals/wolf-howl-moon-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Tuer une créature vous accorde une attaque supplémentaire immédiate.</p>",
+      "value": "<p>Chaque fois que vous tuez une créature ennemie avec une attaque, vous pouvez effectuer immédiatement une attaque supplémentaire avec une arme de corps à corps ou de jet.</p>",
       "chat": ""
     },
     "identifier": "frappe-rapide-meute-de-loups",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836318,
-    "modifiedTime": 1787722836318,
+    "createdTime": 1787723877441,
+    "modifiedTime": 1787723877441,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

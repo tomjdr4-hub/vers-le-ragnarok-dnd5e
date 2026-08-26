@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/prayer-glowing-gold.webp",
   "system": {
     "description": {
-      "value": "<p>Vous conférez à une créature une maîtrise doublée dans une compétence, un outil, une arme ou un instrument de votre choix ; les témoins de la scène peuvent être « envoûtés » (jet de sauvegarde de Charisme).</p>",
+      "value": "<p>Choisissez une créature dans un rayon de 9 m (vous pouvez vous désigner vous-même) et une compétence, un assortiment d'outils, une arme ou un instrument de musique. La créature obtient la maîtrise de l'élément choisi et son bonus de maîtrise est doublé.</p>\n        <p>Si une créature voit la cible désignée utiliser la compétence ou l'objet choisi, elle doit faire un jet de sauvegarde de Charisme pour éviter d'être envoûtée par la performance. Une créature envoûtée de la sorte n'attaquera ni la créature désignée ni vous, et sera généralement amicale avec vous deux pendant toute la durée.</p>",
       "chat": ""
     },
     "identifier": "dr-plingr-college-de-valhalla",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

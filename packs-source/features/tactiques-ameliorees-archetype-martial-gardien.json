@@ -5,7 +5,7 @@
   "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Choisissez deux tactiques supplémentaires parmi : <strong>Double réaction améliorée</strong>, <strong>Frappe revigorante</strong>, <strong>Posture de protection</strong>, <strong>Riposte puissante</strong>.</p>",
+      "value": "<p>Au niveau 10, vous apprenez deux tactiques de gardien supplémentaires parmi celles décrites ci-après. Sauf indication contraire, ces tactiques sont toujours actives.</p>\n        <p><strong>Double réaction améliorée.</strong> Vous obtenez la tactique double réaction, ou une utilisation supplémentaire de celle-ci si vous l'avez déjà.</p>\n        <p><strong>Frappe revigorante.</strong> Quand vous frappez avec succès une créature avec une attaque d'arme, vous pouvez décider de ne pas ajouter le modificateur de caractéristique approprié au jet de dégâts pour gagner 1d8 points de vie temporaires.</p>\n        <p><strong>Posture de protection.</strong> Par une action, vous adoptez une posture défensive particulière. Vous protégez tous les alliés dans la zone d'allonge de votre arme de corps à corps (ou jusqu'à 1,50 m si vous ne maniez pas une arme de corps à corps). Si une attaque touche l'un d'eux, comparez sa CA à la vôtre : si la vôtre est plus élevée, l'attaque est redirigée sur vous. Cette posture dure jusqu'au début de votre prochain tour. Tant que vous adoptez cette posture, vous pouvez faire une unique attaque d'arme par une action bonus. Si vous connaissez la tactique mur de fer, vous bénéficiez de ses avantages lorsque vous adoptez la posture de protection.</p>\n        <p><strong>Riposte puissante.</strong> Vous apprenez la tactique interposer ou tir préventif. Si vous connaissez déjà l'une des deux, à la place vous pouvez ajouter votre modificateur de Force ou de Dextérité (en fonction de votre arme) aux dégâts annulés quand vous utilisez l'une ou l'autre de ces tactiques.</p>",
       "chat": ""
     },
     "identifier": "tactiques-ameliorees-archetype-martial-gardien",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

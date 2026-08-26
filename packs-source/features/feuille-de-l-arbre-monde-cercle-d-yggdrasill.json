@@ -5,7 +5,7 @@
   "img": "icons/magic/nature/tree-icy-green.webp",
   "system": {
     "description": {
-      "value": "<p>Vous créez une zone de 12 m qui applique les lois d'un autre monde pendant 1 minute.</p>",
+      "value": "<p>Par une action, choisissez un monde autre que celui où vous vous trouvez. Une zone sphérique d'un rayon de 12 m, centrée sur vous, est dotée des caractéristiques de ce monde. Cette zone est fixe (elle ne vous suit pas), elle ne modifie pas l'environnement local et ne provoque pas la matérialisation de créatures originaires du monde choisi.</p>\n        <p>Cet effet dure 1 minute. La zone compte effectivement comme une partie du monde choisi et change ainsi en conséquence les lois de la magie et de la physique. Si le MJ le souhaite, cette aptitude peut introduire certains aspects dangereux du monde choisi.</p>",
       "chat": ""
     },
     "identifier": "feuille-de-l-arbre-monde-cercle-d-yggdrasill",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

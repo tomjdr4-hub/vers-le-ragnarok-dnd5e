@@ -5,7 +5,7 @@
   "img": "icons/magic/nature/tree-icy-green.webp",
   "system": {
     "description": {
-      "value": "<p>Sur votre monde natal, vous détectez les créatures non natives à 18 m ou moins. Ailleurs, vous êtes avantagé aux jets de sauvegarde liés à l'environnement.</p>",
+      "value": "<p>Tant que vous êtes sur votre monde natal, vous pouvez utiliser une action pour détecter la présence de créatures non natives dans un rayon de 18 m. Cette aptitude vous révèle leur nombre et leur direction générale, mais rien sur le type de créatures ni leur emplacement exact.</p>\n        <p>Quand vous n'êtes pas sur votre monde natal, vous vous acclimatez aux conditions extrêmes de l'endroit où vous vous trouvez : vous êtes avantagé lors des jets de sauvegarde occasionnés par les conditions environnementales.</p>",
       "chat": ""
     },
     "identifier": "explorateur-des-ramures-cercle-d-yggdrasill",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787722836317,
-    "modifiedTime": 1787722836317,
+    "createdTime": 1787723877440,
+    "modifiedTime": 1787723877440,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
