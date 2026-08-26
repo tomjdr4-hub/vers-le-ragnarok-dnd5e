@@ -5,7 +5,7 @@
   "img": "icons/magic/control/debuff-energy-hold-purple.webp",
   "system": {
     "description": {
-      "value": "<p>En réaction, échangez magiquement de place avec une autre créature à 9 m ou moins pour rediriger une attaque réussie (jet de sauvegarde de Charisme possible).</p>",
+      "value": "<p>Par une réaction, quand vous ou une autre créature à 9 m ou moins de vous êtes la cible d'une attaque réussie, vous pouvez échanger par magie l'emplacement de la cible avec l'emplacement d'une autre créature à 9 m ou moins de vous, redirigeant ainsi l'attaque. Si l'une ou les deux créatures ne veulent pas échanger leur emplacement, elles peuvent tenter un jet de sauvegarde de Charisme ; ce pouvoir ne fonctionne pas si un jet de sauvegarde est réussi.</p>",
       "chat": ""
     },
     "identifier": "riposte-miroir-l-informe",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787690198011,
-    "modifiedTime": 1787690198011,
+    "createdTime": 1787722836318,
+    "modifiedTime": 1787722836318,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

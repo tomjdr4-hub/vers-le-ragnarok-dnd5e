@@ -5,7 +5,7 @@
   "img": "icons/magic/death/skull-humanoid-crown-white.webp",
   "system": {
     "description": {
-      "value": "<p>Vous choisissez l'avantage ou le désavantage aux jets de sauvegarde contre la mort d'une créature. Vous pouvez transférer une résistance physique et une annulation de dégâts à une créature que vous venez de soigner.</p>",
+      "value": "<p>À partir du niveau 17, vous pouvez décider d'être avantagé ou désavantagé sur vos propres jets de sauvegarde contre la mort.</p>\n        <p>Par une action, vous touchez une créature dont la vie a été restaurée il y a une heure ou moins. Elle bénéficie d'une résistance aux dégâts contondants, perforants et tranchants des armes non magiques, et peut abandonner cette résistance par une réaction pour annuler tous les dégâts d'une seule source au moment où ils sont infligés.</p>\n        <p>Une créature ne peut bénéficier de Voilà qui satisfait les dieux qu'une seule fois avant de terminer un repos long.</p>",
       "chat": ""
     },
     "identifier": "voila-qui-satisfait-les-dieux-domaine-du-sacrifice",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787690198010,
-    "modifiedTime": 1787690198010,
+    "createdTime": 1787722836317,
+    "modifiedTime": 1787722836317,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

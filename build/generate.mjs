@@ -760,9 +760,11 @@ const ARCHETYPES = [
         { name: "Balafres sacrées", html: `<p>Quand vous êtes touché alors que vous n'êtes pas à vos points de vie maximum (et sans PV temporaires), vous gagnez des points de vie temporaires égaux à votre modificateur de Charisme, et vous ajoutez ce même montant au prochain jet d'attaque d'arme et jet de dégâts que vous effectuez lors de votre prochain tour.</p>` }
       ] },
       { level: 2, features: [{ name: "Canalisation d'énergie divine : gloire du martyr", html: `<p>Vous pouvez sacrifier une partie de la vie d'un volontaire sur l'autel de la guerre. Par une action, vous ou une créature consentante dans votre champ de vision réduisez tous les dégâts subis de 2 (avant application des résistances et vulnérabilités) et êtes avantagé sur les jets de sauvegarde, mais les effets de guérison dont vous bénéficiez sont réduits de moitié. Ces effets durent 1 minute.</p>` }] },
-      { level: 6, features: [{ name: "Perte sacrée", html: `<p>Par une réaction, vous pouvez donner l'effet de Balafres sacrées à un allié touché, à 9 m ou moins de vous.</p>` }] },
+      { level: 6, features: [{ name: "Perte sacrée", html: `<p>À partir du niveau 6, si un allié à 9 m ou moins de vous dans votre champ de vision subit des dégâts, vous pouvez dépenser votre réaction pour lui conférer les avantages de l'aptitude Balafres sacrées. Vous ne pouvez pas utiliser cette aptitude sur une créature qui a déjà des points de vie temporaires, quel que soit leur montant.</p>` }] },
       { level: 8, features: [{ name: "Frappe divine", html: `<p>Une fois par tour, une attaque d'arme réussie inflige 1d8 dégâts radiants supplémentaires (2d8 au niveau 14).</p>` }] },
-      { level: 17, features: [{ name: "Voilà qui satisfait les dieux", html: `<p>Vous choisissez l'avantage ou le désavantage aux jets de sauvegarde contre la mort d'une créature. Vous pouvez transférer une résistance physique et une annulation de dégâts à une créature que vous venez de soigner.</p>` }] }
+      { level: 17, features: [{ name: "Voilà qui satisfait les dieux", html: `<p>À partir du niveau 17, vous pouvez décider d'être avantagé ou désavantagé sur vos propres jets de sauvegarde contre la mort.</p>
+        <p>Par une action, vous touchez une créature dont la vie a été restaurée il y a une heure ou moins. Elle bénéficie d'une résistance aux dégâts contondants, perforants et tranchants des armes non magiques, et peut abandonner cette résistance par une réaction pour annuler tous les dégâts d'une seule source au moment où ils sont infligés.</p>
+        <p>Une créature ne peut bénéficier de Voilà qui satisfait les dieux qu'une seule fois avant de terminer un repos long.</p>` }] }
     ]
   },
   {
@@ -878,11 +880,11 @@ const ARCHETYPES = [
           <p>De plus, si un ennemi réussit une sauvegarde contre l'un de vos sorts de méthode de l'escroc, il subit des dégâts psychiques (1d4 par dé d'attaque sournoise).</p>
           <p>Une créature qui a subi une cruelle blessure (par un sort ou une attaque) est immunisée à ces effets pendant 1 heure.</p>` }
       ] },
-      { level: 6, features: [{ name: "Fumée et miroirs", html: `<p>Une réussite en Supercherie ou en déguisement devient incontestable pendant 1 heure.</p>` }] },
+      { level: 6, features: [{ name: "Fumée et miroirs", html: `<p>Chaque fois que vous réussissez un test de Supercherie, ou que quelqu'un ne parvient pas à percer l'un de vos déguisements, la cible est totalement convaincue qu'elle perçoit la vérité. Aucune preuve présentée par quiconque autre que vous ne peut la convaincre du contraire. Cet effet dure 1 heure.</p>` }] },
       { level: 9, features: [{ name: "Méthode améliorée", html: `<p>Vous gagnez <em>modifier son apparence</em>, <em>amélioration de caractéristique</em> et <em>image miroir</em>.</p>` }] },
       { level: 13, features: [{ name: "Méthode supérieure", html: `<p>Vous gagnez <em>image majeure</em> et <em>monture fantôme</em>.</p>` }] },
       { level: 17, features: [
-        { name: "Riposte miroir", html: `<p>En réaction, échangez magiquement de place avec une autre créature à 9 m ou moins pour rediriger une attaque réussie (jet de sauvegarde de Charisme possible).</p>` },
+        { name: "Riposte miroir", html: `<p>Par une réaction, quand vous ou une autre créature à 9 m ou moins de vous êtes la cible d'une attaque réussie, vous pouvez échanger par magie l'emplacement de la cible avec l'emplacement d'une autre créature à 9 m ou moins de vous, redirigeant ainsi l'attaque. Si l'une ou les deux créatures ne veulent pas échanger leur emplacement, elles peuvent tenter un jet de sauvegarde de Charisme ; ce pouvoir ne fonctionne pas si un jet de sauvegarde est réussi.</p>` },
         { name: "Maîtrise de l'escroc", html: `<p>Vous gagnez <em>confusion</em> et <em>invisibilité supérieure</em>.</p>` }
       ] }
     ]
