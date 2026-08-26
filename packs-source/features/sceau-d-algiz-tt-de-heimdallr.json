@@ -5,7 +5,7 @@
   "img": "icons/magic/defensive/shield-barrier-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous pouvez dépenser un dé de cercle de futhark en réaction pour forcer une créature à relancer un jet d'attaque d'opportunité qu'elle vient de réussir contre une cible se trouvant dans votre cercle.</p>",
+      "value": "<p>Vous pouvez dépenser un dé de cercle de futhark en réaction pour obliger une créature à relancer son jet d'attaque d'opportunité effectué contre une cible à l'intérieur du cercle.</p>",
       "chat": ""
     },
     "identifier": "sceau-d-algiz-tt-de-heimdallr",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877440,
-    "modifiedTime": 1787723877440,
+    "createdTime": 1787744747106,
+    "modifiedTime": 1787744747106,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

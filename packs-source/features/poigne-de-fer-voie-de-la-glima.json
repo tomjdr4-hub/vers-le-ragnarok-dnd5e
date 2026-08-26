@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/unarmed-punch-fist-white.webp",
   "system": {
     "description": {
-      "value": "<p>Si vous êtes sur le point de perdre un test d'empoignade opposé, vous pouvez dépenser 2 points de ki pour resserrer votre prise : vous réussissez automatiquement le test, mais vous subissez des dégâts égaux à votre niveau + la différence entre votre résultat et celui de votre adversaire. Ces dégâts ne peuvent être annulés par quelque moyen que ce soit.</p>",
+      "value": "<p>Si vous êtes sur le point de perdre un test d'empoignade opposé (c'est-à-dire tout test de caractéristique réalisé pour effectuer ou se libérer d'une empoignade ou similaire), vous pouvez dépenser 2 points de ki pour resserrer votre prise : vous réussissez automatiquement le test, mais vous subissez des dégâts égaux à votre niveau + la différence entre votre résultat et celui de votre adversaire. Ces dégâts ne peuvent être annulés par quelque moyen que ce soit.</p>",
       "chat": ""
     },
     "identifier": "poigne-de-fer-voie-de-la-glima",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877441,
-    "modifiedTime": 1787723877441,
+    "createdTime": 1787744747107,
+    "modifiedTime": 1787744747107,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

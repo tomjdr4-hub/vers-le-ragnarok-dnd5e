@@ -1,6 +1,6 @@
 {
-  "_id": "60dd760e4ac22920",
-  "name": "Méthode améliorée (L'informe)",
+  "_id": "ee4b1886df551d32",
+  "name": "Méthode de l'escroc améliorée (L'informe)",
   "type": "feat",
   "img": "icons/magic/control/debuff-energy-hold-purple.webp",
   "system": {
@@ -8,7 +8,7 @@
       "value": "<p>Vous gagnez <em>modifier son apparence</em>, <em>amélioration de caractéristique</em> et <em>image miroir</em>.</p>",
       "chat": ""
     },
-    "identifier": "methode-amelioree-l-informe",
+    "identifier": "methode-de-l-escroc-amelioree-l-informe",
     "source": "Vers le Ragnarök",
     "requirements": "L'informe — niveau 9",
     "type": {
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877441,
-    "modifiedTime": 1787723877441,
+    "createdTime": 1787744747107,
+    "modifiedTime": 1787744747107,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!60dd760e4ac22920"
+  "_key": "!items!ee4b1886df551d32"
 }

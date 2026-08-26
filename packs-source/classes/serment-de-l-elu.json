@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Honneur au combat, position à faire respecter, et générosité rendue au centuple : les préceptes de l'Élu.</p>",
+      "value": "<p>Depuis que vous comprenez le sens des mots, vous savez que vous êtes destiné à de grandes batailles — peut-être entraîné par votre famille, peut-être appelé par une voix murmurant de grandes récompenses. Vous êtes un élu, et ce seul fait vous incite, vous et vos alliés, à vous rendre là où les épées s'entrechoquent : prêter le serment de l'élu vous lie à un destin glorieux !</p>",
       "chat": ""
     },
     "identifier": "serment-de-l-elu",
@@ -108,8 +108,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877441,
-    "modifiedTime": 1787723877441,
+    "createdTime": 1787744747107,
+    "modifiedTime": 1787744747107,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

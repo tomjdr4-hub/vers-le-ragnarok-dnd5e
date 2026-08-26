@@ -5,7 +5,7 @@
   "img": "icons/environment/people/commoner.webp",
   "system": {
     "description": {
-      "value": "<p>En choisissant un lieu à Miðgarðr, votre personnage y possède une maison et une terre (et une famille, si vous le souhaitez). La communauté locale l'apprécie et l'aide dans les moments difficiles.</p>\n      <p><em>Variante « hersir » : membre plus influent, participant aux débats du þing. Privilège remplacé par <strong>grande propriété</strong> : +5 po de départ et 2 po/jour récupérables au retour chez soi, au risque d'une usurpation en cas d'absence prolongée.</em></p>",
+      "value": "<p>En choisissant un lieu à Miðgarðr, votre personnage y possède une maison et une terre (et une famille, si vous le souhaitez). La communauté locale l'apprécie et l'aide dans les moments difficiles.</p>\n      <p><em>Variante « hersir » : membre plus influent, participant aux débats du þing. En plus du privilège un foyer où revenir, il bénéficie de <strong>grande propriété</strong> : +5 po de départ et 2 po/jour récupérables au retour chez soi, au risque d'une usurpation en cas d'absence prolongée.</em></p>",
       "chat": ""
     },
     "identifier": "privilege-un-foyer-ou-revenir-bondhi",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877439,
-    "modifiedTime": 1787723877439,
+    "createdTime": 1787744747105,
+    "modifiedTime": 1787744747105,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

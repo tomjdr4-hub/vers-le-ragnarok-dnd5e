@@ -5,7 +5,7 @@
   "img": "icons/weapons/axes/axe-double-worn-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Hache lourde à deux mains, taillée pour l'assaut plutôt que le travail du bois.</p>",
+      "value": "<p>Hache à une main taillée pour l'assaut plutôt que le travail du bois.</p>",
       "chat": ""
     },
     "identifier": "hache-d-assaut",
@@ -70,8 +70,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877438,
-    "modifiedTime": 1787723877438,
+    "createdTime": 1787744747104,
+    "modifiedTime": 1787744747104,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

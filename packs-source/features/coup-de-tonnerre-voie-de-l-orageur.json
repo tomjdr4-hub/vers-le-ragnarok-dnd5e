@@ -5,7 +5,7 @@
   "img": "icons/magic/lightning/bolt-strike-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Tant que vous êtes en rage, chaque attaque réussie inflige 1d6 dégâts de tonnerre supplémentaires (1d8 au niveau 10) et vous gagnez 1 charge d'orage (2 sur un coup critique). Si vos charges atteignent votre niveau de barbare, ou à la fin de votre rage, vous perdez toutes vos charges et subissez 1d6 dégâts de tonnerre. Rien ne peut empêcher ces dégâts.</p>",
+      "value": "<p>À partir du niveau 3, vous pouvez canaliser la puissance et la violence du vent. Quand vous utilisez l'action attaquer et que vous êtes en rage, vous pouvez électriser votre arme pour qu'elle inflige 1d6 dégâts de tonnerre supplémentaires lors de chaque attaque réussie. Vous gagnez une charge d'orage pour chaque attaque améliorée de cette façon, deux charges en cas de coup critique.</p>\n          <p>À partir du niveau 10, l'aptitude Coup de tonnerre inflige 1d8 dégâts supplémentaires au lieu de 1d6.</p>",
       "chat": ""
     },
     "identifier": "coup-de-tonnerre-voie-de-l-orageur",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877440,
-    "modifiedTime": 1787723877440,
+    "createdTime": 1787744747106,
+    "modifiedTime": 1787744747106,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

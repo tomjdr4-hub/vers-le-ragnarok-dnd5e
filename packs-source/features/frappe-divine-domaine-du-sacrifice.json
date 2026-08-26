@@ -5,7 +5,7 @@
   "img": "icons/magic/death/skull-humanoid-crown-white.webp",
   "system": {
     "description": {
-      "value": "<p>Une fois par tour, une attaque d'arme réussie inflige 1d8 dégâts radiants supplémentaires (2d8 au niveau 14).</p>",
+      "value": "<p>Au niveau 8, vous pouvez imprégner votre arme d'énergie divine. Une fois lors de chacun de vos tours, quand vous touchez une créature avec une attaque d'arme, vous pouvez faire en sorte que votre attaque inflige 1d8 dégâts radiants supplémentaires. Quand vous atteignez le niveau 14, les dégâts supplémentaires passent à 2d8.</p>",
       "chat": ""
     },
     "identifier": "frappe-divine-domaine-du-sacrifice",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877440,
-    "modifiedTime": 1787723877440,
+    "createdTime": 1787744747107,
+    "modifiedTime": 1787744747107,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

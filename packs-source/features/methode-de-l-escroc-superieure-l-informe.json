@@ -1,6 +1,6 @@
 {
-  "_id": "95f239c161219ac8",
-  "name": "Méthode supérieure (L'informe)",
+  "_id": "3e73b9f2a5ee0743",
+  "name": "Méthode de l'escroc supérieure (L'informe)",
   "type": "feat",
   "img": "icons/magic/control/debuff-energy-hold-purple.webp",
   "system": {
@@ -8,7 +8,7 @@
       "value": "<p>Vous gagnez <em>image majeure</em> et <em>monture fantôme</em>.</p>",
       "chat": ""
     },
-    "identifier": "methode-superieure-l-informe",
+    "identifier": "methode-de-l-escroc-superieure-l-informe",
     "source": "Vers le Ragnarök",
     "requirements": "L'informe — niveau 13",
     "type": {
@@ -35,12 +35,12 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877441,
-    "modifiedTime": 1787723877441,
+    "createdTime": 1787744747107,
+    "modifiedTime": 1787744747107,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
     "exportSource": null
   },
-  "_key": "!items!95f239c161219ac8"
+  "_key": "!items!3e73b9f2a5ee0743"
 }

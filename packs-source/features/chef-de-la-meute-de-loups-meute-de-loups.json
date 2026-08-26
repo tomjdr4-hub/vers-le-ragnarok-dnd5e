@@ -5,7 +5,7 @@
   "img": "icons/creatures/mammals/wolf-howl-moon-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous avez un sens de l'orientation aiguisé. Vous et vos alliés pouvez voyager discrètement à un rythme rapide, ou sans malus à la perception passive, mais pas les deux à la fois. En réaction, vous pouvez déplacer vous-même ou un allié conscient de 3 m au maximum quand un ennemi se déplace (communication ou signe visuel requis, et l'allié doit pouvoir vous entendre ou vous voir).</p>",
+      "value": "<p>Vous avez un sens de l'orientation aiguisé. Vous et vos alliés pouvez voyager discrètement à un rythme rapide, ou sans malus à la perception passive, mais pas les deux à la fois.</p>\n        <p>Quand un ennemi se déplace, vous et vos alliés pouvez vous déplacer d'une distance maximale de 3 m par une réaction. Si un allié souhaite utiliser ce pouvoir, vous et lui devez être conscients ; vous devez pouvoir parler ou faire des signes visuels, et votre allié doit pouvoir vous entendre ou vous voir.</p>",
       "chat": ""
     },
     "identifier": "chef-de-la-meute-de-loups-meute-de-loups",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877441,
-    "modifiedTime": 1787723877441,
+    "createdTime": 1787744747107,
+    "modifiedTime": 1787744747107,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

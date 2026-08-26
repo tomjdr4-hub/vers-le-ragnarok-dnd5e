@@ -5,7 +5,7 @@
   "img": "icons/environment/people/commoner.webp",
   "system": {
     "description": {
-      "value": "<p><strong>L'officiant des rites du quotidien.</strong> Sans être un prêtre au sens strict, il accomplit les rituels courants et fait le lien entre sa communauté et les esprits ; fonction souvent héréditaire, interdite aux esclaves et aux renégats.</p>\n      <p><strong>Compétences :</strong> Ásatrú, Médecine. <strong>Outils :</strong> matériel d'herboriste.</p>\n      <p><strong>Équipement de départ :</strong> robe de cérémonie, matériel d'herboriste, talisman de pierre gravé d'une rune, cinq morceaux d'écorce aromatique, une sacoche de cuir et 15 po.</p>",
+      "value": "<p><strong>L'officiant des rites du quotidien.</strong> Sans être un prêtre au sens strict, il accomplit les rituels courants et fait le lien entre sa communauté et les esprits ; fonction souvent héréditaire, interdite aux esclaves et aux renégats.</p>\n      <p><strong>Compétences :</strong> Ásatrú, Médecine. <strong>Outils :</strong> matériel d'herboriste.</p>\n      <p><strong>Équipement de départ :</strong> robe de cérémonie, matériel d'herboriste, talisman de pierre polie gravé d'une rune, cinq morceaux d'écorce aromatique, une sacoche de cuir et 15 po.</p>",
       "chat": ""
     },
     "identifier": "gothi",
@@ -62,8 +62,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877439,
-    "modifiedTime": 1787723877439,
+    "createdTime": 1787744747105,
+    "modifiedTime": 1787744747105,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

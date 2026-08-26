@@ -5,7 +5,7 @@
   "img": "icons/weapons/swords/greatsword-crossguard.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Objet de clan des Yeux d'Odhinn.</strong> Longue épée très aiguisée forgée avec le meilleur acier de Miðgarðr, réputée briser facilement les armes ordinaires.</p>\n      <p><em>Avantage aux tests de Charisme (Intimidation) contre les habitants de Miðgarðr pour qui la brandit.</em></p>\n      <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>",
+      "value": "<p><strong>Objet de clan des Yeux d'Odhinn.</strong> Longue épée très aiguisée forgée avec le meilleur acier de Miðgarðr, réputée briser facilement les armes ordinaires.</p>\n      <p><em>Un personnage qui montre cette épée est avantagé aux tests de Charisme (Intimidation) contre les habitants de Miðgarðr.</em></p>\n      <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>",
       "chat": ""
     },
     "identifier": "epee-ulfberht",
@@ -42,8 +42,8 @@
         }
       },
       "versatile": {
-        "number": null,
-        "denomination": null,
+        "number": 1,
+        "denomination": "d10",
         "bonus": "",
         "types": [],
         "custom": {
@@ -70,8 +70,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877438,
-    "modifiedTime": 1787723877438,
+    "createdTime": 1787744747104,
+    "modifiedTime": 1787744747104,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

@@ -5,7 +5,7 @@
   "img": "icons/magic/lightning/bolt-strike-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Par une action bonus, vous gagnez 5 charges d'orage puis les libérez aussitôt en une explosion en rayon 1,50 m autour de vous. Chaque créature dans la zone doit faire un jet de sauvegarde de Dextérité (DD = 8 + bonus de maîtrise + modificateur de Constitution) : en cas d'échec, elle subit 5d6 dégâts de foudre ; en cas de réussite, elle ne subit que la moitié des dégâts.</p>",
+      "value": "<p>Par une action bonus, vous pouvez créer un halo de foudre autour de vous jusqu'à la fin de votre tour, ce qui vous permet de gagner 5 charges d'orage.</p>\n        <p>Le cas échéant, chaque créature dans un rayon de 1,50 m autour de vous doit faire un jet de sauvegarde de Dextérité (DD = 8 + bonus de maîtrise + modificateur de Constitution) : en cas d'échec, elle subit 5d6 dégâts de foudre ; en cas de réussite, elle ne subit que la moitié des dégâts.</p>",
       "chat": ""
     },
     "identifier": "demarche-du-tonnerre-voie-de-l-orageur",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877440,
-    "modifiedTime": 1787723877440,
+    "createdTime": 1787744747106,
+    "modifiedTime": 1787744747106,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

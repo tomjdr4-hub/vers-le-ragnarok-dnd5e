@@ -168,7 +168,7 @@ function advMap(list) {
 
 // Equipment / weapon items -----------------------------------------------------
 
-function weapon({ name, img, html, damage, damageType, diceCount = 1, properties = [], weaponType = "simpleM", price = 0, weight = 1, rarity = "", attunement = "" }) {
+function weapon({ name, img, html, damage, damageType, diceCount = 1, versatileDamage = null, range = null, rangeLong = null, properties = [], weaponType = "simpleM", price = 0, weight = 1, rarity = "", attunement = "" }) {
   const finalProperties = rarity ? [...properties, "mgc"] : properties;
   return baseItem({
     name, type: "weapon", img,
@@ -184,8 +184,8 @@ function weapon({ name, img, html, damage, damageType, diceCount = 1, properties
       type: { value: weaponType, subtype: "" },
       properties: finalProperties,
       proficient: null,
-      damage: { base: { number: diceCount, denomination: damage, bonus: "", types: [damageType], custom: { enabled: false } }, versatile: { number: null, denomination: null, bonus: "", types: [], custom: { enabled: false } } },
-      range: { value: null, long: null, reach: null, units: "ft" },
+      damage: { base: { number: diceCount, denomination: damage, bonus: "", types: [damageType], custom: { enabled: false } }, versatile: { number: versatileDamage ? diceCount : null, denomination: versatileDamage, bonus: "", types: [], custom: { enabled: false } } },
+      range: { value: range, long: rangeLong, reach: null, units: "ft" },
       activities: {}
     }
   });
@@ -263,11 +263,11 @@ const EQUIPMENT_DOCS = [
   weapon({
     name: "Hache à barbe courte", img: "icons/weapons/axes/axe-broad-brown.webp",
     html: `<p>Petite hache nordique à lame élargie, aussi maniable au corps à corps qu'au lancer.</p>`,
-    damage: "d6", damageType: "slashing", properties: ["fin", "lgt", "thr"], weaponType: "martialM", price: 6, weight: 1
+    damage: "d6", damageType: "slashing", range: 20, rangeLong: 60, properties: ["fin", "lgt", "thr"], weaponType: "martialM", price: 6, weight: 1
   }),
   weapon({
     name: "Hache d'assaut", img: "icons/weapons/axes/axe-double-worn-steel.webp",
-    html: `<p>Hache lourde à deux mains, taillée pour l'assaut plutôt que le travail du bois.</p>`,
+    html: `<p>Hache à une main taillée pour l'assaut plutôt que le travail du bois.</p>`,
     damage: "d8", damageType: "slashing", properties: ["fin"], weaponType: "martialM", price: 12, weight: 2
   }),
   weapon({
@@ -275,7 +275,7 @@ const EQUIPMENT_DOCS = [
     html: `<p><strong>Objet de clan des Corbeaux de glace.</strong> Bâton noueux obtenu sur un frêne sacré, gravé de runes, incrusté d'un morceau de quartz blanc. Statistiques d'un bâton.</p>
       <p><em>Avantage aux tests de Sagesse (Ásatrú) tant que le personnage la tient en main. Peut servir de focaliseur divin ou arcanique pour un lanceur de sorts.</em></p>
       <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>`,
-    damage: "d6", damageType: "bludgeoning", properties: ["ver"], weaponType: "simpleM", price: 0, weight: 2
+    damage: "d6", versatileDamage: "d8", damageType: "bludgeoning", properties: ["ver"], weaponType: "simpleM", price: 0, weight: 2
   }),
   equipment({
     name: "Cor retentissant", img: "icons/tools/instruments/horn-drinking-white.webp",
@@ -289,7 +289,7 @@ const EQUIPMENT_DOCS = [
     html: `<p><strong>Objet de clan des Fils de jötunn.</strong> Couteau en corne de renne à lame en alliage spécial, permettant d'allumer un feu par étincelles même en conditions défavorables. Une petite crécelle est insérée dans la poignée en os, censée éloigner les mauvais esprits.</p>
       <p><em>Avantage aux tests de Sagesse (Survie) pour son possesseur.</em></p>
       <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>`,
-    damage: "d4", damageType: "piercing", properties: ["fin", "lgt", "thr"], weaponType: "simpleM", price: 0, weight: 1
+    damage: "d4", damageType: "piercing", range: 20, rangeLong: 60, properties: ["fin", "lgt", "thr"], weaponType: "simpleM", price: 0, weight: 1
   }),
   weapon({
     name: "Griffe de la Montagne", img: "icons/weapons/hammers/hammer-double-stone.webp",
@@ -308,9 +308,9 @@ const EQUIPMENT_DOCS = [
   weapon({
     name: "Épée Ulfberht", img: "icons/weapons/swords/greatsword-crossguard.webp",
     html: `<p><strong>Objet de clan des Yeux d'Odhinn.</strong> Longue épée très aiguisée forgée avec le meilleur acier de Miðgarðr, réputée briser facilement les armes ordinaires.</p>
-      <p><em>Avantage aux tests de Charisme (Intimidation) contre les habitants de Miðgarðr pour qui la brandit.</em></p>
+      <p><em>Un personnage qui montre cette épée est avantagé aux tests de Charisme (Intimidation) contre les habitants de Miðgarðr.</em></p>
       <p>Réservé aux membres ou alliés du clan, obtenu en récompense d'un haut fait ou remis par un chef de clan.</p>`,
-    damage: "d8", damageType: "slashing", properties: ["ver"], weaponType: "martialM", price: 0, weight: 1.5
+    damage: "d8", versatileDamage: "d10", damageType: "slashing", properties: ["ver"], weaponType: "martialM", price: 0, weight: 1.5
   }),
   equipment({
     name: "Karve", img: "icons/svg/item-bag.svg",
@@ -516,7 +516,7 @@ const BACKGROUNDS = [
     name: "Bondhi", skills: ["ani", "prc"], tool: "art",
     privilege: "Un foyer où revenir",
     privilegeHtml: `<p>En choisissant un lieu à Miðgarðr, votre personnage y possède une maison et une terre (et une famille, si vous le souhaitez). La communauté locale l'apprécie et l'aide dans les moments difficiles.</p>
-      <p><em>Variante « hersir » : membre plus influent, participant aux débats du þing. Privilège remplacé par <strong>grande propriété</strong> : +5 po de départ et 2 po/jour récupérables au retour chez soi, au risque d'une usurpation en cas d'absence prolongée.</em></p>`,
+      <p><em>Variante « hersir » : membre plus influent, participant aux débats du þing. En plus du privilège un foyer où revenir, il bénéficie de <strong>grande propriété</strong> : +5 po de départ et 2 po/jour récupérables au retour chez soi, au risque d'une usurpation en cas d'absence prolongée.</em></p>`,
     html: `<p><strong>Le paysan libre.</strong> Cultivateur et guerrier occasionnel, propriétaire de son lopin de terre.</p>
       <p><strong>Compétences :</strong> Dressage, Perception. <strong>Outils :</strong> un ensemble d'outils d'artisan au choix.</p>
       <p><strong>Équipement de départ :</strong> habits courants, un ensemble d'outils d'artisan, un bracelet orné d'une rune, une arme courante, un récipient en terre cuite, une sacoche de cuir et 15 po.</p>`
@@ -527,7 +527,7 @@ const BACKGROUNDS = [
     privilegeHtml: `<p>Un accueil (nourriture, abri) est garanti dans toute communauté respectant les anciens dieux, en échange de rituels — un accueil qui s'étend à ses compagnons.</p>`,
     html: `<p><strong>L'officiant des rites du quotidien.</strong> Sans être un prêtre au sens strict, il accomplit les rituels courants et fait le lien entre sa communauté et les esprits ; fonction souvent héréditaire, interdite aux esclaves et aux renégats.</p>
       <p><strong>Compétences :</strong> Ásatrú, Médecine. <strong>Outils :</strong> matériel d'herboriste.</p>
-      <p><strong>Équipement de départ :</strong> robe de cérémonie, matériel d'herboriste, talisman de pierre gravé d'une rune, cinq morceaux d'écorce aromatique, une sacoche de cuir et 15 po.</p>`
+      <p><strong>Équipement de départ :</strong> robe de cérémonie, matériel d'herboriste, talisman de pierre polie gravé d'une rune, cinq morceaux d'écorce aromatique, une sacoche de cuir et 15 po.</p>`
   },
   {
     name: "Huscarl", skills: ["inv", "ins"], tool: null,
@@ -658,7 +658,7 @@ const AETTS = [
         <tr><td>7e</td><td>Manoir somptueux</td></tr>
         <tr><td>8e</td><td>Mot de pouvoir étourdissant</td></tr>
         <tr><td>9e</td><td>Emprisonnement</td></tr></table>` },
-      { level: 2, name: "Sceau d'Algiz", html: `<p>Vous pouvez dépenser un dé de cercle de futhark en réaction pour forcer une créature à relancer un jet d'attaque d'opportunité qu'elle vient de réussir contre une cible se trouvant dans votre cercle.</p>` },
+      { level: 2, name: "Sceau d'Algiz", html: `<p>Vous pouvez dépenser un dé de cercle de futhark en réaction pour obliger une créature à relancer son jet d'attaque d'opportunité effectué contre une cible à l'intérieur du cercle.</p>` },
       { level: 7, name: "Cercle de Heimdallr", html: `<p>Les alliés se trouvant dans votre cercle réduisent les dégâts qu'ils subissent d'un montant égal à la moitié de votre modificateur de Sagesse, avant application des résistances et vulnérabilités. En maintenant le cercle par une action bonus, vous pouvez le déplacer de 1,50 m.</p>` },
       { level: 9, name: "Tours de magie de Heimdallr", html: `<p>Les tours de magie <em>rayon de givre</em> et <em>résistance</em> s'ajoutent à votre liste de tours de magie runiques (voir Incantation runique).</p>` },
       { level: 11, name: "Vigilance d'Eihwaz", html: `<p>Vous et votre marqué n'avez besoin que d'une heure de sommeil lors d'un repos long pour être considérés comme reposés, et pouvez consacrer le reste du temps à des activités mineures. Vous êtes tous deux avantagés aux tests de Sagesse (Perception).</p>` }
@@ -717,8 +717,11 @@ const ARCHETYPES = [
     theme: `<p>Une rage chargée de foudre : le barbare noue un lien dangereux avec l'orage, accumulant des <strong>charges d'orage</strong> (maximum égal à son niveau de barbare) au fil du combat.</p>`,
     levels: [
       { level: 3, features: [
-        { name: "Coup de tonnerre", html: `<p>Tant que vous êtes en rage, chaque attaque réussie inflige 1d6 dégâts de tonnerre supplémentaires (1d8 au niveau 10) et vous gagnez 1 charge d'orage (2 sur un coup critique). Si vos charges atteignent votre niveau de barbare, ou à la fin de votre rage, vous perdez toutes vos charges et subissez 1d6 dégâts de tonnerre. Rien ne peut empêcher ces dégâts.</p>` },
-        { name: "Exutoire calamiteux", html: `<p>Par une action pendant que vous êtes en rage, effectuez une unique attaque d'arme au corps à corps contre une créature. Si elle touche, la cible et toutes les créatures dans un rayon de 1,50 m (3 m au niveau 10) autour d'elle subissent 1 dégât de tonnerre par charge d'orage que vous possédez, et vous perdez toutes vos charges d'orage. Si l'attaque rate, vous gagnez à la place un nombre de charges d'orage égal à vos dégâts de rage.</p>` }
+        { name: "Invocateur d'orage", html: `<p>Quand vous choisissez cette voie au niveau 3, vous maîtrisez la puissance des orages. Chaque fois que vous utilisez l'une de vos aptitudes d'orageur, vous gagnez un certain nombre de charges d'orage. Vous pouvez accumuler un nombre de charges d'orage égal à votre niveau de barbare.</p>
+          <p>Chaque fois que vous accumulez un nombre de charges d'orage égal à votre niveau, ou quand votre rage de barbare se termine, vous perdez immédiatement toutes les charges et subissez 1d6 dégâts de tonnerre. Rien ne peut empêcher ces dégâts.</p>` },
+        { name: "Coup de tonnerre", html: `<p>À partir du niveau 3, vous pouvez canaliser la puissance et la violence du vent. Quand vous utilisez l'action attaquer et que vous êtes en rage, vous pouvez électriser votre arme pour qu'elle inflige 1d6 dégâts de tonnerre supplémentaires lors de chaque attaque réussie. Vous gagnez une charge d'orage pour chaque attaque améliorée de cette façon, deux charges en cas de coup critique.</p>
+          <p>À partir du niveau 10, l'aptitude Coup de tonnerre inflige 1d8 dégâts supplémentaires au lieu de 1d6.</p>` },
+        { name: "Exutoire calamiteux", html: `<p>À partir du niveau 3, vous pouvez déchaîner l'orage sur une créature vivante. Par une action pendant que vous êtes en rage, effectuez une unique attaque d'arme au corps à corps contre une créature. Si elle touche, la cible et toutes les créatures dans un rayon de 1,50 m (3 m au niveau 10) autour d'elle subissent 1 dégât de tonnerre par charge d'orage que vous possédez, et vous perdez toutes vos charges d'orage. Si l'attaque rate, vous gagnez à la place un nombre de charges d'orage égal à vos dégâts de rage.</p>` }
       ] },
       { level: 6, features: [
         { name: "Déclencher la tempête", html: `<p>Vous êtes avantagé lors des jets de sauvegarde effectués pour résister aux tentatives pour vous déplacer, vous pousser ou vous mettre à terre. De plus, quand une attaque au corps à corps vous touche, vous pouvez déclencher un vent soudain qui inflige 1d6 dégâts de tonnerre à l'attaquant et vous fait gagner une charge d'orage.</p>` },
@@ -726,7 +729,8 @@ const ARCHETYPES = [
           <p>Chaque fois que vous effectuez une attaque avec Imprégnation nuageuse, vous gagnez une charge d'orage en plus de celle gagnée avec Coup de tonnerre.</p>` }
       ] },
       { level: 10, features: [{ name: "En harmonie avec les vents", html: `<p>Vous pouvez lancer <em>contrôle du climat</em> en rituel.</p>` }] },
-      { level: 14, features: [{ name: "Démarche du tonnerre", html: `<p>Par une action bonus, vous gagnez 5 charges d'orage puis les libérez aussitôt en une explosion en rayon 1,50 m autour de vous. Chaque créature dans la zone doit faire un jet de sauvegarde de Dextérité (DD = 8 + bonus de maîtrise + modificateur de Constitution) : en cas d'échec, elle subit 5d6 dégâts de foudre ; en cas de réussite, elle ne subit que la moitié des dégâts.</p>` }] }
+      { level: 14, features: [{ name: "Démarche du tonnerre", html: `<p>Par une action bonus, vous pouvez créer un halo de foudre autour de vous jusqu'à la fin de votre tour, ce qui vous permet de gagner 5 charges d'orage.</p>
+        <p>Le cas échéant, chaque créature dans un rayon de 1,50 m autour de vous doit faire un jet de sauvegarde de Dextérité (DD = 8 + bonus de maîtrise + modificateur de Constitution) : en cas d'échec, elle subit 5d6 dégâts de foudre ; en cas de réussite, elle ne subit que la moitié des dégâts.</p>` }] }
     ]
   },
   {
@@ -756,7 +760,7 @@ const ARCHETYPES = [
           <tr><td>5e</td><td>Jeter une malédiction, lueur d'espoir</td></tr>
           <tr><td>7e</td><td>Flétrissement, protection contre la mort</td></tr>
           <tr><td>9e</td><td>Coercition mystique, sanctification</td></tr></table>` },
-        { name: "Rituel de l'offrande honorable", html: `<p>Lors d'un repos long, vous pouvez infliger un nombre de blessures permanentes (œil, oreille, membre… à l'appréciation du MJ) égal à votre modificateur de Sagesse parmi les créatures consentantes dans votre champ de vision.</p>
+        { name: "Rituel de l'offrande honorable", html: `<p>Lors d'un repos long, vous pouvez infliger un nombre de blessures permanentes (œil, oreille, membre… à l'appréciation du MJ) égal à votre modificateur de Sagesse parmi toutes les créatures dans votre champ de vision.</p>
           <p>Pour chaque blessure offerte durant le rituel, le participant qui l'a livrée choisit l'un des avantages suivants, qui dure jusqu'au prochain repos long :</p>
           <p><strong>Avantage de chance.</strong> Refaire un unique test de caractéristique, jet de sauvegarde ou jet d'attaque.</p>
           <p><strong>Avantage d'endurance.</strong> Par une action bonus, dépenser et jeter l'un de ses dés de vie pour récupérer un nombre de points de vie égal au résultat (cumulable en dépensant plusieurs dés lors d'une même action bonus si l'avantage a été choisi plusieurs fois).</p>
@@ -766,7 +770,7 @@ const ARCHETYPES = [
       ] },
       { level: 2, features: [{ name: "Canalisation d'énergie divine : gloire du martyr", html: `<p>Vous pouvez sacrifier une partie de la vie d'un volontaire sur l'autel de la guerre. Par une action, vous ou une créature consentante dans votre champ de vision réduisez tous les dégâts subis de 2 (avant application des résistances et vulnérabilités) et êtes avantagé sur les jets de sauvegarde, mais les effets de guérison dont vous bénéficiez sont réduits de moitié. Ces effets durent 1 minute.</p>` }] },
       { level: 6, features: [{ name: "Perte sacrée", html: `<p>À partir du niveau 6, si un allié à 9 m ou moins de vous dans votre champ de vision subit des dégâts, vous pouvez dépenser votre réaction pour lui conférer les avantages de l'aptitude Balafres sacrées. Vous ne pouvez pas utiliser cette aptitude sur une créature qui a déjà des points de vie temporaires, quel que soit leur montant.</p>` }] },
-      { level: 8, features: [{ name: "Frappe divine", html: `<p>Une fois par tour, une attaque d'arme réussie inflige 1d8 dégâts radiants supplémentaires (2d8 au niveau 14).</p>` }] },
+      { level: 8, features: [{ name: "Frappe divine", html: `<p>Au niveau 8, vous pouvez imprégner votre arme d'énergie divine. Une fois lors de chacun de vos tours, quand vous touchez une créature avec une attaque d'arme, vous pouvez faire en sorte que votre attaque inflige 1d8 dégâts radiants supplémentaires. Quand vous atteignez le niveau 14, les dégâts supplémentaires passent à 2d8.</p>` }] },
       { level: 17, features: [{ name: "Voilà qui satisfait les dieux", html: `<p>À partir du niveau 17, vous pouvez décider d'être avantagé ou désavantagé sur vos propres jets de sauvegarde contre la mort.</p>
         <p>Par une action, vous touchez une créature dont la vie a été restaurée il y a une heure ou moins. Elle bénéficie d'une résistance aux dégâts contondants, perforants et tranchants des armes non magiques, et peut abandonner cette résistance par une réaction pour annuler tous les dégâts d'une seule source au moment où ils sont infligés.</p>
         <p>Une créature ne peut bénéficier de Voilà qui satisfait les dieux qu'une seule fois avant de terminer un repos long.</p>` }] }
@@ -795,9 +799,9 @@ const ARCHETYPES = [
     name: "Origine jötunn", classIdentifier: "sorcerer", img: "icons/magic/water/orb-ice-web.webp",
     theme: `<p>Le sang froid d'Ymir coule dans vos veines et se réveille lorsque vous puisez à sec dans votre magie.</p>`,
     levels: [
-      { level: 1, features: [{ name: "Fils de Jötunheimr", html: `<p>Quand vous épuisez tous vos emplacements de sort d'un niveau donné, vous vous transformez pendant 1 minute : vous récupérez des points de vie égaux au niveau de l'emplacement plus votre niveau de personnage (le triple en points de vie temporaires), gagnez une résistance au froid, et une attaque de contact glacial en 1d6 + Charisme + niveau de l'emplacement (2d6 au niveau 5, 3d6 au niveau 11, 4d6 au niveau 17). Une fois utilisée pour un niveau d'emplacement donné, cette aptitude ne peut être réutilisée pour ce même niveau qu'après un repos long.</p>` }] },
-      { level: 6, features: [{ name: "Peau du froid éternel", html: `<p>En réaction, pour 2 points de sorcellerie, quand vous êtes touché en mêlée vous neutralisez ou ralentissez votre attaquant (jet de sauvegarde de Dextérité).</p>` }] },
-      { level: 14, features: [{ name: "Cœur gelé", html: `<p>Vous êtes avantagé contre l'intimidation, être charmé et être terrorisé.</p>` }] },
+      { level: 1, features: [{ name: "Fils de Jötunheimr", html: `<p>Quand vous épuisez tous vos emplacements de sort d'un niveau donné, vous vous transformez pendant 1 minute : vous récupérez des points de vie égaux au niveau de l'emplacement plus votre niveau de personnage (le triple en points de vie temporaires), gagnez une résistance au froid, et pouvez, par une action, infliger un froid glacial et douloureux d'un simple contact : faites une attaque de sort au corps à corps, qui inflige en cas de réussite 1d6 + Charisme + niveau de l'emplacement (2d6 au niveau 5, 3d6 au niveau 11, 4d6 au niveau 17). Une fois utilisée pour un niveau d'emplacement donné, cette aptitude ne peut être réutilisée pour ce même niveau qu'après un repos long.</p>` }] },
+      { level: 6, features: [{ name: "Peau du froid éternel", html: `<p>En réaction, pour 2 points de sorcellerie, quand vous êtes touché en mêlée vous projetez brusquement du gel sur votre agresseur, qui fait un jet de sauvegarde de Dextérité : s'il le rate, il devient neutralisé et sa vitesse est réduite à 0 ; s'il le réussit, sa vitesse est réduite de moitié. Ces effets durent jusqu'à la fin de son prochain tour.</p>` }] },
+      { level: 14, features: [{ name: "Cœur gelé", html: `<p>Vous êtes avantagé lors des jets de sauvegarde et des tests de compétence effectués pour résister aux tentatives d'intimidation et aux états charmé et terrorisé.</p>` }] },
       { level: 18, features: [{ name: "Les os d'Ymir", html: `<p>Par une action, vous dépensez un emplacement de sort pour déclencher une tempête de neige en rayon 750 m (la neige ne vous atteint pas si vous êtes sous terre ou sous l'eau). Chaque créature à 9 m ou moins de vous subit, au début de son tour, des dégâts de froid égaux au niveau de l'emplacement plus votre modificateur de Charisme (moitié en cas de réussite d'un jet de sauvegarde de Constitution).</p>
         <p>Tant que cette aptitude est active, vous pouvez dépenser une action pour convoquer un élémentaire de la glace qui apparaît à 1,50 m de vous, agit à votre tour et vous obéit — vous pouvez le faire un nombre de fois égal au niveau de l'emplacement utilisé.</p>
         <p>Ces effets durent 1 minute (les élémentaires invoqués disparaissent alors). Un repos long est nécessaire pour réutiliser cette aptitude.</p>` }] }
@@ -813,7 +817,7 @@ const ARCHETYPES = [
         <p><strong>Double réaction.</strong> Vous avez appris à réagir plus vite que quiconque. Lors d'un round, vous disposez d'une réaction supplémentaire. Vous ne pouvez utiliser qu'une réaction par évènement déclencheur. Une fois cette aptitude utilisée, vous devez terminer un repos court ou long pour pouvoir la réutiliser.</p>
         <p><strong>Violentes représailles.</strong> Lorsque vous faites une attaque d'opportunité, vous bénéficiez d'un bonus sur votre jet d'attaque et de dégâts égal au nombre de tactiques de gardien que vous connaissez.</p>
         <p><strong>Mur de bouclier.</strong> Vous coordonnez vos alliés pour résister à un assaut. Quand vous effectuez l'action Esquiver, vous et vos alliés à 1,50 m de vous êtes avantagés lors des jets de sauvegarde de Force et de Dextérité. Les ennemis considèrent comme difficile le terrain dans votre zone d'allonge et celles des alliés affectés par cette aptitude.</p>` }] },
-      { level: 7, features: [{ name: "Porteur de bouclier", html: `<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié à 1,50 m ou moins de vous jusqu'au début de votre prochain tour.</p>` }] },
+      { level: 7, features: [{ name: "Porteur de bouclier", html: `<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié jusqu'au début de votre prochain tour, tant que vous restez à 1,50 m ou moins de lui.</p>` }] },
       { level: 10, features: [{ name: "Tactiques améliorées", html: `<p>Au niveau 10, vous apprenez deux tactiques de gardien supplémentaires parmi celles décrites ci-après. Sauf indication contraire, ces tactiques sont toujours actives.</p>
         <p><strong>Double réaction améliorée.</strong> Vous obtenez la tactique double réaction, ou une utilisation supplémentaire de celle-ci si vous l'avez déjà.</p>
         <p><strong>Frappe revigorante.</strong> Quand vous frappez avec succès une créature avec une attaque d'arme, vous pouvez décider de ne pas ajouter le modificateur de caractéristique approprié au jet de dégâts pour gagner 1d8 points de vie temporaires.</p>
@@ -862,13 +866,13 @@ const ARCHETYPES = [
         { name: "La main sur la nuque", html: `<p>Les créatures que vous empoignez sont désavantagées à leurs jets d'attaque. Sur une empoignade réussie ou rompue, vous pouvez dépenser 1 point de ki pour infliger des dégâts (dé d'arts martiaux + Force ou Dextérité).</p>` }
       ] },
       { level: 6, features: [{ name: "Lancer destructeur", html: `<p>Par une action, vous pouvez dépenser un point de ki pour que tout ce que vous tenez en main et qui n'est pas fixé au sol soit considéré comme un projectile (jusqu'à taille Grande au maximum). L'objet ou la créature est alors considéré comme une arme de jet simple improvisée avec une portée de 3 m/9 m, infligeant votre dé d'arts martiaux + votre modificateur de Force ou de Dextérité. Si vous lancez une créature de la sorte, elle subit le même montant de dégâts, que l'attaque soit réussie ou non.</p>` }] },
-      { level: 11, features: [{ name: "Poigne de fer", html: `<p>Si vous êtes sur le point de perdre un test d'empoignade opposé, vous pouvez dépenser 2 points de ki pour resserrer votre prise : vous réussissez automatiquement le test, mais vous subissez des dégâts égaux à votre niveau + la différence entre votre résultat et celui de votre adversaire. Ces dégâts ne peuvent être annulés par quelque moyen que ce soit.</p>` }] },
+      { level: 11, features: [{ name: "Poigne de fer", html: `<p>Si vous êtes sur le point de perdre un test d'empoignade opposé (c'est-à-dire tout test de caractéristique réalisé pour effectuer ou se libérer d'une empoignade ou similaire), vous pouvez dépenser 2 points de ki pour resserrer votre prise : vous réussissez automatiquement le test, mais vous subissez des dégâts égaux à votre niveau + la différence entre votre résultat et celui de votre adversaire. Ces dégâts ne peuvent être annulés par quelque moyen que ce soit.</p>` }] },
       { level: 17, features: [{ name: "Victoire éclair", html: `<p>Si un ennemi se trouve dans votre zone d'allonge au début du round, vous pouvez dépenser 4 points de ki pour effectuer une tentative d'empoignade (vous êtes avantagé lors du test). Ce test est effectué avant le décompte normal de l'initiative, et vous pouvez jouer normalement quand votre tour arrive. Vous pouvez utiliser Lancer destructeur par une action bonus.</p>` }] }
     ]
   },
   {
     name: "Serment de l'élu", classIdentifier: "paladin", img: "icons/magic/holy/angel-winged-humanoid-blue.webp",
-    theme: `<p>Honneur au combat, position à faire respecter, et générosité rendue au centuple : les préceptes de l'Élu.</p>`,
+    theme: `<p>Depuis que vous comprenez le sens des mots, vous savez que vous êtes destiné à de grandes batailles — peut-être entraîné par votre famille, peut-être appelé par une voix murmurant de grandes récompenses. Vous êtes un élu, et ce seul fait vous incite, vous et vos alliés, à vous rendre là où les épées s'entrechoquent : prêter le serment de l'élu vous lie à un destin glorieux !</p>`,
     levels: [
       { level: 3, features: [
         { name: "Sorts du serment de l'élu", html: `<p>Au niveau de paladin approprié, vous ajoutez les sorts suivants à votre liste de sorts de paladin préparés, sans qu'ils comptent dans le nombre de sorts que vous pouvez préparer :</p>
@@ -894,7 +898,8 @@ const ARCHETYPES = [
     theme: `<p>Le rôdeur chasse et combat comme un membre à part entière d'une meute de loups.</p>`,
     levels: [
       { level: 3, features: [{ name: "Guerrier de la meute de loups", html: `<p>Une attaque de mêlée réussie donne l'avantage à la prochaine attaque d'un allié contre la même cible. Une attaque à distance ou de jet réussie désavantage les attaques d'opportunité de la cible jusqu'au début de votre prochain tour. En réaction, quand un allié est blessé, vous pouvez hurler pour infliger 1d6 dégâts psychiques.</p>` }] },
-      { level: 7, features: [{ name: "Chef de la meute de loups", html: `<p>Vous avez un sens de l'orientation aiguisé. Vous et vos alliés pouvez voyager discrètement à un rythme rapide, ou sans malus à la perception passive, mais pas les deux à la fois. En réaction, vous pouvez déplacer vous-même ou un allié conscient de 3 m au maximum quand un ennemi se déplace (communication ou signe visuel requis, et l'allié doit pouvoir vous entendre ou vous voir).</p>` }] },
+      { level: 7, features: [{ name: "Chef de la meute de loups", html: `<p>Vous avez un sens de l'orientation aiguisé. Vous et vos alliés pouvez voyager discrètement à un rythme rapide, ou sans malus à la perception passive, mais pas les deux à la fois.</p>
+        <p>Quand un ennemi se déplace, vous et vos alliés pouvez vous déplacer d'une distance maximale de 3 m par une réaction. Si un allié souhaite utiliser ce pouvoir, vous et lui devez être conscients ; vous devez pouvoir parler ou faire des signes visuels, et votre allié doit pouvoir vous entendre ou vous voir.</p>` }] },
       { level: 11, features: [{ name: "Frappe rapide", html: `<p>Chaque fois que vous tuez une créature ennemie avec une attaque, vous pouvez effectuer immédiatement une attaque supplémentaire avec une arme de corps à corps ou de jet.</p>` }] },
       { level: 15, features: [{ name: "Endurance du loup", html: `<p>Une fois par round pendant votre tour, vous pouvez dépenser l'un de vos dés de vie pour récupérer un nombre de points de vie égal à 1d8 + votre modificateur de Constitution. Cette aptitude ne nécessite l'utilisation d'aucune action ni action bonus.</p>` }] }
     ]
@@ -907,22 +912,22 @@ const ARCHETYPES = [
         { name: "Méthode de l'escroc", html: `<p>Au niveau 3, vous apprenez le tour de magie <em>illusion mineure</em>. Vous savez corrompre les esprits et les corps au gré de vos humeurs : vous obtenez un ensemble de sorts et d'emplacements de sort selon le tableau suivant. Vous récupérez tous les emplacements de sort dépensés après avoir terminé un repos long ou court. Le DD du jet de sauvegarde des sorts de la méthode de l'escroc est égal à 8 + votre bonus de maîtrise + votre modificateur de Charisme.</p>
           <p>À partir du niveau 3, vous pouvez lancer <em>déguisement</em> et <em>charme-personne</em> grâce à la méthode de l'escroc.</p>
           <table><tr><th>Niveau</th><th>Emplacements</th><th>Niveau des emplacements</th></tr>
-          <tr><td>3</td><td>1</td><td>—</td></tr>
-          <tr><td>4</td><td>1</td><td>—</td></tr>
+          <tr><td>3</td><td>1</td><td>1</td></tr>
+          <tr><td>4</td><td>1</td><td>1</td></tr>
           <tr><td>5</td><td>1</td><td>1</td></tr>
           <tr><td>6</td><td>1</td><td>1</td></tr>
           <tr><td>7</td><td>1</td><td>1</td></tr>
           <tr><td>8</td><td>1</td><td>1</td></tr>
-          <tr><td>9</td><td>2</td><td>1</td></tr>
-          <tr><td>10</td><td>2</td><td>1</td></tr>
+          <tr><td>9</td><td>2</td><td>2</td></tr>
+          <tr><td>10</td><td>2</td><td>2</td></tr>
           <tr><td>11</td><td>2</td><td>2</td></tr>
           <tr><td>12</td><td>2</td><td>2</td></tr>
-          <tr><td>13</td><td>3</td><td>2</td></tr>
-          <tr><td>14</td><td>3</td><td>2</td></tr>
+          <tr><td>13</td><td>3</td><td>3</td></tr>
+          <tr><td>14</td><td>3</td><td>3</td></tr>
           <tr><td>15</td><td>3</td><td>3</td></tr>
           <tr><td>16</td><td>3</td><td>3</td></tr>
-          <tr><td>17</td><td>4</td><td>3</td></tr>
-          <tr><td>18</td><td>4</td><td>3</td></tr>
+          <tr><td>17</td><td>4</td><td>4</td></tr>
+          <tr><td>18</td><td>4</td><td>4</td></tr>
           <tr><td>19</td><td>4</td><td>4</td></tr>
           <tr><td>20</td><td>4</td><td>4</td></tr></table>` },
         { name: "Cruelles blessures", html: `<p>Après une attaque sournoise réussie, vous pouvez remuer l'arme (ou le projectile) enfoncée dans le corps de la cible : sa vitesse de déplacement est réduite de moitié et elle est désavantagée à ses attaques d'opportunité jusqu'à ce qu'elle utilise une action pour retirer l'arme ou le projectile.</p>
@@ -930,8 +935,8 @@ const ARCHETYPES = [
           <p>Une créature qui a subi une cruelle blessure (par un sort ou une attaque) est immunisée à ces effets pendant 1 heure.</p>` }
       ] },
       { level: 6, features: [{ name: "Fumée et miroirs", html: `<p>Chaque fois que vous réussissez un test de Supercherie, ou que quelqu'un ne parvient pas à percer l'un de vos déguisements, la cible est totalement convaincue qu'elle perçoit la vérité. Aucune preuve présentée par quiconque autre que vous ne peut la convaincre du contraire. Cet effet dure 1 heure.</p>` }] },
-      { level: 9, features: [{ name: "Méthode améliorée", html: `<p>Vous gagnez <em>modifier son apparence</em>, <em>amélioration de caractéristique</em> et <em>image miroir</em>.</p>` }] },
-      { level: 13, features: [{ name: "Méthode supérieure", html: `<p>Vous gagnez <em>image majeure</em> et <em>monture fantôme</em>.</p>` }] },
+      { level: 9, features: [{ name: "Méthode de l'escroc améliorée", html: `<p>Vous gagnez <em>modifier son apparence</em>, <em>amélioration de caractéristique</em> et <em>image miroir</em>.</p>` }] },
+      { level: 13, features: [{ name: "Méthode de l'escroc supérieure", html: `<p>Vous gagnez <em>image majeure</em> et <em>monture fantôme</em>.</p>` }] },
       { level: 17, features: [
         { name: "Riposte miroir", html: `<p>Par une réaction, quand vous ou une autre créature à 9 m ou moins êtes la cible d'une attaque réussie, vous pouvez échanger par magie votre emplacement ou celui de la créature avec l'emplacement d'une autre créature située à 9 m ou moins de vous. Si l'une ou les deux créatures ne veulent pas échanger leur emplacement, elles peuvent tenter un jet de sauvegarde de Charisme ; ce pouvoir ne fonctionne pas si un jet de sauvegarde est réussi.</p>
           <p>Si l'échange a lieu, la créature ayant remplacé celle touchée par l'attaque subit celle-ci à sa place. Elle peut faire les éventuels jets de sauvegarde imposés par l'attaque.</p>
@@ -1536,7 +1541,7 @@ const TYPE_MAP = { "Bête": "beast", "Géant": "giant", "Dragon": "dragon", "Mon
 const DAMAGE_MAP = { "acide": "acid", "feu": "fire", "froid": "cold", "nécrotiques": "necrotic", "nécrotique": "necrotic", "poison": "poison", "foudre": "lightning", "tonnerre": "thunder", "radiants": "radiant", "psychiques": "psychic", "force": "force", "contondants": "bludgeoning", "perforants": "piercing", "tranchants": "slashing" };
 const CONDITION_MAP = { "charmé": "charmed", "épuisé": "exhausted", "terrorisé": "frightened", "paralysé": "paralyzed", "empoisonné": "poisoned", "aveuglé": "blinded", "assourdi": "deafened", "étourdi": "stunned", "inconscient": "unconscious" };
 
-function npc({ name, img, size, type, alignment, ac, hp, hpFormula, movement, abilities, saves = [], skills = [], skillExpertise = [], damageImmunities = [], damageResistances = [], conditionImmunities = [], languages = "", cr, legendary = false, biography, aptitudes = [], actions = [], legendaryActions = [], reactions = [] }) {
+function npc({ name, img, size, type, alignment, ac, hp, hpFormula, movement, abilities, saves = [], skills = [], skillExpertise = [], damageImmunities = [], damageResistances = [], conditionImmunities = [], languages = "", cr, legendary = false, legendaryResistance = true, biography, aptitudes = [], actions = [], legendaryActions = [], reactions = [] }) {
   const abilityBlock = {};
   for (const [k, v] of Object.entries(abilities)) {
     abilityBlock[k] = { value: v, proficient: saves.includes(k) ? 1 : 0, bonuses: { check: "", save: "" }, max: null };
@@ -1580,7 +1585,7 @@ function npc({ name, img, size, type, alignment, ac, hp, hpFormula, movement, ab
       },
       skills: skillBlock,
       resources: legendary
-        ? { legact: { value: 3, max: 3 }, legres: { value: 3, max: 3 }, lair: { value: false, initiative: null } }
+        ? { legact: { value: 3, max: 3 }, legres: legendaryResistance ? { value: 3, max: 3 } : { value: 0, max: 0 }, lair: { value: false, initiative: null } }
         : {},
       source: "Vers le Ragnarök"
     },
@@ -1710,7 +1715,7 @@ const NPCS = [
     languages: "commun",
     cr: 19,
     biography: "Considéré comme « l'effrayant épouvantail » de Jötunheimr, le plus terrifiant de tous les jötnar. Né du pied d'Ymir, il a six têtes, apprécie la violence et adore terroriser les jötnar. Il tire sa puissance du froid et de l'obscurité ; sociopathes, fous et assassins de Miðgarðr lui vouent un culte. <em>Immunisé de plus aux dégâts contondants, perforants et tranchants infligés par des armes non magiques (à configurer manuellement).</em>",
-    legendary: true,
+    legendary: true, legendaryResistance: false,
     aptitudes: [
       { nom: "Têtes multiples", texte: "Hrimgrimnir est avantagé lors des tests de Sagesse (Perception) et des jets de sauvegarde contre les états aveuglé, charmé, assourdi, terrorisé, étourdi et inconscient." },
       { nom: "Régénération", texte: "Hrimgrimnir récupère 20 points de vie au début de son tour (sauf s'il a subi des dégâts d'acide ou de feu depuis son dernier tour). Il meurt uniquement s'il débute son tour à 0 point de vie et ne se régénère pas." },

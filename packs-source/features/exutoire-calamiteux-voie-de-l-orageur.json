@@ -5,7 +5,7 @@
   "img": "icons/magic/lightning/bolt-strike-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Par une action pendant que vous êtes en rage, effectuez une unique attaque d'arme au corps à corps contre une créature. Si elle touche, la cible et toutes les créatures dans un rayon de 1,50 m (3 m au niveau 10) autour d'elle subissent 1 dégât de tonnerre par charge d'orage que vous possédez, et vous perdez toutes vos charges d'orage. Si l'attaque rate, vous gagnez à la place un nombre de charges d'orage égal à vos dégâts de rage.</p>",
+      "value": "<p>À partir du niveau 3, vous pouvez déchaîner l'orage sur une créature vivante. Par une action pendant que vous êtes en rage, effectuez une unique attaque d'arme au corps à corps contre une créature. Si elle touche, la cible et toutes les créatures dans un rayon de 1,50 m (3 m au niveau 10) autour d'elle subissent 1 dégât de tonnerre par charge d'orage que vous possédez, et vous perdez toutes vos charges d'orage. Si l'attaque rate, vous gagnez à la place un nombre de charges d'orage égal à vos dégâts de rage.</p>",
       "chat": ""
     },
     "identifier": "exutoire-calamiteux-voie-de-l-orageur",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877440,
-    "modifiedTime": 1787723877440,
+    "createdTime": 1787744747106,
+    "modifiedTime": 1787744747106,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

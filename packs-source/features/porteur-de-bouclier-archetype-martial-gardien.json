@@ -5,7 +5,7 @@
   "img": "icons/equipment/shield/heater-crest-cross-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié à 1,50 m ou moins de vous jusqu'au début de votre prochain tour.</p>",
+      "value": "<p>Vous pouvez changer d'arme ou de bouclier librement, et accorder +1 à la classe d'armure d'un allié jusqu'au début de votre prochain tour, tant que vous restez à 1,50 m ou moins de lui.</p>",
       "chat": ""
     },
     "identifier": "porteur-de-bouclier-archetype-martial-gardien",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877440,
-    "modifiedTime": 1787723877440,
+    "createdTime": 1787744747107,
+    "modifiedTime": 1787744747107,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,

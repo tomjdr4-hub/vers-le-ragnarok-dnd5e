@@ -5,7 +5,7 @@
   "img": "icons/magic/water/orb-ice-web.webp",
   "system": {
     "description": {
-      "value": "<p>En réaction, pour 2 points de sorcellerie, quand vous êtes touché en mêlée vous neutralisez ou ralentissez votre attaquant (jet de sauvegarde de Dextérité).</p>",
+      "value": "<p>En réaction, pour 2 points de sorcellerie, quand vous êtes touché en mêlée vous projetez brusquement du gel sur votre agresseur, qui fait un jet de sauvegarde de Dextérité : s'il le rate, il devient neutralisé et sa vitesse est réduite à 0 ; s'il le réussit, sa vitesse est réduite de moitié. Ces effets durent jusqu'à la fin de son prochain tour.</p>",
       "chat": ""
     },
     "identifier": "peau-du-froid-eternel-origine-jotunn",
@@ -35,8 +35,8 @@
     "coreVersion": "14",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1787723877440,
-    "modifiedTime": 1787723877440,
+    "createdTime": 1787744747107,
+    "modifiedTime": 1787744747107,
     "lastModifiedBy": null,
     "duplicateSource": null,
     "compendiumSource": null,
